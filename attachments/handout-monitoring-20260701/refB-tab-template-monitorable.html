@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>1-2 幾百幾十幾個一（SVG 版）— 國小數學二年級互動講義(康軒版)</title>
+  <style>
+    /* 引入標準字體與專門處理注音黑科技的 BpmfIansui 字體 */
+    @font-face{font-family:'Iansui';src:url('https://cdn.jsdelivr.net/gh/ButTaiwan/iansui@master/fonts/ttf/Iansui-Regular.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap;}
+    @font-face{font-family:'BpmfIansui';src:url('https://cdn.jsdelivr.net/gh/ButTaiwan/bpmfvs@master/outputs/BpmfIansui-Regular.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap;}
+    
+    :root{
+        --ink:#1c1a14;--paper:#fffaf0;--accent:#e67e22;--accent2:#27ae60;
+        --gold:#f39c12;--gold-light:#fdebd0;--muted:#7f8c8d;--correct:#2ecc71;
+        --wrong:#e74c3c;--card:#ffffff;--border:#f5cba7;--shadow:rgba(0,0,0,.08);
+        
+        /* 動態注音顏色變數 (預設橘色) */
+        --zy-color: #d35400; 
+    }
+    
+    *{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+    body{font-family:'Iansui',serif;background:var(--paper);color:var(--ink);min-height:100vh;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0);}
+    body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(243,156,18,.05) 31px,rgba(243,156,18,.05) 32px);}
+    #root{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:24px 16px 60px;}
+    
+    strong { color: var(--accent); font-weight: 900; }
+    
+    /* Cover */
+    .cover{text-align:center;padding:36px 20px 28px;border-bottom:3px dashed var(--accent);margin-bottom:28px; background: #fff; border-radius: 20px; box-shadow: 0 4px 12px var(--shadow);}
+    .cover-deco{font-size:32px;color:var(--gold);letter-spacing:8px;margin-bottom:10px;}
+    .cover-title{font-size:clamp(32px,8vw,48px);font-weight:900;letter-spacing:6px;color:var(--accent); line-height: 1.4;}
+    .cover-author{font-size:20px;color:var(--accent2);margin-top:12px;letter-spacing:2px; font-weight: 700; line-height: 1.6;}
+    .cover-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px;}
+    .meta-badge{background:var(--gold-light);border:2px solid var(--gold);border-radius:20px;padding:6px 16px;font-size:15px;color:#d35400;font-weight:900; line-height: 1.6;}
+    
+    /* Progress */
+    .progress-wrap{margin-bottom:20px;}
+    .progress-bar{background:var(--border);border-radius:10px;height:12px;overflow:hidden; border: 2px solid #fff; box-shadow: 0 2px 4px var(--shadow);}
+    .progress-fill{height:100%;background:linear-gradient(90deg,var(--accent2),#2ecc71);border-radius:10px;transition:width .5s ease;}
+    .progress-text{font-size:15px;font-weight:900;color:var(--accent);text-align:right;margin-top:8px; line-height: 1.6;}
+    
+    /* Tabs */
+    .tab-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+    .tab-btn{padding:10px 18px;border-radius:12px 12px 0 0;font-family:inherit;font-size:18px;font-weight:900;border:2px solid var(--border);border-bottom:none;cursor:pointer;background:var(--card);color:var(--muted);transition:all .2s;touch-action:manipulation; line-height: 1.8;}
+    .tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent); transform: translateY(-2px); --zy-color:#fff;}
+    .tab-content{display:none;}.tab-content.active{display:block;}
+    
+    /* Interactive Flip Boxes */
+    .section{background:var(--card);border:2px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px;box-shadow:0 4px 12px var(--shadow);}
+    .section-title{font-size:22px;font-weight:900;color:var(--accent);border-left:6px solid var(--accent);padding-left:12px;margin-bottom:18px;letter-spacing:1px; background: var(--gold-light); display: inline-block; padding-right: 16px; border-radius: 0 8px 8px 0; line-height: 2.0;}
+    
+    .flip-row { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+    .flip-box { background: #fff; border: 2px solid var(--border); border-radius: 10px; overflow: hidden; cursor: pointer; transition: all 0.2s; box-shadow: 0 2px 4px var(--shadow); }
+    .flip-box:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .flip-head { background: var(--gold-light); padding: 12px 16px; font-weight: 900; font-size: 18px; color: #d35400; display: flex; justify-content: space-between; align-items: center; line-height:1.6;}
+    .flip-head::after { content: '▼'; font-size: 14px; transition: transform 0.3s; color: var(--accent);}
+    .flip-body { padding: 0 16px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; line-height: 1.8; color: var(--ink); font-size: 18px; font-weight: 700; }
+    .flip-box.active .flip-head { background: var(--accent); color: #fff; --zy-color:#fff; }
+    .flip-box.active .flip-head::after { transform: rotate(180deg); color: #fff; }
+    .flip-box.active .flip-body { padding: 14px 16px; max-height: 2000px; border-top: 2px dashed var(--border); background: #fffdf5; }
+
+    /* Poem */
+    .poem-box{background:linear-gradient(135deg,#e8f8f5,#d4efdf);border:3px dashed var(--accent2);border-radius:16px;padding:32px;position:relative;overflow:hidden; text-align: center;}
+    .poem-title-line{margin-bottom:24px;border-bottom:2px dashed var(--accent2);padding-bottom:12px;}
+    .poem-title-main{font-size:32px;font-weight:900;color:var(--accent2);letter-spacing:4px; line-height: 1.6;}
+    .stanza{margin-bottom:20px;line-height:2.8;font-size:26px;letter-spacing:2px; font-weight: 900;}
+    .verse-line{display:block;}
+    
+    /* 💎 教育部標準注音排版系統 (MOE Standard Ruby System) 💎 */
+    .moe-zy { 
+        display: inline-flex; 
+        align-items: center; 
+        vertical-align: middle; 
+        margin: 0 0.08em; /* 縮小字元間距，排版更緊湊 */
+        line-height: 1; 
+    }
+    .moe-c { 
+        font-size: 1em; 
+        line-height: 1; 
+    }
+    .zy-wrap { 
+        display: inline-flex;
+        position: relative;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        color: var(--zy-color); 
+        margin-left: 0.08em;
+        font-size: 0.45em; /* 國小課本比例：注音約為國字的35% */
+        user-select: none;
+    }
+    .zy-syms {
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-family: 'BpmfIansui', 'Microsoft JhengHei', sans-serif;
+        line-height: 1;
+        letter-spacing: -0.05em;
+    }
+    .zy-tone {
+        position: absolute;
+        font-family: 'Microsoft JhengHei', Arial, sans-serif; /* 獨立字體防止符號歪斜 */
+        font-size: 1.4em; /* 顯著放大聲符，幫助低年級識別 */
+        font-weight: 900; /* 加粗聲符 */
+        line-height: 1;
+    }
+    /* 輕聲 (˙) 配置 */
+    .zy-wrap.has-light {
+        padding-top: 1.1em; /* 留出上方空間給變大的輕聲 */
+    }
+    .zy-tone-0 {
+        top: -0.15em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* 二、三、四聲 (ˊˇˋ) 配置 */
+    .zy-wrap.has-tone {
+        padding-right: 0.95em; /* 留出右側空間給聲符，縮小避免撞下個字 */
+    }
+    .zy-tone-2, .zy-tone-3, .zy-tone-4 {
+        right: 0.15em;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Char cards */
+    .char-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px;}
+    .char-card{background:#fff;border:2px solid var(--border);border-radius:12px;padding:16px 8px;text-align:center;cursor:pointer;transition:all .2s;user-select:none; box-shadow: 0 3px 6px var(--shadow);}
+    .char-card:hover{border-color:var(--accent); transform: scale(1.05);}
+    .char-card.cc-active{border-color:var(--accent);box-shadow:0 0 0 4px rgba(230,126,34,.2); background: #fffdf5;}
+    
+    .ruby-wrap { display: flex; justify-content: center; align-items: center; margin-bottom: 10px; height: 75px; font-size: 56px; }
+    
+    .cc-div{height:2px;background:var(--border);margin:10px 0;}
+    .cc-radical{font-size:18px;font-weight:900;color:var(--accent2);display:block;margin-bottom:4px;line-height:2.0;}
+    .cc-strokes{font-size:15px;color:var(--muted);display:block;font-weight: 700;line-height:2.0;}
+    
+    /* Interactive Widgets */
+    .question-block{margin-bottom:26px; background: #fff; padding: 24px; border-radius: 16px; border: 2px solid var(--border); box-shadow:0 4px 10px var(--shadow);}
+    .q-index{font-size:18px; color:var(--accent2); font-weight:900; margin-bottom:14px; display:flex; align-items:center; line-height: 2.0;}
+    .q-tag{display:inline-block; background:var(--gold-light); border-radius:8px; font-size:14px; padding:4px 10px; color:var(--accent); margin-left:10px; line-height: 1.6;}
+    .q-text{font-size:22px; font-weight:900; line-height:2.2; margin-bottom:20px; color:var(--ink);}
+    
+    /* MCQ Options */
+    .options-list{display:grid; gap:12px;}
+    .opt-btn{display:flex;align-items:center;gap:14px;background:#fffaf0;border:3px solid var(--border);border-radius:12px;padding:16px 20px;cursor:pointer;font-family:inherit;font-size:20px;font-weight:700;color:var(--ink);transition:all .2s;width:100%;text-align:left; line-height: 2.0;}
+    .opt-btn:hover:not(:disabled){border-color:var(--accent);background:var(--gold-light); transform:translateY(-2px);}
+    .opt-btn .lbl{min-width:36px;height:36px;border-radius:50%;background:var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;flex-shrink:0; transition:all .2s; color:#fff;}
+    .opt-btn.correct{border-color:var(--correct);background:#eafaf1; color: var(--correct); --zy-color: var(--correct);}
+    .opt-btn.wrong{border-color:var(--wrong);background:#fdedec; color: var(--wrong); --zy-color: var(--wrong); opacity:0.8;}
+    .opt-btn.correct .lbl{background:var(--correct);}
+    .opt-btn.wrong .lbl{background:var(--wrong);}
+    .opt-btn:disabled{cursor:default;}
+    
+    /* Scratch & Slider */
+    .scratch-sentence, .slider-sentence {font-size:24px;line-height:3.2;margin-top:20px; text-align:center; font-weight:900; padding:16px; background:#f4f6f7; border:3px dashed var(--accent2); border-radius:16px;}
+    .slider-blank{display:inline-block;vertical-align:middle;position:relative;width:180px;height:64px;border-radius:8px;overflow:hidden;border:2px solid var(--accent);margin:0 8px;}
+    .slider-back{position:absolute;inset:0;background:var(--gold-light);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:var(--accent);line-height:1.5;}
+    .slider-cover{position:absolute;top:0;left:0;height:100%;background:linear-gradient(90deg,var(--accent2),#2ecc71);border-radius:6px 0 0 6px;transition:width .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);width:100%; pointer-events:none; display:flex; align-items:center; justify-content:center; color:#fff; font-size:16px; font-weight:900; overflow:hidden;line-height:1.5; --zy-color:#fff;}
+    .slider-cover.revealed { width: 0%; }
+    
+    /* Sort 排序題 */
+    .sort-pool{display:flex;flex-wrap:wrap;gap:12px;padding:20px;border:3px dashed var(--accent);border-radius:12px;min-height:80px;background:var(--gold-light);margin-bottom:16px;}
+    .sort-slots{display:flex;flex-wrap:wrap;gap:12px;padding:20px;border:3px dashed var(--accent2);border-radius:12px;min-height:80px;background:#e8f8f5;}
+    .sort-label{font-size:18px;font-weight:900;color:var(--accent);margin-bottom:10px; line-height:1.6;}
+    .sort-chip{padding:12px 24px;border:3px solid var(--accent);border-radius:30px;background:#fff;font-size:22px;font-weight:900;cursor:grab;user-select:none;touch-action:manipulation;transition:all .2s;color:var(--ink); box-shadow: 0 4px 8px var(--shadow); line-height: 1.6;}
+    .sort-chip:hover{background:var(--accent);color:#fff;transform:translateY(-3px); --zy-color:#fff;}
+    .sort-chip.placed{border-color:var(--muted);background:#ecf0f1;color:var(--muted);cursor:default;box-shadow:none;}
+    .sort-chip.s-correct{border-color:var(--correct)!important;background:#eafaf1!important;color:var(--correct)!important; --zy-color:var(--correct);}
+    .sort-chip.s-wrong{border-color:var(--wrong)!important;background:#fdedec!important;color:var(--wrong)!important; --zy-color:var(--wrong);}
+    .slot-num{display:inline-flex;align-items:center;justify-content:center;background:var(--accent2);color:#fff;border-radius:50%;width:28px;height:28px;font-size:16px;font-weight:900;flex-shrink:0; margin-right:8px;}
+
+    /* Interactive Feedback & Explanation */
+    .feedback{font-size:20px; font-weight:900; padding:16px 20px; border-radius:12px; margin-top:16px; display:none; line-height:2.2;}
+    .feedback.ok{background:#eafaf1;color:var(--correct);display:block; border-left: 6px solid var(--correct); --zy-color: var(--correct);}
+    .feedback.err{background:#fdedec;color:var(--wrong);display:block; border-left: 6px solid var(--wrong); --zy-color: var(--wrong);}
+    .expl-box { display:none; margin-top:20px; background-color:#fff9e6; border:3px dashed var(--gold); border-radius:12px; padding:20px 24px; font-size:20px; line-height:2.2; color:#d35400; font-weight:700; --zy-color: #d35400;}
+    .expl-title { font-weight: 900; color: var(--accent); margin-bottom: 10px; font-size: 22px; border-bottom: 2px solid var(--gold-light); padding-bottom: 6px; display:inline-block; line-height: 2.0;}
+
+    /* Misc Boxes */
+    .hint-box{background:#e8f8f5;border-left:6px solid var(--accent2);border-radius:0 12px 12px 0;padding:16px 20px;font-size:18px;font-weight:900;color:var(--accent2);margin-bottom:16px;line-height:2.2;}
+    
+    /* Score */
+    .score-panel{display:none;text-align:center;padding:40px 20px;}
+    .score-panel.visible{display:block; animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;}
+    @keyframes popIn { 0% { opacity: 0; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1); } }
+    .score-ring{width:160px;height:160px;border-radius:50%;border:8px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 24px;background:#fff;box-shadow:0 6px 24px rgba(243,156,18,.3);}
+    .score-num{font-size:64px;font-weight:900;color:var(--accent);line-height:1;}
+    .score-den{font-size:20px;color:var(--muted); font-weight:900;}
+    .score-msg{font-size:24px;font-weight:900;margin-bottom:12px; color:var(--accent2); line-height:2.0; --zy-color: var(--accent2);}
+    .score-sub{font-size:18px;color:var(--muted); font-weight:700; line-height:2.0; --zy-color: var(--muted);}
+    
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 28px;border-radius:12px;font-family:inherit;font-size:18px;font-weight:900;border:none;cursor:pointer;transition:all .2s; line-height:2.0; --zy-color:#fff;}
+    .btn-primary{background:var(--accent);color:#fff; box-shadow: 0 4px 0 #d35400;}.btn-primary:hover{transform:translateY(2px); box-shadow: 0 2px 0 #d35400;}
+    .btn-ghost{background:var(--card);color:var(--accent);border:3px solid var(--accent); --zy-color:var(--accent);}.btn-ghost:hover{background:var(--gold-light);}
+    .btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;}
+    /* ===== 字卡（田字格 + 大字） ===== */
+    .hw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:12px}
+    .hw-card{background:var(--gold-light);border:2px solid var(--border);border-radius:16px;padding:14px;display:flex;flex-direction:column;align-items:center;gap:10px}
+    .hw-canvas{background:#fff;border:2px dashed #c0a060;border-radius:12px;width:180px;height:180px;flex-shrink:0;position:relative;display:flex;align-items:center;justify-content:center}
+    .hw-canvas svg{display:block;width:100%;height:100%}
+    .hw-canvas .hw-placeholder{font-size:96px;color:#bbb;font-weight:900}
+    .hw-charname{font-size:24px;font-weight:900;color:var(--accent)}
+    .hw-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;width:100%}
+    .hw-btn{padding:10px 16px;border:0;border-radius:99px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit;box-shadow:0 3px 0 rgba(0,0,0,.15);line-height:1.4}
+    .hw-btn:active{transform:translateY(1px);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+    .hw-btn.demo{background:var(--accent);color:#fff;--zy-color:#fff}
+    .hw-btn.reset{background:#fff;color:var(--accent);border:2px solid var(--accent);--zy-color:var(--accent)}
+    .hw-status{font-size:15px;font-weight:700;padding:5px 14px;border-radius:99px;background:#fff;color:#888;border:1.5px solid #ddd;display:inline-block;margin-top:2px}
+    .hw-status.pass{background:#e8f5e9;color:#2e7d32;border-color:#81c784}
+    .hw-fallback{color:#888;font-size:13px;font-style:italic}
+    /* ===== Tab 解鎖 ===== */
+    .tab-btn.locked{opacity:.45;cursor:not-allowed}
+    .tab-btn.locked::after{content:" 🔒";font-size:14px}
+    .tab-toast{position:fixed;top:24px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:14px 22px;border-radius:99px;font-weight:700;font-size:16px;z-index:9999;opacity:0;transition:opacity .3s;pointer-events:none;line-height:1.8}
+    .tab-toast.show{opacity:1}
+    .next-tab-row{margin-top:24px;padding-top:16px;border-top:2px dashed var(--border);text-align:center}
+    .next-tab-btn{background:var(--accent2);color:#fff;border:0;padding:14px 28px;border-radius:99px;font-size:18px;font-weight:900;cursor:pointer;box-shadow:0 4px 0 #2980b9;font-family:inherit;--zy-color:#fff;line-height:1.6}
+    .next-tab-btn:active{transform:translateY(2px);box-shadow:0 2px 0 #2980b9}
+    .next-tab-btn:disabled{background:#bbb;box-shadow:0 4px 0 #999;cursor:not-allowed}
+    .next-tab-hint{margin-top:10px;font-size:15px;color:var(--muted)}
+    /* 田字格背景（純 CSS）給靜態描寫卡用 */
+    .hw-tianzi{background-image:
+        linear-gradient(#e8a06f 1px, transparent 1px),
+        linear-gradient(90deg, #e8a06f 1px, transparent 1px),
+        linear-gradient(135deg, transparent calc(50% - .5px), #e8a06f calc(50% - .5px), #e8a06f calc(50% + .5px), transparent calc(50% + .5px)),
+        linear-gradient(45deg, transparent calc(50% - .5px), #e8a06f calc(50% - .5px), #e8a06f calc(50% + .5px), transparent calc(50% + .5px));
+      background-size:100% 50%, 50% 100%, 100% 100%, 100% 100%;
+      background-position:0 50%, 50% 0, 0 0, 0 0;
+      background-repeat:no-repeat;
+      background-color:#fff;
+    }
+    .hw-card.hw-done{background:#e8f5e9;border-color:#81c784}
+    .hw-card.hw-done .hw-tianzi{background-color:#f1f8e9}
+    .hw-bigchar{font-family:'Iansui','BpmfIansui',serif;font-size:120px;font-weight:900;color:#d35400;line-height:1;user-select:none}
+    .hw-card.hw-done .hw-bigchar{color:#388e3c}
+    .hw-zhuyin{font-family:'BpmfIansui','Iansui',serif;font-size:30px;color:#444;text-align:center;font-weight:700}
+    .hw-zhuyin .zy-wrap{font-size:0.5em}
+    .hw-done-btn{background:var(--accent);color:#fff;--zy-color:#fff;border:0;padding:10px 18px;border-radius:99px;font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 3px 0 #b3651b;font-family:inherit;line-height:1.4}
+    .hw-done-btn:active{transform:translateY(1px);box-shadow:0 2px 0 #b3651b}
+    .hw-card.hw-done .hw-done-btn{background:#4caf50;box-shadow:0 3px 0 #2e7d32}
+    /* 認識生字 — 翻卡互動 */
+    .cv-flip{cursor:pointer;position:relative;transition:transform .3s;perspective:600px}
+    .cv-flip:hover{transform:translateY(-3px) scale(1.02)}
+    .cv-face{width:100%;display:flex;flex-direction:column;align-items:center;gap:8px;transition:opacity .25s}
+    .cv-back{display:none}
+    .cv-flip.flipped .cv-front{display:none}
+    .cv-flip.flipped .cv-back{display:flex}
+    .cv-flip.flipped{background:#fffdf5;border-color:var(--accent);box-shadow:0 0 0 3px rgba(230,126,34,.2)}
+    .cv-info{display:flex;flex-direction:column;align-items:center;gap:8px;padding:6px 0}
+    .cv-rad{font-size:26px;font-weight:900;color:var(--accent2);line-height:1.8;background:#e8f5e9;padding:8px 20px;border-radius:99px;border:2px solid #81c784}
+    .cv-rad .zy-wrap{font-size:0.5em}
+    .cv-ext{font-size:22px;color:var(--accent);font-weight:700;line-height:1.6;background:#fff3e0;padding:7px 18px;border-radius:99px;border:2px solid #ffb74d}
+    .cv-ext .zy-wrap{font-size:0.5em}
+    .cv-hint{font-size:13px;color:var(--muted);font-weight:700;margin-top:4px;background:#fff;padding:3px 10px;border-radius:99px}
+    .cv-flip.flipped .cv-front .cv-hint, .cv-flip:not(.flipped) .cv-back .cv-hint{display:none}
+    .cv-back .hw-bigchar{font-size:64px;color:var(--accent2)}
+    /* 心智圖 — 中央 hub + 分支節點 + 詳情面板 */
+    .mm-wrap{background:linear-gradient(135deg,#fff8e7,#fff);border:2px dashed var(--gold);border-radius:18px;padding:18px;margin-top:10px}
+    .mm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;align-items:stretch}
+    .mm-center{grid-column:1/-1;text-align:center;background:linear-gradient(135deg,var(--accent),#f39c12);color:#fff;padding:20px;border-radius:18px;font-weight:900;font-size:24px;box-shadow:0 6px 16px rgba(230,126,34,.3);--zy-color:#fff;line-height:2.0;word-spacing:0.05em}
+    .mm-center .zy-wrap{font-size:0.5em}
+    .mm-node{background:#fff;border:2px solid var(--border);border-radius:14px;padding:18px 10px;text-align:center;cursor:pointer;transition:all .2s;box-shadow:0 3px 6px var(--shadow);user-select:none;min-height:120px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+    .mm-node:hover{transform:translateY(-3px);border-color:var(--accent2);box-shadow:0 6px 12px rgba(0,0,0,.12)}
+    .mm-node.active{border-color:var(--accent2);background:#e8f5e9;box-shadow:0 0 0 3px rgba(39,174,96,.18)}
+    .mm-node-icon{font-size:32px;line-height:1;margin-bottom:6px}
+    .mm-node-label{font-size:16px;font-weight:900;color:var(--accent);line-height:1.8;word-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .mm-node-label .zy-wrap{font-size:0.5em}
+    .mm-node-label .moe-zy{margin:0 0.05em}
+    .mm-node-hint{font-size:12px;color:var(--muted);margin-top:4px}
+    .mm-detail{margin-top:18px;background:#fff;border:2px solid var(--accent2);border-radius:14px;padding:18px;min-height:80px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:15px;line-height:2;text-align:center;font-weight:700}
+    .mm-detail.has-content{color:var(--ink);text-align:left;justify-content:flex-start;background:#f8fff5}
+    .mm-detail-title{font-size:18px;font-weight:900;color:var(--accent2);margin-bottom:8px;display:block;line-height:1.8}
+    .mm-detail-body{font-size:15px;line-height:2;color:var(--ink)}
+    /* 完成學習按鈕（最後一個 tab 底部 in-flow） */
+    .complete-learning-btn{color:#fff;border:0;border-radius:99px;font-weight:900;cursor:pointer;font-family:inherit;--zy-color:#fff;line-height:1.6;white-space:nowrap}
+    .complete-learning-btn:active{transform:translateY(2px)}
+    .complete-learning-btn:disabled{opacity:.78;box-shadow:none;transform:none;cursor:default}
+  </style>
+</head>
+<body>
+<div id="root">
+  <div class="cover">
+    <div class="cover-deco">🍬 🧮 💯</div>
+    <div class="cover-title needs-zhuyin">1-2 [幾](ㄐㄧˇ)[個](ㄍㄜ˙)[百](ㄅㄞˇ)、[幾](ㄐㄧˇ)[個](ㄍㄜ˙)[十](ㄕˊ)、[幾](ㄐㄧˇ)[個](ㄍㄜ˙)[一](ㄧ)</div>
+    <div class="cover-author needs-zhuyin">[康](ㄎㄤ)[軒](ㄒㄩㄢ)[版](ㄅㄢˇ) [二](ㄦˋ)[年](ㄋㄧㄢˊ)[級](ㄐㄧˊ)[數](ㄕㄨˋ)[學](ㄒㄩㄝˊ)<br><br>🍬 [糖](ㄊㄤˊ)[果](ㄍㄨㄛˇ)[店](ㄉㄧㄢˋ)：1 [條](ㄊㄧㄠˊ)=10 [顆](ㄎㄜ)、1 [張](ㄓㄤ)[百](ㄅㄞˇ)[格](ㄍㄜˊ)[板](ㄅㄢˇ)=100 [顆](ㄎㄜ)<br>📦 1 [箱](ㄒㄧㄤ)=10 [盒](ㄏㄜˊ)=100 [顆](ㄎㄜ)<br>💯 1 [箱](ㄒㄧㄤ) 3 [盒](ㄏㄜˊ) 7 [顆](ㄎㄜ) = 137：[位](ㄨㄟˋ)[值](ㄓˊ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)<br>🧮 [積](ㄐㄧ)[木](ㄇㄨˋ)[視](ㄕˋ)[覺](ㄐㄩㄝˊ)[化](ㄏㄨㄚˋ)：[百](ㄅㄞˇ)[板](ㄅㄢˇ) / [十](ㄕˊ)[條](ㄊㄧㄠˊ) / [小](ㄒㄧㄠˇ)[方](ㄈㄤ)[塊](ㄎㄨㄞˋ)</div>
+    <div class="cover-meta">
+      <span class="meta-badge needs-zhuyin">[國](ㄍㄨㄛˊ)[小](ㄒㄧㄠˇ)[二](ㄦˋ)[年](ㄋㄧㄢˊ)[級](ㄐㄧˊ)</span>
+      <span class="meta-badge needs-zhuyin">[康](ㄎㄤ)[軒](ㄒㄩㄢ)[版](ㄅㄢˇ) [數](ㄕㄨˋ)[學](ㄒㄩㄝˊ)</span>
+      <span class="meta-badge needs-zhuyin">[互](ㄏㄨˋ)[動](ㄉㄨㄥˋ)[闖](ㄔㄨㄤˇ)[關](ㄍㄨㄢ)</span>
+    </div>
+  </div>
+  
+  <div class="progress-wrap">
+    <div class="progress-bar"><div class="progress-fill" id="pFill" style="width:0%"></div></div>
+    <div class="progress-text" id="pText"></div>
+  </div>
+  
+  <div class="tab-nav" id="tabNav"></div>
+  <div id="tabPanels"></div>
+
+  <div class="section score-panel" id="scorePanel">
+    <div class="score-ring">
+      <div class="score-num" id="scoreNum">0</div>
+      <div class="score-den" id="scoreDen">/ 0</div>
+    </div>
+    <div class="score-msg" id="scoreMsg"></div>
+    <div class="score-sub" id="scoreSub"></div>
+    <div class="btn-row" style="justify-content:center;margin-top:32px">
+      <button class="btn btn-primary" onclick="resetAll()">🔄 <span class="needs-zhuyin">[再](ㄗㄞˋ)[玩](ㄨㄢˊ)[一](ㄧˊ)[次](ㄘˋ)，[變](ㄅㄧㄢˋ)[更](ㄍㄥˋ)[厲](ㄌㄧˋ)[害](ㄏㄞˋ)！</span></button>
+    </div>
+  </div>
+</div>
+
+<script>
+window.toggleFlip = function(el) { el.classList.toggle('active'); };
+
+const COURSE_DATA = {"title":"1-2 [幾](ㄐㄧˇ)[個](ㄍㄜ˙)[百](ㄅㄞˇ)、[幾](ㄐㄧˇ)[個](ㄍㄜ˙)[十](ㄕˊ)、[幾](ㄐㄧˇ)[個](ㄍㄜ˙)[一](ㄧ)","tabs":[{"tabId":"t1","title":"📖 [單](ㄉㄢ)[元](ㄩㄢˊ)[認](ㄖㄣˋ)[識](ㄕˋ)","sections":[{"type":"mindMap","sectionTitle":"[一](ㄧ)、[單](ㄉㄢ)[元](ㄩㄢˊ)[心](ㄒㄧㄣ)[智](ㄓˋ)[圖](ㄊㄨˊ)","note":"[本](ㄅㄣˇ)[單](ㄉㄢ)[元](ㄩㄢˊ)[學](ㄒㄩㄝˊ)[位](ㄨㄟˋ)[值](ㄓˊ)[概](ㄍㄞˋ)[念](ㄋㄧㄢˋ)！","center":"[位](ㄨㄟˋ)[值](ㄓˊ)[概](ㄍㄞˋ)[念](ㄋㄧㄢˋ)","nodes":[{"icon":"🍬","label":"[糖](ㄊㄤˊ)[果](ㄍㄨㄛˇ)[店](ㄉㄧㄢˋ)[情](ㄑㄧㄥˊ)[境](ㄐㄧㄥˋ)","body":"[糖](ㄊㄤˊ)[果](ㄍㄨㄛˇ)[店](ㄉㄧㄢˋ)[裡](ㄌㄧˇ)[糖](ㄊㄤˊ)[果](ㄍㄨㄛˇ)！[一](ㄧˊ)[個](ㄍㄜ˙) ●＝1 [顆](ㄎㄜ)[糖](ㄊㄤˊ)！[排](ㄆㄞˊ)[排](ㄆㄞˊ)[看](ㄎㄢˋ)：1 [條](ㄊㄧㄠˊ)[長](ㄔㄤˊ)[條](ㄊㄧㄠˊ) = 10 [顆](ㄎㄜ)！1 [張](ㄓㄤ)[百](ㄅㄞˇ)[格](ㄍㄜˊ)[板](ㄅㄢˇ) = 100 [顆](ㄎㄜ)！"},{"icon":"📦","label":"1 [箱](ㄒㄧㄤ) = 10 [盒](ㄏㄜˊ) = 100 [顆](ㄎㄜ)","body":"10 [顆](ㄎㄜ)[糖](ㄊㄤˊ)[裝](ㄓㄨㄤ)[一](ㄧˋ)[盒](ㄏㄜˊ)，10 [盒](ㄏㄜˊ)[再](ㄗㄞˋ)[裝](ㄓㄨㄤ)[成](ㄔㄥˊ)[一](ㄧˋ)[箱](ㄒㄧㄤ)！[所](ㄙㄨㄛˇ)[以](ㄧˇ) 1 [箱](ㄒㄧㄤ) = 10 [盒](ㄏㄜˊ) × 10 [顆](ㄎㄜ) = 100 [顆](ㄎㄜ)！[相](ㄒㄧㄤ)[當](ㄉㄤ)[於](ㄩˊ) 10 [條](ㄊㄧㄠˊ) [積](ㄐㄧ)[木](ㄇㄨˋ)！"},{"icon":"💯","label":"1 [箱](ㄒㄧㄤ) 3 [盒](ㄏㄜˊ) 7 [顆](ㄎㄜ) = 137 [顆](ㄎㄜ)","body":"[計](ㄐㄧˋ)[算](ㄙㄨㄢˋ)：1 [箱](ㄒㄧㄤ)（100）+ 3 [盒](ㄏㄜˊ)（30）+ 7 [顆](ㄎㄜ)（7）= **137 [顆](ㄎㄜ)**！[百](ㄅㄞˇ)[位](ㄨㄟˋ) 1、[十](ㄕˊ)[位](ㄨㄟˋ) 3、[個](ㄍㄜ˙)[位](ㄨㄟˋ) 7！[位](ㄨㄟˋ)[值](ㄓˊ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)！"},{"icon":"🧮","label":"[積](ㄐㄧ)[木](ㄇㄨˋ)[圖](ㄊㄨˊ)[像](ㄒㄧㄤˋ)","body":"[視](ㄕˋ)[覺](ㄐㄩㄝˊ)[化](ㄏㄨㄚˋ)：[百](ㄅㄞˇ)[板](ㄅㄢˇ)（[大](ㄉㄚˋ)[方](ㄈㄤ)[形](ㄒㄧㄥˊ)）= 100、[十](ㄕˊ)[條](ㄊㄧㄠˊ)（[長](ㄔㄤˊ)[條](ㄊㄧㄠˊ)）= 10、[個](ㄍㄜ˙)[單](ㄉㄢ)（[小](ㄒㄧㄠˇ)[方](ㄈㄤ)[塊](ㄎㄨㄞˋ)）= 1！[幫](ㄅㄤ)[助](ㄓㄨˋ)[理](ㄌㄧˇ)[解](ㄐㄧㄝˇ)[數](ㄕㄨˋ)[字](ㄗˋ)[結](ㄐㄧㄝˊ)[構](ㄍㄡˋ)！"},{"icon":"💡","label":"[本](ㄅㄣˇ)[單](ㄉㄢ)[元](ㄩㄢˊ)[學](ㄒㄩㄝˊ)[會](ㄏㄨㄟˋ)","body":"(1) [百](ㄅㄞˇ)/[十](ㄕˊ)/[個](ㄍㄜ˙)[位](ㄨㄟˋ)[認](ㄖㄣˋ)[識](ㄕˋ) (2) [用](ㄩㄥˋ)[積](ㄐㄧ)[木](ㄇㄨˋ)[圖](ㄊㄨˊ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)[數](ㄕㄨˋ)[字](ㄗˋ) (3) [幾](ㄐㄧˇ)[個](ㄍㄜ˙)[百](ㄅㄞˇ)+[幾](ㄐㄧˇ)[個](ㄍㄜ˙)[十](ㄕˊ)+[幾](ㄐㄧˇ)[個](ㄍㄜ˙)[一](ㄧ)=[一](ㄧˊ)[個](ㄍㄜ˙)[數](ㄕㄨˋ)！"}]}]},{"tabId":"t3","title":"🧮 [位](ㄨㄟˋ)[值](ㄓˊ)[認](ㄖㄣˋ)[識](ㄕˋ)","sections":[{"type":"interactiveInfo","sectionTitle":"[一](ㄧ)、[百](ㄅㄞˇ) [十](ㄕˊ) [個](ㄍㄜ˙)[三](ㄙㄢ)[個](ㄍㄜ˙)[位](ㄨㄟˋ)[值](ㄓˊ)","note":"[本](ㄅㄣˇ)[單](ㄉㄢ)[元](ㄩㄢˊ)[核](ㄏㄜˊ)[心](ㄒㄧㄣ)！","rows":[{"label":"🧱 [位](ㄨㄟˋ)[值](ㄓˊ)[積](ㄐㄧ)[木](ㄇㄨˋ)：[百](ㄅㄞˇ)/[十](ㄕˊ)/[個](ㄍㄜ˙)[位](ㄨㄟˋ)","value":"<div style='line-height:1.8;padding:10px'><div style='font-size:14px'>[三](ㄙㄢ)[種](ㄓㄨㄥˇ)[積](ㄐㄧ)[木](ㄇㄨˋ)[代](ㄉㄞˋ)[表](ㄅㄧㄠˇ)[不](ㄅㄨˋ)[同](ㄊㄨㄥˊ)[位](ㄨㄟˋ)[值](ㄓˊ)：</div><table style='width:100%;border-collapse:collapse;font-size:13px;text-align:center;margin-top:8px'><tr style='background:#fdebd0'><th style='border:1px solid #d35400;padding:6px'>[積](ㄐㄧ)[木](ㄇㄨˋ)</th><th style='border:1px solid #d35400;padding:6px'>[名](ㄇㄧㄥˊ)[字](ㄗˋ)</th><th style='border:1px solid #d35400;padding:6px'>[價](ㄐㄧㄚˋ)[值](ㄓˊ)</th></tr><tr><td style='border:1px solid #ccc;padding:4px'><svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:4px;display:inline-block;vertical-align:middle;border:2px solid #117a65;\"><rect width=\"80\" height=\"80\" fill=\"#d1f2eb\"/><g stroke=\"#117a65\" stroke-width=\"0.8\" fill=\"none\"><path d=\"M0 8h80M0 16h80M0 24h80M0 32h80M0 40h80M0 48h80M0 56h80M0 64h80M0 72h80M8 0v80M16 0v80M24 0v80M32 0v80M40 0v80M48 0v80M56 0v80M64 0v80M72 0v80\"/></g><text x=\"40\" y=\"48\" font-size=\"22\" font-weight=\"900\" fill=\"#0e6655\" text-anchor=\"middle\">100</text></svg></td><td style='border:1px solid #ccc;padding:4px'>[百](ㄅㄞˇ)[格](ㄍㄜˊ)[板](ㄅㄢˇ)</td><td style='border:1px solid #ccc;padding:4px;font-weight:900;color:#c0392b'>100</td></tr><tr style='background:#fef9e7'><td style='border:1px solid #ccc;padding:4px'><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg></td><td style='border:1px solid #ccc;padding:4px'>[十](ㄕˊ)[條](ㄊㄧㄠˊ)</td><td style='border:1px solid #ccc;padding:4px;font-weight:900;color:#c0392b'>10</td></tr><tr><td style='border:1px solid #ccc;padding:4px'><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg></td><td style='border:1px solid #ccc;padding:4px'>[小](ㄒㄧㄠˇ)[方](ㄈㄤ)[塊](ㄎㄨㄞˋ)</td><td style='border:1px solid #ccc;padding:4px;font-weight:900;color:#c0392b'>1</td></tr></table></div>"},{"label":"📊 [拆](ㄔㄞ)[解](ㄐㄧㄝˇ) 162：1 [百](ㄅㄞˇ) + 6 [十](ㄕˊ) + 2 [個](ㄍㄜ˙)","value":"<div style='line-height:1.8;padding:10px'><div style='text-align:center;margin:8px 0'><svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:4px;display:inline-block;vertical-align:middle;border:2px solid #117a65;\"><rect width=\"80\" height=\"80\" fill=\"#d1f2eb\"/><g stroke=\"#117a65\" stroke-width=\"0.8\" fill=\"none\"><path d=\"M0 8h80M0 16h80M0 24h80M0 32h80M0 40h80M0 48h80M0 56h80M0 64h80M0 72h80M8 0v80M16 0v80M24 0v80M32 0v80M40 0v80M48 0v80M56 0v80M64 0v80M72 0v80\"/></g><text x=\"40\" y=\"48\" font-size=\"22\" font-weight=\"900\" fill=\"#0e6655\" text-anchor=\"middle\">100</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><div style='font-size:18px;font-weight:900;color:#c0392b;margin-top:4px'>= 162</div></div><div style='font-size:13px;text-align:center'>1×100 + 6×10 + 2×1 = 100+60+2 = <b>162</b></div></div>"},{"label":"🔢 [位](ㄨㄟˋ)[值](ㄓˊ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)[表](ㄅㄧㄠˇ)","value":"<div style='line-height:1.8;padding:10px'><table style='width:100%;border-collapse:collapse;font-size:13px;text-align:center'><tr style='background:#fdebd0'><th style='border:1px solid #d35400;padding:4px'>[數](ㄕㄨˋ)</th><th style='border:1px solid #d35400;padding:4px'>[百](ㄅㄞˇ)</th><th style='border:1px solid #d35400;padding:4px'>[十](ㄕˊ)</th><th style='border:1px solid #d35400;padding:4px'>[個](ㄍㄜ˙)</th></tr><tr><td style='border:1px solid #ccc;padding:4px'>137</td><td style='border:1px solid #ccc;padding:4px'>1</td><td style='border:1px solid #ccc;padding:4px'>3</td><td style='border:1px solid #ccc;padding:4px'>7</td></tr><tr style='background:#fef9e7'><td style='border:1px solid #ccc;padding:4px'>205</td><td style='border:1px solid #ccc;padding:4px'>2</td><td style='border:1px solid #ccc;padding:4px'>0</td><td style='border:1px solid #ccc;padding:4px'>5</td></tr><tr><td style='border:1px solid #ccc;padding:4px'>180</td><td style='border:1px solid #ccc;padding:4px'>1</td><td style='border:1px solid #ccc;padding:4px'>8</td><td style='border:1px solid #ccc;padding:4px'>0</td></tr></table><div style='margin-top:8px;font-size:13px'>💡 [十](ㄕˊ)[位](ㄨㄟˋ)[是](ㄕˋ) 0 [念](ㄋㄧㄢˋ)「[零](ㄌㄧㄥˊ)」：205 [念](ㄋㄧㄢˋ)「[二](ㄦˋ)[百](ㄅㄞˇ)[零](ㄌㄧㄥˊ)[五](ㄨˇ)」</div></div>"},{"label":"🎯 [重](ㄓㄨㄥˋ)[點](ㄉㄧㄢˇ)","value":"<div style='line-height:1.8;padding:10px;font-size:14px'>1️⃣ [認](ㄖㄣˋ)[識](ㄕˋ)[三](ㄙㄢ)[位](ㄨㄟˋ)[值](ㄓˊ)<br>2️⃣ [每](ㄇㄟˇ)[一](ㄧˋ)[位](ㄨㄟˋ)[價](ㄐㄧㄚˋ)[值](ㄓˊ)[不](ㄅㄨˋ)[同](ㄊㄨㄥˊ)<br>3️⃣ [會](ㄏㄨㄟˋ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)+[組](ㄗㄨˇ)[合](ㄏㄜˊ)<br>4️⃣ [十](ㄕˊ)[位](ㄨㄟˋ) 0 [念](ㄋㄧㄢˋ)[零](ㄌㄧㄥˊ)</div>"}]}]},{"tabId":"t4","title":"🎮 [綜](ㄗㄨㄥˇ)[合](ㄏㄜˊ)[練](ㄌㄧㄢˋ)[習](ㄒㄧˊ)","sections":[{"type":"mcqSet","sectionTitle":"[一](ㄧ)、[練](ㄌㄧㄢˋ)[習](ㄒㄧˊ)","note":"[練](ㄌㄧㄢˋ)！","questions":[{"id":"r1","text":"<div style=\"text-align:center\"><svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:4px;display:inline-block;vertical-align:middle;border:2px solid #117a65;\"><rect width=\"80\" height=\"80\" fill=\"#d1f2eb\"/><g stroke=\"#117a65\" stroke-width=\"0.8\" fill=\"none\"><path d=\"M0 8h80M0 16h80M0 24h80M0 32h80M0 40h80M0 48h80M0 56h80M0 64h80M0 72h80M8 0v80M16 0v80M24 0v80M32 0v80M40 0v80M48 0v80M56 0v80M64 0v80M72 0v80\"/></g><text x=\"40\" y=\"48\" font-size=\"22\" font-weight=\"900\" fill=\"#0e6655\" text-anchor=\"middle\">100</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg></div>[共](ㄍㄨㄥˋ)？","options":["1062","162","62","16"],"answer":1,"explanation":"100+60+2=162！"},{"id":"r2","text":"162 = ？","options":["1 [百](ㄅㄞˇ)+6 [十](ㄕˊ)+2 [一](ㄧ)","16+2","1+6+2","1+62"],"answer":0,"explanation":"[位](ㄨㄟˋ)[值](ㄓˊ)[分](ㄈㄣ)[解](ㄐㄧㄝˇ)！"},{"id":"r3","text":"1 [箱](ㄒㄧㄤ)(10 [盒](ㄏㄜˊ)) + 3 [盒](ㄏㄜˊ) + 7 [顆](ㄎㄜ) = ?","options":["100","137","37","1037"],"answer":1,"explanation":"100+30+7=137！"},{"id":"r4","text":"180 = ？","options":["1+8+0","18 [十](ㄕˊ)","0+180","1 [百](ㄅㄞˇ)+8 [十](ㄕˊ)+0 [一](ㄧ)"],"answer":3,"explanation":"180=100+80+0！"},{"id":"r5","text":"1 [張](ㄓㄤ)[百](ㄅㄞˇ)[格](ㄍㄜˊ)[板](ㄅㄢˇ) + 9 [小](ㄒㄧㄠˇ)[方](ㄈㄤ)[塊](ㄎㄨㄞˋ) = ?","options":["9","190","19","109"],"answer":3,"explanation":"100+9=109！[十](ㄕˊ)[位](ㄨㄟˋ) 0 [念](ㄋㄧㄢˋ)[零](ㄌㄧㄥˊ)！"}]}]},{"tabId":"t5","title":"🏆 [統](ㄊㄨㄥˇ)[整](ㄓㄥˇ)[測](ㄘㄜˋ)[驗](ㄧㄢˋ)","sections":[{"type":"mcqSet","sectionTitle":"[一](ㄧ)、[大](ㄉㄚˋ)[挑](ㄊㄧㄠ)[戰](ㄓㄢˋ)","note":"[綜](ㄗㄨㄥˇ)[合](ㄏㄜˊ)！","questions":[{"id":"xe1","text":"[認](ㄖㄣˋ)[識](ㄕˋ)[哪](ㄋㄚˇ)[三](ㄙㄢ)[個](ㄍㄜ˙)[位](ㄨㄟˋ)[值](ㄓˊ)？","options":["[百](ㄅㄞˇ)/[十](ㄕˊ)/[個](ㄍㄜ˙)[位](ㄨㄟˋ)","[只](ㄓˇ)[有](ㄧㄡˇ)[個](ㄍㄜ˙)[位](ㄨㄟˋ)","[千](ㄑㄧㄢ)/[百](ㄅㄞˇ)/[十](ㄕˊ)[位](ㄨㄟˋ)","[隨](ㄙㄨㄟˊ)[便](ㄅㄧㄢˋ)"],"answer":0,"explanation":"[百](ㄅㄞˇ)/[十](ㄕˊ)/[個](ㄍㄜ˙)[三](ㄙㄢ)[位](ㄨㄟˋ)！"},{"id":"xe2","text":"<div style=\"text-align:center\"><svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:4px;display:inline-block;vertical-align:middle;border:2px solid #117a65;\"><rect width=\"80\" height=\"80\" fill=\"#d1f2eb\"/><g stroke=\"#117a65\" stroke-width=\"0.8\" fill=\"none\"><path d=\"M0 8h80M0 16h80M0 24h80M0 32h80M0 40h80M0 48h80M0 56h80M0 64h80M0 72h80M8 0v80M16 0v80M24 0v80M32 0v80M40 0v80M48 0v80M56 0v80M64 0v80M72 0v80\"/></g><text x=\"40\" y=\"48\" font-size=\"22\" font-weight=\"900\" fill=\"#0e6655\" text-anchor=\"middle\">100</text></svg><svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:4px;display:inline-block;vertical-align:middle;border:2px solid #117a65;\"><rect width=\"80\" height=\"80\" fill=\"#d1f2eb\"/><g stroke=\"#117a65\" stroke-width=\"0.8\" fill=\"none\"><path d=\"M0 8h80M0 16h80M0 24h80M0 32h80M0 40h80M0 48h80M0 56h80M0 64h80M0 72h80M8 0v80M16 0v80M24 0v80M32 0v80M40 0v80M48 0v80M56 0v80M64 0v80M72 0v80\"/></g><text x=\"40\" y=\"48\" font-size=\"22\" font-weight=\"900\" fill=\"#0e6655\" text-anchor=\"middle\">100</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"80\" height=\"20\" viewBox=\"0 0 80 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:3px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"78\" height=\"18\" fill=\"#d6eaf8\" stroke=\"#1b4f72\" stroke-width=\"2\"/><g stroke=\"#1b4f72\" stroke-width=\"0.8\"><line x1=\"8\" y1=\"1\" x2=\"8\" y2=\"19\"/><line x1=\"16\" y1=\"1\" x2=\"16\" y2=\"19\"/><line x1=\"24\" y1=\"1\" x2=\"24\" y2=\"19\"/><line x1=\"32\" y1=\"1\" x2=\"32\" y2=\"19\"/><line x1=\"40\" y1=\"1\" x2=\"40\" y2=\"19\"/><line x1=\"48\" y1=\"1\" x2=\"48\" y2=\"19\"/><line x1=\"56\" y1=\"1\" x2=\"56\" y2=\"19\"/><line x1=\"64\" y1=\"1\" x2=\"64\" y2=\"19\"/><line x1=\"72\" y1=\"1\" x2=\"72\" y2=\"19\"/></g><text x=\"40\" y=\"15\" font-size=\"12\" font-weight=\"900\" fill=\"#0b2a3d\" text-anchor=\"middle\">10</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" style=\"margin:2px;display:inline-block;vertical-align:middle\"><rect x=\"1\" y=\"1\" width=\"18\" height=\"18\" fill=\"#fdebd0\" stroke=\"#b9770e\" stroke-width=\"1.5\"/><text x=\"10\" y=\"14\" font-size=\"11\" font-weight=\"900\" fill=\"#7d6608\" text-anchor=\"middle\">1</text></svg></div>","options":["2055","55","255","25"],"answer":2,"explanation":"200+50+5=255！"},{"id":"xe3","text":"[積](ㄐㄧ)[木](ㄇㄨˋ)[圖](ㄊㄨˊ)[幫](ㄅㄤ)[助](ㄓㄨˋ)？","options":["[漂](ㄆㄧㄠˋ)[亮](ㄌㄧㄤˋ)","[沒](ㄇㄟˊ)[用](ㄩㄥˋ)","[視](ㄕˋ)[覺](ㄐㄩㄝˊ)[化](ㄏㄨㄚˋ)[數](ㄕㄨˋ)[字](ㄗˋ)[結](ㄐㄧㄝˊ)[構](ㄍㄡˋ)","[算](ㄙㄨㄢˋ)[數](ㄕㄨˋ)[學](ㄒㄩㄝˊ)[變](ㄅㄧㄢˋ)[難](ㄋㄢˊ)"],"answer":2,"explanation":"[百](ㄅㄞˇ)[板](ㄅㄢˇ)/[十](ㄕˊ)[條](ㄊㄧㄠˊ)/[小](ㄒㄧㄠˇ)[塊](ㄎㄨㄞˋ) [一](ㄧˋ)[眼](ㄧㄢˇ)[看](ㄎㄢˋ)[出](ㄔㄨ)[位](ㄨㄟˋ)[值](ㄓˊ)！"},{"id":"xe4","text":"[本](ㄅㄣˇ)[單](ㄉㄢ)[元](ㄩㄢˊ)[最](ㄗㄨㄟˋ)[重](ㄓㄨㄥˋ)[要](ㄧㄠˋ)？","options":["[沒](ㄇㄟˊ)[重](ㄓㄨㄥˋ)[要](ㄧㄠˋ)","[只](ㄓˇ)[會](ㄏㄨㄟˋ)[寫](ㄒㄧㄝˇ)[字](ㄗˋ)","[會](ㄏㄨㄟˋ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)[百](ㄅㄞˇ)+[十](ㄕˊ)+[個](ㄍㄜ˙)[位](ㄨㄟˋ)","[只](ㄓˇ)[學](ㄒㄩㄝˊ)[數](ㄕㄨˋ) 10"],"answer":2,"explanation":"[位](ㄨㄟˋ)[值](ㄓˊ)[拆](ㄔㄞ)[解](ㄐㄧㄝˇ)！[未](ㄨㄟˋ)[來](ㄌㄞˊ)[加](ㄐㄧㄚ)[減](ㄐㄧㄢˇ)[都](ㄉㄡ)[用](ㄩㄥˋ)！"},{"id":"xe5","text":"201 = ？","options":["2 [百](ㄅㄞˇ)+0 [十](ㄕˊ)+1 [一](ㄧ)","2+0+1","20+1","201 [個](ㄍㄜ˙)[一](ㄧ)"],"answer":0,"explanation":"201 = 二[百](ㄅㄞˇ)[零](ㄌㄧㄥˊ)[一](ㄧ)！"}]}]}]};
+
+window.UI_TEXT = {
+  correct: "[答](ㄉㄚˊ)[對](ㄉㄨㄟˋ)[了](ㄌㄜ˙)！🎉 [寶](ㄅㄠˇ)[貝](ㄅㄟˋ)[太](ㄊㄞˋ)[棒](ㄅㄤˋ)[了](ㄌㄜ˙)，[老](ㄌㄠˇ)[師](ㄕ)[為](ㄨㄟˋ)[你](ㄋㄧˇ)[拍](ㄆㄞ)[拍](ㄆㄞ)[手](ㄕㄡˇ)",
+  wrongPrefix: "[哎](ㄞ)[呀](ㄧㄚ)，[是](ㄕˋ)[不](ㄅㄨˋ)[是](ㄕˋ)[看](ㄎㄢˋ)[錯](ㄘㄨㄛˋ)[了](ㄌㄜ˙)[呢](ㄋㄜ˙)？[沒](ㄇㄟˊ)[關](ㄍㄨㄢ)[係](ㄒㄧˋ)，[再](ㄗㄞˋ)[試](ㄕˋ)[一](ㄧˊ)[次](ㄘˋ)[喔](ㄛ)！💪",
+  excellent: "[太](ㄊㄞˋ)[厲](ㄌㄧˋ)[害](ㄏㄞˋ)[了](ㄌㄜ˙)！[你](ㄋㄧˇ)[是](ㄕˋ)[無](ㄨˊ)[敵](ㄉㄧˊ)[小](ㄒㄧㄠˇ)[學](ㄒㄩㄝˊ)[霸](ㄅㄚˋ)！🌟",
+  good: "[很](ㄏㄣˇ)[棒](ㄅㄤˋ)[喔](ㄛ)！[繼](ㄐㄧˋ)[續](ㄒㄩˋ)[加](ㄐㄧㄚ)[油](ㄧㄡˊ)！👍",
+  pass: "[過](ㄍㄨㄛˋ)[關](ㄍㄨㄢ)[了](ㄌㄜ˙)！[可](ㄎㄜˇ)[以](ㄧˇ)[再](ㄗㄞˋ)[挑](ㄊㄧㄠ)[戰](ㄓㄢˋ)[一](ㄧˊ)[次](ㄘˋ)[拿](ㄋㄚˊ)[滿](ㄇㄢˇ)[分](ㄈㄣ)[喔](ㄛ)！😊"
+};
+
+(function(){
+  var CD=COURSE_DATA, UI=window.UI_TEXT;
+  var state={answers:{}, sortState:{}, timers:{}};
+  var totalQ=0;
+
+  function escZ(s, allowHtml){
+    if(s == null) return '';
+    var str = String(s);
+    if (!allowHtml) {
+      str = str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    str = str.replace(/&lt;br\/?&gt;/gi, '<br>');
+    str = str.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    
+    // 全新版：教育部國小課本級注音解析引擎 (Flexbox + Absolute Positioning)
+    return str.replace(/\[(.*?)\]\((.*?)\)/g, function(match, char, zy) {
+        let hasLight = zy.includes('˙');
+        let tone = '';
+        let sym = zy;
+        
+        if (hasLight) {
+            tone = '˙';
+            sym = zy.replace('˙', '');
+        } else {
+            let tMatch = zy.match(/[ˊˇˋ]/);
+            if (tMatch) {
+                tone = tMatch[0];
+                sym = zy.replace(tMatch[0], '');
+            }
+        }
+        
+        let zyClass = 'zy-wrap';
+        if (hasLight) zyClass += ' has-light';
+        else if (tone) zyClass += ' has-tone';
+        
+        let toneClass = '';
+        if (tone === '˙') toneClass = 'zy-tone-0';
+        else if (tone === 'ˊ') toneClass = 'zy-tone-2';
+        else if (tone === 'ˇ') toneClass = 'zy-tone-3';
+        else if (tone === 'ˋ') toneClass = 'zy-tone-4';
+        
+        return '<span class="moe-zy"><span class="moe-c">' + char + '</span><span class="' + zyClass + '"><span class="zy-syms">' + sym + '</span>' + (tone ? '<span class="zy-tone ' + toneClass + '">' + tone + '</span>' : '') + '</span></span>';
+    });
+  }
+
+  function countAll(){
+    var n=0;
+    CD.tabs.forEach(function(t){t.sections.forEach(function(s){
+      if(s.type==='mcqSet'&&s.questions) n+=s.questions.length;
+      if(s.type==='sortSet'&&s.questions) n+=s.questions.length;
+      if(s.type==='sliderSet'&&s.questions) n+=s.questions.length;
+    });});
+    return n;
+  }
+
+  function updateProgress(){
+    var a=0;
+    Object.keys(state.answers).forEach(function(k){
+      if(state.answers[k].completed) a++;
+    });
+    var pct=totalQ?Math.round(a/totalQ*100):0;
+    document.getElementById('pFill').style.width=pct+'%';
+    document.getElementById('pText').innerHTML=escZ('[闖](ㄔㄨㄤˇ)[關](ㄍㄨㄢ)[進](ㄐㄧㄣˋ)[度](ㄉㄨˋ)： '+a+' / '+totalQ+' [關](ㄍㄨㄢ)');
+  }
+
+  function buildTabs(){
+    var nav=document.getElementById('tabNav'),panels=document.getElementById('tabPanels');
+    nav.innerHTML='';panels.innerHTML='';
+    CD.tabs.forEach(function(tab,i){
+      var btn=document.createElement('button');
+      btn.className='tab-btn'+(i===0?' active':'')+(i>0?' locked':'');
+      btn.dataset.tabidx = i;
+      btn.dataset.tabid = tab.tabId;
+      btn.innerHTML=escZ(tab.title);
+      btn.addEventListener('click',function(){
+        if(btn.classList.contains('locked')){
+          showTabToast('🔒 ' + escZ('[請](ㄑㄧㄥˇ)[先](ㄒㄧㄢ)[完](ㄨㄢˊ)[成](ㄔㄥˊ)[前](ㄑㄧㄢˊ)[一](ㄧˊ)[個](ㄍㄜ˙)[關](ㄍㄨㄢ)[卡](ㄎㄚˇ)！'));
+          return;
+        }
+        document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+        document.querySelectorAll('.tab-content').forEach(function(p){p.classList.remove('active');});
+        btn.classList.add('active');
+        document.getElementById('tc_'+tab.tabId).classList.add('active');
+        try{reportTab(+btn.dataset.tabidx);}catch(e){}
+      });
+      nav.appendChild(btn);
+      var panel=document.createElement('div');
+      panel.className='tab-content'+(i===0?' active':'');
+      panel.id='tc_'+tab.tabId;
+      var inner=tab.sections.map(buildSection).join('');
+      if(i < CD.tabs.length-1){
+        inner += buildNextTabBar(tab.tabId, i);
+      } else {
+        inner += buildFinishLearningBar();
+      }
+      panel.innerHTML=inner;
+      panels.appendChild(panel);
+    });
+  }
+
+  function buildFinishLearningBar(){
+    return '<div class="next-tab-row" style="border-top-color:var(--accent2)">'+
+      '<button class="next-tab-btn complete-learning-btn" style="font-size:20px;padding:16px 32px;background:var(--accent2);box-shadow:0 4px 0 #1e8449" onclick="finishLearning()">'+
+        escZ('🎓 [我](ㄨㄛˇ)[已](ㄧˇ)[完](ㄨㄢˊ)[成](ㄔㄥˊ)[學](ㄒㄩㄝˊ)[習](ㄒㄧˊ)')+
+      '</button>'+
+      '<div class="next-tab-hint" style="color:var(--accent2)">'+
+        escZ('[全](ㄑㄩㄢˊ)[部](ㄅㄨˋ)[練](ㄌㄧㄢˋ)[完](ㄨㄢˊ)[了](ㄌㄜ˙)！[按](ㄢˋ)[下](ㄒㄧㄚˋ)[去](ㄑㄩˋ)[告](ㄍㄠˋ)[訴](ㄙㄨˋ)[老](ㄌㄠˇ)[師](ㄕ)[你](ㄋㄧˇ)[完](ㄨㄢˊ)[成](ㄔㄥˊ)[了](ㄌㄜ˙)！')+
+      '</div>'+
+    '</div>';
+  }
+  function buildNextTabBar(tabId, idx){
+    return '<div class="next-tab-row" id="ntr_'+tabId+'">'+
+      '<button class="next-tab-btn" id="ntb_'+tabId+'" onclick="unlockNext(\''+tabId+'\','+idx+')">'+
+        escZ('🎯 [完](ㄨㄢˊ)[成](ㄔㄥˊ)[本](ㄅㄣˇ)[關](ㄍㄨㄢ)，[前](ㄑㄧㄢˊ)[往](ㄨㄤˇ)[下](ㄒㄧㄚˋ)[一](ㄧˊ)[個](ㄍㄜ˙)[關](ㄍㄨㄢ)[卡](ㄎㄚˇ)')+
+      '</button>'+
+      '<div class="next-tab-hint" id="nth_'+tabId+'">'+
+        escZ('[練](ㄌㄧㄢˋ)[習](ㄒㄧˊ)[到](ㄉㄠˋ)[一](ㄧˊ)[個](ㄍㄜ˙)[段](ㄉㄨㄢˋ)[落](ㄌㄨㄛˋ)[就](ㄐㄧㄡˋ)[可](ㄎㄜˇ)[以](ㄧˇ)[進](ㄐㄧㄣˋ)[下](ㄒㄧㄚˋ)[一](ㄧˊ)[關](ㄍㄨㄢ)！')+
+      '</div>'+
+    '</div>';
+  }
+  function showTabToast(msg){
+    var t = document.getElementById('tabToast');
+    if(!t){
+      t = document.createElement('div');
+      t.id = 'tabToast';
+      t.className = 'tab-toast';
+      document.body.appendChild(t);
+    }
+    t.innerHTML = msg;
+    t.classList.add('show');
+    clearTimeout(t._h);
+    t._h = setTimeout(function(){ t.classList.remove('show'); }, 2400);
+  }
+  function unlockNext(curTabId, curIdx){
+    var btns = document.querySelectorAll('.tab-btn');
+    var next = btns[curIdx+1];
+    if(next){
+      next.classList.remove('locked');
+      next.click();
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  }
+
+  function buildSection(s){
+    var inner='';
+    if(s.type==='interactiveInfo') inner=buildInteractiveFlipRow(s);
+    else if(s.type==='poem') inner=buildPoem(s);
+    else if(s.type==='charTable') inner=buildCharTable(s);
+    else if(s.type==='mcqSet') inner=buildMCQSet(s);
+    else if(s.type==='sortSet') inner=buildSortSet(s);
+    else if(s.type==='sliderSet') inner=buildSliderSet(s);
+    else if(s.type==='mindMap') inner=buildMindMap(s);
+    return '<div class="section"><div class="section-title">'+escZ(s.sectionTitle)+'</div>'+inner+'</div>';
+  }
+
+  function buildMindMap(s){
+    var note = s.note ? '<div class="hint-box">🧠 '+escZ(s.note)+'</div>' : '';
+    var mmId = 'mm_' + Math.random().toString(36).substr(2,6);
+    if(!window.MM_DATA) window.MM_DATA = {};
+    window.MM_DATA[mmId] = s.nodes;
+    var nodesHtml = s.nodes.map(function(n, i){
+      var nid = mmId + '_n' + i;
+      return '<div class="mm-node" id="'+nid+'" data-mm-id="'+mmId+'" data-idx="'+i+'" onclick="mmShow(\''+mmId+'\','+i+')">'+
+        '<div class="mm-node-icon">'+n.icon+'</div>'+
+        '<div class="mm-node-label">'+escZ(n.label)+'</div>'+
+        '<div class="mm-node-hint">'+escZ('[點](ㄉㄧㄢˇ)[我](ㄨㄛˇ)[展](ㄓㄢˇ)[開](ㄎㄞ)')+'</div>'+
+        '</div>';
+    }).join('');
+    var defaultMsg = escZ('👆 [點](ㄉㄧㄢˇ)[一](ㄧˋ)[個](ㄍㄜ˙)[節](ㄐㄧㄝˊ)[點](ㄉㄧㄢˇ)，[看](ㄎㄢˋ)[看](ㄎㄢˋ)[課](ㄎㄜˋ)[文](ㄨㄣˊ)[在](ㄗㄞˋ)[說](ㄕㄨㄛ)[什](ㄕㄣˊ)[麼](ㄇㄜ˙)！');
+    return note +
+      '<div class="mm-wrap">'+
+        '<div class="mm-grid"><div class="mm-center">'+escZ(s.center)+'</div>'+nodesHtml+'</div>'+
+        '<div class="mm-detail" id="'+mmId+'_detail">'+defaultMsg+'</div>'+
+      '</div>';
+  }
+
+  window.mmShow = function(mmId, idx){
+    var data = window.MM_DATA && window.MM_DATA[mmId];
+    if(!data || !data[idx]) return;
+    var n = data[idx];
+    document.querySelectorAll('.mm-node[data-mm-id="'+mmId+'"]').forEach(function(el){ el.classList.remove('active'); });
+    var node = document.getElementById(mmId+'_n'+idx);
+    if(node) node.classList.add('active');
+    var detail = document.getElementById(mmId+'_detail');
+    if(!detail) return;
+    detail.classList.add('has-content');
+    var detailHtml = '<div style="width:100%"><span class="mm-detail-title">'+n.icon+' '+escZ(n.label)+'</span><div class="mm-detail-body">'+escZ(n.body, true)+'</div></div>';
+    detail.innerHTML = detailHtml;
+  };
+
+  // Expose IIFE-scoped helpers to window so inline onclick handlers can reach them
+  window.unlockNext = unlockNext;
+  window.showTabToast = showTabToast;
+
+  function buildInteractiveFlipRow(s){
+    var note=s.note?'<div class="hint-box">💡 '+escZ(s.note)+'</div>':'';
+    var rowsData = s.rows; 
+    var htmlRows = rowsData.map(function(r){
+      var label = escZ(r.label);
+      var value = escZ(r.value, true);
+      return '<div class="flip-box" onclick="toggleFlip(this)"><div class="flip-head"><span>'+label+'</span></div><div class="flip-body">'+value+'</div></div>';
+    }).join('');
+    return note + '<div class="flip-row">' + htmlRows + '</div>';
+  }
+  
+  function buildPoem(s){
+    var st=s.stanzas.map(function(st){
+      var lines=st.lines.map(function(l){return '<span class="verse-line">'+escZ(l)+'</span>';}).join('');
+      return '<div class="stanza">'+lines+'</div>';
+    }).join('');
+    return '<div class="poem-box"><div class="poem-title-line"><span class="poem-title-main">'+escZ(s.poemTitle)+'</span></div>'+st+'</div>';
+  }
+
+  function buildCharTable(s){
+    var note=s.note?'<div class="hint-box">👆 '+escZ(s.note)+'</div>':'';
+    var cards=s.chars.map(function(c){
+      var front =
+        '<div class="cv-face cv-front">'+
+          '<div class="hw-canvas hw-tianzi">'+
+            '<span class="hw-bigchar">'+c.c+'</span>'+
+          '</div>'+
+          '<div class="hw-zhuyin">'+escZ('['+c.c+']('+c.r+')')+'</div>'+
+          '<div class="cv-hint">'+escZ('👆 [點](ㄉㄧㄢˇ)[我](ㄨㄛˇ)[看](ㄎㄢˋ)[祕](ㄇㄧˋ)[密](ㄇㄧˋ)！')+'</div>'+
+        '</div>';
+      var back =
+        '<div class="cv-face cv-back">'+
+          '<div class="hw-canvas hw-tianzi" style="background-color:#fffdf5">'+
+            '<span class="hw-bigchar">'+c.c+'</span>'+
+          '</div>'+
+          '<div class="hw-zhuyin">'+escZ('['+c.c+']('+c.r+')')+'</div>'+
+          '<div class="cv-info">'+
+            '<span class="cv-rad">'+escZ(c.rad)+escZ('[部](ㄅㄨˋ)')+'</span>'+
+            '<span class="cv-ext">'+escZ('[部](ㄅㄨˋ)[外](ㄨㄞˋ) ' + c.ext + ' [畫](ㄏㄨㄚˋ)')+'</span>'+
+          '</div>'+
+          '<div class="cv-hint">'+escZ('↩ [再](ㄗㄞˋ)[點](ㄉㄧㄢˇ)[一](ㄧˋ)[下](ㄒㄧㄚˋ)[翻](ㄈㄢ)[回](ㄏㄨㄟˊ)[來](ㄌㄞˊ)')+'</div>'+
+        '</div>';
+      return '<div class="hw-card cv-flip" onclick="this.classList.toggle(\'flipped\')">' + front + back + '</div>';
+    }).join('');
+    return note + '<div class="hw-grid">'+cards+'</div>';
+  }
+
+  function buildSliderSet(s){
+    var note=s.note?'<div class="hint-box">🎯 '+escZ(s.note)+'</div>':'';
+    var qs=s.questions.map(function(q,i){
+      var opts=q.options.map(function(o,oi){
+        var lbl=['Ａ','Ｂ','Ｃ','Ｄ'][oi];
+        return '<button class="opt-btn" id="sl_ob_'+q.id+'_'+oi+'" onclick="doInteractiveGame(\''+q.id+'\','+oi+','+q.answer+',\'slider\')"><span class="lbl">'+lbl+'</span><span>'+escZ(o,true)+'</span></button>';
+      }).join('');
+      var explBox = q.explanation ? '<div id="expl_'+q.id+'" class="expl-box" style="display:none;"><div class="expl-title">' + escZ('🌟 [老](ㄌㄠˇ)[師](ㄕ)[說](ㄕㄨㄛ)[給](ㄍㄟˇ)[你](ㄋㄧˇ)[聽](ㄊㄧㄥ)：') + '</div><div style="margin-top:6px;">'+escZ(q.explanation)+'</div></div>' : '';
+      var explBtn = q.explanation ? '<button class="btn btn-ghost" style="margin-top:10px; font-size:16px; padding:8px 16px;" onclick="showGameExpl(\''+q.id+'\', \'slider\', '+q.answer+')"><span>' + escZ('👀 [直](ㄓˊ)[接](ㄐㄧㄝ)[看](ㄎㄢˋ)[答](ㄉㄚˊ)[案](ㄢˋ)') + '</span></button>' : '';
+      
+      return '<div class="question-block" id="qb_'+q.id+'">'+
+        '<div class="q-index"><span>' + escZ('[第](ㄉㄧˋ) '+(i+1)+' [關](ㄍㄨㄢ)') + '</span> <span class="q-tag">' + escZ('[填](ㄊㄧㄢˊ)[空](ㄎㄨㄥ)[大](ㄉㄚˋ)[挑](ㄊㄧㄠ)[戰](ㄓㄢˋ)') + '</span></div>'+
+        '<div class="q-text">'+escZ(q.text,true)+'</div>'+
+        '<div class="options-list">'+opts+'</div>'+
+        '<div class="slider-sentence" style="margin-top:20px;">'+escZ(q.before)+
+          '<span class="slider-blank"><span class="slider-back">'+escZ(q.secret)+'</span><span class="slider-cover" id="slc_'+q.id+'">'+escZ('🔒 [闖](ㄔㄨㄤˇ)[關](ㄍㄨㄢ)[解](ㄐㄧㄝˇ)[鎖](ㄙㄨㄛˇ)')+'</span></span>'+
+          escZ(q.after)+
+        '</div>'+
+        explBtn + '<div id="fb_'+q.id+'" class="feedback"></div>' + explBox + '</div>';
+    }).join('');
+    return note+qs;
+  }
+
+  function buildSortSet(s){
+    var note=s.note?'<div class="hint-box">🔀 '+escZ(s.note)+'</div>':'';
+    var qs=s.questions.map(function(q,i){
+      var shuffled=q.items.slice().map(function(v,idx){return {v:v,idx:idx};}).sort(function(){return Math.random()-.5;});
+      state.sortState[q.id]={placed:{},items:q.items,answer:q.answer};
+      var chips=shuffled.map(function(obj){
+        return '<div class="sort-chip" id="chip_'+q.id+'_'+obj.idx+'" onclick="sChipClick(\''+q.id+'\','+obj.idx+')">'+escZ(obj.v)+'</div>';
+      }).join('');
+      var slots='';
+      for(var k=0;k<q.items.length;k++){
+        slots+='<div class="sort-chip" id="slot_'+q.id+'_'+k+'" style="min-width:120px;border-style:dashed;color:var(--muted)">'+
+          '<span class="slot-num">'+(k+1)+'</span> <span id="st_'+q.id+'_'+k+'">　　</span></div>';
+      }
+      
+      var explBox = q.explanation ? '<div id="expl_'+q.id+'" class="expl-box" style="display:none;"><div class="expl-title">' + escZ('🌟 [老](ㄌㄠˇ)[師](ㄕ)[說](ㄕㄨㄛ)[給](ㄍㄟˇ)[你](ㄋㄧˇ)[聽](ㄊㄧㄥ)：') + '</div><div style="margin-top:6px;">'+escZ(q.explanation)+'</div></div>' : '';
+      var explBtn = q.explanation ? '<button class="btn btn-ghost" onclick="showGameExpl(\''+q.id+'\', \'sort\')"><span>' + escZ('👀 [直](ㄓˊ)[接](ㄐㄧㄝ)[看](ㄎㄢˋ)[答](ㄉㄚˊ)[案](ㄢˋ)') + '</span></button>' : '';
+
+      return '<div class="question-block" id="qb_'+q.id+'">'+
+        '<div class="q-index"><span>' + escZ('[第](ㄉㄧˋ) '+(i+1)+' [關](ㄍㄨㄢ)') + '</span> <span class="q-tag">' + escZ('[排](ㄆㄞˊ)[序](ㄒㄩˋ)[大](ㄉㄚˋ)[挑](ㄊㄧㄠ)[戰](ㄓㄢˋ)') + '</span></div>'+
+        '<div class="q-text" style="font-weight:700">'+escZ(q.text,true)+'</div>'+
+        '<div class="sort-label">' + escZ('👆 [點](ㄉㄧㄢˇ)[擊](ㄐㄧˊ)[下](ㄒㄧㄚˋ)[方](ㄈㄤ)[卡](ㄎㄚˇ)[片](ㄆㄧㄢˋ)[放](ㄈㄤˋ)[入](ㄖㄨˋ)[框](ㄎㄨㄤ)[框](ㄎㄨㄤ)[中](ㄓㄨㄥ)：') + '</div>'+
+        '<div class="sort-pool" id="pool_'+q.id+'">'+chips+'</div>'+
+        '<div class="sort-label">' + escZ('✅ [排](ㄆㄞˊ)[好](ㄏㄠˇ)[的](ㄉㄜ˙)[句](ㄐㄩˋ)[子](ㄗ˙)（[由](ㄧㄡˊ)[左](ㄗㄨㄛˇ)[至](ㄓˋ)[右](ㄧㄡˋ)）：') + '</div>'+
+        '<div class="sort-slots">'+slots+'</div>'+
+        '<div class="btn-row" id="sbtn_'+q.id+'">'+
+          '<button class="btn btn-primary" onclick="checkSort(\''+q.id+'\')"><span>' + escZ('[我](ㄨㄛˇ)[排](ㄆㄞˊ)[好](ㄏㄠˇ)[了](ㄌㄜ˙)！') + '</span></button>'+
+          '<button class="btn btn-ghost" onclick="resetSort(\''+q.id+'\')" style="border-color:var(--muted);color:var(--muted);"><span>' + escZ('[重](ㄔㄨㄥˊ)[新](ㄒㄧㄣ)[排](ㄆㄞˊ)[列](ㄌㄧㄝˋ)') + '</span></button>'+
+          explBtn +
+        '</div>'+
+        '<div id="fb_'+q.id+'" class="feedback"></div>'+ explBox +'</div>';
+    }).join('');
+    return note+qs;
+  }
+
+  function buildMCQSet(s){return s.questions.map(function(q,i){return buildQuestion(q,i);}).join('');}
+  
+  function buildQuestion(q,qi){
+    var idx='<div class="q-index"><span>' + escZ('[第](ㄉㄧˋ) '+(qi+1)+' [關](ㄍㄨㄢ)') + '</span> <span class="q-tag">' + escZ('[選](ㄒㄩㄢˇ)[選](ㄒㄩㄢˇ)[看](ㄎㄢˋ)') + '</span></div>';
+    var opts=q.options.map(function(o,oi){
+      var lbl=['Ａ','Ｂ','Ｃ','Ｄ'][oi];
+      return '<button class="opt-btn" id="ob_'+q.id+'_'+oi+'" onclick="doMCQ(\''+q.id+'\','+oi+','+q.answer+')"><span class="lbl">'+lbl+'</span><span>'+escZ(o,true)+'</span></button>';
+    }).join('');
+    
+    var explBtn = '<div style="margin-top:16px;"><button class="btn btn-ghost" style="padding: 8px 16px; font-size:16px;" onclick="showGameExpl(\''+q.id+'\', \'mcq\', '+q.answer+')"><span>' + escZ('👀 [直](ㄓˊ)[接](ㄐㄧㄝ)[看](ㄎㄢˋ)[老](ㄌㄠˇ)[師](ㄕ)[解](ㄐㄧㄝˇ)[答](ㄉㄚˊ)') + '</span></button></div>';
+    var explBox = '<div id="expl_'+q.id+'" class="expl-box"><div class="expl-title">' + escZ('🌟 [老](ㄌㄠˇ)[師](ㄕ)[說](ㄕㄨㄛ)[給](ㄍㄟˇ)[你](ㄋㄧˇ)[聽](ㄊㄧㄥ)：') + '</div><div style="margin-top:6px;">'+escZ(q.explanation)+'</div></div>';
+    
+    return '<div class="question-block" id="qb_'+q.id+'">'+idx+'<div class="q-text">'+escZ(q.text,true)+'</div><div class="options-list">'+opts+'</div>'+explBtn+'<div id="fb_'+q.id+'" class="feedback"></div>'+explBox+'</div>';
+  }
+
+  /* ── INTERACTIONS ── */
+  function ensureState(qId) {
+      if(!state.answers[qId]) state.answers[qId] = { correct: false, completed: false, attempts: 0 };
+  }
+
+  window.doMCQ = function(qId, chosen, correct) {
+    ensureState(qId);
+    if(state.answers[qId].completed) return; 
+    var ok = (chosen === correct);
+    var btn = document.getElementById('ob_'+qId+'_'+chosen);
+    state.answers[qId].attempts++;
+
+    if(ok){
+      for(var i=0;i<4;i++){
+        var b = document.getElementById('ob_'+qId+'_'+i);
+        if(b) b.disabled = true;
+      }
+      btn.classList.add('correct');
+      setFb(qId, true, UI.correct);
+      document.getElementById('expl_'+qId).style.display = 'block';
+      state.answers[qId].completed = true;
+      if(state.answers[qId].attempts === 1) state.answers[qId].correct = true; 
+      updateProgress();
+    } else {
+      btn.classList.add('wrong');
+      btn.disabled = true;
+      setFb(qId, false, UI.wrongPrefix);
+    }
+  };
+
+  window.doInteractiveGame = function(qId, chosen, correct, type) {
+    ensureState(qId);
+    if(state.answers[qId].completed) return; 
+    var ok = (chosen === correct);
+    var prefix = 'sl_ob_';
+    var btn = document.getElementById(prefix+qId+'_'+chosen);
+    state.answers[qId].attempts++;
+
+    if(ok){
+      for(var i=0;i<4;i++){
+        var b = document.getElementById(prefix+qId+'_'+i);
+        if(b) b.disabled = true;
+      }
+      btn.classList.add('correct');
+      document.getElementById('slc_'+qId).style.width = '0%';
+      setFb(qId, true, '[答](ㄉㄚˊ)[對](ㄉㄨㄟˋ)[了](ㄌㄜ˙)！🎉 [成](ㄔㄥˊ)[功](ㄍㄨㄥ)[解](ㄐㄧㄝˇ)[鎖](ㄙㄨㄛˇ)！[寶](ㄅㄠˇ)[貝](ㄅㄟˋ)[好](ㄏㄠˇ)[棒](ㄅㄤˋ)！');
+      document.getElementById('expl_'+qId).style.display = 'block';
+      state.answers[qId].completed = true;
+      if(state.answers[qId].attempts === 1) state.answers[qId].correct = true; 
+      updateProgress();
+    } else {
+      btn.classList.add('wrong');
+      btn.disabled = true;
+      setFb(qId, false, UI.wrongPrefix);
+    }
+  };
+
+  window.sChipClick = function(qId, idx) {
+    ensureState(qId);
+    if(state.answers[qId].completed) return;
+    var ss = state.sortState[qId];
+    if(!ss) return;
+    for(var k=0; k<ss.items.length; k++){
+      if(ss.placed[k] === undefined){ placeSlot(qId, idx, k); return; }
+    }
+  };
+  function placeSlot(qId, itemIdx, slot) {
+    var ss = state.sortState[qId];
+    for(var k=0; k<ss.items.length; k++){
+        if(ss.placed[k] === itemIdx){
+            ss.placed[k] = undefined;
+            var st = document.getElementById('st_'+qId+'_'+k);
+            if(st) st.textContent = '　　';
+        }
+    }
+    ss.placed[slot] = itemIdx;
+    var stEl = document.getElementById('st_'+qId+'_'+slot);
+    if(stEl) stEl.innerHTML = escZ(ss.items[itemIdx]);
+    
+    document.querySelectorAll('[id^="chip_'+qId+'_"]').forEach(function(c){ c.classList.remove('placed'); });
+    Object.keys(ss.placed).forEach(function(k){
+        if(ss.placed[k] !== undefined){
+            var c = document.getElementById('chip_'+qId+'_'+ss.placed[k]);
+            if(c) c.classList.add('placed');
+        }
+    });
+  }
+  window.checkSort = function(qId) {
+    ensureState(qId);
+    if(state.answers[qId].completed) return;
+    state.answers[qId].attempts++;
+    var ss = state.sortState[qId];
+    
+    var allPlaced = true;
+    for(var k=0; k<ss.items.length; k++){ if(ss.placed[k] === undefined) allPlaced = false; }
+    if(!allPlaced) { setFb(qId, false, '[寶](ㄅㄠˇ)[貝](ㄅㄟˋ)，[請](ㄑㄧㄥˇ)[把](ㄅㄚˇ)[全](ㄑㄩㄢˊ)[部](ㄅㄨˋ)[的](ㄉㄜ˙)[卡](ㄎㄚˇ)[片](ㄆㄧㄢˋ)[都](ㄉㄡ)[排](ㄆㄞˊ)[進](ㄐㄧㄣˋ)[去](ㄑㄩˋ)[喔](ㄛ)！'); return; }
+    
+    var ok = true;
+    ss.answer.forEach(function(correctIdx, slot){
+      var slotEl = document.getElementById('slot_'+qId+'_'+slot);
+      if(ss.placed[slot] === correctIdx){ if(slotEl) slotEl.classList.add('s-correct'); }
+      else{ ok = false; if(slotEl) slotEl.classList.add('s-wrong'); }
+    });
+    
+    if(ok) {
+        state.answers[qId].completed = true;
+        if(state.answers[qId].attempts === 1) state.answers[qId].correct = true;
+        setFb(qId, true, UI.correct);
+        var expl = document.getElementById('expl_'+qId);
+        if(expl) expl.style.display = 'block';
+        var btnRow = document.getElementById('sbtn_'+qId);
+        if(btnRow) btnRow.style.display = 'none';
+        updateProgress();
+    } else {
+        setFb(qId, false, '[好](ㄏㄠˇ)[像](ㄒㄧㄤˋ)[有](ㄧㄡˇ)[點](ㄉㄧㄢˇ)[不](ㄅㄨˋ)[對](ㄉㄨㄟˋ)[喔](ㄛ)，[紅](ㄏㄨㄥˊ)[色](ㄙㄜˋ)[的](ㄉㄜ˙)[放](ㄈㄤˋ)[錯](ㄘㄨㄛˋ)[了](ㄌㄜ˙)，[再](ㄗㄞˋ)[試](ㄕˋ)[試](ㄕˋ)[看](ㄎㄢˋ)！💪');
+    }
+  };
+  window.resetSort = function(qId) {
+    var ss = state.sortState[qId];
+    ss.placed = {};
+    for(var k=0; k<ss.items.length; k++){
+      var st = document.getElementById('st_'+qId+'_'+k); if(st) st.textContent = '　　';
+      var slotEl = document.getElementById('slot_'+qId+'_'+k); if(slotEl) slotEl.classList.remove('s-correct','s-wrong');
+    }
+    document.querySelectorAll('[id^="chip_'+qId+'_"]').forEach(function(c){ c.classList.remove('placed','s-correct','s-wrong'); });
+    var fb = document.getElementById('fb_'+qId); if(fb) { fb.className='feedback'; fb.style.display='none'; }
+  };
+
+  window.showGameExpl = function(qId, type, correctIdx) {
+    ensureState(qId);
+    if(state.answers[qId].completed) {
+        var expl = document.getElementById('expl_'+qId);
+        if(expl) expl.style.display = 'block';
+        return;
+    }
+    
+    if(type === 'mcq') {
+        for(var i=0;i<4;i++){
+            var b = document.getElementById('ob_'+qId+'_'+i);
+            if(b) { b.disabled = true; if(i === correctIdx) b.classList.add('correct'); }
+        }
+    } else if(type === 'slider') {
+        for(var i=0;i<4;i++){
+            var bsl = document.getElementById('sl_ob_'+qId+'_'+i);
+            if(bsl) { bsl.disabled = true; if(i === correctIdx) bsl.classList.add('correct'); }
+        }
+        var c = document.getElementById('slc_'+qId);
+        if(c) c.style.width = '0%';
+    } else if(type === 'sort') {
+        var ss = state.sortState[qId];
+        ss.answer.forEach(function(correctIdx, slot){
+             var stEl = document.getElementById('st_'+qId+'_'+slot);
+             if(stEl) stEl.innerHTML = escZ(ss.items[correctIdx]);
+             var slotEl = document.getElementById('slot_'+qId+'_'+slot);
+             if(slotEl) slotEl.classList.add('s-correct');
+             var chip = document.getElementById('chip_'+qId+'_'+correctIdx);
+             if(chip) chip.classList.add('placed');
+        });
+        var btnRow = document.getElementById('sbtn_'+qId);
+        if(btnRow) btnRow.style.display = 'none';
+    }
+    
+    var expl = document.getElementById('expl_'+qId);
+    if(expl) expl.style.display = 'block';
+    
+    var msg = '[直](ㄓˊ)[接](ㄐㄧㄝ)[看](ㄎㄢˋ)[老](ㄌㄠˇ)[師](ㄕ)[的](ㄉㄜ˙)[解](ㄐㄧㄝˇ)[答](ㄉㄚˊ)[也](ㄧㄝˇ)[是](ㄕˋ)[一](ㄧˋ)[種](ㄓㄨㄥˇ)[學](ㄒㄩㄝˊ)[習](ㄒㄧˊ)[喔](ㄛ)！👇';
+    setFb(qId, false, msg);
+    
+    state.answers[qId].completed = true;
+    state.answers[qId].correct = false;
+    updateProgress();
+  };
+
+  function setFb(qId, ok, msg){
+      var el = document.getElementById('fb_'+qId);
+      if(!el) return;
+      el.className = 'feedback ' + (ok ? 'ok' : 'err');
+      el.innerHTML = escZ(msg); 
+  }
+
+  function showScore(){
+    var correctScore = 0;
+    Object.keys(state.answers).forEach(function(k){
+      if(state.answers[k].correct) correctScore++;
+    });
+    var pct=Math.round(correctScore/totalQ*100);
+    document.getElementById('scoreNum').textContent = correctScore;
+    document.getElementById('scoreDen').textContent = '/ ' + totalQ;
+    document.getElementById('scoreMsg').innerHTML = escZ('[寶](ㄅㄠˇ)[貝](ㄅㄟˋ)[總](ㄗㄨㄥˇ)[共](ㄍㄨㄥˋ)[答](ㄉㄚˊ)[對](ㄉㄨㄟˋ)[了](ㄌㄜ˙) '+correctScore+' / '+totalQ+' [關](ㄍㄨㄢ)！');
+    document.getElementById('scoreSub').innerHTML = escZ(pct>=80 ? UI.excellent : pct>=60 ? UI.good : UI.pass);
+    var p = document.getElementById('scorePanel');
+    p.classList.add('visible');
+  }
+  
+  function applyZhuyinToStatic() {
+    document.querySelectorAll('.needs-zhuyin').forEach(function(el) {
+      el.innerHTML = escZ(el.innerHTML);
+    });
+  }
+
+  // === Platform Infrastructure ===
+  window.postToParent = function(type, payload){
+    if(window.parent !== window){
+      window.parent.postMessage({
+        type: type,
+        data: payload,
+        source: 'eduTemplate',
+        timestamp: Date.now()
+      }, '*');
+    }
+  };
+
+  window.sendTaskComplete = function(){
+    var correct = 0, total = totalQ;
+    Object.keys(state.answers).forEach(function(k){
+      if(state.answers[k].correct) correct++;
+    });
+    var accuracy = total > 0 ? correct/total : 0;
+    var badges = [];
+    if(accuracy >= 0.8) badges.push('accuracy_high');
+    if(accuracy >= 1.0) badges.push('perfect_score');
+    window.postToParent('TASK_COMPLETED', {
+      achievedScore: Math.max(0, Math.min(1, accuracy)),
+      completedAt: new Date().toISOString(),
+      performance: {
+        totalQuestions: total,
+        correctAnswers: correct,
+        accuracy: accuracy
+      },
+      suggestedRewards: {
+        xp: accuracy >= 0.8 ? 25 : accuracy >= 0.6 ? 20 : 10,
+        coins: accuracy >= 0.8 ? 10 : accuracy >= 0.6 ? 5 : 3,
+        badges: badges
+      }
+    });
+  };
+
+  window.finishLearning = function(){
+    window.sendTaskComplete();
+    // Disable the finish button + reveal score panel
+    document.querySelectorAll('.complete-learning-btn').forEach(function(btn){
+      btn.disabled = true;
+      btn.innerHTML = escZ('✓ [已](ㄧˇ)[送](ㄙㄨㄥˋ)[出](ㄔㄨ)');
+    });
+    showScore();
+    var panel = document.getElementById('scorePanel');
+    if(panel){
+      panel.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  };
+
+  window.resetAll=function(){
+    state={answers:{}, sortState:{}, timers:{}};
+    document.getElementById('scorePanel').classList.remove('visible');
+    buildTabs();
+    updateProgress();
+    window.scrollTo(0,0);
+  };
+
+  // 🔴 監控協定:位置回報(tab index = page)+ game:ready + 平台拉取(REQUEST_READY/REQUEST_STATE)
+  function __clearedQ(){var c=0,a=(state&&state.answers)||{};Object.keys(a).forEach(function(k){if(a[k]&&a[k].correct)c++;});return c;}
+  function reportTab(idx){ if(typeof idx!=='number'||isNaN(idx))return; var T=(CD&&CD.tabs)||[]; var cl=__clearedQ();
+    window.postToParent('PROGRESS_UPDATE',{page:idx,totalPages:T.length,section:(T[idx]||{}).title||'',pageType:'tab',
+      percent: totalQ?Math.round(cl/totalQ*100):Math.round(idx/((T.length-1)||1)*100), clearedQuestions:cl, totalQuestions:totalQ}); }
+  function __announceReady(){ var T=(CD&&CD.tabs)||[]; window.postToParent('game:ready',{totalPages:T.length,totalQuestions:totalQ,
+      protocolVersion:'1.1',engineVersion:'tab-tpl-v1',capabilities:['game:ready','PROGRESS_UPDATE','TASK_COMPLETED','REQUEST_READY','REQUEST_STATE'],timestamp:Date.now()}); }
+  function __curTabIdx(){var b=document.querySelector('.tab-btn.active');return b?(+b.dataset.tabidx||0):0;}
+  window.addEventListener('message',function(e){ if(!e||!e.data||e.data.source!=='eduPlatform')return;
+    if(e.data.type==='REQUEST_READY'){__announceReady();}
+    else if(e.data.type==='REQUEST_STATE'){__announceReady();reportTab(__curTabIdx());} });
+  totalQ=countAll();
+  buildTabs();
+  applyZhuyinToStatic();
+  updateProgress();
+  __announceReady();          // listener 已於上方先掛,再宣告 ready
+  reportTab(__curTabIdx());   // 首次進場回報位置
+})();
+</script>
+</body>
+</html>
