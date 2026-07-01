@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>生命現象 · 雜誌風(舊結構)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Nunito:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+<!-- KaTeX:自架於我們網域(learning.edubaania.com)為主;未部署/載入失敗時 fallback 外部 jsdelivr CDN(與芫荽字型同政策) -->
+<link rel="stylesheet" href="https://learning.edubaania.com/katex/katex.min.css" onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css';">
+<script>
+(function(){
+  var OUR='https://learning.edubaania.com/katex/', CDN='https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/';
+  function load(src,fb,next){var s=document.createElement('script');s.src=src;
+    s.onload=next;s.onerror=function(){var f=document.createElement('script');f.src=fb;f.onload=next;f.onerror=next;document.head.appendChild(f);};
+    document.head.appendChild(s);}
+  load(OUR+'katex.min.js',CDN+'katex.min.js',function(){
+    load(OUR+'auto-render.min.js',CDN+'contrib/auto-render.min.js',function(){
+      function r(){try{window.renderMath&&window.renderMath(document.body);}catch(e){}}
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',r);else r();
+    });});
+})();
+</script>
+<!-- 🔴 官方課件執行期:注音 toggle(SET_ZHUYIN)+ 破音字修正(變體選擇器)。引用我們網域 → 永遠拿平台最新破音字表。所有模板必載。 -->
+<script src="https://learning.edubaania.com/courseware/courseware-runtime.js"></script>
+<style>
+/* 字型策略(無芫荽):預設 = 品牌字 Noto Sans TC(Google 版本化、穩定、見 head <link>)。
+   注音 ON / 破音字修正 = 官方 courseware-runtime.js 處理(SET_ZHUYIN → html.zhuyin-runtime-on + !important 換 BpmfZihiKaiStd),不在此 CSS 處理。 */
+:root{
+  --bg:#e9f6f3; --bg-2:#f5fbfa; --paper:#fff; --ink:#2c4347; --ink-soft:#51686b; --ink-faint:#8aa1a1;
+  --rule:#dcebe8; --brand:#16b3a8; --brand-deep:#0e8d84; --brand-soft:#d3f0ec;
+  --subject:#57a767; --subject-soft:#dcf0d8; --warn:#e07a5f; --warn-soft:#fce4dc;
+  --gold:#f2b53c; --gold-soft:#fbeccc;
+  --round:"Noto Sans TC","PingFang TC",system-ui,sans-serif;
+  --sans:"Noto Sans TC","PingFang TC",system-ui,sans-serif; --latin:"Nunito","Noto Sans TC",sans-serif;
+  /* IPA 音標專用:系統字型必含 IPA Extensions(SF/Segoe/Roboto…),不經過無 IPA 的芫荽,避免豆腐字破圖 */
+  --ipa:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans TC",Arial,sans-serif;
+  --fs-base:19px; --lh-body:1.7; --maxcopy:40rem; --radius:20px;
+  --shadow:0 12px 34px -16px rgba(34,72,72,.34); --shadow-sm:0 4px 14px -8px rgba(34,72,72,.30);
+  --dur:.5s; --ease:cubic-bezier(.7,.02,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+/* 🔴 行動裝置觸控強化(2026 最佳實務,Chrome+Safari):防雙擊縮放/300ms延遲/連點/誤觸選字/長按選單/下拉刷新 */
+html,body{overscroll-behavior:none}
+.opt,.sopt,.chip,.sbtn,.redo-btn,.cardnext-btn,.nav-btn,.open-btn,.complete-btn,.wc-flip,.wc-zi,.bar-tools button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.opt:active,.sopt:active,.chip:active:not(.used),.sbtn:active,.redo-btn:active,.cardnext-btn:active,.nav-btn:active:not(:disabled),.open-btn:active,.complete-btn:active{filter:brightness(.95)}
+.opt:focus-visible,.sopt:focus-visible,.chip:focus-visible,.sbtn:focus-visible,.redo-btn:focus-visible,.cardnext-btn:focus-visible,.nav-btn:focus-visible,.open-btn:focus-visible,.complete-btn:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+html{font-size:var(--fs-base);-webkit-text-size-adjust:100%}
+/* 🔴 低年級字級放大(小學課本字大、字少):由 data-band 控制,字級全文 rem-based 會一起放大 */
+html[data-band="g1g2"]{--fs-base:27px;--lh-body:1.95}
+html[data-band="g3g4"]{--fs-base:22px;--lh-body:1.8}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);height:100vh;height:100dvh;overflow:hidden;
+  background-image:radial-gradient(120% 80% at 50% -10%,var(--bg-2) 0,transparent 60%),
+   radial-gradient(circle at 12% 8%,rgba(255,255,255,.7) 0,transparent 34%),
+   radial-gradient(circle at 88% 96%,rgba(22,179,168,.06) 0,transparent 44%)}
+img{display:block;max-width:100%}
+svg{max-width:100%;height:auto}  /* 內聯 SVG 跨載具防溢出:不論生成的 SVG 是否固定寬,都不會撐破版面 */
+#app{display:flex;flex-direction:column;height:100vh;height:100dvh}
+#viewport{flex:1 1 auto;position:relative;overflow:hidden}
+#track{display:flex;height:100%;will-change:transform;transition:transform var(--dur) var(--ease)}
+#track.dragging{transition:none}
+.page{flex:0 0 100%;height:100%;position:relative;overflow:clip;touch-action:pan-y}
+
+/* 封面 */
+.cover{display:grid;grid-template-columns:1.05fr .95fr;height:100%}
+.cover .cover-art{position:relative;overflow:hidden;background:var(--subject-soft)}
+.cover .cover-art img{width:100%;height:100%;object-fit:cover}
+.cover .cover-art::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(90deg,transparent 62%,var(--bg) 100%)}
+.cover .cover-meta{display:flex;flex-direction:column;justify-content:center;padding:clamp(1.5rem,5vw,4rem);gap:.5rem;position:relative}
+.cover .cover-meta::before{content:"";position:absolute;left:0;top:18%;bottom:18%;width:3px;border-radius:99px;background:linear-gradient(var(--brand),var(--subject));opacity:.65}
+.cover .kicker{font-family:var(--latin);font-weight:700;color:var(--brand);letter-spacing:.06em;font-size:1rem;margin-bottom:.4rem}
+.cover .subject{font-family:var(--round);font-weight:700;letter-spacing:.4em;text-indent:.4em;color:var(--subject);font-size:.95rem}
+.cover h1{font-family:var(--round);font-weight:900;line-height:1.05;font-size:clamp(3rem,8vw,5.5rem);color:var(--ink);margin:.2rem 0 .6rem;letter-spacing:.02em;text-wrap:balance}
+.cover .level{color:var(--ink-soft);font-size:1rem;letter-spacing:.04em}
+.cover .stars{color:var(--gold);letter-spacing:.1em}
+.cover .open-btn{align-self:flex-start;margin-top:1.6rem;font-family:var(--round);font-weight:700;font-size:1.05rem;background:var(--brand);color:#fff;border:none;border-radius:999px;padding:.75rem 1.7rem;cursor:pointer;transition:.25s;letter-spacing:.05em;box-shadow:0 10px 24px -10px var(--brand)}
+.cover .open-btn:hover{background:var(--brand-deep);transform:translateY(-2px)}
+.cover .ed{position:absolute;bottom:clamp(1rem,4vw,2.5rem);left:clamp(1.5rem,5vw,4rem);font-family:var(--latin);font-style:italic;color:var(--ink-faint);font-size:.85rem}
+
+/* 關卡分隔頁(章節扉頁) */
+.page.divider{display:flex;align-items:center;justify-content:center;padding:clamp(1rem,4vw,3rem)}
+.divider-card{text-align:center;max-width:720px;background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:clamp(2rem,6vw,4rem) clamp(1.6rem,5vw,3.4rem);position:relative;overflow:hidden}
+.divider-card::before{content:"";position:absolute;top:0;left:0;right:0;height:7px;background:linear-gradient(90deg,var(--brand),var(--subject))}
+.divider-card .tabicon{font-size:clamp(3rem,9vw,5rem);line-height:1}
+.divider-card .tabkick{font-family:var(--latin);font-weight:800;letter-spacing:.16em;color:var(--brand);font-size:.9rem;margin:.8rem 0 .3rem}
+.divider-card h2{font-family:var(--round);font-weight:900;font-size:clamp(2rem,6vw,3.2rem);color:var(--ink);margin:.1rem 0 .6rem;text-wrap:balance}
+.divider-card .purpose{color:var(--ink-soft);font-size:1.05rem;line-height:1.7}
+
+/* 課文頁(研究實證:流動重排 — 文字滿寬可讀、不縮放;密集頁垂直捲動;版面回應容器寬而非viewport) */
+.page.lesson{display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;padding:clamp(8px,1vw,14px)}
+.lesson-inner{width:100%;min-height:100%;flex-shrink:0;position:relative;background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow-sm);container-type:inline-size;display:flex;flex-direction:column;justify-content:center}
+.lesson-fit{width:100%;max-width:1380px;margin:auto;padding:clamp(1.1rem,2.6cqi,2rem) clamp(1.2rem,3cqi,2.4rem)}
+.kicker-l{font-family:var(--latin);font-weight:700;color:var(--subject);font-size:.95rem;letter-spacing:.04em;margin-bottom:.5rem;display:flex;align-items:center;gap:.6rem}
+.kicker-l::after{content:"";flex:1;height:1px;background:var(--rule)}
+.kicker-l .step{font-family:var(--sans);font-weight:800;font-size:.66rem;letter-spacing:.12em;color:var(--brand-deep);background:var(--brand-soft);padding:.18rem .6rem;border-radius:99px}
+.title{font-family:var(--round);font-weight:900;line-height:1.18;font-size:clamp(1.7rem,3.6vw,2.5rem);color:var(--ink);margin:.1rem 0 .7rem;letter-spacing:.01em;text-wrap:balance}
+.warmup{background:var(--brand-soft);border:none;border-radius:14px;padding:.85rem 1.15rem;font-size:.95rem;color:var(--ink-soft);line-height:1.8;margin:.3rem 0 1rem}
+.warmup .lbl{color:var(--brand-deep);background:#fff;padding:.22rem .7rem;border-radius:99px;margin:0 .55rem .1rem 0;display:inline-block;box-shadow:var(--shadow-sm);font-weight:800;font-size:.72rem;letter-spacing:.08em}
+.warmup .lbl::before{content:"💭 "}
+/* 🔴 區塊河流:Grid auto-fit 填滿寬、minmax 下限同時防「條紋」(太少欄)與「擠壓」(太多欄),跨容器自動 3/2/1 欄 */
+/* 🔴 masonry(CSS columns):各欄獨立流動,不對齊列高 → 高插圖旁的短文字不再留大空隙 */
+.lesson-cols{column-width:21rem;column-gap:clamp(1rem,2.4cqi,1.6rem);margin-top:.4rem}
+.lesson-cols>*{min-width:0;break-inside:avoid;margin-bottom:clamp(1rem,2.4cqi,1.6rem)}
+.lesson-cols .has-tbl{column-span:all}   /* 含表格區塊 = 跨全欄 figure */
+.lesson-cols .art-card{margin-top:0}
+.art-card{background:var(--subject-soft);border-radius:14px;padding:clamp(.4rem,1vw,.7rem);display:flex;align-items:center;justify-content:center}
+.art-card img{width:100%;max-width:none;aspect-ratio:1/1;object-fit:cover;border-radius:12px;background:#fff;box-shadow:var(--shadow-sm),0 0 0 4px #fff;cursor:zoom-in}
+.art-card .art-svg{width:100%;background:#fff;border-radius:12px;box-shadow:var(--shadow-sm),0 0 0 4px #fff;cursor:zoom-in;padding:clamp(.5rem,2vw,1rem);box-sizing:border-box;line-height:0}
+.art-card .art-svg svg{display:block;width:100%;height:auto}  /* 順著 viewBox 自然比例縮放,寬扁圖=寬扁框,不硬塞正方形、不裁切 */
+.lead{font-size:1.02rem;line-height:var(--lh-body);color:var(--ink);text-wrap:pretty;text-align:justify}
+.lead .lbl,.sec .seclbl{display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem;font-family:var(--sans);font-weight:800;font-size:.7rem;letter-spacing:.1em;color:var(--subject)}
+.sec .seclbl::before{content:"";width:1.3rem;height:3px;border-radius:99px;background:var(--subject)}
+.sec p,.lead p{font-size:.98rem;line-height:var(--lh-body);color:var(--ink-soft);text-wrap:pretty;text-align:justify;max-width:34em}  /* 行長上限 ~34 全形字(CJK 可讀) */
+.lead{background:var(--bg);border-radius:12px;padding:.7rem .9rem}
+.lead .lbl{color:var(--brand-deep)}
+code{background:var(--bg);padding:.05em .35em;border-radius:5px;font-size:.92em;font-family:ui-monospace,"SFMono-Regular",Menlo,monospace}
+.copy u,.warmup u{text-decoration:none;font-weight:700;color:var(--ink);background:linear-gradient(transparent 56%,var(--subject-soft) 0);padding:0 .08em;border-radius:3px}
+.misc{background:var(--warn-soft);border-left:4px solid var(--warn);border-radius:14px;padding:.75rem 1.05rem;line-height:1.7}
+.misc .lbl{font-weight:800;font-size:.7rem;letter-spacing:.1em;color:var(--warn);display:block;margin-bottom:.3rem}
+.misc .lbl::before{content:"⚠️ "}
+.misc p{font-size:.95rem;color:#a84f37}
+/* 零-SVG 後 body 內 markdown 表格/條列(fmtBody 渲染) */
+.headnote{background:var(--brand-soft);border-radius:12px;padding:.55rem .85rem;font-size:.9rem;color:var(--ink-soft);line-height:1.7}
+.headnote p,.headnote>*:last-child{margin:0}
+/* 🔴 表格 = 跨全寬可讀 figure(非縮圖):完整顯示、語意 table、窄寬才橫向捲動 */
+.tbl-wrap{margin:.5rem 0;overflow:auto;-webkit-overflow-scrolling:touch;border-radius:14px;box-shadow:var(--shadow-sm),0 0 0 1px #eef0f2}
+.tbl-wrap:focus-visible{outline:3px solid var(--brand-deep);outline-offset:2px}
+.md-tbl{width:100%;border-collapse:collapse;font-size:.92rem;background:#fff}
+.md-tbl th,.md-tbl td{padding:.55rem .95rem;text-align:left;vertical-align:top;line-height:1.55;color:var(--ink-soft);border-bottom:1px solid #eef0f2;word-break:break-word}
+.md-tbl thead th{background:var(--subject-soft);color:var(--ink);font-weight:800;border-bottom:2px solid var(--subject);position:sticky;top:0}
+.md-tbl tbody tr:last-child td,.md-tbl tbody tr:last-child th{border-bottom:none}
+.md-tbl tbody tr:nth-child(even) td,.md-tbl tbody tr:nth-child(even) th{background:var(--bg)}
+.md-tbl td.num,.md-tbl th.num{text-align:right;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.md-tbl tbody th[scope=row]{font-weight:700;color:var(--ink);text-align:left}
+.md-ul,.md-ol{margin:.3rem 0 .3rem 1.15rem;padding:0}
+.md-ul li,.md-ol li{font-size:.95rem;line-height:var(--lh-body);color:var(--ink-soft);margin:.18rem 0;text-align:justify}
+/* ``` 程式碼塊(數學短除法等 ASCII 排版):等寬、保留空白對齊、窄寬橫向捲動 */
+.md-pre{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;white-space:pre;overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--subject-soft);border-radius:10px;padding:.7rem 1rem;font-size:.9rem;line-height:1.6;color:var(--ink);margin:.5rem 0;tab-size:2}
+/* lightbox 放大的表格(可讀大小) */
+#lbHtml{background:#fff;border-radius:16px;max-width:94vw;max-height:90vh;overflow:auto;-webkit-overflow-scrolling:touch;box-shadow:0 20px 60px -15px rgba(0,0,0,.5)}
+#lbHtml .md-tbl{width:max-content;font-size:clamp(.95rem,2.4vw,1.15rem)}
+#lbHtml .md-tbl th,#lbHtml .md-tbl td{padding:.6rem 1.15rem}
+.misc u{background:linear-gradient(transparent 56%,var(--warn-soft) 0)}
+.mnemonic{position:relative;padding:.85rem 1.2rem .85rem 1.4rem;background:linear-gradient(180deg,var(--brand-soft),#e9faf7);border-radius:16px}
+.mnemonic .lbl{font-weight:800;font-size:.7rem;letter-spacing:.1em;color:var(--brand-deep);display:block;margin-bottom:.3rem}
+.mnemonic .lbl::before{content:"🔑 "}
+.mnemonic p{font-family:var(--round);font-weight:700;font-size:1.1rem;line-height:1.6;color:var(--brand-deep)}
+
+/* 互動頁(mcq / sort / slider)— 等比放大填滿,大小一致 */
+.page.cardpage{display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:clamp(8px,1vw,14px)}
+.page.cardpage:has(.icard[data-type]){align-items:flex-start;padding-top:clamp(16px,4vh,48px)}
+.card-fit{width:min(680px,94vw);transform-origin:top center}
+.card-fit.wide{width:min(1080px,95vw)}
+.icard{background:var(--paper);box-shadow:var(--shadow);border-radius:22px;padding:clamp(1.5rem,3.5vw,2.4rem)}
+/* 長題目:左右兩欄(題目左、選項右),寬螢幕充分運用空間 */
+.icard.split{display:grid;grid-template-columns:1fr 1.05fr;column-gap:2.4rem;row-gap:1.1rem;align-items:center}
+.icard.split .card-ref{grid-column:1/-1;align-self:start}
+.icard.split .q-prompt{grid-column:1;grid-row:2;margin-bottom:0;align-self:center}
+.icard.split .opts{grid-column:2;grid-row:2}
+.icard.split .fb,.icard.split .card-foot{grid-column:1/-1}
+@media(max-width:760px){
+  .card-fit.wide{width:min(94vw,460px)}
+  .icard.split{grid-template-columns:1fr}
+  .icard.split .q-prompt,.icard.split .opts{grid-column:1;grid-row:auto}
+  .icard.split .q-prompt{margin-bottom:1rem}
+}
+.card-ref{display:flex;align-items:center;gap:.55rem;font-weight:700;font-size:.9rem;color:var(--ink-faint);margin-bottom:1rem}
+.card-ref::before{content:"";width:1.4rem;height:3px;border-radius:9px;background:var(--subject)}
+.q-tag{display:inline-block;font-family:var(--sans);font-weight:800;font-size:.7rem;letter-spacing:.1em;color:var(--brand-deep);background:var(--brand-soft);padding:.2rem .6rem;border-radius:99px;margin-right:.55rem}
+.q-prompt{font-weight:700;font-size:1.16rem;color:var(--ink);line-height:1.6;margin-bottom:1rem}
+.opts{display:flex;flex-direction:column;gap:.55rem}
+.opt{display:flex;align-items:center;gap:.7rem;width:100%;text-align:left;font-family:var(--sans);font-size:1rem;color:var(--ink-soft);background:#fff;border:1.5px solid var(--rule);border-radius:12px;padding:.7rem .9rem;cursor:pointer;transition:.18s;line-height:1.4}
+.opt .ol{flex:0 0 auto;width:1.7rem;height:1.7rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--latin);font-weight:800;font-size:.9rem;color:var(--ink-faint);background:var(--bg);transition:.18s}
+.opt .opt-t{flex:1;min-width:0;line-height:1.5}
+.chip .chip-t{min-width:0}
+.opt:hover:not(:disabled){border-color:var(--brand);background:var(--brand-soft)}
+.opt:hover:not(:disabled) .ol{background:#fff;color:var(--brand-deep)}
+.opt:disabled{cursor:default}
+.opt.correct{border-color:var(--subject);background:var(--subject-soft);color:var(--ink);font-weight:700}
+.opt.correct .ol{background:var(--subject);color:#fff}
+.opt.wrong{border-color:var(--warn);background:var(--warn-soft);color:#a84f37}
+.opt.wrong .ol{background:var(--warn);color:#fff}
+.fb{margin-top:.85rem;padding:.8rem 1rem;border-radius:12px;font-size:.92rem;line-height:1.7;white-space:pre-wrap}
+.fb.ok{background:var(--subject-soft);color:#356b41;border:2px solid #6bbf7e}
+.fb.no{background:var(--warn-soft);color:#a84f37}
+.fb.reveal{background:var(--gold-soft);color:#8a6d1f}   /* 試N次後揭示答案:琥珀色,明確區別於「真的答對」的綠 */
+/* 🔴 未作答時回饋框「佔位但隱形」:預填「答對」訊息→量出實際高度設成 min-height(見JS)→卡片高度從頭固定:fit一次定好,作答零位移(不縮不跳)+可置中放大填滿不空曠 */
+.icard .fb-pre[hidden]{display:block;visibility:hidden}
+/* 🔴 過關後出現的「前往下一頁/重做」按鈕也預留空間(隱藏時佔位但隱形)→ 卡片高度不因按鈕出現而變→答題零位移 */
+.icard .card-foot .cardnext-btn[hidden],.icard .card-foot .redo-btn[hidden]{display:inline-block;visibility:hidden}
+.card-foot{display:flex;align-items:center;gap:.9rem;margin-top:1.1rem;flex-wrap:wrap}
+.redo-btn{font-family:var(--round);font-weight:700;font-size:.9rem;color:var(--brand-deep);
+  background:var(--brand-soft);border:1.5px solid var(--brand-soft);border-radius:999px;padding:.45rem 1.15rem;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;gap:.35rem}
+.redo-btn:hover{background:#fff;border-color:var(--brand)}
+.redo-btn[hidden]{display:none}
+.cardnext-btn{font-family:var(--round);font-weight:800;font-size:.95rem;color:#fff;background:var(--brand);border:1.5px solid var(--brand);border-radius:999px;padding:.5rem 1.4rem;cursor:pointer;transition:.18s;box-shadow:0 9px 22px -10px var(--brand)}
+.cardnext-btn:hover{background:var(--brand-deep);border-color:var(--brand-deep);transform:translateY(-1px)}
+.cardnext-btn[hidden]{display:none}
+.gate-note{font-size:.82rem;font-weight:800;letter-spacing:.03em;color:var(--ink-faint);display:inline-flex;align-items:center;gap:.3rem}
+.disc-list{margin:.6rem 0;padding-left:1.3rem;line-height:1.85;font-size:.96rem;color:var(--ink)}
+.disc-list li{margin:.25rem 0}
+.disc-ex{margin-top:.7rem;padding:.6rem .8rem;border-radius:12px;background:var(--paper,rgba(0,0,0,.03));font-size:.9rem;line-height:1.7;color:var(--ink-faint)}
+.gate-note.open{color:var(--subject)}
+.icard.gate-active .gate-note:not(.open){color:var(--warn);animation:gatepulse 1.4s var(--ease) infinite}
+@keyframes gatepulse{0%,100%{opacity:1}50%{opacity:.45}}
+
+/* sortSet:可點選排序 */
+.sort-pool{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.chip{font-family:var(--sans);font-size:.98rem;color:var(--ink-soft);background:#fff;border:1.5px solid var(--rule);border-radius:12px;padding:.55rem .85rem;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:.5rem}
+.chip:hover:not(.used){border-color:var(--brand);background:var(--brand-soft)}
+.chip.used{opacity:.4;cursor:default;border-style:dashed}
+.chip .seq{font-family:var(--latin);font-weight:800;color:var(--brand-deep);background:var(--brand-soft);border-radius:50%;width:1.4rem;height:1.4rem;display:none;align-items:center;justify-content:center;font-size:.8rem}
+.chip.used .seq{display:flex}
+.sort-actions{display:flex;gap:.6rem;align-items:center}
+.sbtn{font-family:var(--round);font-weight:700;font-size:.95rem;border:none;border-radius:999px;padding:.55rem 1.3rem;cursor:pointer;transition:.2s}
+.sbtn.go{background:var(--brand);color:#fff;box-shadow:0 8px 20px -10px var(--brand)}
+.sbtn.go:hover{background:var(--brand-deep)}
+.sbtn.reset{background:var(--bg);color:var(--ink-soft);border:1.5px solid var(--rule)}
+
+/* sliderSet:逐項判斷 */
+.slider-item{padding:.8rem 0;border-bottom:1px solid var(--rule)}
+.slider-item:last-child{border-bottom:none}
+.slider-clue{font-weight:700;color:var(--ink);margin-bottom:.5rem;font-size:1rem}
+.slider-opts{display:flex;gap:.5rem;flex-wrap:wrap}
+.slider-list{display:grid;grid-template-columns:1fr;gap:0}
+@media(min-width:740px){.slider-list{grid-template-columns:1fr 1fr;column-gap:2rem}.slider-list .slider-item{padding:.7rem 0}}
+@media(min-width:860px){.card-fit:has(.icard[data-type="slider"]){width:min(960px,94vw)}}
+.sopt{font-family:var(--sans);font-size:.92rem;color:var(--ink-soft);background:#fff;border:1.5px solid var(--rule);border-radius:999px;padding:.5rem 1.05rem;min-height:42px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:.15s}
+.sopt:hover:not(.locked){border-color:var(--brand);background:var(--brand-soft)}
+.sopt.correct{border-color:var(--subject);background:var(--subject-soft);color:#356b41;font-weight:700}
+.sopt.wrong{border-color:var(--warn);background:var(--warn-soft);color:#a84f37}
+.slider-fb{margin-top:.4rem;font-size:.86rem;color:var(--ink-soft);line-height:1.6}
+
+/* 底列 */
+.bottombar{position:relative;flex:0 0 auto;display:flex;align-items:center;gap:clamp(.6rem,2vw,1.3rem);padding:.55rem clamp(.9rem,3vw,1.8rem);padding-bottom:max(.55rem,env(safe-area-inset-bottom));padding-left:max(clamp(.9rem,3vw,1.8rem),env(safe-area-inset-left));padding-right:max(clamp(.9rem,3vw,1.8rem),env(safe-area-inset-right));border-top:1px solid var(--rule);background:#fff;box-shadow:0 -8px 22px -14px rgba(34,72,72,.22);z-index:30}
+.nav-btn{flex:0 0 auto;width:2.6rem;height:2.6rem;border-radius:50%;border:1.5px solid var(--rule);background:#fff;color:var(--brand-deep);font-size:1.35rem;line-height:1;cursor:pointer;transition:.2s;display:flex;align-items:center;justify-content:center}
+.nav-btn:hover:not(:disabled){background:var(--brand);color:#fff;border-color:var(--brand)}
+.nav-btn:disabled{opacity:.32;cursor:default}
+/* 下一頁明確引導:可前往下一頁且還有未讀頁時,next 鈕填色+脈動光環 */
+.nav-btn.cta{background:var(--brand);color:#fff;border-color:var(--brand);animation:nextpulse 1.7s var(--ease) infinite}
+.nav-btn.cta:hover{background:var(--brand-deep);border-color:var(--brand-deep)}
+@keyframes nextpulse{0%{box-shadow:0 0 0 0 rgba(22,179,168,.45)}70%{box-shadow:0 0 0 11px rgba(22,179,168,0)}100%{box-shadow:0 0 0 0 rgba(22,179,168,0)}}
+/* 浮出提示氣泡(指向 next 鈕),切頁時短暫顯示後淡出 */
+#nextHint{position:absolute;right:clamp(.9rem,3vw,1.8rem);bottom:calc(100% + .55rem);background:var(--brand);color:#fff;font-family:var(--round);font-weight:800;font-size:.84rem;padding:.4rem .85rem;border-radius:999px;white-space:nowrap;box-shadow:var(--shadow-sm);opacity:0;transform:translateY(7px);transition:opacity .28s var(--ease),transform .28s var(--ease);pointer-events:none;z-index:40}
+#nextHint::after{content:'';position:absolute;top:100%;right:1.15rem;border:6px solid transparent;border-top-color:var(--brand)}
+#nextHint.show{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){.nav-btn.cta{animation:none}}
+/* 手機:底部列改兩列(導覽列在上、工具列在下),確保 ‹ › 永遠看得到、絕不被擠出畫面 */
+@media (max-width:560px){
+  .bottombar{flex-wrap:wrap;gap:.45rem .5rem;padding:.5rem .8rem .6rem}
+  #prev{order:1;flex-shrink:0}
+  .progress{order:2;flex:1 1 60px}
+  .pagenum{order:3;flex-shrink:0;font-size:.8rem;min-width:0;white-space:nowrap}
+  #next{order:4;flex-shrink:0}
+  .bar-tools{order:5;width:100%;justify-content:center;flex-shrink:0}
+  #nextHint{right:.8rem}
+}
+.progress{flex:1 1 auto;height:6px;background:var(--rule);border-radius:99px;overflow:hidden}
+#progressFill{height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--subject));border-radius:99px;transition:width var(--dur) var(--ease)}
+.pagenum{flex:0 0 auto;font-family:var(--latin);font-style:italic;color:var(--ink-faint);font-size:.92rem;min-width:3.5rem;text-align:center}
+.bar-tools{display:flex;align-items:center;gap:.4rem;flex:0 0 auto}
+.bar-tools button{font-family:inherit;border:1px solid var(--rule);background:#fff;color:var(--ink-soft);border-radius:999px;cursor:pointer;padding:.34rem .7rem;font-size:.82rem;line-height:1;transition:.2s}
+.bar-tools button:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft)}
+.bar-tools::before{content:"";width:1px;height:1.4rem;background:var(--rule);margin-right:.2rem}
+
+/* 生字卡 / 單字卡 */
+.wordcards-page{overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding:clamp(1rem,4vw,2.5rem);background:var(--paper)}
+.wc-wrap{max-width:1100px;margin:0 auto}
+.wc-title{font-family:var(--round);font-weight:900;font-size:clamp(1.5rem,4vw,2.2rem);color:var(--ink);text-align:center;margin:.3rem 0 1.2rem}
+.wc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(146px,1fr));gap:clamp(.7rem,2vw,1.1rem);align-items:start}
+.wc-zi{border:1px solid var(--rule);border-radius:16px;background:var(--paper);padding:.8rem .7rem;text-align:center;cursor:pointer;font:inherit;color:var(--ink);transition:border-color .2s,transform .2s,box-shadow .2s;box-shadow:var(--shadow-sm)}
+.wc-zi:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:var(--shadow)}
+.wc-zi.open{border-color:var(--brand)}
+.zi-grid{position:relative;width:100%;aspect-ratio:1/1;border:1.5px dashed var(--brand-soft);border-radius:10px;display:grid;place-items:center;background-color:var(--paper);
+  background-image:linear-gradient(90deg,transparent calc(50% - .5px),rgba(22,179,168,.22) 50%,transparent calc(50% + .5px)),linear-gradient(0deg,transparent calc(50% - .5px),rgba(22,179,168,.22) 50%,transparent calc(50% + .5px)),linear-gradient(45deg,transparent calc(50% - .5px),rgba(22,179,168,.13) 50%,transparent calc(50% + .5px)),linear-gradient(135deg,transparent calc(50% - .5px),rgba(22,179,168,.13) 50%,transparent calc(50% + .5px))}
+.zi-char{font-family:var(--round);font-weight:900;font-size:clamp(2.4rem,8vw,3.6rem);color:var(--ink);line-height:1}
+.zi-zhuyin{font-weight:700;color:var(--brand-deep);margin-top:.4rem;letter-spacing:.08em}
+.wc-hint{font-size:.72rem;font-weight:700;color:var(--brand);margin-top:.4rem}
+.zi-reveal{margin-top:.5rem;padding-top:.5rem;border-top:1px dashed var(--rule);font-size:.84rem;color:var(--ink-soft);line-height:1.7;text-align:left}
+.zi-reveal .zi-mean{margin:.3rem 0;color:var(--ink)}
+/* 🔴 翻卡:grid 同格堆疊兩面 → 容器自動長到較高面,長單字/片語不再溢出(移除 aspect-ratio:3/2 + 絕對定位) */
+.wc-flip{perspective:800px;background:none;border:none;padding:0;cursor:pointer;font:inherit}
+.wc-flip-in{position:relative;width:100%;display:grid;min-height:6.4rem;transition:transform .5s var(--ease);transform-style:preserve-3d}
+.wc-flip.flipped .wc-flip-in{transform:rotateY(180deg)}
+.wc-face{grid-area:1/1;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:.6rem .5rem;box-shadow:var(--shadow-sm);overflow-wrap:anywhere}
+.wc-front{background:var(--brand-soft)}
+.wc-word{font-family:var(--latin);font-weight:800;font-size:clamp(1rem,2.8vw,1.45rem);color:var(--brand-deep);line-height:1.15;overflow-wrap:anywhere;max-width:100%}
+.wc-ph{font-family:var(--ipa);color:var(--ink-soft);margin-top:.2rem;letter-spacing:.01em;overflow-wrap:anywhere;max-width:100%}
+.wc-back{background:var(--subject-soft);transform:rotateY(180deg);text-align:center}
+.wc-zh{font-weight:800;font-size:1.05rem;color:var(--ink);overflow-wrap:anywhere}
+.wc-ex{font-size:.82rem;color:var(--ink-soft);margin-top:.3rem;line-height:1.5;overflow-wrap:anywhere}
+/* 🔴 完成宣告頁:學生主動點按鈕宣告完成學習 */
+.complete-page{display:flex;align-items:center;justify-content:center;background:var(--paper);padding:2rem;text-align:center}
+.complete-inner{max-width:460px}
+.complete-emoji{font-size:clamp(3rem,10vw,4.5rem);line-height:1}
+.complete-title{font-family:var(--round);font-weight:900;font-size:clamp(1.7rem,5vw,2.4rem);color:var(--ink);margin:.4rem 0 .2rem}
+.complete-sub{color:var(--ink-soft);font-size:clamp(1rem,2.6vw,1.15rem);margin-bottom:1.6rem}
+.complete-btn{font-family:var(--round);font-weight:800;font-size:clamp(1.05rem,3vw,1.25rem);color:#fff;background:var(--brand);border:none;border-radius:999px;padding:.85rem 2.4rem;cursor:pointer;box-shadow:0 12px 28px -10px var(--brand);transition:.18s}
+.complete-btn:hover{background:var(--brand-deep);transform:translateY(-2px)}
+.complete-btn.done{background:#4caf50;cursor:default;transform:none;box-shadow:none}
+
+/* 目錄 + lightbox */
+#toc{position:fixed;top:0;right:0;bottom:0;left:0;z-index:60;display:none}#toc.open{display:block}
+#toc .scrim{position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(34,72,72,.42);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+#toc .panel{position:absolute;top:0;right:0;bottom:0;width:min(82vw,400px);background:#fff;box-shadow:-20px 0 50px -20px rgba(0,0,0,.5);padding:1.6rem 1.4rem;overflow-y:auto}
+#toc h2{font-family:var(--round);font-size:1.3rem;margin-bottom:1rem;color:var(--ink)}
+#toc .toc-item{display:flex;align-items:baseline;gap:.7rem;padding:.55rem .4rem;border-radius:8px;cursor:pointer;border-bottom:1px solid var(--rule)}
+#toc .toc-item:hover{background:var(--brand-soft)}
+#toc .toc-item.locked{opacity:.4;cursor:not-allowed}
+#toc .toc-item.locked:hover{background:none}
+#toc .toc-item .n{font-size:1.1rem}
+#toc .toc-item .t{font-size:.95rem;color:var(--ink)}
+#toc .toc-item .lock{margin-left:auto;font-size:.85rem}
+#lightbox{position:fixed;top:0;right:0;bottom:0;left:0;z-index:70;display:none;place-items:center;background:rgba(18,38,40,.94);cursor:zoom-out;touch-action:none}
+#lightbox.open{display:grid}
+#lightbox img{max-width:94vw;max-height:90vh;border-radius:4px;box-shadow:0 30px 80px -20px rgba(0,0,0,.8)}
+
+/* 直向:堆疊 */
+@media (orientation:portrait),(max-width:899px),(max-height:560px){
+  .cover{grid-template-columns:1fr;grid-template-rows:46vh 1fr}
+  .cover .cover-art::after{background:linear-gradient(0deg,var(--paper) 2%,transparent 30%)}
+  .cover h1{font-size:clamp(2.6rem,12vw,4rem)}
+  .cover .cover-meta::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){#track,#progressFill,.nav-btn{transition:none!important}}
+:focus-visible{outline:2.5px solid var(--brand);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+<div id="app">
+  <main id="viewport" aria-live="polite"><div id="track"></div></main>
+  <footer class="bottombar">
+    <button class="nav-btn" id="prev" aria-label="上一頁">‹</button>
+    <div class="progress"><div id="progressFill"></div></div>
+    <div class="pagenum" id="pageNum">封面</div>
+    <div class="bar-tools">
+      <button id="fontDown">A−</button><button id="fontReset">A</button><button id="fontUp">A＋</button>
+      <button id="tocBtn">☰ 目錄</button>
+    </div>
+    <button class="nav-btn" id="next" aria-label="下一頁">›</button>
+    <div id="nextHint" aria-hidden="true">下一頁 →</div>
+  </footer>
+</div>
+<div id="toc" aria-hidden="true"><div class="scrim" data-close></div>
+  <nav class="panel"><h2>目錄</h2><div id="tocList"></div></nav></div>
+<div id="lightbox" aria-hidden="true"><img id="lbImg" alt=""><div id="lbHtml" hidden></div></div>
+
+<script>
+// 樣本切換:?c=content_xxx.js(預設 content.js)。document.write 確保在引擎前同步載入
+(function(){var c=new URLSearchParams(location.search).get('c')||'content.js';
+  if(!/^[\w.\-]+\.js$/.test(c))c='content.js';
+  document.write('<script src="'+c+'"><\/script>');})();
+</script>
+<script>
+(function(){
+"use strict";
+const CD=window.COURSE_DATA||{meta:{},concepts:[]};
+const MA=(window.MEDIA_ASSETS||{}).images||{};
+const M=CD.meta||{};
+const SUBJECT_THEME={'國文':['#d2698a','#fbe2e2'],'國語':['#d2698a','#fbe2e2'],'數學':['#4f86d6','#dbe8fb'],
+ '英文':['#2f9fc4','#d4ecf6'],'英語':['#2f9fc4','#d4ecf6'],'自然':['#2fa896','#cff3eb'],'社會':['#dd9430','#fce6c4'],
+ '理化':['#8a6fd0','#ebe2fb'],'生物':['#57a767','#dcf0d8'],'歷史':['#bd8a4e','#f6e6d0'],'地理':['#2fa3b0','#cdedef'],'公民':['#dd9430','#fce6c4']};
+const _th=SUBJECT_THEME[M.subject];
+if(_th){const rs=document.documentElement.style;rs.setProperty('--subject',_th[0]);rs.setProperty('--subject-soft',_th[1]);}
+
+const track=document.getElementById('track'), viewport=document.getElementById('viewport');
+const esc=s=>String(s==null?'':s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const fmt=s=>{
+  let _svg=[]; s=String(s==null?'':s).replace(/<svg[\s\S]*?<\/svg>/gi,m=>{
+    let safe=m.replace(/<script[\s\S]*?<\/script>/gi,'').replace(/\son\w+\s*=\s*"[^"]*"/gi,'').replace(/\son\w+\s*=\s*'[^']*'/gi,''); // 去 script/事件處理
+    _svg.push(safe); return ''+(_svg.length-1)+'';            // 保護 SVG 不被 esc 跳脫
+  });
+  // 分數一律轉直式(沿用 v2.7,KaTeX 渲染):先裸 \frac 包 $,再 sup/sub 分數、帶分數「N 又 a/b」
+  if((s.indexOf('\\frac')>-1||s.indexOf('\\times')>-1||s.indexOf('\\div')>-1) && s.indexOf('$')===-1){
+    s=s.replace(/((?:[0-9]+\s*)?(?:\\times\s*|\\div\s*|×\s*|÷\s*)?\\frac\{[^{}]*\}\{[^{}]*\}(?:\s*(?:\\times|\\div|×|÷|=|\+|-)\s*(?:[0-9]+\s*)?(?:\\frac\{[^{}]*\}\{[^{}]*\})?)*)/g,m=>'$'+m+'$');
+  }
+  s=s.replace(/<sup>\s*(\d+)\s*<\/sup>\s*[\/⁄]\s*<sub>\s*(\d+)\s*<\/sub>/gi,(_,a,b)=>'$\\frac{'+a+'}{'+b+'}$');   // <sup>a</sup>/<sub>b</sub> → 直式
+  s=s.replace(/(\d+)\s*又\s*(\d+)\s*\/\s*(\d+)/g,(m,w,a,b,off)=>(s.slice(0,off).split('$').length%2===1)?'$'+w+'\\frac{'+a+'}{'+b+'}$':m);   // 帶分數(偶數個$=數學外才轉)
+  return esc(s)
+    .replace(/&lt;(\/?(?:u|b|strong|em|mark|br|i|q|sub|sup))&gt;/g,'<$1>')
+    .replace(/&lt;a\b[^&]*&gt;|&lt;\/a&gt;/g,'')           // 連結:去標籤留文字
+    .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
+    .replace(/(^|[^*])\*(?=\S)([^*\n]*?\S)\*(?!\*)/g,'$1<em>$2</em>')   // 單個*斜體(無 lookbehind,相容 Safari<16.4;緊貼文字避開數學乘號)
+    .replace(/`([^`\n]+)`/g,'<code>$1</code>')
+    .replace(/\s*([(（][1-9][)）])/g,'<br>$1').replace(/^\s*(?:<br>)+/,'')
+    .replace(/(\d+)/g,(_,i)=>_svg[+i]);                       // 還原 SVG 原樣
+};
+// ── 區塊級渲染 fmtBody:處理 markdown 表格 / 條列 / 換行(concept body 專用;fmt 仍供行內)──
+// 動機:零-SVG 後數據改用 body 內 markdown 表格表示,且模型常用換行/數字條列組織內容;
+//       fmt 不處理這些 → 表格變管線符號、多行擠成一段。此函式把它們渲染成 <table>/<ul>/<ol>/<p>。
+const _hasTbl=t=>{const s=String(t==null?'':t);return /^\s*\|.*\|/m.test(s)||s.split('\n').some(l=>l.split(/\s+\|\s+/).length>=3);};
+const _mdCells=row=>row.trim().replace(/^\|/,'').replace(/\|$/,'').split('|').map(c=>c.trim());
+const _isSep=cells=>cells.length>0&&cells.every(c=>/^:?-{2,}:?$/.test(c.replace(/\s/g,'')));
+function fmtBody(raw){
+  let txt=String(raw==null?'':raw).replace(/\r/g,'');
+  // 正規化「行內管線表格」:模型偶爾把整張表寫成一行用 ；/; 分隔列(|a|b|；|c|d|)→ 拆成多列,才能渲染成表格
+  txt=txt.split('\n').map(line=>{
+    if((line.match(/\|/g)||[]).length>=4 && /\|\s*[；;]\s*\|/.test(line)){
+      const k=line.indexOf('|'),pre=line.slice(0,k).trim(),rest=line.slice(k);
+      const rows=rest.split(/\s*[；;]\s*/).map(r=>{r=r.trim().replace(/[。.！!？?\s]+$/,'');
+        return r.startsWith('|')?(r.endsWith('|')?r:r+'|'):r;}).filter(Boolean);
+      return (pre?pre+'\n':'')+rows.join('\n');
+    }
+    return line;
+  }).join('\n');
+  if(txt.indexOf('\n')===-1&&txt.indexOf('|')===-1) return `<p>${fmt(txt)}</p>`;  // 單行無表格 → 走原樣式
+  const lines=txt.split('\n'),out=[];let i=0,para=[];
+  const flush=()=>{if(para.length){out.push('<p>'+para.map(fmt).join('<br>')+'</p>');para=[];}};
+  const isRow=s=>/^\s*\|.*\|\s*$/.test(s)||s.split(/\s+\|\s+/).length>=3;   // 帶首尾| 或「空白|空白」分隔≥3欄(AI不加首尾|);🔴用空白界定避開絕對值|a|/|a−b|被誤判成表格
+  while(i<lines.length){
+    const ln=lines[i];
+    if(/^\s*```/.test(ln)){flush();i++;const code=[];   // ``` 程式碼塊(如數學短除法 ASCII 排版)→ <pre> 等寬保留對齊
+      while(i<lines.length&&!/^\s*```/.test(lines[i])){code.push(lines[i]);i++;}
+      if(i<lines.length)i++;                              // 跳過結尾 ```
+      if(code.length)out.push('<pre class="md-pre">'+code.map(esc).join('\n')+'</pre>');continue;}
+    if(isRow(ln)&&((i+1<lines.length&&isRow(lines[i+1]))||/\|.*\|.*\|/.test(ln))){   // 表格:連續|行 或 單行多欄
+      flush();const rows=[];
+      while(i<lines.length&&isRow(lines[i])){rows.push(_mdCells(lines[i]));i++;}
+      const data=rows.filter(r=>!_isSep(r));
+      if(data.length){const hd=data[0],bd=data.slice(1);
+        const num=hd.map((_,ci)=>bd.length>0&&bd.every(r=>/^[\d.,\s%+\-－—~～$＄()（）]*\d[\d.,\s%+\-－—~～$＄()（）]*$/.test(String(r[ci]==null?'':r[ci]).trim())));   // 純數字欄 → 靠右等寬
+        let h='<div class="tbl-wrap" role="region" aria-label="資料表" tabindex="0"><table class="md-tbl"><thead><tr>'+hd.map((c,ci)=>`<th scope="col"${num[ci]?' class="num"':''}>${fmt(c)}</th>`).join('')+'</tr></thead>';
+        if(bd.length)h+='<tbody>'+bd.map(r=>'<tr>'+r.map((c,ci)=>ci===0?`<th scope="row">${fmt(c)}</th>`:`<td${num[ci]?' class="num"':''}>${fmt(c)}</td>`).join('')+'</tr>').join('')+'</tbody>';
+        out.push(h+'</table></div>');}
+      continue;}
+    if(/^\s*[-*+]\s+\S/.test(ln)){flush();const it=[];
+      while(i<lines.length&&/^\s*[-*+]\s+\S/.test(lines[i])){it.push(lines[i].replace(/^\s*[-*+]\s+/,''));i++;}
+      out.push('<ul class="md-ul">'+it.map(t=>'<li>'+fmt(t)+'</li>').join('')+'</ul>');continue;}
+    if(/^\s*\d+[.)]\s+\S/.test(ln)){flush();const it=[];
+      while(i<lines.length&&/^\s*\d+[.)]\s+\S/.test(lines[i])){it.push(lines[i].replace(/^\s*\d+[.)]\s+/,''));i++;}
+      out.push('<ol class="md-ol">'+it.map(t=>'<li>'+fmt(t)+'</li>').join('')+'</ol>');continue;}
+    if(!ln.trim()){flush();i++;continue;}
+    para.push(ln);i++;}
+  flush();return out.join('');
+}
+// 插圖槽用的內聯 SVG:只收 <svg>…</svg>,去 script/事件,並確保有 viewBox(否則縮放時會裁切內容)
+const safeSvg=s=>{s=String(s==null?'':s).trim();const m=s.match(/<svg[\s\S]*<\/svg>/i);if(!m)return '';
+  let g=m[0].replace(/<script[\s\S]*?<\/script>/gi,'').replace(/\son\w+\s*=\s*"[^"]*"/gi,'').replace(/\son\w+\s*=\s*'[^']*'/gi,'');
+  if(!/viewBox\s*=/i.test(g)){  // 無 viewBox → 從 width/height 補,讓內容隨容器縮放而非被裁掉
+    const w=(g.match(/<svg[^>]*?\bwidth\s*=\s*["']?([\d.]+)/i)||[])[1], h=(g.match(/<svg[^>]*?\bheight\s*=\s*["']?([\d.]+)/i)||[])[1];
+    if(w&&h) g=g.replace(/<svg/i,`<svg viewBox="0 0 ${w} ${h}"`);}
+  return g;};
+const stars=n=>'★★★★★'.slice(0,n)+'☆☆☆☆☆'.slice(0,5-n);
+// KaTeX 數學渲染(沿用 v2.7 delimiters);忽略 svg/code 內文,壞式不 throw
+function renderMath(el){if(!window.renderMathInElement)return;try{renderMathInElement(el||document.body,{
+  delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},
+    {left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],
+  throwOnError:false,ignoredTags:['script','style','textarea','pre','code','svg']});}catch(_){}}
+window.renderMath=renderMath;
+const showFB=(el,s)=>{el.innerHTML=fmt(s);renderMath(el);};   // 回饋框走 fmt 渲染(支援 <u>/**粗體**/(1)(2)(3)/KaTeX)
+
+// ── 解析舊 concept.body 六段 → sections ──
+const KNOWN_SEG={'先備':'pre','白話':'plain','特質':'trait','例子':'example','迷思':'misc','口訣':'mnemonic'};
+// 通用解析:任何【標籤】都切成區塊。已知 6 種放對應 key、其餘進 out.extra(渲染成通用框),
+// 這樣模型自然用什麼標籤都渲染成獨立區塊、不會殘留生硬【】。
+function parseBody(body){
+  const out={extra:[]}; const txt=body||'';
+  const marks=[]; const re=/【([^】]{1,30})】/g; let m;
+  while((m=re.exec(txt))) marks.push([m.index, m[1], re.lastIndex]);
+  if(marks.length){
+    const head=txt.slice(0,marks[0][0]).trim();   // 🔴 首標籤前的文字(操作指令/表格等)以前被丟 → 保留
+    if(head) out.head=head;
+    marks.forEach(([pos,label,start],i)=>{
+      const end = i+1<marks.length ? marks[i+1][0] : txt.length;
+      const text = txt.slice(start,end).trim();
+      if(KNOWN_SEG[label]) out[KNOWN_SEG[label]]=text;
+      else out.extra.push({label,text});
+    });
+  } else if(txt.trim()) out.plain=txt.trim();  // 整段無標籤 → 當白話
+  return out;
+}
+// 卡片索引
+const cardsById={};
+(CD.mcqs||[]).forEach(m=>cardsById[m.id]={type:'mcq',data:m});
+(CD.sortSets||[]).forEach(s=>{
+  // 容錯:correctOrder 若是「項目字串」而非索引(資料變體)→ 映射回索引,讓引擎正常判分
+  const it=s.items||[];
+  if(Array.isArray(s.correctOrder)&&s.correctOrder.length&&!s.correctOrder.every(x=>Number.isInteger(x))){
+    const mapped=s.correctOrder.map(x=>Number.isInteger(x)?x:it.indexOf(x));
+    if(mapped.every(i=>Number.isInteger(i)&&i>=0&&i<it.length)) s.correctOrder=mapped;
+  }
+  cardsById[s.id]={type:'sort',data:s};
+});
+(CD.sliderSets||[]).forEach(s=>cardsById[s.id]={type:'slider',data:s});
+const conceptById={}; (CD.concepts||[]).forEach(c=>conceptById[c.id]=c);
+
+// ── 封面 ──
+const cover=document.createElement('section'); cover.className='page cover';
+const coverImg = MA[(CD.concepts[0]||{}).illustrationSlot] || Object.values(MA)[0] || '';
+cover.innerHTML=`
+  <div class="cover-art">${coverImg?`<img src="${coverImg}" alt="封面">`:''}</div>
+  <div class="cover-meta">
+    <div class="kicker">互動講義</div>
+    <div class="subject">${esc(M.subject||'')}</div>
+    <h1>${fmt(M.unitTitle||'')}</h1>
+    <div class="level"><span class="stars">${stars(M.levelStars||1)}</span></div>
+    <button class="open-btn" id="openBtn">翻開閱讀 →</button>
+  </div>`;
+track.appendChild(cover);
+
+let cI=0; // concept 序號(顯示用)
+const tocEntries=[];
+
+// ── 條件式生字卡/單字卡(僅當 COURSE_DATA 有 wordCards 才建)──
+if((CD.wordCards||[]).length){
+  const isEN=CD.wordCards[0] && CD.wordCards[0].word!=null;
+  const wp=document.createElement('section'); wp.className='page wordcards-page';
+  const cards=CD.wordCards.map((w,i)=> isEN
+    ? `<button class="wc-flip" data-wi="${i}" aria-label="翻卡"><div class="wc-flip-in"><div class="wc-face wc-front"><div class="wc-word">${esc(w.word)}</div><div class="wc-ph">${esc(w.phonetic||'')}</div><div class="wc-hint">👆 點我看中文</div></div><div class="wc-face wc-back"><div class="wc-zh">${esc(w.pos?'('+w.pos+') ':'')}${esc(w.zh||'')}</div><div class="wc-ex">${fmt(w.example||'')}</div></div></div></button>`
+    : `<button class="wc-zi" data-wi="${i}" aria-label="看生字"><div class="zi-grid"><span class="zi-char">${esc(w.char)}</span></div><div class="zi-zhuyin">${esc(w.zhuyin||'')}</div><div class="wc-hint">👆 點我看祕密</div><div class="zi-reveal" hidden><div class="zi-meta">部首 ${esc(w.radical||'—')}　${w.strokes?('共 '+esc(String(w.strokes))+' 畫'):''}</div><div class="zi-mean">${fmt(w.meaning||'')}</div>${(w.words||[]).length?`<div class="zi-words">造詞：${(w.words||[]).map(esc).join('、')}</div>`:''}</div></button>`
+  ).join('');
+  wp.innerHTML=`<div class="wc-wrap"><h2 class="wc-title">${isEN?'📖 本課單字':'✍️ 本課生字'}</h2><div class="wc-grid">${cards}</div></div>`;
+  track.appendChild(wp);
+  tocEntries.push({label:isEN?'本課單字':'本課生字',pageIdx:track.children.length-1,tab:true});
+}
+
+(CD.tabConfig||[]).forEach((tab,ti)=>{
+  // 關卡扉頁
+  const dv=document.createElement('section'); dv.className='page divider';
+  dv.innerHTML=`<div class="divider-card"><div class="tabicon">${esc(tab.icon||'📖')}</div>
+    <div class="tabkick">關卡 ${ti+1} / ${CD.tabConfig.length}</div>
+    <h2>${fmt((tab.title||'').replace(/^[^一-龥A-Za-z0-9]+/,''))}</h2>
+    <div class="purpose">${fmt(tab.purpose||'')}</div></div>`;
+  track.appendChild(dv);
+  tocEntries.push({label:`關卡 ${ti+1}：${(tab.title||'').replace(/^[^一-龥A-Za-z0-9]+/,'')}`,pageIdx:track.children.length-1,tab:true});
+
+  // 概念課文頁
+  (tab.conceptIds||[]).forEach(cid=>{
+    const c=conceptById[cid]; if(!c) return; cI++;
+    const s=parseBody(c.body); const img=MA[c.illustrationSlot]; const csvg=safeSvg(c.illustrationSvg);
+    const blocks=[
+      img?`<div class="art-card"><img src="${img}" alt="${esc(c.title)} 插圖" data-cap="${esc(c.title)}"></div>`
+      :csvg?`<div class="art-card"><div class="art-svg" role="img" aria-label="${esc(c.title)} 示意圖" data-cap="${esc(c.title)}">${csvg}</div></div>`:'',
+      s.head?`<div class="headnote">${fmtBody(s.head)}</div>`:'',
+      s.plain?`<div class="lead${_hasTbl(s.plain)?' has-tbl':''}"><span class="lbl">白話</span>${fmtBody(s.plain)}</div>`:'',
+      s.trait?`<div class="sec${_hasTbl(s.trait)?' has-tbl':''}"><div class="seclbl">特質</div>${fmtBody(s.trait)}</div>`:'',
+      s.example?`<div class="sec${_hasTbl(s.example)?' has-tbl':''}"><div class="seclbl">例子</div>${fmtBody(s.example)}</div>`:'',
+      s.misc?`<aside class="misc"><span class="lbl">常見迷思</span>${fmtBody(s.misc)}</aside>`:'',
+      s.mnemonic?`<blockquote class="mnemonic"><span class="lbl">記憶口訣</span>${fmtBody(s.mnemonic)}</blockquote>`:'',
+      ...(s.extra||[]).map(x=>`<div class="sec${_hasTbl(x.text)?' has-tbl':''}"><div class="seclbl">${esc(x.label)}</div>${fmtBody(x.text)}</div>`),
+    ].join('');
+    const p=document.createElement('section'); p.className='page lesson';
+    p.innerHTML=`<div class="lesson-inner"><div class="lesson-fit">
+      <div class="kicker-l">${M.unitNo?fmt(M.unitNo)+' ':''}${fmt(M.unitTitle||'')}<span class="step">課文</span></div>
+      <h1 class="title">${fmt(c.title)}</h1>
+      ${s.pre?`<div class="warmup"><span class="lbl">先備知識</span>${fmtBody(s.pre)}</div>`:''}
+      <div class="lesson-cols">${blocks}</div>
+    </div></div>`;
+    track.appendChild(p);
+    tocEntries.push({label:`　${cI}. ${c.title}`,pageIdx:track.children.length-1});
+  });
+
+  // 互動卡(mcq / sort / slider)。容錯:合併欄位變體(cardIds/mcqIds/sortSetIds/sliderSetIds/quizIds)
+  [].concat(tab.cardIds||[],tab.mcqIds||[],tab.sortSetIds||[],tab.sliderSetIds||[],tab.quizIds||[]).forEach(cardId=>{
+    const card=cardsById[cardId]; if(!card) return;
+    track.appendChild(buildCard(card,cardId));
+  });
+});
+
+// 補:沒被任何 tab 引用到的「概念」—— tabConfig 沒給 conceptIds 時概念不會顯示,一定要補(否則學生看不到課文)
+const refConcepts=new Set();(CD.tabConfig||[]).forEach(t=>(t.conceptIds||[]).forEach(id=>refConcepts.add(id)));
+const orphanConcepts=(CD.concepts||[]).filter(c=>!refConcepts.has(c.id));
+if(orphanConcepts.length){
+  const dv=document.createElement('section');dv.className='page divider';
+  dv.innerHTML=`<div class="divider-card"><div class="tabicon">📖</div><div class="tabkick">課程內容</div><h2>重點概念</h2><div class="purpose">本課核心概念</div></div>`;
+  track.appendChild(dv);
+  orphanConcepts.forEach(c=>{
+    const s=parseBody(c.body); const img=MA[c.illustrationSlot]; const csvg=safeSvg(c.illustrationSvg);
+    const blocks=[
+      img?`<div class="art-card"><img src="${img}" alt="${esc(c.title)} 插圖" data-cap="${esc(c.title)}"></div>`
+      :csvg?`<div class="art-card"><div class="art-svg" role="img" aria-label="${esc(c.title)} 示意圖" data-cap="${esc(c.title)}">${csvg}</div></div>`:'',
+      s.head?`<div class="headnote">${fmtBody(s.head)}</div>`:'',
+      s.plain?`<div class="lead${_hasTbl(s.plain)?' has-tbl':''}"><span class="lbl">白話</span>${fmtBody(s.plain)}</div>`:'',
+      s.trait?`<div class="sec${_hasTbl(s.trait)?' has-tbl':''}"><div class="seclbl">特質</div>${fmtBody(s.trait)}</div>`:'',
+      s.example?`<div class="sec${_hasTbl(s.example)?' has-tbl':''}"><div class="seclbl">例子</div>${fmtBody(s.example)}</div>`:'',
+      s.misc?`<aside class="misc"><span class="lbl">常見迷思</span>${fmtBody(s.misc)}</aside>`:'',
+      s.mnemonic?`<blockquote class="mnemonic"><span class="lbl">記憶口訣</span>${fmtBody(s.mnemonic)}</blockquote>`:'',
+      ...(s.extra||[]).map(x=>`<div class="sec${_hasTbl(x.text)?' has-tbl':''}"><div class="seclbl">${esc(x.label)}</div>${fmtBody(x.text)}</div>`),
+    ].join('');
+    const p=document.createElement('section'); p.className='page lesson';
+    p.innerHTML=`<div class="lesson-inner"><div class="lesson-fit">
+      <div class="kicker-l">${fmt(M.unitTitle||'')}<span class="step">課文</span></div>
+      <h1 class="title">${fmt(c.title)}</h1>
+      ${s.pre?`<div class="warmup"><span class="lbl">先備知識</span>${fmtBody(s.pre)}</div>`:''}
+      <div class="lesson-cols">${blocks}</div>
+    </div></div>`;
+    track.appendChild(p);
+    tocEntries.push({label:`　${c.title}`,pageIdx:track.children.length-1});
+  });
+}
+// 補:沒被任何 tab 引用到的卡(合併欄位變體後再判斷孤兒)
+const referenced=new Set();(CD.tabConfig||[]).forEach(t=>[].concat(t.cardIds||[],t.mcqIds||[],t.sortSetIds||[],t.sliderSetIds||[],t.quizIds||[]).forEach(id=>referenced.add(id)));
+const orphans=Object.keys(cardsById).filter(id=>!referenced.has(id));
+if(orphans.length){
+  const dv=document.createElement('section');dv.className='page divider';
+  dv.innerHTML=`<div class="divider-card"><div class="tabicon">📝</div><div class="tabkick">加碼練習</div><h2>更多練習</h2><div class="purpose">補充題目</div></div>`;
+  track.appendChild(dv);
+  orphans.forEach(id=>track.appendChild(buildCard(cardsById[id],id)));
+}
+
+// 「無標準答案」的延伸/討論/教師卡偵測 → 非闖關顯示(不 gating、不計分,避免空題卡關或誤判答錯)
+function isUngraded(card){
+  const d=card.data||{};
+  if(card.type==='mcq'){const n=(d.options||[]).length;return !(Number.isInteger(d.answerIndex)&&d.answerIndex>=0&&d.answerIndex<n);}
+  if(card.type==='sort'){const it=d.items||[];const co=d.correctOrder;return it.length===0||!Array.isArray(co)||co.length!==it.length||!co.every(x=>Number.isInteger(x)&&x>=0&&x<it.length);}
+  if(card.type==='slider'){
+    const its=d.items||[]; if(!its.length)return true;
+    const sa=[...new Set(its.map(x=>x.answer).filter(a=>typeof a==='string'&&a!==''))];
+    const grade=it=>{const a=it.answer;
+      if(it.options&&it.options.length&&a!=null&&it.options.map(String).includes(String(a)))return true;
+      if(Number.isInteger(it.answerIndex))return true;
+      if(it.labels&&typeof it.labels==='object'&&!Array.isArray(it.labels))return true;
+      if(typeof a==='boolean'||a==='true'||a==='false')return true;
+      for(const k of ['value','target','answerValue','correctValue','position'])if(typeof it[k]==='number')return true;
+      if(typeof a==='number')return true;
+      if(typeof a==='string'&&a&&sa.length>=2)return true;
+      if(a!=null&&(d.options||(d.min!=null&&d.max!=null)))return true;
+      return false;};
+    return !its.some(grade);   // 無任何可評項(全是確認/反思型)→ 非闖關討論卡
+  }
+  return false;
+}
+function buildCard(card,id){
+  const p=document.createElement('section'); p.className='page cardpage';
+  if(isUngraded(card)){                       // 非闖關討論卡:顯示內容 + 直接可前往下一頁(不要求作答)
+    p.className='page cardpage ungraded';
+    const d=card.data||{};
+    const prompt=d.prompt||d.q||d.stem||'';
+    let body='';
+    if(card.type==='mcq'&&(d.options||[]).length)
+      body=`<ul class="disc-list">${d.options.map((o,oi)=>`<li>${String.fromCharCode(65+oi)}. ${fmt(o)}</li>`).join('')}</ul>`;
+    else if(card.type==='sort'&&(d.items||[]).length)
+      body=`<ul class="disc-list">${d.items.map(it=>`<li>${fmt(it)}</li>`).join('')}</ul>`;
+    else if(card.type==='slider'&&(d.items||[]).length)   // 反思型 slider:保留 clue 教學內容 + 反思選項
+      body=`<ul class="disc-list">${d.items.map(it=>`<li>${fmt(it.clue||it.statement||it.text||'')}${(it.options&&it.options.length)?'　'+it.options.map(o=>'〔'+fmt(o)+'〕').join(' '):''}</li>`).join('')}</ul>`;
+    const ex=d.explanation?`<div class="disc-ex">${fmt(d.explanation)}</div>`:'';
+    p.innerHTML=`<div class="card-fit"><div class="icard ungraded" data-type="discussion" data-id="${id}">
+      <div class="card-ref">延伸思考 </div>
+      <div class="q-prompt"><span class="q-tag">💬 討論</span>${fmt(prompt)}</div>
+      ${body}${ex}
+      <div class="card-foot"><span class="gate-note open">💬 延伸思考 · 不計分</span><button class="cardnext-btn">前往下一頁 →</button></div></div></div>`;
+    return p;
+  }
+  if(card.type==='mcq'){
+    const m=card.data;
+    const long=String(m.prompt||'').length>55||(m.options||[]).length>=5;
+    p.innerHTML=`<div class="card-fit${long?' wide':''}"><div class="icard${long?' split':''}" data-type="mcq" data-id="${id}" data-answer="${m.answerIndex}">
+      <div class="card-ref">小檢核 </div>
+      <div class="q-prompt"><span class="q-tag">✦ 選擇</span>${fmt(m.prompt)}</div>
+      <div class="opts">${(m.options||[]).map((o,oi)=>`<button class="opt" data-i="${oi}"><span class="ol">${String.fromCharCode(65+oi)}</span><span class="opt-t">${fmt(o)}</span></button>`).join('')}</div>
+      <div class="fb fb-pre" hidden>${fmt('✅ 答對了！\n'+(m.explanation||''))}</div>
+      <div class="card-foot"><button class="redo-btn" hidden>↻ 重做這題</button><span class="gate-note">🔒 答對後解鎖下一頁</span><button class="cardnext-btn" hidden>前往下一頁 →</button></div></div></div>`;
+  }else if(card.type==='sort'){
+    const s=card.data;
+    p.innerHTML=`<div class="card-fit"><div class="icard" data-type="sort" data-id="${id}">
+      <div class="card-ref">排排看 </div>
+      <div class="q-prompt"><span class="q-tag">↕ 排序</span>${fmt(s.prompt)}</div>
+      <div class="sort-pool">${(s.items||[]).map((it,i)=>`<button class="chip" data-i="${i}"><span class="seq"></span><span class="chip-t">${fmt(it)}</span></button>`).join('')}</div>
+      <div class="sort-actions"><button class="sbtn go">檢查</button><button class="sbtn reset">重來</button></div>
+      <div class="fb fb-pre" hidden>${fmt('✅ 答對了！順序完全正確 🎉\n'+(s.explanation||''))}</div>
+      <div class="card-foot"><span class="gate-note">🔒 排對後解鎖下一頁</span><button class="cardnext-btn" hidden>前往下一頁 →</button></div></div></div>`;
+  }else if(card.type==='slider'){
+    const s=card.data;
+    // 兩種結構:① item 自帶 options(選擇式) ② min/max 評分量表(Likert,item 用 statement + 數字 answer)
+    const scale=(s.min!=null&&s.max!=null)?Array.from({length:s.max-s.min+1},(_,k)=>String(s.min+k)):null;
+    p.innerHTML=`<div class="card-fit"><div class="icard" data-type="slider" data-id="${id}">
+      <div class="card-ref">逐項判斷 </div>
+      <div class="q-prompt"><span class="q-tag">◎ 判斷</span>${fmt(s.prompt)}</div>
+      <div class="slider-list">${(s.items||[]).map((it,ii)=>{
+        // 🔴 涵蓋全部 slider 答案變體(options/answerIndex/labels-dict/字串分類/是非/兩極多欄位/數值量表),逐步嘗試直到取得按鈕
+        const gv=x=>{for(const k of ['value','target','answerValue','correctValue','position']){if(typeof x[k]==='number')return x[k];} return typeof x.answer==='number'?x.answer:null;};
+        const bk=v=>v<34?'0':(v>66?'100':'50');
+        const cl=t=>String(t).replace(/(符合|不符合|正確|錯誤)\s*(?:教材|課本|課文|本單元內容)/g,'$1').replace(/^(?:教材|課本)$/,'本內容');
+        const clue=it.clue||it.statement||it.text||it.label||'';
+        const sans=[...new Set((s.items||[]).map(x=>x.answer).filter(a=>typeof a==='string'&&a!==''))];
+        let opts=null, ans='';
+        if(it.options&&it.options.length){                       // (a) item 自帶選項
+          opts=it.options.map(o=>({v:String(o),t:cl(o)})); ans=esc(it.answer);
+        }
+        if(!opts&&Number.isInteger(it.answerIndex)){             // (b) answerIndex:labels陣列 / set.scale / 聚合answerLabel / prompt「N＝標籤」
+          let arr=Array.isArray(it.labels)?it.labels.map(String):(Array.isArray(s.scale)?s.scale.map(String):(Array.isArray(s.labels)?s.labels.map(String):null));
+          if(!arr){const agg={};(s.items||[]).forEach(x=>{if(Number.isInteger(x.answerIndex)&&(x.answerLabel||x.label))agg[x.answerIndex]=x.answerLabel||x.label;});
+            (s.prompt||'').replace(/(\d+)\s*(?:[＝=:：])\s*[「『]?([^，,。；;、\n」』（()]{1,16})/g,(m,n,l)=>{if(agg[+n]==null)agg[+n]=l.trim();return m;});
+            const idx=Object.keys(agg).map(Number).sort((a,b)=>a-b);if(idx.length>=2)arr=idx.map(i=>agg[i]);}
+          if(arr&&arr.length>=2&&it.answerIndex<arr.length){opts=arr.map(t=>({v:cl(t),t:cl(t)}));ans=cl(arr[it.answerIndex]);}}
+        if(!opts&&it.labels&&typeof it.labels==='object'&&!Array.isArray(it.labels)){  // (c) item 自帶 value→label 量表(dict)
+          opts=Object.entries(it.labels).map(([v,t])=>({v:String(v),t:cl(t)})); ans=String(it.answer);}
+        if(!opts&&typeof it.answer==='string'&&it.answer!==''&&sans.length>=2){  // (d) 字串分類(優先於數值定位,如「事實/意見」position)
+          opts=sans.map(a=>({v:String(a),t:cl(a)})); ans=esc(it.answer);}
+        if(!opts&&((typeof it.answer==='boolean')||it.answer==='true'||it.answer==='false')){  // (e) 是非 → 對/錯
+          opts=[{v:'true',t:'⭕ 對'},{v:'false',t:'✕ 錯'}]; ans=(it.answer===true||it.answer==='true')?'true':'false';}
+        if(!opts&&gv(it)!=null){  // (e2') 統一分類:完整類別標籤/小值集/2值程度 → 精確值按鈕(prompt「N＝類別」權威,避免類別碼被bk收合+二元全同bug)
+          const vals=[...new Set((s.items||[]).map(gv).filter(v=>v!=null))].sort((a,b)=>a-b);
+          if(vals.length>=2){
+            const vmin=vals[0], vmax=vals[vals.length-1], L={};
+            (s.items||[]).forEach(x=>{const g=gv(x),l=x.answerLabel||x.targetLabel;if(g!=null&&l)L[String(g)]=l;if(x.leftLabel)L[String(vmin)]=x.leftLabel;if(x.rightLabel)L[String(vmax)]=x.rightLabel;});
+            const sL=s.leftLabel||s.minLabel, sR=s.rightLabel||s.maxLabel;
+            if(sL&&L[String(vmin)]==null)L[String(vmin)]=sL;
+            if(sR&&L[String(vmax)]==null)L[String(vmax)]=sR;
+            (s.prompt||'').replace(/([+-]?\d+(?:\.\d+)?)\s*(?:[＝=:：]|代表|表示|為)\s*[「『]?([^，,。；;、\n」』（）()]{1,16})/g,(m,n,l)=>{L[String(+n)]=l.trim();return m;});  // prompt 最後=權威
+            const labeled=vals.filter(v=>L[String(v)]!=null).length;
+            const smallSet=(vmax<=5&&vmin>=-5), allLabeled=(labeled===vals.length), twoScore=(vals.length===2&&/符合|程度|同意|傾向|正確/.test(s.prompt||''));
+            if(vals.length<=8&&(allLabeled||smallSet||twoScore)){
+              if(smallSet&&vmax<=1&&vmin>=0){L['1']=L['1']||'成立';L['0']=L['0']||'不成立';}
+              if(twoScore&&labeled<2){const pos=/正確/.test(s.prompt||'')?'正確':'符合';L[String(vmax)]=L[String(vmax)]||pos;L[String(vmin)]=L[String(vmin)]||('不'+pos);}
+              opts=vals.map(v=>({v:String(v),t:cl(L[String(v)]||String(v))})); ans=String(gv(it));
+            }
+          }
+        }
+        if(!opts&&gv(it)!=null){  // (e1) numInput 數值配對:item有min/max/step真數值題(無類別標籤)→該set所有distinct答案當配對按鈕;單值補range distractor
+          const numItems=(s.items||[]).filter(x=>typeof x.min==='number'&&typeof x.max==='number'&&typeof x.step==='number');
+          if(numItems.length>=1){
+            let pool=[...new Set(numItems.map(gv).filter(v=>v!=null))].sort((a,b)=>a-b);
+            const unit=it.unit||numItems[0].unit||'';
+            if(pool.length<2){const A=pool.length?pool[0]:gv(it),mn=Math.min(...numItems.map(x=>x.min)),mx=Math.max(...numItems.map(x=>x.max)),mid=Math.round((mn+mx)/2);pool=[...new Set([A,mn,mid,mx])].sort((a,b)=>a-b);}
+            opts=pool.map(v=>({v:String(v),t:String(v)+unit})); ans=String(gv(it));
+          }
+        }
+        if(!opts&&gv(it)!=null){                                 // (f) 兩極/量表(0-100)分類 → 真實極標籤分桶
+          const L={};
+          (s.prompt||'').replace(/(\d+)\s*(?:[＝=:：]|代表|為)\s*[「『]?([^，,。；;、\n」』（()]{1,14})/g,(m,n,l)=>{L[bk(+n)]=l.trim();return m;});
+          const setL=(lo,mid,hi)=>{if(lo)L['0']=lo; if(mid)L['50']=mid; if(hi)L['100']=hi;};
+          setL(s.leftLabel||s.minLabel, s.middleLabel||s.midLabel, s.rightLabel||s.maxLabel);
+          (s.items||[]).forEach(x=>{
+            if(x.leftLabel)L['0']=x.leftLabel; if(x.rightLabel)L['100']=x.rightLabel;
+            if(x.middleLabel||x.midLabel)L['50']=x.middleLabel||x.midLabel;
+            const g=gv(x), al=x.answerLabel||x.targetLabel; if(g!=null&&al)L[bk(g)]=al;
+          });
+          const anyMid=(s.items||[]).some(x=>gv(x)!=null&&bk(gv(x))==='50')||!!L['50'];
+          const lo=cl(L['0']||'較不符合'), mid=cl(L['50']||'中間'), hi=cl(L['100']||'較符合');
+          opts=anyMid?[{v:'0',t:lo},{v:'50',t:mid},{v:'100',t:hi}]:[{v:'0',t:lo},{v:'100',t:hi}];
+          ans=bk(gv(it));}
+        if(!opts&&scale){opts=scale.map(o=>({v:o,t:o})); ans=esc(it.answer);}  // (g) set 層數值量表
+        if(!opts){opts=[{v:'true',t:'⭕ 對'},{v:'false',t:'✕ 錯'}]; ans=(it.answer===true||it.answer==='true')?'true':'false';}  // (h) fallback 對/錯(避免零按鈕卡關)
+        return `<div class="slider-item" data-ii="${ii}" data-answer="${ans}">
+        <div class="slider-clue">${fmt(clue)}</div>
+        <div class="slider-opts">${opts.map(o=>`<button class="sopt" data-v="${esc(o.v)}">${fmt(o.t)}</button>`).join('')}</div>
+        <div class="slider-fb fb-pre" hidden>${fmt('✅ 答對了！'+(it.explanation||''))}</div></div>`;}).join('')}</div>
+      <div class="fb" hidden></div>
+      <div class="card-foot"><button class="redo-btn" hidden>↻ 重做這題</button><span class="gate-note">🔒 全部答對後解鎖下一頁</span><button class="cardnext-btn" hidden>前往下一頁 →</button></div></div></div>`;
+  }
+  return p;
+}
+
+// 互動題:失敗達此次數即揭示正解並解鎖(逃生閥,避免卡關)— mcq/sort/slider 共用
+const REVEAL_AFTER=3;
+function revealSortOrder(ic,s){
+  ic._order=[...s.correctOrder];
+  ic.querySelectorAll('.chip').forEach(c=>{const pos=s.correctOrder.indexOf(+c.dataset.i);
+    c.classList.add('used');c.querySelector('.seq').textContent=pos+1;});
+}
+
+// 🔴 完成宣告頁(最後一頁;過完所有關卡才到得了,學生主動點按鈕宣告完成 → 發 TASK_COMPLETED)
+const completePage=document.createElement('section'); completePage.className='page complete-page';
+completePage.innerHTML=`<div class="complete-inner"><div class="complete-emoji">🎉</div><h2 class="complete-title">恭喜完成!</h2><p class="complete-sub">你完成了這份講義</p><button class="complete-btn" id="declareBtn">🎓 完成學習</button></div>`;
+track.appendChild(completePage);
+
+const pages=Array.from(track.children); const total=pages.length;
+let cur=0;
+const prevBtn=document.getElementById('prev'),nextBtn=document.getElementById('next');
+const nextHint=document.getElementById('nextHint');
+const fill=document.getElementById('progressFill'),pageNum=document.getElementById('pageNum');
+// 明確引導前往下一頁:可前往(非關卡鎖)且還有未讀頁時,next 鈕脈動 + 浮出提示(切頁短暫顯示)
+function updateNextCue(){
+  const canNext=!nextBtn.disabled&&cur<total-1;
+  nextBtn.classList.toggle('cta',canNext);
+  if(!nextHint)return;
+  clearTimeout(nextHint._t);
+  if(canNext){nextHint.textContent=cur===0?'開始閱讀 →':'下一頁 →';
+    nextHint.classList.add('show');
+    nextHint._t=setTimeout(()=>nextHint.classList.remove('show'),3400);}
+  else nextHint.classList.remove('show');
+}
+const reduceMotion=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+// ── postMessage 協定(platform-iframe-protocol.md):每切頁 + 每作答 + 過關 + 完成都上報 ──
+const CARDPAGES=pages.filter(p=>p.classList.contains('cardpage')&&!p.classList.contains('ungraded'));
+const TOTAL_Q=CARDPAGES.length;
+const SESSION={startedAt:Date.now(),log:[{event:'session:start',ts:Date.now()}],
+  qStart:{},qLast:{},qAttempts:{},qWrong:{},cleared:new Set(),firstTryCount:0,combo:0,maxCombo:0,guessing:0,_done:false,_lastPage:-1};
+function postToParent(type,data){try{(window.parent||window).postMessage({type,data:data||{},source:'eduTemplate',timestamp:Date.now()},'*');}catch(_){}}
+window.postToParent=postToParent;
+function sectionTitle(i){for(let j=i;j>=0;j--){const h=pages[j].querySelector('.divider-card h2');if(h)return h.textContent;}return pages[i]&&pages[i].classList.contains('cover')?'封面':'';}
+const GUESS_TH={mcq:2000,sort:3000,slider:3000};
+function answerTime(qid){const now=Date.now();const base=SESSION.qLast[qid]||SESSION.qStart[qid]||now;SESSION.qLast[qid]=now;return now-base;}
+function recordAnswer(qid,qtype,correct,timeMs){
+  SESSION.qAttempts[qid]=(SESSION.qAttempts[qid]||0)+1;
+  if(!correct){SESSION.qWrong[qid]=(SESSION.qWrong[qid]||0)+1;SESSION.combo=0;if(timeMs<(GUESS_TH[qtype]||3000))SESSION.guessing++;}
+  SESSION.log.push({event:'answer',ts:Date.now(),data:{questionId:qid,correct,timeMs}});
+  postToParent('ANSWER',{questionId:qid,type:qtype,correct,timeMs,attempt:SESSION.qAttempts[qid]});
+}
+function onPageChange(){
+  if(SESSION._lastPage===cur)return; SESSION._lastPage=cur;
+  const pg=pages[cur],ic=pg.querySelector('.icard');
+  if(ic&&!SESSION.qStart[ic.dataset.id]){SESSION.qStart[ic.dataset.id]=Date.now();SESSION.qLast[ic.dataset.id]=Date.now();}
+  SESSION.log.push({event:'page:view',ts:Date.now(),data:{page:cur}});
+  postToParent('PROGRESS_UPDATE',{page:cur,totalPages:total-1,
+    percent:TOTAL_Q?Math.round(SESSION.cleared.size/TOTAL_Q*100):Math.round((total>1?cur/(total-1):1)*100),
+    section:sectionTitle(cur),pageType:(pg.className.match(/page (\w+)/)||['',''])[1],
+    clearedQuestions:SESSION.cleared.size,totalQuestions:TOTAL_Q});
+  saveProgress();   // 本地持久化目前頁
+}
+function fireComplete(){
+  if(SESSION._done)return;             // 只發一次(由「完成宣告頁」按鈕或平台 sendTaskComplete 觸發)
+  SESSION._done=true;
+  const totalTimeMs=Date.now()-SESSION.startedAt,correctAnswers=SESSION.firstTryCount,
+    accuracy=Math.round((TOTAL_Q?correctAnswers/TOTAL_Q:1)*100)/100;
+  SESSION.log.push({event:'task:complete',ts:Date.now(),data:{score:accuracy,timeMs:totalTimeMs}});
+  let xp=10,coins=3;const badges=[];
+  if(accuracy>=0.8){xp+=5;coins+=2;badges.push('accuracy_high');}
+  if(SESSION.guessing===0){xp+=10;coins+=5;badges.push('no_guess');}
+  SESSION._completePayload={achievedScore:accuracy,completedAt:new Date().toISOString(),
+    performance:{totalQuestions:TOTAL_Q,correctAnswers,accuracy,maxCombo:SESSION.maxCombo,guessingCount:SESSION.guessing,totalTimeMs},
+    suggestedRewards:{xp:Math.min(25,xp),coins:Math.min(10,coins),badges},sessionLog:SESSION.log};
+  postToParent('TASK_COMPLETED',SESSION._completePayload);
+  // 🔴 繳交/完成後本地進度歸零(成績已上報平台,本地 in-progress 記錄清掉)
+  try{EduStorage.remove('progress');}catch(e){}
+}
+// 🔴 連接穩定性:平台漏接 TASK_COMPLETED 時,可用 REQUEST_STATE 拉回(不做未經請求的重送,避免現行平台重複發獎)
+function resendComplete(){if(SESSION._done&&SESSION._completePayload)postToParent('TASK_COMPLETED',SESSION._completePayload);}
+// 🔴 完成訊息改由「完成宣告頁」按鈕觸發(學生主動宣告);平台仍可呼叫 sendTaskComplete 強制完成
+window.sendTaskComplete=()=>{CARDPAGES.forEach(p=>SESSION.cleared.add(p.querySelector('.icard').dataset.id));fireComplete();};
+
+// ── 闖關 gating:互動關卡答對才解鎖後面(下一頁 + 目錄) ──
+const clearedPages=new Set();          // 已過關的關卡頁 index(非互動頁視為自動通過)
+const tocItemEls=[];                    // 目錄項目 DOM(供鎖定切換)
+// ── 本地持久化:每份講義獨立(instanceId/taskId 取自 URL → prefix,不同份/不同任務不互吃;同 v2.7)──
+window.EduStorage = window.EduStorage || (function(){
+  var p=new URLSearchParams(location.search), iid=p.get('instanceId')||p.get('taskId')||'default';
+  // 🔴 每份講義獨立 key:除了 instanceId,再加「本份講義專屬 id」,確保即使沒帶 instanceId(fallback default),
+  //    不同份講義也不會互吃進度(用戶要求:開過 A 完成後開結構類似的 B,B 不應顯示已完成)。
+  var hid=window.HANDOUT_ID||'';
+  if(!hid){try{var cd=window.COURSE_DATA||{},m=cd.meta||{},c0=(cd.concepts||[])[0]||{};
+    var seed=(m.unitTitle||'')+'|'+(c0.title||'')+'|'+((cd.concepts||[]).length)+'|'+((cd.mcqs||[]).length);
+    var hh=0;for(var i=0;i<seed.length;i++){hh=(hh*31+seed.charCodeAt(i))|0;}hid='h'+(hh>>>0).toString(36);}catch(e){hid='';}}
+  var pre='edu_'+iid+'_'+(hid?hid+'_':'');
+  return {load:function(k,d){try{var s=localStorage.getItem(pre+k);return s?JSON.parse(s):d;}catch(e){return d;}},
+          save:function(k,v){try{localStorage.setItem(pre+k,JSON.stringify(v));}catch(e){}},
+          remove:function(k){try{localStorage.removeItem(pre+k);}catch(e){}}};
+})();
+function saveProgress(){EduStorage.save('progress',{cleared:[...clearedPages],page:cur,sess:[...SESSION.cleared],ft:SESSION.firstTryCount});}
+function restoreProgress(){var s=EduStorage.load('progress',null);if(!s)return;
+  if(Array.isArray(s.sess))s.sess.forEach(id=>SESSION.cleared.add(id));
+  if(typeof s.ft==='number')SESSION.firstTryCount=s.ft;
+  if(Array.isArray(s.cleared))s.cleared.forEach(i=>{if(pages[i]&&pages[i].classList.contains('cardpage'))clearedPages.add(i);});
+  clearedPages.forEach(i=>{var ic=pages[i]&&pages[i].querySelector('.icard');if(!ic)return;   // 還原已過關卡的 UI
+    var gn=ic.querySelector('.gate-note');if(gn){gn.classList.add('open');gn.textContent='✅ 已過關';}
+    var nb=ic.querySelector('.cardnext-btn');if(nb){nb.hidden=false;nb.textContent=i>=total-1?'🎉 全部完成':'前往下一頁 →';}});
+  if(typeof s.page==='number')cur=Math.max(0,Math.min(maxReachable(),s.page));}
+function firstGate(){for(let i=0;i<total;i++){if(pages[i].classList.contains('cardpage')&&!pages[i].classList.contains('ungraded')&&!clearedPages.has(i))return i;}return -1;}
+function maxReachable(){const g=firstGate();return g<0?total-1:g;}
+function markCleared(ic){const idx=pages.indexOf(ic.closest('.page'));clearedPages.add(idx);
+  const gn=ic.querySelector('.gate-note');if(gn){gn.classList.add('open');gn.textContent='✅ 已過關';}
+  const nb=ic.querySelector('.cardnext-btn');if(nb){nb.hidden=false;nb.textContent=idx>=total-1?'🎉 全部完成':'前往下一頁 →';}
+  ic.classList.remove('gate-active');
+  const qid=ic.dataset.id;
+  if(!SESSION.cleared.has(qid)){SESSION.cleared.add(qid);
+    if(!SESSION.qWrong[qid])SESSION.firstTryCount++;
+    SESSION.combo++;SESSION.maxCombo=Math.max(SESSION.maxCombo,SESSION.combo);
+    postToParent('SECTION_CLEARED',{questionId:qid,firstTry:!SESSION.qWrong[qid],clearedQuestions:SESSION.cleared.size,totalQuestions:TOTAL_Q});}
+  refreshLocks();saveProgress();}
+function refreshLocks(){const mr=maxReachable();
+  nextBtn.disabled=cur>=mr; prevBtn.disabled=cur===0;
+  const fg=firstGate();
+  pages.forEach((pg,i)=>{const ic=pg.querySelector('.icard');if(ic)ic.classList.toggle('gate-active',i===cur&&i===fg);});
+  tocItemEls.forEach((el,i)=>{const locked=tocEntries[i].pageIdx>mr;el.classList.toggle('locked',locked);
+    const lk=el.querySelector('.lock');if(lk)lk.hidden=!locked;});
+  updateNextCue();}
+
+function render(keep){
+  track.style.transform=`translateX(${-cur*100}%)`; viewport.scrollLeft=0;
+  fill.style.width=(total>1?(cur/(total-1))*100:100)+'%';
+  pageNum.textContent=cur===0?'封面':`${cur} / ${total-1}`;
+  refreshLocks();
+  if(!keep){const pg=pages[cur]; if(pg.scrollTop) pg.scrollTop=0;}
+}
+function goTo(i){cur=Math.max(0,Math.min(maxReachable(),i));render();fitPage(pages[cur]);onPageChange();}
+window.goToSlide=goTo;
+
+// fit-to-fill(課文 + 互動卡 大小一致)
+const FIT_CAP=1.5; let LESSON_SCALE=1;
+function fitPage(pg){
+  if(pg.classList.contains('lesson')){const fit=pg.querySelector('.lesson-fit');if(fit)fit.style.transform='';return;}   // 流動重排,不縮放(清掉舊 transform)
+  if(pg.classList.contains('cardpage')){const fit=pg.querySelector('.card-fit');if(!fit)return;
+    const sy=pg.scrollTop;                 // 🔴 保留捲動位置:作答後 re-fit 不可跳回頂部(大忌)
+    fit.style.transform='';
+    // 🔴 互動卡(作答會冒回饋框而長高)不放大→維持自然 1×:不再「越點越小」,且 scale=1 時 overflow 捲動正常(visual=layout)。
+    //    非互動卡(封面/討論/純內容)才放大填滿視窗。高度比留 3% 安全邊距。
+    // 🔴 mcq 預留回饋空間後可放大填滿(穩定);slider/sort 回饋難精準預留→維持1×不放大(避免殘留長高被放大成可見縮放),它們多項通常已夠高不空曠
+    const ig=fit.querySelector('.icard[data-type]');
+    const noUp = ig && !pg.classList.contains('ungraded');
+    const cap=Math.min(pg.clientWidth/fit.offsetWidth,pg.clientHeight/fit.offsetHeight*0.97,noUp?1:FIT_CAP);
+    const s=Math.max(1,cap);fit.style.transform=(s>1?'scale('+s+')':'');
+    pg.scrollTop=sy;                        // 還原捲動位置
+    return;}
+}
+// 封面標題自動縮放:長標題(尤其英文單元名)不裁切,縮到 cover-meta 容得下為止
+function fitCover(){
+  const cover=track.querySelector('.cover'); if(!cover)return;
+  const h1=cover.querySelector('h1'); if(!h1)return;
+  h1.style.fontSize='';
+  let size=parseFloat(getComputedStyle(h1).fontSize)||56,guard=0;
+  // 封面格 row 會隨內容長高,溢出發生在 .cover 層級 → 用 cover 自身 scrollHeight>clientHeight 判斷
+  while(cover.scrollHeight>cover.clientHeight && size>16 && guard++<80){size-=2;h1.style.fontSize=size+'px';}
+}
+function fitAll(){
+  fitCover();
+  pages.forEach(p=>{if(p.classList.contains('lesson'))fitPage(p);});  // 課文頁:清掉舊 transform(改 CSS 流動重排)
+  LESSON_SCALE=1;                                                     // 課文頁不再縮放 → 互動卡以原尺寸為基準(自身再 cap 進頁面)
+  pages.forEach(p=>{if(p.classList.contains('cardpage'))fitPage(p);});
+}
+let _rt;addEventListener('resize',()=>{clearTimeout(_rt);_rt=setTimeout(fitAll,120);});
+requestAnimationFrame(fitCover);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fitAll);
+track.querySelectorAll('img').forEach(im=>{if(!im.complete)im.addEventListener('load',()=>{const pg=im.closest('.page');if(pg)fitPage(pg);});});
+
+// 記錄生字卡頁按下當下的捲動位置(在 focus/reflow 改動之前),供 click 還原
+track.addEventListener('pointerdown',e=>{const wp=e.target.closest('.wordcards-page');if(wp)wp._savedScroll=wp.scrollTop;},true);
+// 🔴 防 focus-scroll:答題按鈕 pointerdown 阻止取得焦點(真實點擊跳頂主因)
+// 🔴 防跳頂核心:focus-scroll 在 mousedown(click 前)就把卡片甩到頂,引擎在 click handler 內記位置已太晚。
+//    解法:在 pointerdown(最早、甩動發生前)記下捲動位置 _preScroll,作答後把它釘回並持續壓制 ~400ms(涵蓋瀏覽器非同步捲動)。
+var __scrollReleased=false; // 使用者主動滾輪/鍵盤捲動 → 停止所有釘住(桌機捲動順暢;跳頂在 click 當下已擋,放行不復發)
+function holdAnchor(pg){ if(!pg)return; var target=(pg._preScroll!=null?pg._preScroll:pg.scrollTop);
+  try{pg.scrollTop=target;}catch(e){}
+  var n=0; var t=function(){ if(!__scrollReleased && Math.abs(pg.scrollTop-target)>2)pg.scrollTop=target; if(++n<20)requestAnimationFrame(t); }; requestAnimationFrame(t);
+  [16,40,80,140,220,320,430].forEach(function(ms){setTimeout(function(){ if(!__scrollReleased && Math.abs(pg.scrollTop-target)>2)pg.scrollTop=target; },ms);});
+  setTimeout(function(){pg._preScroll=null;},480);
+}
+// 🔴 防跳頂核心(觸控版):在 pointerdown(focus-scroll 甩頁之前)立即「全域釘住」捲動位置,
+//    不依賴答題 handler 是否觸發 —— 觸控時 focus-scroll 會在 touchend 前就甩頁、害 tap 落空、handler 根本不跑。
+//    只在「點按鈕」時釘;若使用者實際在捲動(pointermove 超過閾值)立刻放行;tap 結束後再壓制 ~480ms 蓋掉非同步捲動與回饋長高。
+var __SEL='.sopt,.opt,.chip,.sbtn,.redo-btn,.cardnext-btn,#declareBtn,.complete-btn,.wc-flip,.wc-zi,.open-btn';
+var __pinPg=null,__pinTop=0,__pinning=false,__pinStartX=0,__pinStartY=0,__pinUntil=0,__pinRAF=0,__pinBtn=null,__ghostUntil=0,__expectGhost=false;
+function __pinTick(){
+  if(!__scrollReleased && __pinPg && (__pinning||performance.now()<__pinUntil)){
+    if(Math.abs(__pinPg.scrollTop-__pinTop)>1)__pinPg.scrollTop=__pinTop;
+    __pinRAF=requestAnimationFrame(__pinTick);
+  }else{__pinRAF=0;}
+}
+track.addEventListener('pointerdown',function(e){
+  if(e.isPrimary===false)return;
+  var btn=e.target.closest(__SEL); if(!btn)return;
+  var pg=btn.closest('.page.cardpage')||btn.closest('.wordcards-page'); if(!pg)return;
+  __pinPg=pg; __pinTop=pg.scrollTop; pg._preScroll=__pinTop; __pinning=true; __pinStartX=e.clientX; __pinStartY=e.clientY; __pinUntil=0; __pinBtn=btn; __scrollReleased=false;
+  // 🔴 預先以 preventScroll 聚焦按鈕 → 瀏覽器點擊時的自動聚焦變 no-op,減少 focus-scroll
+  try{ if(btn.focus) btn.focus({preventScroll:true}); }catch(_e){}
+  if(!__pinRAF)__pinRAF=requestAnimationFrame(__pinTick);
+},true);
+track.addEventListener('pointermove',function(e){
+  if(__pinning && (Math.abs(e.clientY-__pinStartY)>10||Math.abs(e.clientX-__pinStartX)>10)){__pinning=false;__pinUntil=0;__pinBtn=null;} // 捲動/換頁滑動 → 放行,不補點
+},true);
+function __endPin(){ if(__pinPg){ __pinUntil=performance.now()+480; if(!__pinRAF)__pinRAF=requestAnimationFrame(__pinTick);} }
+track.addEventListener('pointerup',function(e){
+  if(e.isPrimary===false)return;
+  // 🔴 觸控時原生 click 會因 focus-scroll 在命中前甩頁 → 命中錯元素、無法作答。pointerup 時座標仍正確:
+  //    在「真正的按鈕」上補發 synthetic click(untrusted),並吞掉隨後命中錯誤的 trusted ghost click。
+  if(__pinning && __pinBtn){
+    __expectGhost=true; __ghostUntil=performance.now()+800;
+    try{ __pinBtn.dispatchEvent(new MouseEvent('click',{bubbles:true,cancelable:true,view:window})); }catch(_e){}
+  }
+  __pinning=false; __pinBtn=null; __endPin();
+},true);
+track.addEventListener('pointercancel',function(){__pinning=false;__pinUntil=0;__pinBtn=null;},true);
+// 桌機:主動滾輪 / 捲動鍵 → 解除釘住
+window.addEventListener('wheel',function(){__scrollReleased=true;},{capture:true,passive:true});
+window.addEventListener('keydown',function(e){if(['PageDown','PageUp','ArrowDown','ArrowUp','Home','End',' ','Spacebar'].indexOf(e.key)>=0)__scrollReleased=true;},true);
+// 吞掉 ghost 窗內、命中錯誤的「原生(trusted)」click;synthetic(untrusted)放行給互動處理
+window.addEventListener('click',function(e){ if(e.isTrusted && __expectGhost && performance.now()<__ghostUntil){ __expectGhost=false; e.stopImmediatePropagation(); e.preventDefault(); } },true);
+// 互動處理
+track.addEventListener('click',e=>{
+  // 🔴 防連點:同一「按鈕」300ms 內第二次點擊忽略(防 rapid double-tap 重複計分/重複送出);per-button 不影響同卡其他 item/chip
+  var __aBtn=e.target.closest('.opt,.sopt,.chip,.sbtn');
+  if(__aBtn){var __now=Date.now(); if(__aBtn._lt&&__now-__aBtn._lt<300){return;} __aBtn._lt=__now;}
+  // 前往下一頁(過關後出現的主要 CTA)
+  if(e.target.closest('.cardnext-btn')){goTo(cur+1);return;}
+  // 🔴 完成宣告:學生主動點「完成學習」→ 發 TASK_COMPLETED(只發一次)
+  const dBtn=e.target.closest('#declareBtn');
+  if(dBtn){fireComplete();dBtn.textContent='✅ 已完成學習';dBtn.classList.add('done');dBtn.disabled=true;return;}
+  // 重做這題(過關狀態保留,純粹清空作答讓學生再練一次)
+  const redoBtn=e.target.closest('.redo-btn');
+  if(redoBtn){const ic=redoBtn.closest('.icard');const t=ic.dataset.type;
+    if(t==='mcq'){ic.classList.remove('done');ic.querySelectorAll('.opt').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});
+      const fb=ic.querySelector('.fb');fb.hidden=true;}
+    else if(t==='slider'){ic.querySelectorAll('.slider-item').forEach(item=>{item.classList.remove('answered');
+      item.querySelectorAll('.sopt').forEach(b=>b.classList.remove('locked','correct','wrong'));
+      const f=item.querySelector('.slider-fb');f.hidden=true;f.textContent='';});}
+    redoBtn.hidden=true;{const _rpg=ic.closest('.page'),_rTop=ic.getBoundingClientRect().top;fitPage(_rpg);const _ra=()=>{const d=ic.getBoundingClientRect().top-_rTop;if(Math.abs(d)>2)_rpg.scrollTop+=d;};holdAnchor(_rpg);}return;}
+  // mcq
+  const opt=e.target.closest('.opt');
+  if(opt&&!opt.disabled){const ic=opt.closest('.icard');if(ic.classList.contains('done'))return;
+    const _mpg=opt.closest('.page'),_mTop=ic.getBoundingClientRect().top;   // 🔴 錨點:答後把題目卡拉回原位,防視線甩走
+    const ans=+ic.dataset.answer,pick=+opt.dataset.i,m=cardsById[ic.dataset.id].data,fb=ic.querySelector('.fb');
+    const redo=ic.querySelector('.redo-btn');if(redo)redo.hidden=false;
+    recordAnswer(ic.dataset.id,'mcq',pick===ans,answerTime(ic.dataset.id));
+    if(pick===ans){ic.classList.add('done');opt.classList.add('correct');ic.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+      fb.hidden=false;fb.className='fb ok';showFB(fb,'✅ 答對了！\n'+(m.explanation||''));markCleared(ic);}
+    else{opt.classList.add('wrong');opt.disabled=true;ic._fails=(ic._fails||0)+1;fb.hidden=false;
+      if(ic._fails>=REVEAL_AFTER){const co=ic.querySelectorAll('.opt')[ans];co.classList.add('correct');
+        ic.querySelectorAll('.opt').forEach(b=>b.disabled=true);ic.classList.add('done');
+        fb.className='fb reveal';showFB(fb,'💡 已試 '+ic._fails+' 次（未自行答對),正確答案是 '+String.fromCharCode(65+ans)+'：'+(m.options[ans]||'')+'\n'+(m.explanation||''));markCleared(ic);}
+      else{fb.className='fb no';showFB(fb,'💡 再想想（'+ic._fails+'/'+REVEAL_AFTER+'）：'+(m.hint||'換個角度想想。'));}}
+    fitPage(_mpg);const _ma=()=>{const d=ic.getBoundingClientRect().top-_mTop;if(Math.abs(d)>2)_mpg.scrollTop+=d;};if(opt.blur)opt.blur();holdAnchor(_mpg);return;}
+  // sort:點 chip 排序
+  const chip=e.target.closest('.chip');
+  if(chip&&!chip.classList.contains('used')){const ic=chip.closest('.icard');
+    const order=ic._order||(ic._order=[]); order.push(+chip.dataset.i);
+    chip.classList.add('used');chip.querySelector('.seq').textContent=order.length;holdAnchor(ic.closest('.page.cardpage'));return;}
+  if(e.target.closest('.sbtn.reset')){const ic=e.target.closest('.icard');ic._order=[];
+    ic.querySelectorAll('.chip').forEach(c=>{c.classList.remove('used');c.querySelector('.seq').textContent='';});
+    const fb=ic.querySelector('.fb');fb.hidden=true;holdAnchor(ic.closest('.page.cardpage'));return;}
+  if(e.target.closest('.sbtn.go')){const ic=e.target.closest('.icard');const s=cardsById[ic.dataset.id].data;
+    const _spg=ic.closest('.page'),_sTop=ic.getBoundingClientRect().top;   // 🔴 錨點:排序送出後把卡拉回原位
+    const order=ic._order||[],fb=ic.querySelector('.fb');
+    if(order.length<(s.items||[]).length){fb.hidden=false;fb.className='fb no';showFB(fb,'還沒排完喔!依序點選全部項目。');return;}
+    const ok=JSON.stringify(order)===JSON.stringify(s.correctOrder);
+    recordAnswer(ic.dataset.id,'sort',ok,answerTime(ic.dataset.id));
+    if(ok){fb.hidden=false;fb.className='fb ok';showFB(fb,'✅ 答對了！順序完全正確 🎉\n'+(s.explanation||''));revealSortOrder(ic,s);markCleared(ic);}
+    else{ic._fails=(ic._fails||0)+1;fb.hidden=false;
+      if(ic._fails>=REVEAL_AFTER){
+        const correctText=s.correctOrder.map((oi,n)=>(n+1)+'. '+(s.items||[])[oi]).join('\n');
+        fb.className='fb reveal';showFB(fb,'💡 已試 '+ic._fails+' 次（未自行答對),為你揭示正確順序：\n'+correctText+(s.explanation?'\n\n'+s.explanation:''));
+        revealSortOrder(ic,s);markCleared(ic);}
+      else{fb.className='fb no';showFB(fb,'💡 順序不對,再試試（'+ic._fails+'/'+REVEAL_AFTER+'）。\n'+(s.explanation||''));}}
+    fitPage(_spg);const _sa=()=>{const d=ic.getBoundingClientRect().top-_sTop;if(Math.abs(d)>2)_spg.scrollTop+=d;};holdAnchor(_spg);return;}
+  // slider:逐項(答錯可立即重選,全部答對才過關)
+  const sopt=e.target.closest('.sopt');
+  if(sopt&&!sopt.classList.contains('locked')){const item=sopt.closest('.slider-item');
+    if(item.classList.contains('answered'))return;
+    const ic=sopt.closest('.icard'),s=cardsById[ic.dataset.id].data,ii=+item.dataset.ii,it=(s.items||[])[ii];
+    const _apg=sopt.closest('.page'),_aTop=item.getBoundingClientRect().top;   // 🔴 錨點:記住正在答的這項在視窗的位置,答完拉回原位(防回饋出現/re-fit/焦點造成視線被甩走)
+    // 一律精確命中(各分支 ans 必為某按鈕值;±1容差會誤判相鄰數值/二元,移除);無答案=探索/反思卡→任意點擊放行不卡關
+    const da=item.dataset.answer;
+    const noAns=(da===''||da==='undefined'||da==='null'||da==='None'||da==='NaN');
+    const correct=noAns?true:(sopt.dataset.v===da);
+    recordAnswer(ic.dataset.id,'slider',correct,answerTime(ic.dataset.id));
+    const fb=item.querySelector('.slider-fb');fb.hidden=false;
+    const redo=ic.querySelector('.redo-btn');if(redo)redo.hidden=false;
+    if(correct){item.classList.add('answered');item.querySelectorAll('.sopt').forEach(b=>{b.classList.add('locked');b.classList.remove('wrong');});sopt.classList.add('correct');
+      fb.hidden=false;fb.className='slider-fb fb ok';showFB(fb,'✅ 答對了！'+(it.explanation||''));
+      const all=ic.querySelectorAll('.slider-item').length,done=ic.querySelectorAll('.slider-item.answered').length;
+      if(all===done)markCleared(ic);}
+    else{item._fails=(item._fails||0)+1;
+      if(item._fails>=REVEAL_AFTER){item.classList.add('answered');
+        item.querySelectorAll('.sopt').forEach(b=>{b.classList.add('locked');b.classList.remove('wrong');});
+        const cb=[...item.querySelectorAll('.sopt')].find(b=>b.dataset.v===item.dataset.answer);if(cb)cb.classList.add('correct');
+        const ansTxt=item.dataset.answer==='true'?'對':item.dataset.answer==='false'?'錯':(it.answer||item.dataset.answer);
+        fb.hidden=false;fb.className='slider-fb fb reveal';showFB(fb,'💡 已試 '+item._fails+' 次（未自行答對),正解：'+ansTxt+'。'+(it.explanation||''));
+        const all=ic.querySelectorAll('.slider-item').length,done=ic.querySelectorAll('.slider-item.answered').length;
+        if(all===done)markCleared(ic);}
+      else{item.querySelectorAll('.sopt').forEach(b=>b.classList.remove('wrong'));sopt.classList.add('wrong');
+        fb.hidden=false;fb.className='slider-fb fb no';showFB(fb,'❌ 再想想（'+item._fails+'/'+REVEAL_AFTER+'）：'+(it.hint||it.explanation||'換個選項試試。'));}}
+    fitPage(_apg);
+    // 🔴 把剛答的這項拉回原本視窗位置:同步先做一次,再用 rAF 蓋掉瀏覽器可能的「焦點捲入視野」非同步捲動
+    const _anchor=()=>{const d=item.getBoundingClientRect().top-_aTop;if(Math.abs(d)>2)_apg.scrollTop+=d;};
+    if(sopt.blur)sopt.blur();holdAnchor(_apg);   // 移除焦點,避免瀏覽器把按鈕捲入視野
+    return;}
+  // 生字卡/單字卡 —— 翻卡/看祕密;保留捲動位置(防 button 取得焦點或展開 reflow 造成回滾置頂)
+  const wcCard=e.target.closest('.wc-flip,.wc-zi');
+  if(wcCard){const sc=wcCard.closest('.wordcards-page');
+    const st=sc?(sc._savedScroll!=null?sc._savedScroll:sc.scrollTop):0;
+    if(wcCard.classList.contains('wc-flip')){wcCard.classList.toggle('flipped');}
+    else{const r=wcCard.querySelector('.zi-reveal'),h=wcCard.querySelector('.wc-hint');
+      if(r){r.hidden=!r.hidden;wcCard.classList.toggle('open',!r.hidden);if(h)h.hidden=!r.hidden;}}
+    if(sc){sc.scrollTop=st;requestAnimationFrame(()=>{sc.scrollTop=st;});}
+    return;}
+  // lightbox(圖片 + 內聯 SVG 皆可放大)
+  const img=e.target.closest('.art-card img'); if(img){lbHtml.hidden=true;lbImg.hidden=false;lbImg.src=img.src;lb.classList.add('open');return;}
+  const sv=e.target.closest('.art-svg'); if(sv){const m=sv.querySelector('svg'); if(m){lbHtml.hidden=true;lbImg.hidden=false;lbImg.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(m.outerHTML);lb.classList.add('open');}return;}
+});
+
+prevBtn.onclick=()=>goTo(cur-1);
+nextBtn.onclick=()=>goTo(cur+1);
+document.getElementById('openBtn').onclick=()=>goTo(1);
+addEventListener('keydown',e=>{
+  if(lb.classList.contains('open')){if(e.key==='Escape')lb.classList.remove('open');return;}
+  if(e.key==='ArrowRight'||e.key==='PageDown')goTo(cur+1);
+  else if(e.key==='ArrowLeft'||e.key==='PageUp')goTo(cur-1);
+  else if(e.key==='Home')goTo(0); else if(e.key==='End')goTo(total-1);
+});
+
+// 觸控翻頁
+const active=new Set();let startX=0,startY=0,startT=0,dragging=false,locked=null,w=1;
+viewport.addEventListener('pointerdown',e=>{if(lb.classList.contains('open'))return;active.add(e.pointerId);
+  if(active.size>1){cancelDrag();return;}startX=e.clientX;startY=e.clientY;startT=e.timeStamp;dragging=true;locked=null;w=viewport.clientWidth;});
+viewport.addEventListener('pointermove',e=>{if(!dragging||active.size>1)return;const dx=e.clientX-startX,dy=e.clientY-startY;
+  if(locked===null){if(Math.abs(dx)<6&&Math.abs(dy)<6)return;locked=Math.abs(dx)>Math.abs(dy)?'h':'v';if(locked==='h')track.classList.add('dragging');}
+  if(locked==='h'){let d=dx;if((cur===0&&dx>0)||(cur>=maxReachable()&&dx<0))d=dx*0.32;track.style.transform=`translateX(calc(${-cur*100}% + ${d}px))`;}});
+function endDrag(e){if(e)active.delete(e.pointerId);if(!dragging)return;dragging=false;track.classList.remove('dragging');
+  const dx=e?e.clientX-startX:0;
+  if(locked==='h'){const TH=Math.min(80,w*0.14),dt=e?Math.max(1,e.timeStamp-startT):999,vx=dx/dt,FLICK=0.35;
+    if(dx<=-TH||(dx<-24&&vx<=-FLICK))cur=Math.min(maxReachable(),cur+1);else if(dx>=TH||(dx>24&&vx>=FLICK))cur=Math.max(0,cur-1);}
+  render();fitPage(pages[cur]);onPageChange();}
+function cancelDrag(){if(dragging){dragging=false;track.classList.remove('dragging');render();}}
+viewport.addEventListener('pointerup',endDrag);
+viewport.addEventListener('pointercancel',e=>{active.delete(e.pointerId);cancelDrag();});
+viewport.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')endDrag(e);});
+
+// 字級 + 目錄 + lightbox
+let fs=19;const root=document.documentElement;
+const setFs=v=>{fs=Math.max(15,Math.min(26,v));root.style.setProperty('--fs-base',fs+'px');fitAll();};
+document.getElementById('fontUp').onclick=()=>setFs(fs+1);
+document.getElementById('fontDown').onclick=()=>setFs(fs-1);
+document.getElementById('fontReset').onclick=()=>setFs(19);
+const toc=document.getElementById('toc'),tocList=document.getElementById('tocList');
+tocEntries.forEach((en,i)=>{const it=document.createElement('div');it.className='toc-item';
+  it.innerHTML=`<span class="t" style="${en.tab?'font-weight:800;color:var(--brand-deep)':''}">${fmt(en.label)}</span><span class="lock" hidden>🔒</span>`;
+  it.onclick=()=>{if(en.pageIdx>maxReachable())return;goTo(en.pageIdx);toc.classList.remove('open');};
+  tocList.appendChild(it);tocItemEls.push(it);});
+document.getElementById('tocBtn').onclick=()=>toc.classList.add('open');
+toc.querySelector('[data-close]').onclick=()=>toc.classList.remove('open');
+const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg'),lbHtml=document.getElementById('lbHtml');
+lb.addEventListener('click',()=>lb.classList.remove('open'));
+
+// 🔴 預留回饋空間:量「答對」訊息(fb-pre 預填內容,含 KaTeX 渲染後高度)→鎖成 min-height→清空。卡片高度從頭=答完高度,fit一次定好,作答零位移(不縮不跳)+可置中放大填滿。
+function reserveFb(){track.querySelectorAll('.fb-pre').forEach(fb=>{const h=fb.offsetHeight;if(h>0)fb.style.minHeight=h+'px';fb.textContent='';});}
+restoreProgress();render();
+// KaTeX(defer 載入)就緒後渲染全頁數學式(含 fb-pre 內的式子),再量回饋高度→鎖 min-height + fit。math 未就緒前先 fit(fb-pre 原文佔位,隱形),載入後重量重fit。
+if(window.renderMathInElement){renderMath(document.body);reserveFb();fitAll();}
+else{fitAll();window.addEventListener('load',()=>{renderMath(document.body);reserveFb();fitAll();});}
+
+// ── 協定:載入完成上報 + 平台指令監聽(platform-iframe-protocol.md)──
+// 注:SET_ZHUYIN(注音開關)+ 破音字修正由 head 的官方 courseware-runtime.js 處理,此處不攔。
+// 🔴 協定版本 + 能力宣告(擴充性:平台可辨識模板版本/支援事件,新增欄位皆放 data 向下相容)
+var PROTOCOL_VERSION='1.1',ENGINE_VERSION='v18';
+var CAPABILITIES=['game:ready','PROGRESS_UPDATE','ANSWER','SECTION_CLEARED','TASK_COMPLETED','SET_PAGE','RESET_PROGRESS','REQUEST_READY','REQUEST_STATE','SET_ZHUYIN','SET_THEME'];
+function announceReady(){postToParent('game:ready',{totalPages:total-1,totalQuestions:TOTAL_Q,protocolVersion:PROTOCOL_VERSION,engineVersion:ENGINE_VERSION,capabilities:CAPABILITIES,timestamp:Date.now()});}
+// 🔴 連接穩定性:先掛 listener 再宣告 ready(避免平台漏接首個 game:ready)
+window.addEventListener('message',e=>{
+  if(!e||!e.data||e.data.source!=='eduPlatform')return;
+  const d=e.data.data||{};
+  if(e.data.type==='SET_PAGE'){            // 續讀:還原闖關狀態 + 跳回上次位置
+    if(typeof d.clearedUpTo==='number')pages.forEach((p,i)=>{if(i<=d.clearedUpTo&&p.classList.contains('cardpage'))clearedPages.add(i);});
+    if(typeof d.page==='number')goTo(d.page);
+  }else if(e.data.type==='RESET_PROGRESS'){clearedPages.clear();EduStorage.remove('progress');goTo(0);}
+  else if(e.data.type==='REQUEST_READY'){announceReady();}   // 平台漏接 → 重發 game:ready
+  else if(e.data.type==='REQUEST_STATE'){announceReady();SESSION._lastPage=-1;onPageChange();resendComplete();} // 平台拉取:重發 ready+目前進度+(已完成則)完成
+  // SET_ZHUYIN(注音/破音字)由 courseware-runtime.js 處理;SET_THEME 未實作 → no-op;未知 type 向下相容忽略
+});
+announceReady();
+onPageChange();
+})();
+</script>
+</body>
+</html>
