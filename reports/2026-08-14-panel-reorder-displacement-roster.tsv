@@ -1,0 +1,10 @@
+A1-G6A-enter	5	228	G6A→G6B, G6B→G7A, G7A→G8A, G8A→G9A, G9A→G6A
+A2-G6B-enter	4	171	G6B→G7A, G7A→G8A, G8A→G9A, G9A→G6B
+A3-G7A-enter	3	114	G7A→G8A, G8A→G9A, G9A→G7A
+A4-G8A-enter	2	57	G8A→G9A, G9A→G8A
+A5-G9A-enter	0	0	
+B-G8A-raise	0	0	
+B-G6B-raise	0	0	
+B-G9A-raise	0	0	
+C-fixed-pointer-G7A-raise	0	0	
+D-G6A-leave	0	0	
