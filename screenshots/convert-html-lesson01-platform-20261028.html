@@ -1,0 +1,1876 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#1c1917">
+<title>第 1 課｜你好，這就是我！</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+:root{--ink:#1c1917;--cream:#fefce8;--orange:#ea580c;--yellow:#fde047;--blue:#2563eb;--green:#166534;--red:#b91c1c;--muted:#78716c;--scale:1}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%}body{background:#292524;color:var(--ink);font-family:'Noto Sans TC',sans-serif;font-weight:500;overflow:hidden}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--blue);outline-offset:3px}h1,h2,.eyebrow{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:800}h1,h2,h3,p{margin:0}h1:focus,h2:focus{outline:none}h3{font-size:23px;font-weight:900}button{touch-action:manipulation}.workspace{height:100%;display:flex;flex-direction:column;padding:0 24px}.topbar{height:58px;flex-shrink:0;color:#d6d3d1;display:flex;align-items:center;justify-content:space-between;font-size:13px}.brand{display:flex;align-items:center;gap:10px;letter-spacing:1px}.brand i{color:var(--yellow)}.top-actions{display:flex;gap:8px;align-items:center}.utility{border:1px solid #57534e;background:transparent;color:#e7e5e4;border-radius:8px;padding:7px 11px;font-size:12px}.utility:hover{border-color:#a8a29e}.topbar select{max-width:200px;color:#e7e5e4;background:#292524;border:1px solid #57534e;padding:6px;border-radius:8px;font-size:12px}.stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}.frame{width:calc(1280px * var(--scale));height:calc(720px * var(--scale));position:relative;flex-shrink:0}.slide{position:absolute;inset:0;width:1280px;height:720px;transform:scale(var(--scale));transform-origin:top left;background:var(--cream);color:var(--ink);display:flex;flex-direction:column;padding:36px 52px 22px;overflow:hidden;box-shadow:0 24px 80px #0003}.slide[hidden]{display:none}.slide.cover,.slide.final{background:#1c1917;color:#fefce8}.content{flex:1;min-height:0}.eyebrow{color:var(--orange);font-size:24px;letter-spacing:2px;display:flex;align-items:center;gap:12px;line-height:1.5}.cover .eyebrow,.final .eyebrow{color:#fb923c}.chip{font-size:15px;letter-spacing:1px;background:#ffedd5;border-radius:8px;padding:5px 10px}.title-row{display:flex;align-items:center;justify-content:space-between;margin-top:11px;gap:18px}.title-row h2{font-size:44px;line-height:1.3;letter-spacing:1px}.tag{font-size:14px;color:#57534e;border:1px solid #d6d3b7;border-radius:99px;padding:7px 13px;flex-shrink:0}.guide{font-size:19px;color:#57534e;margin:10px 0 20px;line-height:1.6}.card{background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.05);padding:22px 25px}.footer{border-top:1px solid #1c191722;padding-top:12px;margin-top:16px;display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:13px;gap:20px;flex-shrink:0}.footer b{letter-spacing:2px;white-space:nowrap}.cover .footer,.final .footer{border-color:#fefce822;color:#a8a29e}.cover-layout{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;height:100%;gap:26px}.cover h1{font-size:77px;line-height:1.22;margin:24px 0 22px;letter-spacing:1px}.accent{color:var(--yellow)}.cover p{font-size:22px;line-height:1.85;color:#d6d3d1}.primary{background:var(--yellow);color:var(--ink);border:0;border-radius:13px;padding:14px 22px;font-weight:900;font-size:19px;box-shadow:0 4px 0 #b6a221;display:inline-flex;align-items:center;gap:20px}.cover .primary{margin-top:25px}.pill-row{display:flex;gap:10px;margin:22px 0 0}.pill{color:#d6d3d1;border:1px solid #57534e;border-radius:99px;padding:7px 12px;font-size:14px}.cover-art{height:430px;position:relative}.circle{position:absolute;border:1px solid #fefce826;border-radius:50%;width:370px;height:370px;left:15px;top:20px}.circle:after{content:'';position:absolute;inset:24px;border:1px dashed #fefce833;border-radius:50%}.tile{position:absolute;width:151px;height:160px;border-radius:26px;display:grid;place-items:center;font-size:91px;font-weight:900;box-shadow:0 15px 30px #0003}.t1{background:var(--yellow);color:var(--ink);top:35px;left:18px;rotate:-10deg}.t2{background:var(--orange);right:15px;top:92px;rotate:10deg}.t3{background:var(--blue);color:var(--cream);left:35px;bottom:30px;rotate:6deg;font-size:75px}.t4{background:var(--cream);color:var(--orange);right:19px;bottom:5px;rotate:-7deg}.art-note{position:absolute;top:0;right:25px;font-size:14px;color:#d6d3d1;letter-spacing:2px}.reading{display:grid;grid-template-columns:1.5fr .7fr;gap:22px}.diary{border-left:12px solid var(--orange);font-size:20px;line-height:1.78;text-align:justify;padding:22px 25px}.diary p+p{margin-top:13px}.word{font-weight:900;color:#9a3412;background:#fef08a;border-radius:3px;padding:0 2px}.word-list{border:4px dashed var(--yellow);padding:21px}.word-list h3{font-size:22px;margin-bottom:13px}.words{display:grid;grid-template-columns:1fr 1fr;gap:8px}.word-pill{padding:8px;border:3px solid var(--blue);background:#eff6ff;color:#1d4ed8;border-radius:12px;text-align:center;font-weight:900;font-size:20px}.word-pill:nth-child(even){border-color:var(--orange);background:#fff7ed;color:#c2410c}.note{font-size:15px;color:var(--muted);line-height:1.7;margin-top:13px}.label{font-size:13px;font-weight:900;color:var(--orange);letter-spacing:2px;margin-bottom:9px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}.question{padding:13px 0;border-bottom:1px dashed #d6d3d1;font-size:19px;line-height:1.6}.question:last-child{border-bottom:0}.question-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.tf{display:flex;gap:7px;flex-shrink:0}.option{border:2px solid #d6d3d1;background:#fff;border-radius:10px;padding:6px 13px;color:var(--ink);font-weight:700;font-size:18px}.option:hover{border-color:var(--orange);background:#fff7ed}.correct{border-color:#86efac!important;background:#f0fdf4!important;color:var(--green)!important}.incorrect{border-color:#fca5a5!important;background:#fef2f2!important;color:var(--red)!important}.feedback{font-size:16px;line-height:1.6;color:#57534e;min-height:27px;margin-top:12px}.feedback.good{color:var(--green)}.feedback.bad{color:var(--red)}.small-questions{font-size:20px;line-height:1.7;padding-left:25px;margin:0}.small-questions li+li{margin-top:18px}.paper-line{height:36px;border-bottom:2px solid #d6d3d1;margin:4px 0}.zhuyin-stack{display:grid;gap:18px}.zhuyin-item{padding:19px 25px}.zhuyin-sentence{font-size:26px;line-height:1.85;letter-spacing:1px;word-break:normal;overflow-wrap:normal}.num{color:var(--orange);font-weight:900;margin-right:8px}.zhuyin-item .paper-line{height:32px;margin-top:8px}.zhuyin-stack.short{gap:12px}.short .zhuyin-item{padding:14px 23px}.short .zhuyin-sentence{font-size:25px;line-height:1.7}.word-layout{display:grid;grid-template-columns:250px 1fr;gap:18px}.bank{border:4px dashed var(--yellow);padding:16px}.bank h3{font-size:22px}.bank-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:10px 0}.drag-word{border:3px solid var(--blue);background:#eff6ff;color:#1d4ed8;border-radius:12px;padding:5px 6px;font-weight:900;font-size:20px;cursor:grab}.drag-word:nth-child(even){border-color:var(--orange);background:#fff7ed;color:#c2410c}.drag-word.selected{box-shadow:0 0 0 4px var(--yellow)}.drag-word:disabled{border-color:#d6d3d1;background:#f5f5f4;color:#a8a29e;text-decoration:line-through;opacity:.75;cursor:default}.drag-word.dragging{opacity:.4}.word-tasks{display:grid;grid-template-columns:1.05fr 1fr;gap:15px}.task{font-size:18px;line-height:1.9;padding:21px}.task h3{font-size:23px;margin-bottom:12px}.task ol{padding-left:24px;margin:0}.task li+li{margin-top:4px}.drop{display:inline-flex;min-width:78px;min-height:36px;align-items:center;justify-content:center;border:2px dashed #d6a145;border-radius:9px;background:var(--cream);color:#a16207;padding:1px 7px;font-weight:900;vertical-align:middle;font-size:17px}.drop.over{background:#fef08a;border-color:var(--orange)}.drop.filled{border-style:solid;border-color:#86efac;background:#f0fdf4;color:var(--green)}.score-row{display:flex;justify-content:space-between;align-items:center;margin-top:9px;gap:15px}.score{font-size:15px;background:#fff;border-radius:99px;padding:6px 13px;white-space:nowrap}.secondary,.check-btn{border:1px solid #d6d3d1;border-radius:10px;padding:9px 14px;font-size:15px;background:#fff;color:#57534e}.check-btn{background:var(--ink);border-color:var(--ink);color:#fff}.check-btn:hover{background:#44403c}.secondary:hover{background:#f5f5f4}.bank .secondary{width:100%;margin-top:7px}.dialogue-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px}.interview-list{display:grid;gap:10px}.interview{padding:13px 20px;border-radius:17px;border:2px solid #e7e5e4}.interview h3{font-size:22px;margin-bottom:8px}.interview .option{font-size:16px;max-width:100%;text-align:left}.match-answers{display:grid;gap:12px}.answer-card{border:3px solid var(--blue);border-radius:15px;padding:16px;background:#eff6ff;font-size:20px;line-height:1.65;text-align:left;cursor:grab}.answer-card.selected{box-shadow:0 0 0 4px var(--yellow)}.answer-card:disabled{opacity:.4}.answer-drop{display:block;width:100%;min-height:51px;border:3px dashed #f59e0b;background:#fff7cc;border-radius:10px;font-size:17px;text-align:left;padding:8px 12px;color:transparent}.answer-drop.filled{border-style:solid;border-color:#86efac;background:#f0fdf4;color:var(--green)}.match-actions{display:flex;gap:8px;align-items:center;margin-top:10px}.match-actions .check-btn{background:var(--orange);border-color:var(--orange);font-weight:900}.pattern-formula{font-size:31px;font-weight:900;color:#9a3412;background:#ffedd5;padding:17px 22px;border-radius:15px;margin-bottom:18px}.pattern-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px}.example-box{border-left:8px solid var(--orange);padding:20px 23px}.example-box p{font-size:22px;line-height:1.8}.example-box .label{margin-top:14px}.example-box .label:first-child{margin-top:0}.practice-box h3{font-size:22px;margin-bottom:15px}.practice{font-size:22px;line-height:1.9}.practice+.practice{margin-top:22px}.practice .paper-line{height:28px}.tip{background:#fffbeb;border-radius:13px;padding:13px 16px;color:#a16207;font-size:17px;line-height:1.7;margin-top:17px}.position-page .content{display:flex;flex-direction:column}.position-drag-exercise{flex:1;min-height:0;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:12px}.position-bank{padding:12px 18px;display:flex;align-items:center;gap:18px}.position-bank .label{margin:0;white-space:nowrap}.position-bank-grid{display:flex;gap:12px;align-items:center}.position-word{border:3px solid var(--blue);background:#eff6ff;color:#1d4ed8;border-radius:12px;padding:7px 24px;font-weight:900;font-size:23px;cursor:grab}.position-word:nth-child(even){border-color:var(--orange);background:#fff7ed;color:#c2410c}.position-word.selected{box-shadow:0 0 0 4px var(--yellow)}.position-word.dragging{opacity:.45}.position-grid{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px}.position-card{padding:13px 18px;min-height:0;display:flex;flex-direction:column;justify-content:center}.position-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}.position-card-head .label{margin:0}.position-card-head .position-word{font-size:20px;padding:4px 19px}.position-card .label{margin-bottom:5px}.position-task{font-size:22px;line-height:1.8;white-space:nowrap}.position-slot{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:37px;margin:0 2px;padding:0 3px;border:0;border-radius:0;background:transparent;color:#a16207;font-size:21px;font-weight:900;vertical-align:middle;text-decoration:none;cursor:pointer}.position-slot.over{background:#fef08a}.position-slot.filled{border-bottom-style:solid;background:#fef08a;color:#9a3412;text-decoration:none}.position-slot.correct{border-bottom-color:#16a34a!important;background:#dcfce7!important;color:#166534!important}.position-slot.incorrect{border-bottom-color:#dc2626!important;background:#fee2e2!important;color:#991b1b!important}.position-card .feedback{display:none}.position-actions{display:flex;align-items:center;gap:12px}.position-actions .feedback{display:block;flex:1;margin:0;min-height:0}.position-actions .check-btn{background:var(--orange);border-color:var(--orange);font-size:17px;font-weight:900;padding:9px 20px}.position-actions .secondary{white-space:nowrap}.reorder-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.token-bank,.token-target{display:flex;flex-wrap:wrap;gap:8px;align-content:start}.token-bank{min-height:109px;margin-top:14px}.token{border:3px solid var(--blue);background:#eff6ff;border-radius:12px;padding:9px 12px;font-size:20px;cursor:grab;color:#1d4ed8}.token:disabled{opacity:.35;cursor:default}.token-target{border:3px dashed #d6a145;border-radius:14px;background:var(--cream);padding:13px;min-height:127px;margin:5px 0 14px}.placed-token{border:2px solid var(--orange);background:#fff7ed;border-radius:9px;padding:7px 9px;font-size:18px;color:#9a3412;cursor:grab}.empty-hint{font-size:17px;color:#a16207;align-self:center}.order-actions{display:flex;gap:9px}/* 句子組裝：每頁只學一種方法，左側示範、右側紙上練習。 */
+.combine-page .content{display:flex;flex-direction:column}
+.combine-page{--combine-accent:#2563eb;--combine-soft:#eff6ff;--combine-line:#bfdbfe}
+.combine-page.combine-sequence{--combine-accent:#ea580c;--combine-soft:#fff7ed;--combine-line:#fed7aa}
+.combine-layout{flex:1;min-height:0;display:grid;grid-template-columns:1.08fr 1fr;gap:24px}
+.combine-demo,.combine-practice{min-height:0;display:flex;flex-direction:column;padding:22px 26px}
+.combine-card-head{display:flex;align-items:center;gap:12px;padding-bottom:10px;border-bottom:1px solid #e7e5e4;margin-bottom:12px}
+.combine-card-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--combine-soft);color:var(--combine-accent);font-size:22px;flex-shrink:0}
+.combine-card-head h3{font-size:25px;line-height:1.4}
+.combine-card-head small{font-size:14px;color:#78716c;margin-left:auto}
+.combine-block{padding:10px 16px;border-radius:14px;background:#fafaf9;border:1px solid #e7e5e4}
+.combine-label{font-size:15px;font-weight:900;display:flex;align-items:center;gap:9px;color:#57534e;margin:0 0 7px}
+.combine-label span{display:grid;place-items:center;width:24px;height:24px;border-radius:8px;background:#e7e5e4;font-family:'M PLUS Rounded 1c',sans-serif;font-size:14px}
+.combine-block p{font-size:23px;line-height:1.45}
+.combine-original p+p{margin-top:1px}
+.combine-key{color:var(--combine-accent);font-weight:900;background:var(--combine-soft);border-radius:4px;padding:0 3px}
+.combine-method{margin:10px 0;background:var(--combine-soft);border:0;border-left:6px solid var(--combine-accent);padding:11px 15px}
+.combine-method .combine-label,.combine-result .combine-label{color:var(--combine-accent)}
+.combine-method .combine-label span,.combine-result .combine-label span{background:var(--combine-accent);color:#fff}
+.combine-method p{font-size:19px;line-height:1.5}
+.combine-result{border:2px solid var(--combine-line);background:#fff;flex:1;display:flex;flex-direction:column;justify-content:center}
+.combine-result p{font-size:24px;font-weight:700;line-height:1.5}
+.combine-practice{border:3px dashed #fde047;padding:19px 23px}
+.combine-practice .combine-card-icon{background:#fef9c3;color:#a16207}
+.combine-practice-original{background:#fffbeb;border:0;padding:19px 20px}
+.combine-practice-original p{font-size:25px;line-height:1.85}
+.combine-cue{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:18px;color:#57534e}
+.combine-cue b{padding:5px 14px;border:2px solid var(--combine-line);border-radius:10px;background:var(--combine-soft);color:var(--combine-accent);font-size:22px}
+.combine-paper{margin-top:auto;padding-top:12px}
+.combine-paper-title{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:700;color:#9a3412;margin-bottom:4px}
+.combine-paper .paper-line{height:25px;margin:0;border-bottom:2px solid #e7e5e4}
+.combine-paper-note{font-size:15px;color:#78716c;line-height:1.6;margin-top:10px}
+/* 看圖寫句：各圖搭配詞語提示，學生自行組句。 */
+.figure-page .content{display:flex;flex-direction:column}
+.figure-grid{flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.figure-card{min-height:0;display:flex;flex-direction:column;padding:14px 16px 20px}
+.figure-card svg{width:100%;height:225px;flex-shrink:0;display:block;border-radius:15px;background:#fafaf9}
+.figure-card h3{font-size:17px;line-height:1.5;margin:11px 0;color:var(--orange)}
+.figure-vocab-label{font-size:14px;line-height:1.5;color:#78716c;margin-bottom:7px}
+.figure-vocab-list{display:flex;flex-wrap:wrap;gap:8px}
+.figure-vocab-list span{font-size:19px;line-height:1.4;font-weight:700;color:#9a3412;background:#fff7ed;border:1px solid #fed7aa;border-radius:9px;padding:4px 12px}
+.figure-answer{margin-top:auto;padding-top:8px}
+.figure-card .paper-line{height:29px;margin:4px 0 0}
+/* 寫作準備與正式寫作分頁，維持紙上作答。 */
+.writing-page .content{display:flex;flex-direction:column}
+.plan-layout{flex:1;min-height:0;display:flex;flex-direction:column;gap:14px}
+.plan-grid{flex:1;min-height:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:1fr 1fr;gap:18px}
+.plan-card{grid-column:span 2;display:flex;flex-direction:column;padding:20px 24px}
+.plan-card.wide{grid-column:span 3}
+.plan-card-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.plan-number{width:34px;height:34px;border-radius:11px;background:#ffedd5;color:#c2410c;display:grid;place-items:center;font-family:'M PLUS Rounded 1c',sans-serif;font-weight:800;font-size:19px;flex-shrink:0}
+.plan-card h3{font-size:25px}
+.plan-card p{font-size:18px;line-height:1.65;color:#57534e}
+.plan-card .paper-line{height:29px;margin: auto 0 0;border-bottom:2px solid #d6d3d1}
+.plan-card:nth-child(2n) .plan-number{background:#dbeafe;color:#1d4ed8}
+.plan-reminder{display:flex;align-items:center;gap:12px;background:#ffedd5;color:#9a3412;border-radius:14px;padding:13px 20px;font-size:18px;line-height:1.5}
+.writing-assignment{flex:1;min-height:0;border-left:12px solid var(--orange);padding:20px 28px;display:flex;flex-direction:column}
+.assignment-heading{display:flex;align-items:center;gap:25px;padding-bottom:15px;border-bottom:1px solid #e7e5e4}
+.assignment-heading h3{font-family:'M PLUS Rounded 1c',sans-serif;font-size:34px;color:#9a3412;white-space:nowrap;font-weight:800}
+.assignment-heading p{font-size:18px;line-height:1.7;color:#57534e;padding-left:25px;border-left:2px solid #fde68a}
+.writing-starters{flex:1;min-height:0;display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1.8fr) minmax(0,1fr) minmax(0,1fr);gap:8px;margin:12px 0}
+.writing-starter{display:flex;align-items:center;gap:20px;background:#fafaf9;border-radius:13px;padding:5px 18px}
+.writing-starter-label{margin:0;display:flex;align-items:center;gap:10px;min-width:160px;font-size:21px;font-weight:900;color:var(--orange)}
+.writing-starter-label span{font-family:'M PLUS Rounded 1c',sans-serif;font-weight:800;color:#a8a29e;font-size:17px}
+.writing-starter p{font-size:24px;line-height:1.5}
+.writing-starter:nth-child(even){background:#fffbeb}
+.writing-goal{display:flex;align-items:center;gap:12px;font-size:18px;line-height:1.5;background:#ffedd5;color:#9a3412;border-radius:12px;padding:11px 16px}
+.final-layout{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:50px;height:100%}.final h2{font-size:62px;line-height:1.3;margin:20px 0}.final p{color:#d6d3d1;font-size:21px;line-height:1.8}.stamp{width:76px;height:76px;display:grid;place-items:center;border:2px solid var(--yellow);border-radius:21px;rotate:-7deg;color:var(--yellow);font-size:35px;margin-bottom:25px}.checklist{display:grid;gap:12px}.check-row{display:flex;gap:13px;align-items:flex-start;background:#292524;border:1px solid #57534e;border-radius:16px;padding:15px 18px;color:#fefce8;font-size:19px;line-height:1.65;cursor:pointer}.check-row input{accent-color:var(--yellow);width:23px;height:23px;flex-shrink:0;margin:5px 0 0}.check-row.done{border-color:#fde04788;background:#fde0470c}.done-note{color:var(--yellow);border:2px dashed #fde04788;border-radius:13px;text-align:center;padding:14px;margin-top:16px;font-size:18px}.return-button{background:transparent;border:1px solid #78716c;color:var(--cream);padding:11px 17px;font-size:16px;border-radius:11px;margin-top:23px}.nav{height:84px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;max-width:1280px;width:100%;align-self:center;color:#d6d3d1;gap:12px}.nav-button{border:1px solid #57534e;background:#44403c;color:#fefce8;border-radius:11px;padding:10px 17px;font-size:14px;white-space:nowrap}.nav-button:disabled{opacity:.3}.nav-button:hover:not(:disabled){border-color:var(--yellow)}.nav-middle{display:flex;flex-direction:column;align-items:center;gap:8px}.steps{display:flex;gap:7px;align-items:center}.step-dot{width:29px;height:25px;border:1px solid #57534e;background:transparent;color:#a8a29e;border-radius:7px;font-size:11px;padding:0}.step-dot.active{background:var(--yellow);border-color:var(--yellow);color:var(--ink);font-weight:900}.nav small{color:#a8a29e;font-size:11px}.page-count{margin-left:10px;color:#d6d3d1}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.reference-dialog{width:min(740px,92vw);max-height:82vh;background:#fffef5;border:0;border-radius:22px;padding:27px 30px;color:var(--ink);box-shadow:0 24px 100px #0005}.reference-dialog::backdrop{background:#1c1917aa}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid #e7e5e4;padding-bottom:14px;margin-bottom:18px}.dialog-head h2{font-size:24px}.dialog-head button{background:white;border:1px solid #d6d3d1;border-radius:8px;padding:5px 11px}.reference-body{font-size:18px;line-height:1.9;white-space:pre-line}.reference-body p+p{margin-top:9px}.reference-intro{font-size:13px;color:var(--muted);margin-bottom:12px}noscript{color:#fff;padding:30px}@media(max-width:650px){.workspace{padding:0 10px}.topbar{height:48px;font-size:11px}.brand{letter-spacing:0}.brand span{display:none}.top-actions{gap:5px}.topbar select{max-width:145px}.utility{padding:6px 8px}.nav{height:73px}.nav-button{padding:8px 10px;font-size:12px}.steps{gap:3px}.step-dot{width:18px;height:20px;font-size:9px}.nav small{font-size:9px}.page-count{margin-left:4px}}@media print{@page{size:1280px 720px;margin:0}html,body{height:auto;overflow:visible}body{background:#fff;print-color-adjust:exact;-webkit-print-color-adjust:exact}.workspace{display:block;width:1280px;padding:0}.topbar,.nav,.reference-dialog{display:none!important}.stage,.frame{display:block;width:1280px;height:auto}.slide,.slide[hidden]{position:relative;display:flex;transform:none;box-shadow:none;break-after:page}.slide:last-child{break-after:auto}.slide{inert:none}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* 課文與詞語各自使用完整一頁。 */
+.reading-page .content,.vocabulary-page .content{display:flex;flex-direction:column}
+.reading-page .reading{flex:1;min-height:0;margin-top:20px;grid-template-columns:minmax(0,1fr) 300px;gap:24px}
+.reading-page .diary{font-size:26px;line-height:1.85;padding:24px 28px;display:flex;flex-direction:column;justify-content:center}
+.reading-page .diary p+p{margin-top:16px}.reading-page .word{white-space:nowrap}
+.xiaoan-portrait{margin:0;min-height:0;background:#fff7ed;border:2px solid #ffedd5;border-radius:24px;display:flex;flex-direction:column;overflow:hidden}
+.xiaoan-portrait svg{display:block;width:100%;flex:1;min-height:0}
+.xiaoan-portrait figcaption{padding:13px 16px 20px;text-align:center;background:#fff7ed}
+.xiaoan-portrait strong{display:flex;justify-content:center;align-items:center;gap:12px;font-size:28px;font-weight:900}
+.xiaoan-portrait strong span{font-size:16px;color:#9a3412;background:#ffedd5;border-radius:99px;padding:4px 10px}
+.xiaoan-portrait figcaption p{margin-top:7px;font-size:17px;color:#78716c}
+.vocabulary-grid{flex:1;min-height:0;margin-top:20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:18px}
+.vocabulary-card{border:3px solid var(--blue);border-radius:24px;padding:16px 18px;background:white;box-shadow:0 10px 30px #00000008;display:flex;flex-direction:column}
+.vocabulary-card:nth-child(even){border-color:var(--orange)}
+.vocabulary-heading{display:flex;align-items:center;gap:10px;color:#1d4ed8}
+.vocabulary-card:nth-child(even) .vocabulary-heading{color:#c2410c}
+.vocabulary-heading>span{align-self:flex-start;margin-top:5px;font-size:13px;font-weight:900;border-bottom:2px solid #bfdbfe;padding-bottom:3px}
+.vocabulary-card:nth-child(even) .vocabulary-heading>span{border-color:#fed7aa}
+.vocabulary-heading h3{font-size:37px;line-height:1.35;letter-spacing:2px}
+.vocabulary-meaning{font-size:17px;line-height:1.65;margin-top:11px}
+.vocabulary-context{margin-top:auto;padding-top:9px}
+.vocabulary-context>span{display:block;font-size:12px;letter-spacing:2px;color:#78716c;margin-bottom:5px}
+.vocabulary-context p{font-size:16px;font-weight:700;line-height:1.5;color:#1d4ed8;background:#eff6ff;border-radius:10px;padding:8px 10px}
+.vocabulary-card:nth-child(even) .vocabulary-context p{color:#c2410c;background:#fff7ed}
+
+/* 閱讀理解：兩頁皆保留完整課文，題目置於右欄。 */
+.comprehension-page .content{display:flex;flex-direction:column}
+.comprehension-layout{flex:1;min-height:0;margin-top:20px;display:grid;grid-template-columns:minmax(0,700px) minmax(0,1fr);gap:24px}
+.comprehension-reading{border-left:12px solid var(--orange);padding:22px 24px;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.comprehension-reading h3{font-size:24px;line-height:1.4;margin-bottom:14px}
+.comprehension-passage{font-size:22px;line-height:1.75;text-align:justify}
+.comprehension-passage p+p{margin-top:14px}
+.comprehension-passage .word{white-space:nowrap}
+.comprehension-tf,.comprehension-written{padding:20px 22px;display:flex;flex-direction:column;min-height:0}
+.comprehension-tf h3,.comprehension-written h3{font-size:25px;line-height:1.4}
+.comprehension-tf .label,.comprehension-written .label{margin-bottom:7px}
+.comprehension-questions{margin-top:6px;flex:1;display:flex;flex-direction:column;justify-content:space-around}
+.comprehension-tf .question{font-size:19px;line-height:1.45;padding:7px 0}
+.comprehension-tf .question-row{gap:10px}
+.comprehension-tf .tf{gap:6px}
+.comprehension-tf .option{font-size:19px;width:39px;height:40px;padding:0}
+.comprehension-tf .option[aria-pressed="true"]{background:#2563eb;border-color:#1d4ed8;color:#fff;box-shadow:0 0 0 3px #bfdbfe;font-weight:900}
+.comprehension-tf .option.correct,.comprehension-tf .option.incorrect{box-shadow:none}
+.comprehension-tf .feedback{font-size:15px;line-height:1.6;min-height:48px;margin-top:9px;padding-top:9px;border-top:1px dashed #d6d3d1}
+.comprehension-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:8px}
+.comprehension-actions .check-btn{background:var(--orange);border-color:var(--orange);font-size:17px;font-weight:900;padding:9px 20px}
+.written-questions{flex:1;min-height:0;margin:18px 0 0;padding-left:27px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;font-size:21px;line-height:1.65}
+.written-questions li{padding-left:1px}
+.written-questions li::marker{color:var(--orange);font-weight:900}
+.answer-rules{margin-top:6px}
+.answer-rules .paper-line{height:21px;border-bottom:1px solid #e7e5e4;margin:0}
+
+/* 音節由上而下，聲調置於右側，輕聲點置於音節上方。 */
+.zhuyin-stack.three{gap:14px}
+.zhuyin-stack.three .zhuyin-item{padding:12px 24px 14px}
+.zhuyin-stack.three .zhuyin-item .paper-line{height:22px;margin-top:5px}
+.zhuyin-stack.three .zhuyin-sentence{display:flex;align-items:center;gap:17px;min-height:84px}
+.zhuyin-stack.three .num{font-size:24px;flex-shrink:0;margin:0}
+.zhuyin-vertical{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;min-width:0}
+.zy-unit{display:inline-flex;align-items:center;gap:4px;flex-shrink:0}
+.zy-syllable{position:relative;display:inline-flex;align-items:center;justify-content:flex-start;height:84px;width:40px}
+.zy-glyphs{display:flex;flex-direction:column;align-items:center;color:#1c1917;font-family:'Noto Sans TC',sans-serif;font-size:26px;line-height:1;letter-spacing:0}
+.zy-glyphs>span{display:block;height:25px;width:26px;text-align:center}
+.zy-tone{position:absolute;right:0;bottom:calc((84px - var(--syllable-count) * 25px)/2 + 7px);height:25px;font-size:25px;line-height:1;letter-spacing:0}
+.zy-tone.neutral{left:0;right:auto;bottom:auto;top:calc((84px - var(--syllable-count) * 25px)/2 - 19px);width:26px;height:20px;text-align:center;font-size:24px}
+.zy-punctuation{font-size:25px;line-height:1;letter-spacing:0;align-self:center;margin-top:44px;margin-bottom:0}
+
+/* 詞語運用拆成兩頁，每頁只保留一組詞卡與一種填空。 */
+.vocab-page .content{display:flex;flex-direction:column}
+.vocab-layout{flex:1;min-height:0;margin-top:0;display:grid;grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr) auto;gap:14px}
+.vocab-layout .bank{padding:18px 20px;border-width:4px;display:flex;flex-direction:column;min-height:0}
+.vocab-layout .bank h3{font-size:26px;line-height:1.3;margin:0}
+.vocab-layout .bank-grid{grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:1fr;gap:10px;margin:12px 0;flex:none;min-height:0}
+.vocab-layout .drag-word{font-size:24px;line-height:1.2;padding:10px 7px;min-height:58px;border-radius:14px}
+.vocab-layout .bank .secondary{font-size:16px;line-height:1.4;padding:8px 12px;margin-top:0;align-self:flex-end}
+.vocab-task{padding:24px 34px;min-height:0;display:flex;flex-direction:column;justify-content:center}
+.vocab-task h3{font-size:29px;line-height:1.3;margin-bottom:8px;flex-shrink:0}
+.vocab-instruction{font-size:18px;line-height:1.5;color:#78716c;margin-bottom:12px;flex-shrink:0}
+.vocab-task ol{font-size:24px;line-height:1.65;margin:0;padding-left:32px;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.vocab-task li+li{margin-top:5px}
+.vocab-task .drop{font-size:21px;line-height:1.3;min-width:106px;min-height:43px;border-width:3px;padding:2px 9px}
+.vocab-short-text{font-size:27px;line-height:2.15;margin:12px 0}
+.vocab-short-text .drop{font-size:21px;min-width:106px;min-height:43px}
+.vocab-layout .score-row{grid-column:1 / -1;margin-top:0;align-self:center;display:flex;align-items:center;gap:14px}.vocab-layout .score-row .feedback{flex:1}.vocab-layout .score-row .check-btn{flex-shrink:0}
+.vocab-layout .feedback{font-size:17px}
+
+/* 上方選詞、下方填空；提交前只顯示填答狀態。 */
+.vocab-layout .bank{padding:12px 22px;border-width:3px;border-style:solid;border-color:#e7e5e4}
+.vocab-layout .bank-grid{margin:0;gap:14px}
+.vocab-layout .drag-word{border-radius:10px;min-height:54px;font-size:26px;padding:7px 10px}
+.vocab-task{padding:14px 32px}
+.vocab-task h3,.vocab-task .vocab-instruction{display:none}
+.vocab-task ol{flex:1;gap:0;font-size:25px;line-height:1.5}
+.vocab-task li+li{margin-top:3px}
+.vocab-task .drop{border:3px dashed #f59e0b;border-radius:6px;min-width:122px;min-height:42px;font-size:23px;line-height:1.25;background:#fff7cc;color:transparent;padding:2px 9px;box-shadow:inset 0 -2px 0 #fde68a}
+.vocab-task .drop.filled{border-style:solid;border-color:#ea580c;background:#fef08a;color:#1c1917;box-shadow:none}
+.vocab-task .drop.over{border-color:#c2410c;background:#fef08a}.vocab-task .drop.correct{border-color:#16a34a!important;background:#dcfce7!important;color:#166534!important}.vocab-task .drop.incorrect{border-color:#dc2626!important;background:#fee2e2!important;color:#991b1b!important}
+.vocab-layout .score-row{min-height:43px;gap:12px}
+.vocab-layout .feedback{margin-top:0;line-height:1.5}
+.vocab-layout .score{font-size:15px;padding:7px 12px}
+.vocab-layout .check-btn{background:var(--orange);border-color:var(--orange);font-size:17px;font-weight:900;padding:9px 20px}
+.vocab-short-text{font-size:30px;line-height:2.4;margin:0}
+
+/* 放大詞語填空的目標，拖近空格也可放入。 */
+.vocab-task .drop{min-width:136px;min-height:50px}
+.vocab-task .drop.drop-ready{outline:3px solid #fde68a;outline-offset:3px}
+.vocab-task .drop.over{background:#fde047;border-color:#ea580c;outline:4px solid #fdba74;outline-offset:4px;box-shadow:0 0 0 9px #ffedd580}
+.vocab-task .drop.filled{cursor:grab}
+.vocab-task .drop.dragging{opacity:.45}
+
+/* 確認整組正確後的鼓勵動畫；不攔截學生操作。 */
+.success-celebration{position:absolute;inset:0;z-index:20;pointer-events:none;display:flex;align-items:center;justify-content:center}
+.success-banner{position:relative;z-index:1;width:540px;padding:26px 30px;border:4px solid #fde047;border-radius:26px;background:#fffef5;box-shadow:0 14px 55px #1c191740;text-align:center;animation:success-pop .45s cubic-bezier(.2,.9,.3,1.3) both}
+.success-medal{display:grid;place-items:center;width:76px;height:76px;margin:0 auto 13px;background:#fef08a;color:#a16207;border-radius:50%;font-size:38px}
+.success-banner strong{display:block;font-family:'M PLUS Rounded 1c',sans-serif;font-weight:800;font-size:34px;color:#166534;line-height:1.5}
+.success-banner p{margin-top:9px;font-size:20px;line-height:1.7;color:#57534e}
+.success-confetti{position:absolute;left:var(--x);top:12%;width:12px;height:20px;background:var(--color);border-radius:3px;opacity:0;animation:success-confetti 1.8s var(--delay) ease-out both}
+.check-btn.success-button{background:#166534!important;border-color:#166534!important;animation:success-button .55s ease-in-out 2}
+@keyframes success-pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes success-confetti{0%{opacity:0;transform:translate(0,-30px) rotate(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translate(var(--drift),510px) rotate(var(--spin))}}
+@keyframes success-button{50%{transform:scale(1.08);box-shadow:0 0 0 7px #bbf7d055}}
+@media(prefers-reduced-motion:reduce){.success-banner,.check-btn.success-button{animation:none}.success-confetti{display:none}}
+@media print{.success-celebration{display:none!important}}
+
+
+/* 紙上作答：每題完成勾選與每頁確認。 */
+.paper-check{display:inline-flex;align-items:center;gap:7px;color:#78716c;font-size:15px;font-weight:700;line-height:1.5;white-space:nowrap;cursor:pointer;background:#fffef5;border-radius:8px;padding:3px 8px}
+.paper-check input{width:22px;height:22px;accent-color:#16a34a;margin:0;flex-shrink:0;cursor:pointer}
+.paper-check:has(input:checked){background:#f0fdf4;color:#166534}
+.paper-line.paper-check-line{position:relative}
+.paper-check-line>.paper-check{position:absolute;right:0;bottom:3px}
+.writing-starter>.paper-check{margin-left:auto}
+.order-exercise{position:relative}
+.order-exercise>.paper-check{position:absolute;right:22px;top:24px}
+.paper-completion-bar{display:flex;align-items:center;gap:16px;flex:1;min-width:0}
+.paper-completion-status{font-size:15px;line-height:1.5;color:#57534e;flex:1}
+.paper-completion-status.good{color:#166534}.paper-completion-status.bad{color:#b91c1c}
+.paper-completion-bar .check-btn{padding:7px 18px;background:#ea580c;border-color:#ea580c;font-weight:900;font-size:16px;flex-shrink:0}
+.has-paper-completion .zhuyin-stack.three{gap:6px}
+.has-paper-completion .token-bank{min-height:98px}
+.has-paper-completion .token-target{min-height:110px}
+.has-paper-completion.combine-page .combine-demo{padding-top:16px;padding-bottom:16px}
+.has-paper-completion .footer{align-items:center;padding-top:9px;margin-top:12px}
+.final .paper-completion-status{color:#fefce8}.final .paper-completion-status.good{color:#fde047}.final .paper-completion-status.bad{color:#fdba74}
+@media print{.paper-completion-bar .check-btn{display:none}.paper-check{color:#57534e;background:transparent}}
+
+
+/* 句型轉換與合併句子的紙上練習：題目、提示、作答、完成分區。 */
+.combine-page .combine-layout{margin-bottom:2px}
+.combine-page .combine-practice{padding:16px 22px}
+.combine-practice .combine-card-head{padding-bottom:8px;margin-bottom:10px}
+.combine-practice .combine-practice-original{padding:12px 18px}
+.combine-practice .combine-practice-original p{font-size:24px;line-height:1.55}
+.combine-practice .combine-cue{margin-top:12px;font-size:17px}
+.combine-practice .combine-cue b{font-size:21px;padding:4px 13px}
+.combine-practice .combine-paper{padding-top:10px}
+.combine-practice .combine-paper-title{font-size:18px;margin-bottom:2px}
+.combine-practice .combine-paper .paper-line{height:20px}
+.combine-practice .combine-paper-note{font-size:14px;line-height:1.5;margin-top:8px}
+.combine-completion{border-top:1px solid #e7e5e4;margin-top:9px;padding-top:9px;display:flex;justify-content:flex-end}
+.combine-completion .paper-check{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;padding:5px 11px}
+.combine-completion .paper-check:has(input:checked){background:#f0fdf4;border-color:#bbf7d0;color:#166534}
+
+
+/* 封底的學習完成主按鈕。 */
+.finish-learning{display:flex;align-items:center;justify-content:center;gap:15px;width:100%;min-height:78px;margin-top:18px;padding:15px 26px;border:0;border-radius:19px;background:#fde047;color:#1c1917;box-shadow:0 6px 0 #a16207;font-family:'M PLUS Rounded 1c',sans-serif;font-weight:800;font-size:32px;line-height:1.4}
+.finish-learning:hover{background:#fef08a}
+.finish-learning:active{transform:translateY(3px);box-shadow:0 3px 0 #a16207}
+.finish-learning.success-button{background:#bbf7d0;color:#166534;box-shadow:0 6px 0 #15803d}
+.final.has-paper-completion .footer .paper-completion-bar{min-height:27px}
+@media print{.finish-learning{display:none}}
+
+
+#reference-auth label{display:block;font-size:19px;font-weight:700;margin-bottom:12px}
+.reference-auth-row{display:flex;align-items:center;gap:12px}
+#reference-password{flex:1;min-width:0;border:2px solid #d6d3d1;border-radius:11px;background:#fff;padding:11px 14px;font-size:20px}
+.reference-auth-row .check-btn{padding:13px 20px;font-size:17px;background:#ea580c;border-color:#ea580c;font-weight:700}
+#reference-auth-error{min-height:26px;margin-top:12px;font-size:16px;line-height:1.6;color:#b91c1c}
+
+/* 滿版閱讀：縮小外圍留白，讓文字、圖像與題目使用可用空間。 */
+.slide{padding:24px 30px 16px}
+.title-row{margin-top:7px}
+.title-row h2{font-size:46px}
+.guide{margin:8px 0 14px;font-size:20px}
+.footer{margin-top:12px;padding-top:9px}
+.reading-page .reading,.vocabulary-grid,.comprehension-layout{margin-top:14px;gap:16px}
+.reading-page .diary{font-size:28px;line-height:1.8;padding:22px 26px}
+.vocabulary-card{padding:18px}
+.vocabulary-heading h3{font-size:40px}
+.vocabulary-meaning{font-size:19px;line-height:1.65}
+.vocabulary-context p{font-size:18px}
+.comprehension-layout{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)}
+.comprehension-passage{font-size:23px;line-height:1.75}
+.comprehension-tf .question{font-size:21px}
+.written-questions{font-size:23px;gap:12px}
+.content:has(>.zhuyin-stack),.content:has(>.dialogue-layout),.content:has(>.pattern-layout),.content:has(>.reorder-grid){display:flex;flex-direction:column}
+.has-paper-completion .zhuyin-stack.three{flex:1;min-height:0;gap:10px;grid-template-rows:repeat(3,minmax(0,1fr))}
+.zhuyin-stack.three .zhuyin-item{display:flex;flex-direction:column;justify-content:center;padding:12px 24px}
+.zhuyin-stack.three .zhuyin-item .paper-line{height:28px;flex-shrink:0}
+.vocab-task ol{font-size:28px}
+.vocab-short-text{font-size:32px;line-height:2.4}
+.dialogue-layout{flex:1;min-height:0;gap:16px}
+.dialogue-layout>.card{display:flex;flex-direction:column;min-height:0;padding:20px 24px}
+.interview-list,.match-answers{flex:1;min-height:0;grid-template-rows:repeat(3,minmax(0,1fr))}
+.interview{display:flex;flex-direction:column;justify-content:center;padding:10px 18px}
+.interview h3{font-size:24px}
+.answer-drop{min-height:58px;font-size:21px}
+.answer-card{font-size:24px;padding:12px 18px}
+.match-actions .check-btn{font-size:18px}
+.pattern-formula{font-size:34px;padding:13px 22px;margin-bottom:12px}
+.pattern-layout{flex:1;min-height:0;gap:16px}
+.pattern-layout .example-box{display:grid;grid-template-rows:auto minmax(0,1fr) auto minmax(0,1fr);gap:6px;padding:18px 24px;min-height:0}
+.example-box .label{font-size:16px;margin:0}
+.example-box p{font-size:27px;line-height:1.6;min-height:0;align-self:stretch;display:flex;align-items:center;padding:8px 14px;background:#fff7ed;border-radius:14px}
+.practice-box{display:flex;flex-direction:column;padding:18px 24px;min-height:0}
+.practice-box h3{font-size:25px;margin-bottom:8px}
+.practice{flex:1;display:flex;flex-wrap:wrap;align-content:center;font-size:24px;line-height:1.75}
+.practice .paper-line{width:100%;height:32px;flex-shrink:0}
+.practice+.practice{margin-top:10px;padding-top:10px;border-top:1px dashed #e7e5e4}
+.tip{margin-top:10px;padding:10px 16px;font-size:18px}
+.position-grid{gap:12px}
+.position-card{padding:18px 22px}
+.position-card-head .label{font-size:16px}
+.position-card-head .position-word{font-size:24px}
+.position-task{font-size:23px;line-height:2}
+.reorder-grid{flex:1;min-height:0;gap:16px}
+.order-exercise{display:flex;flex-direction:column;padding:20px 24px}
+.order-exercise h3{font-size:26px}
+.has-paper-completion .token-bank{min-height:92px;align-content:center}
+.token{font-size:23px}
+.has-paper-completion .token-target{flex:1;min-height:110px;align-content:center}
+.placed-token{font-size:22px}
+.order-exercise .feedback{font-size:17px}
+.combine-layout{gap:16px}
+.combine-block p{font-size:25px}
+.combine-method p{font-size:21px}
+.combine-result p{font-size:27px}
+.combine-practice .combine-practice-original{padding:16px 18px}
+.combine-practice .combine-practice-original p{font-size:27px;line-height:1.65}
+.combine-practice .combine-paper-title{font-size:20px}
+.combine-practice .combine-paper-note{font-size:16px}
+.figure-grid,.plan-grid{gap:14px}
+.figure-card svg{height:245px}
+.figure-card h3{font-size:20px}
+.figure-vocab-list span{font-size:21px}
+.plan-card p{font-size:21px}
+.plan-card h3{font-size:28px}
+.cover h1{font-size:84px}
+.cover p{font-size:24px}
+.cover-art{height:470px}
+.final-layout{gap:32px}
+
+
+/* 瀏覽器滿版：依視窗比例擴展畫布，等比例縮放文字與互動元素。 */
+@media screen{
+ html,body{width:100%;height:100%;background:var(--cream)}
+ .workspace{position:relative;width:100%;height:100%;padding:0;display:block}
+ .stage{position:absolute;inset:0;width:100%;height:100%;display:block}
+ .frame{width:100%;height:100%;position:relative}
+ .slide{width:var(--canvas-width,1280px);height:var(--canvas-height,720px);padding-bottom:82px;box-shadow:none}
+ .topbar{position:fixed;z-index:30;top:10px;right:16px;height:36px;width:auto;gap:0;color:#57534e}
+ .brand{display:none}
+ .top-actions{gap:6px;background:#fffef5ed;padding:4px 6px;border:1px solid #d6d3b7;border-radius:12px;box-shadow:0 3px 12px #1c19170a}
+ .topbar select{background:transparent;color:#57534e;border-color:#d6d3b7;max-width:185px;padding:4px 7px}
+ .utility{background:transparent;border-color:transparent;color:#57534e;padding:5px 8px}
+ .utility:hover{border-color:#ea580c;background:#ffedd5}
+ .nav{position:fixed;z-index:30;left:50%;bottom:9px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 20px);height:42px;padding:4px 7px;gap:12px;justify-content:center;background:#fffef5f5;border:1px solid #d6d3b7;border-radius:14px;box-shadow:0 3px 15px #1c191714;color:#57534e}
+ .nav-button{background:transparent;color:#57534e;border-color:transparent;padding:5px 10px;font-size:13px;border-radius:8px}
+ .nav-button:hover:not(:disabled){background:#ffedd5;border-color:#ea580c}
+ .nav-middle{flex-direction:row;gap:12px;min-width:0}
+ .steps{gap:4px}
+ .step-dot{width:25px;height:25px;border-color:#d6d3b7;color:#57534e}
+ .step-dot.active{background:var(--yellow);border-color:#eab308;color:var(--ink)}
+ .nav small{font-size:0;color:#57534e;white-space:nowrap}
+ .page-count{font-size:12px;color:inherit;margin:0}
+ body[data-slide-theme="dark"] .top-actions,body[data-slide-theme="dark"] .nav{background:#292524f5;border-color:#57534e;color:#fefce8}
+ body[data-slide-theme="dark"] .utility,body[data-slide-theme="dark"] .topbar select,body[data-slide-theme="dark"] .nav-button,body[data-slide-theme="dark"] .nav small,body[data-slide-theme="dark"] .step-dot{color:#fefce8}
+ body[data-slide-theme="dark"] .topbar select,body[data-slide-theme="dark"] .step-dot{border-color:#57534e}
+ body[data-slide-theme="dark"] .topbar select option{background:#292524}
+ body[data-slide-theme="dark"] .step-dot.active{color:#1c1917;border-color:#eab308}
+ body[data-slide-theme="dark"] .nav-button:hover:not(:disabled),body[data-slide-theme="dark"] .utility:hover{background:#44403c}
+}
+@media screen and (max-width:650px){
+ .topbar{top:5px;right:7px;height:29px}
+ .top-actions{padding:2px 4px;gap:2px;border-radius:9px}
+ .topbar select{max-width:118px;font-size:10px;padding:3px}
+ .utility{font-size:11px;padding:4px 5px}
+ .nav{height:34px;bottom:5px;padding:3px 5px;gap:5px;border-radius:10px}
+ .nav-button{font-size:11px;padding:4px 6px}
+ .steps{gap:3px}.step-dot{width:18px;height:21px;font-size:9px}
+ .nav-middle{gap:7px}.page-count{font-size:10px}
+}
+
+@media screen{
+ .topbar{top:calc(12px * var(--ui-scale,1));right:calc(16px * var(--ui-scale,1));transform:scale(var(--ui-scale,1));transform-origin:top right}
+ .nav{bottom:calc(9px * var(--ui-scale,1));max-width:none;transform:translateX(-50%) scale(var(--ui-scale,1));transform-origin:bottom center}
+}
+
+/* 放大底部翻頁列，方便學生閱讀與點選。 */
+@media screen{
+ .nav{height:58px;padding:7px 12px;gap:18px;border-radius:17px}
+ .nav-button{padding:8px 14px;font-size:17px;border-radius:10px}
+ .nav-middle{gap:17px}
+ .steps{gap:6px}
+ .step-dot{width:32px;height:31px;font-size:14px;border-radius:8px}
+ .nav small{font-size:0}
+ .page-count{font-size:16px;font-weight:700}
+}
+@media screen and (max-width:650px){
+ .nav{height:46px;padding:5px 8px;gap:8px;border-radius:13px}
+ .nav-button{padding:6px 9px;font-size:13px}
+ .nav-middle{gap:9px}
+ .steps{gap:3px}
+ .step-dot{width:23px;height:25px;font-size:11px}
+ .page-count{font-size:12px}
+}
+
+
+#root{width:100%;height:100%}
+@media screen{
+ .workspace{width:auto;height:auto;inset:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);position:fixed}
+ .topbar{top:calc(env(safe-area-inset-top) + 12px * var(--ui-scale,1));right:calc(env(safe-area-inset-right) + 16px * var(--ui-scale,1))}
+ .nav{bottom:calc(env(safe-area-inset-bottom) + 9px * var(--ui-scale,1))}
+}
+#gate-notice{position:fixed;z-index:100;left:50%;bottom:calc(85px * var(--ui-scale,1) + env(safe-area-inset-bottom));transform:translateX(-50%);max-width:90vw;padding:12px 20px;border-radius:12px;background:#1c1917;color:#fefce8;box-shadow:0 8px 24px #0004;font-size:16px;font-weight:700;pointer-events:none}
+.step-dot.locked{opacity:.45}
+[draggable="true"]{touch-action:none}
+.lesson-image{display:block;width:100%;height:100%;object-fit:contain;min-height:0}
+.figure-card .lesson-image{height:245px;flex-shrink:0}
+.media-fallback{display:grid;place-items:center;flex:1;min-height:90px;padding:24px;border:2px dashed #fbbf24;border-radius:15px;background:#fff7ed;color:#9a3412;font-size:20px;text-align:center}
+.boot-status{min-height:100%;display:grid;place-items:center;padding:32px;font-size:22px;text-align:center;background:#fefce8;color:#1c1917}
+ruby{ruby-align:center}rt[data-optional-zhuyin]{font-size:.4em;font-weight:500;line-height:1;letter-spacing:0;color:#9a3412}rt[hidden]{display:none}
+@media print{#gate-notice{display:none!important}}
+</style>
+<style id="confirm-done-style">.check-btn[data-confirm-paper]:disabled,.finish-learning:disabled{opacity:.6;box-shadow:none}</style>
+<style id="track-page-compat">/* 平台從 #track 的 translateX 讀目前頁；這份的頁是疊在一起用 hidden 切換，畫面不能跟著位移 */#track{transform:none!important}</style>
+</head>
+<body>
+<div id="root"><div class="boot-status" role="status">教材載入中…</div></div>
+<script>
+/* ===== EduBaania 平台橋接 platform-bridge.js（2026-10-27 版，對齊 frontend-monorepo main 5e73f9335）=====
+ * 放法：整段包一層 script 標籤，貼在 body 裡、你自己的程式 script「前面」（註解與字串裡不可出現字面的 script 結束標籤）。
+ * React 這類一載入就讀存檔的程式，橋接與 init() 都要先於 bundle 執行。
+ *
+ *   EduBridge.init({
+ *     handoutId: '這份檔案的唯一代號',     // 必填：建議用檔名；每份檔案唯一（不可照抄）；可用中文，不可有空白、底線 _、斜線 /
+ *     totalQuestions: 12,                // 必填：計分題總數，0 以上整數；純閱讀填 0
+ *     onSetPage: function (page, clearedUpTo) {},  // 選填：只有 #track > .page 分頁式才需要（規範 §4.2、§4.3）
+ *     onZhuyin: function (enabled) {},   // 選填：不用平台 runtime、自己管注音字型時才需要
+ *   });
+ *   EduBridge.recordAnswer('q3', true, 4200);   // 每次作答都呼叫（對錯都要）；第 3 參數＝這題出現（或上次作答）到這次作答的毫秒數
+ *   EduBridge.answeredCount() >= EduBridge.totalQuestions   // 每一題都作答過了沒：完成鈕在這之後才開放（規範 §6 第 6 步）
+ *   EduBridge.complete();                        // 學生按「完成」時呼叫；一次載入只送一次
+ *   EduBridge.complete({ totalQuestions: 10, correctAnswers: 8 });  // 只在完全沒接 recordAnswer 時用；有逐題紀錄時 correctAnswers 會被忽略
+ *   EduBridge.progress(page, totalPages, '第 2 關', 35);  // 一頁一頁翻的才送（規範 §4.2）；第 4 個參數＝百分比，監控面板顯示「閱讀中 35%」
+ *   EduBridge.storage.get('myState', {}) / .set('myState', obj)   // 取代 localStorage；鍵名不可用 __eb_ 開頭（保留給橋接）
+ *   EduBridge.lastCompletedAt()                  // 上次送完成的時間（ISO），只拿來顯示「已完成」，不要拿來擋完成鈕
+ */
+(function () {
+  'use strict';
+  if (window.EduBridge) return;
+
+  var RESERVED = '__eb_';
+
+  function warn(msg) { try { console.warn('[EduBridge] ' + msg); } catch (e) { /* 沒有 console 也不能壞 */ } }
+
+  function postToParent(type, data) {
+    try {
+      window.parent.postMessage({ type: type, data: data || {}, source: 'eduTemplate', timestamp: Date.now() }, '*');
+    } catch (e) { /* 不在 iframe 裡也不能壞 */ }
+  }
+
+  // 平台用 srcdoc 載入：自己的網址恆為 about:srcdoc，存檔鍵要讀父頁網址。
+  // 一個任務 id 只對應一個日期（baania-core StudentTask），所以只取 id，不接日期：同一任務從任何入口進來都同一把鍵。
+  function resolveInstanceId() {
+    var iid = '';
+    try {
+      var q = new URLSearchParams(location.search);
+      iid = q.get('instanceId') || q.get('taskId') || '';
+      if (!iid) {
+        var pl = window.parent !== window ? window.parent.location : location;
+        var m = pl.pathname.match(/\/(?:tasks?|resource)\/([^\/?#]+)/);   // /tasks/<id>、/task/<id>、/resource/<id>
+        iid = m ? m[1] : (new URLSearchParams(pl.search).get('res') || '');  // 高中版 reader/comic 用 ?res=
+      }
+    } catch (e) { /* 跨網域讀不到父頁時退回 default，靠 handoutId 區分 */ }
+    return iid || 'default';
+  }
+
+  function isObj(v) { return !!v && typeof v === 'object' && !Array.isArray(v); }
+
+  function makeStore(prefix) {
+    function raw(k) { try { var v = localStorage.getItem(prefix + k); return v == null ? undefined : JSON.parse(v); } catch (e) { return undefined; } }
+    function put(k, v) { try { localStorage.setItem(prefix + k, JSON.stringify(v)); } catch (e) { /* Safari 無痕／滿了：靜默降級 */ } }
+    function del(k) { try { localStorage.removeItem(prefix + k); } catch (e) { /* 同上 */ } }
+    function own(k) {
+      if (String(k).indexOf(RESERVED) === 0) { warn('存檔鍵不可用 ' + RESERVED + ' 開頭（保留給橋接）：' + k); return false; }
+      return true;
+    }
+    var user = {
+      get: function (k, d) { var v = raw(k); return v === undefined ? d : v; },
+      set: function (k, v) { if (own(k)) put(k, v); },
+      remove: function (k) { if (own(k)) del(k); },
+      // 只清這份講義的作答畫面；首答紀錄（__eb_）保留，否則「重來」就能把答錯洗成第一次就對。
+      // 絕對不要清空整個 localStorage（講義和學生端同網域，會把學生登出）
+      clearAll: function () {
+        try {
+          Object.keys(localStorage).forEach(function (k) {
+            if (k.indexOf(prefix) === 0 && k.indexOf(prefix + RESERVED) !== 0) localStorage.removeItem(k);
+          });
+        } catch (e) { /* 同上 */ }
+      }
+    };
+    user.load = user.get; user.save = user.set; user.getItem = user.get; user.setItem = user.set; user.removeItem = user.remove;
+    var internal = {
+      get: function (k, d) { var v = raw(RESERVED + k); return v === undefined ? d : v; },
+      set: function (k, v) { put(RESERVED + k, v); }
+    };
+    return { user: user, internal: internal };
+  }
+
+  function isCount(n) { return typeof n === 'number' && isFinite(n) && n >= 0 && Math.floor(n) === n; }
+
+  var cfg = null, store = null;
+  var S = { startedAt: Date.now(), first: {}, tries: {}, guessing: 0, combo: 0, maxCombo: 0, log: [], done: false, payload: null };
+
+  function announceReady() {
+    // 意思是「橋接已在聽下行指令」，不是「畫面已畫好」；平台收到後只會收起載入畫面、送 SET_ZHUYIN
+    postToParent('game:ready', {
+      totalPages: cfg.totalPages || 0,
+      totalQuestions: cfg.totalQuestions,
+      protocolVersion: '1.1',
+      engineVersion: cfg.engineVersion || 'bridge-2026-10',
+      capabilities: ['game:ready', 'TASK_COMPLETED', 'REQUEST_READY']
+        .concat(cfg.onZhuyin ? ['SET_ZHUYIN'] : [])
+        .concat(cfg.onSetPage ? ['PROGRESS_UPDATE', 'SET_PAGE'] : []),
+      timestamp: Date.now()
+    });
+  }
+
+  function onMessage(e) {
+    var m = e.data;
+    if (!m || m.source !== 'eduPlatform') return;
+    var d = m.data || {};
+    if (m.type === 'REQUEST_READY') announceReady();
+    else if (m.type === 'SET_PAGE' && typeof d.page === 'number' && cfg.onSetPage) {
+      // clearedUpTo 與 page 同基準；老師畫筆跳頁不帶（不可替學生解鎖），老師端鏡像頁帶 page（先解鎖再跳）
+      cfg.onSetPage(d.page, typeof d.clearedUpTo === 'number' ? d.clearedUpTo : null);
+    } else if (m.type === 'SET_ZHUYIN' && cfg.onZhuyin) cfg.onZhuyin(!!d.enabled);
+    // 其他 type 一律忽略（向下相容）
+  }
+
+  function init(options) {
+    if (cfg) { warn('init 只能呼叫一次，已忽略第二次'); return; }
+    if (!options) throw new Error('EduBridge.init 需要參數');
+    var hid = options.handoutId;
+    if (typeof hid !== 'string' || !hid || /[\s_\/]/.test(hid)) {
+      throw new Error('EduBridge.init 的 handoutId 必須是非空字串，且不可有空白、底線 _、斜線 /（建議用檔名），收到：' + hid);
+    }
+    if (!isCount(options.totalQuestions)) {
+      throw new Error('EduBridge.init 的 totalQuestions 必須是 0 以上的整數（純閱讀填 0），收到：' + options.totalQuestions);
+    }
+    cfg = options;
+    EduBridge.handoutId = hid;
+    EduBridge.totalQuestions = options.totalQuestions;
+    var st = makeStore('edu_' + resolveInstanceId() + '_' + hid + '_');
+    store = st.internal;
+    EduBridge.storage = st.user;
+    window.EduStorage = st.user;                     // 舊程式碼若呼叫 EduStorage.* 也接得上
+    // 首答紀錄要存：重新整理不能把答錯洗成「第一次就對」
+    S.first = isObj(store.get('first')) ? store.get('first') : {};
+    S.tries = isObj(store.get('tries')) ? store.get('tries') : {};
+    S.guessing = isCount(store.get('guessing')) ? store.get('guessing') : 0;
+    window.addEventListener('message', onMessage);   // 先掛 listener 再宣告 ready
+    S.log.push({ event: 'session:start', ts: Date.now() });
+    announceReady();
+  }
+
+  function recordAnswer(questionId, correct, timeMs, guessThresholdMs) {
+    if (!cfg) { warn('recordAnswer 在 init 之前呼叫，已忽略'); return; }
+    if (S.done) return;
+    if (questionId == null || questionId === '') { warn('recordAnswer 缺題號，已忽略'); return; }
+    var qid = String(questionId);
+    var ok = correct === true || correct === 1;
+    if (!(qid in S.first)) { S.first[qid] = ok; store.set('first', S.first); }
+    S.tries[qid] = (S.tries[qid] || 0) + 1;
+    store.set('tries', S.tries);
+    if (ok) { S.combo += 1; if (S.combo > S.maxCombo) S.maxCombo = S.combo; }
+    else {
+      S.combo = 0;
+      if (typeof timeMs === 'number' && timeMs < (guessThresholdMs || 2000)) {
+        S.guessing += 1;
+        store.set('guessing', S.guessing);
+      }
+    }
+    S.log.push({ event: 'answer', ts: Date.now(), data: { questionId: qid, correct: ok, timeMs: timeMs, attempt: S.tries[qid] } });
+  }
+
+  function progress(page, totalPages, section, percent) {
+    if (!cfg) { warn('progress 在 init 之前呼叫，已忽略'); return; }
+    var d = { page: Math.max(0, page), totalPages: totalPages };
+    if (section != null) d.section = String(section);
+    if (typeof percent === 'number') d.percent = Math.max(0, Math.min(100, percent));
+    postToParent('PROGRESS_UPDATE', d);
+  }
+
+  function rewardConfig(total) {
+    var u = isObj(window.EDU_REWARD) ? window.EDU_REWARD : {};
+    function num(v, d, max) { return typeof v === 'number' && isFinite(v) && v >= 0 ? Math.min(v, max) : d; }
+    return {
+      maxXp: num(u.maxXp, 50, 50),
+      maxCoins: num(u.maxCoins, 20, 20),
+      completionOnly: typeof u.completionOnly === 'boolean' ? u.completionOnly : total === 0
+    };
+  }
+
+  // 獎勵回報規範 v2：上限 50/20、首答正確率 < 60% → 2/0、純閱讀 → 25/10；version: 2 必帶，否則平台整組丟掉
+  // stats（選填）：原程式自己算好的成績 { totalQuestions, correctAnswers?, guessingCount?, maxCombo? }；
+  // 沒給 correctAnswers 就沿用 recordAnswer 累積的首答數
+  function complete(stats) {
+    if (!cfg) { warn('complete 在 init 之前呼叫，已忽略'); return; }
+    if (S.done) return;
+    S.done = true;
+    var total = cfg.totalQuestions, correct = 0, answered = 0;
+    for (var k in S.first) { answered += 1; if (S.first[k]) correct += 1; }
+    if (isObj(stats) && isCount(Math.round(stats.totalQuestions))) {
+      // 題數只能比 init 多、不能少：拿「已作答題數」當題數，只答一題答對就是滿分
+      if (Math.round(stats.totalQuestions) < total) warn('complete 的 totalQuestions 少於 init 的 ' + total + '，改用 ' + total);
+      total = Math.max(total, Math.round(stats.totalQuestions));
+      if (typeof stats.correctAnswers === 'number' && isFinite(stats.correctAnswers)) {
+        // 有逐題 recordAnswer 紀錄時以首答為準：原程式自己數的多半是「最後答對」，重答到全對就變滿分
+        if (answered > 0) {
+          if (Math.round(stats.correctAnswers) !== correct) {
+            warn('已有逐題作答紀錄，忽略 complete 傳入的 correctAnswers（' + stats.correctAnswers + '），改用首答數 ' + correct);
+            S.log.push({ event: 'bridge:warn', ts: Date.now(), data: { ignoredCorrectAnswers: stats.correctAnswers, firstTryCorrect: correct } });
+          }
+        } else correct = Math.max(0, Math.round(stats.correctAnswers));
+      }
+      if (typeof stats.guessingCount === 'number' && isFinite(stats.guessingCount)) S.guessing = Math.max(0, Math.round(stats.guessingCount));
+      if (typeof stats.maxCombo === 'number' && isFinite(stats.maxCombo)) S.maxCombo = Math.max(0, Math.round(stats.maxCombo));
+    } else if (answered > total) {
+      warn('作答過 ' + answered + ' 題，但 totalQuestions 是 ' + total + '：題數設錯了');
+      S.log.push({ event: 'bridge:warn', ts: Date.now(), data: { answered: answered, totalQuestions: total } });
+    }
+    if (answered < total) S.log.push({ event: 'bridge:warn', ts: Date.now(), data: { answered: answered, totalQuestions: total, note: 'completed before all answered' } });
+    if (correct > total) correct = total;
+    var rawAcc = total ? correct / total : 1;
+    var accuracy = Math.round(rawAcc * 100) / 100;
+    var rw = rewardConfig(total);
+    var fail = !rw.completionOnly && rawAcc < 0.6;   // 用未四捨五入的值比 60%（0.595 不算及格）
+    var ratio = rw.completionOnly ? 0.5 : (fail ? 0 : 0.5 + 0.5 * (rawAcc - 0.6) / 0.4);
+    var xp = fail ? 2 : Math.round(rw.maxXp * ratio);
+    var coins = fail ? 0 : Math.round(rw.maxCoins * ratio);
+    var badges = [];
+    if (accuracy >= 0.8) badges.push('accuracy_high');
+    if (S.guessing === 0) badges.push('no_guess');
+    var totalTimeMs = Date.now() - S.startedAt;
+    S.log.push({ event: 'task:complete', ts: Date.now(), data: { score: accuracy, timeMs: totalTimeMs } });
+    S.payload = {
+      achievedScore: accuracy,                       // 0–1，不是 0–100
+      completedAt: new Date().toISOString(),
+      performance: { totalQuestions: total, correctAnswers: correct, accuracy: accuracy,
+        maxCombo: S.maxCombo, guessingCount: S.guessing, totalTimeMs: totalTimeMs },
+      suggestedRewards: { version: 2, xp: Math.min(50, xp), coins: Math.min(20, coins), badges: badges },
+      sessionLog: S.log                              // 陣列，不是物件
+    };
+    postToParent('TASK_COMPLETED', S.payload);
+    store.set('completedAt', S.payload.completedAt);
+  }
+
+  function lastCompletedAt() { return store ? store.get('completedAt', null) : null; }
+  // 作答過的不同題號數（含重新整理前的紀錄；首答紀錄存在存檔裡）
+  function answeredCount() { var n = 0; for (var k in S.first) { if (Object.prototype.hasOwnProperty.call(S.first, k)) n += 1; } return n; }
+
+  var EduBridge = { init: init, recordAnswer: recordAnswer, progress: progress, complete: complete,
+    lastCompletedAt: lastCompletedAt, answeredCount: answeredCount, storage: null, handoutId: null, totalQuestions: null,
+    postToParent: postToParent };
+  window.EduBridge = EduBridge;
+  window.postToParent = postToParent;
+  window.sendTaskComplete = complete;
+})();
+
+</script>
+<script>
+/* 平台相容層（2026-10 平台課件規範）：原檔的 EduPlatform／PerformanceTracker／ZhuyinManager 等全域物件
+   改由 platform-bridge.js（EduBridge）實作；存檔、首答紀錄、game:ready、TASK_COMPLETED 都交給橋接。 */
+(()=>{
+'use strict';
+const HANDOUT_ID='第01課-你好這就是我-互動教材';
+const THRESHOLDS={choice:2000,truefalse:1500,fill:3000,matching:2000,calculation:4000,fraction:5000,other:3000};
+// 計分題總數：和 WritingLesson 回報的題號一一對應（頁 id:q序號、頁 id:order-序號）；紙上作答、閱讀確認不算
+const countScored=cd=>cd.pages.reduce((n,p)=>{const c=p.content||{};switch(p.type){
+ case 'truefalse':case 'matching':return n+c.questions.length;
+ case 'vocab-single':return n+c.items.reduce((m,q)=>m+Math.floor(q.parts.length/2),0);
+ case 'vocab-short':return n+Math.floor(c.parts.length/2);
+ case 'position':case 'order':return n+c.items.length;
+ default:return n}},0);
+const DeviceInfo={isTouch:navigator.maxTouchPoints>0||'ontouchstart' in window,get isMobile(){return innerWidth<768},get isTablet(){return innerWidth>=768&&innerWidth<=1180},get width(){return innerWidth},get height(){return innerHeight}};
+const SessionRecorder={init(){return this},start(){return this},record(){},getLog(){return []}};
+const PerformanceTracker={THRESHOLDS,recordAnswer(questionId,isCorrect,timeMs,questionType='other'){
+ // 紙上作答傳的不是布林：不可能答錯，不算計分題
+ if(typeof isCorrect!=='boolean')return null;
+ EduBridge.recordAnswer(String(questionId),isCorrect,Math.max(0,Number(timeMs)||0),THRESHOLDS[questionType]??3000);
+ return {questionId:String(questionId),correct:isCorrect};
+}};
+let noticeTimer=null;
+function notify(text){let el=document.getElementById('gate-notice');if(!el){el=document.createElement('div');el.id='gate-notice';el.setAttribute('role','status');document.body.append(el)}el.textContent=text;el.hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>{el.hidden=true},3500)}
+function sendTaskComplete(){
+ if(window.__eduCompletionAllowed&&!window.__eduCompletionAllowed())return null;
+ const left=EduBridge.totalQuestions-EduBridge.answeredCount();
+ if(left>0){notify(`還有 ${left} 題沒有作答，全部做完再按「完成學習」。`);return null}
+ EduBridge.complete();   // 一次載入只送一次；重新開啟後可以再按
+ // 這次開啟已經送出：停用按鈕，避免一直重複按（平台每次開啟也只收第一次）；不存進存檔，重新開啟後照樣能按
+ document.querySelectorAll('[data-finish-learning]').forEach(b=>{b.disabled=true;b.textContent='已完成學習 ✓'});
+ return true;
+}
+function addTapHandler(element,handler){if(!element)return()=>{};element.addEventListener('click',handler);return()=>element.removeEventListener('click',handler)}
+// 注音：原檔自己畫（ruby／rt），不掛平台 runtime；平台的 SET_ZHUYIN 由橋接轉到 onZhuyin
+const ZhuyinManager={enabled:false,init(){return this},setEnabled(enabled){this.enabled=Boolean(enabled);document.documentElement.dataset.zhuyin=String(this.enabled);document.querySelectorAll('[data-optional-zhuyin]').forEach(el=>{el.hidden=!this.enabled});window.dispatchEvent(new CustomEvent('edu:zhuyin-change',{detail:{enabled:this.enabled}}));return this.enabled},configure(){},toggle(){return this.setEnabled(!this.enabled)}};
+window.DeviceInfo=DeviceInfo;window.PerformanceTracker=PerformanceTracker;window.SessionRecorder=SessionRecorder;window.sendTaskComplete=sendTaskComplete;window.addTapHandler=addTapHandler;window.ZhuyinManager=ZhuyinManager;
+window.EduPlatform={init(){EduBridge.init({handoutId:HANDOUT_ID,totalQuestions:countScored(window.COURSE_DATA),totalPages:Math.max(0,window.COURSE_DATA.pages.length-1),onZhuyin:enabled=>ZhuyinManager.setEnabled(enabled),onSetPage:(page,clearedUpTo)=>window.WritingLesson?.setPage?.(page,clearedUpTo)})},ready(){/* game:ready 由 EduBridge.init 送 */}};
+})();
+</script>
+<script>
+const COURSE_DATA = {
+  "_schemaHint": {
+    "templateType": "primary-writing-slides",
+    "contentSummary": "20頁國小三四年級寫作；課文→詞語→理解→注音→選詞→對話→句型→組句→看圖→紙本作文→檢核。",
+    "generationRules": [
+      "保留 pages 的 type 與次序；各頁 content 使用樣本同形欄位，items／questions／bank 可依需要調整數量。",
+      "課文只填 lesson.paragraphs；詞語 vocabulary；練習均須連結課文；不新增聽力或網頁作文輸入。",
+      "文本為純文字；Html 欄位只允許 br、span、strong，數量提示使用 {count}、{bankCount}、{patternCount}；媒體以 illustrationSlot 參照 MEDIA_ASSETS。",
+      "各頁完成條件由 type 推導：閱讀按下一頁，客觀題確認全對，紙筆勾選確認；最後按完成學習回報。"
+    ],
+    "pageContentShapes": {
+      "reading": "{illustrationSlot,name,age,caption}",
+      "vocabulary": "{} uses lesson.vocabulary",
+      "truefalse": "{questions:[[text,O|X,evidence]]}",
+      "written": "{questions:[text]}",
+      "zhuyin": "{items:[[bopomofo,answer]]}",
+      "vocab-single": "{bank:[word],items:[{parts:[text,answer,text]}]}",
+      "vocab-short": "{bank:[word],parts:[text,answer,text,...]}",
+      "matching": "{answers:[{id,label,text}],questions:[[question,answerId]]}",
+      "pattern": "{formula,original,example,practice:[text],tip}",
+      "position": "{items:[{word,parts:[text,...],answer:A|B|C}]}",
+      "order": "{items:[{tokens:[text],answer:[text],sentence:text}]}",
+      "combine": "{demo:{originalHtml:[text],methodHtml,resultHtml},practice:{original:[text],cue,note}}",
+      "pictures": "{items:[{illustrationSlot,alt,words:[text]}]}",
+      "plan": "{items:[[name,prompt]],reminder}",
+      "writing": "{heading,requirementsHtml,items:[[label,sentenceHtml]],goal}",
+      "cover|final": "見樣本；保留所有欄位"
+    }
+  },
+  "id": "writing-lesson-01",
+  "lesson": {
+    "number": 1,
+    "title": "你好，這就是我！",
+    "topic": "自我介紹",
+    "student": "國小三、四年級",
+    "paragraphs": [
+      "大家好，我叫林小安，今年九歲。我是一個開朗的孩子，喜歡看書，也喜歡畫畫。看書時，我會專心地讀；畫畫時，我會仔細觀察身邊的事物。有一次，我發現葉子上的小水珠像亮亮的珠子，就把它畫了下來。",
+      "放學後，我先完成作業，再練習畫畫。畫完以後，我會把彩色筆排得很整齊。我也喜歡和同學分享作品，聽聽大家的想法。",
+      "我有自己的目標。我想畫出一本小小的故事書，把有趣的事情記下來。我希望自己每天都有進步。這就是我，你想和我做朋友嗎？"
+    ],
+    "vocabulary": [
+      [
+        "開朗",
+        "活潑、樂觀，喜歡與人相處。",
+        "開朗的孩子"
+      ],
+      [
+        "專心",
+        "把注意力放在同一件事上。",
+        "專心地讀"
+      ],
+      [
+        "觀察",
+        "仔細地看，留意事物的樣子。",
+        "觀察身邊的事物"
+      ],
+      [
+        "發現",
+        "看到或找到原先沒注意的事。",
+        "發現葉子上的小水珠"
+      ],
+      [
+        "完成",
+        "把一件事情做好、做完。",
+        "完成作業"
+      ],
+      [
+        "練習",
+        "反覆地做，讓自己更熟練。",
+        "練習畫畫"
+      ],
+      [
+        "整齊",
+        "排列有順序，看起來不雜亂。",
+        "彩色筆排得很整齊"
+      ],
+      [
+        "分享",
+        "和別人一起欣賞或交流。",
+        "和同學分享作品"
+      ],
+      [
+        "目標",
+        "自己想努力做到的事情。",
+        "我有自己的目標"
+      ],
+      [
+        "進步",
+        "比原來做得更好。",
+        "每天都有進步"
+      ]
+    ],
+    "zhuyin": {
+      "大": "ㄉㄚˋ",
+      "家": "ㄐㄧㄚ",
+      "好": "ㄏㄠˇ",
+      "我": "ㄨㄛˇ",
+      "叫": "ㄐㄧㄠˋ",
+      "林": "ㄌㄧㄣˊ",
+      "小": "ㄒㄧㄠˇ",
+      "安": "ㄢ",
+      "今": "ㄐㄧㄣ",
+      "年": "ㄋㄧㄢˊ",
+      "九": "ㄐㄧㄡˇ",
+      "歲": "ㄙㄨㄟˋ",
+      "放": "ㄈㄤˋ",
+      "學": "ㄒㄩㄝˊ",
+      "後": "ㄏㄡˋ",
+      "先": "ㄒㄧㄢ",
+      "完": "ㄨㄢˊ",
+      "成": "ㄔㄥˊ",
+      "作": "ㄗㄨㄛˋ",
+      "業": "ㄧㄝˋ",
+      "再": "ㄗㄞˋ",
+      "練": "ㄌㄧㄢˋ",
+      "習": "ㄒㄧˊ",
+      "畫": "ㄏㄨㄚˋ",
+      "這": "ㄓㄜˋ",
+      "就": "ㄐㄧㄡˋ",
+      "是": "ㄕˋ",
+      "你": "ㄋㄧˇ",
+      "想": "ㄒㄧㄤˇ",
+      "和": "ㄏㄢˋ",
+      "做": "ㄗㄨㄛˋ",
+      "朋": "ㄆㄥˊ",
+      "友": "ㄧㄡˇ",
+      "嗎": "˙ㄇㄚ"
+    }
+  },
+  "blocks": [
+    "封面",
+    "課文閱讀",
+    "閱讀理解",
+    "看注音寫完整句子",
+    "詞語運用",
+    "對話與句型",
+    "句子組裝",
+    "圖像與情境表達",
+    "引導式短文寫作",
+    "寫作檢查"
+  ],
+  "pages": [
+    {
+      "id": "page-1",
+      "type": "cover",
+      "block": 0,
+      "title": "你好，這就是我！",
+      "foot": "第 1 課 · 自我介紹 · 適合國小三、四年級",
+      "reference": "本課從自我介紹出發，練習喜好、具體表現與目標。\n注音轉寫、仿寫和正式短文請在紙上完成；選詞、配對和組句可直接操作。\n可由上方選單回到任何教材區塊。",
+      "className": "cover",
+      "content": {
+        "eyebrow": " 第 1 課 · 認識自己",
+        "headingHtml": "你好，<br><span class=\"accent\">這就是我！<\/span>",
+        "introHtml": "認識小安，找到課文裡的詞語和句型，<br>再用紙筆寫下屬於自己的故事。",
+        "pills": [
+          "讀懂課文",
+          "動手練習",
+          "紙上寫作"
+        ],
+        "start": "開始第一課",
+        "artNote": "每個人，都有值得分享的小故事。",
+        "tiles": [
+          "我",
+          "！",
+          "喜歡",
+          "畫"
+        ]
+      }
+    },
+    {
+      "id": "page-2",
+      "type": "reading",
+      "block": 1,
+      "title": "你好，這就是我！",
+      "guide": "",
+      "tag": "閱讀課文",
+      "symbol": "book-open",
+      "foot": "第 1 課 · 你好，這就是我！",
+      "reference": "第一段：姓名、年齡、個性、喜好與觀察的小事。\n第二段：放學後的習慣、整理與分享。\n第三段：想完成的目標，以及對自己的期待。",
+      "className": "reading-page",
+      "content": {
+        "illustrationSlot": "portrait",
+        "name": "林小安",
+        "age": "9 歲",
+        "caption": "喜歡看書，也喜歡畫畫。"
+      }
+    },
+    {
+      "id": "page-3",
+      "type": "vocabulary",
+      "block": 1,
+      "title": "本課詞語",
+      "guide": "",
+      "tag": "{count} 個課文詞語",
+      "symbol": "box-open",
+      "foot": "讀詞語、懂意思，再回到課文看看怎麼用。",
+      "reference": "{count} 個詞語都取自本課課文。\n可先讀詞語與意思，再回到課文找出搭配的句子。",
+      "className": "vocabulary-page",
+      "content": {}
+    },
+    {
+      "id": "page-4",
+      "type": "truefalse",
+      "block": 2,
+      "title": "讀懂小安的故事",
+      "guide": "",
+      "tag": "{count} 題點選判斷",
+      "symbol": "lightbulb",
+      "foot": "閱讀理解 A · 左側對照課文，右側點選答案。",
+      "reference": "1. ○　2. ×　3. ×　4. ○　5. ○\n1. 喜歡看書，也喜歡畫畫。\n2. 他先完成作業，再練習畫畫。\n3. 他喜歡和同學分享作品。\n4. 他發現葉子上的小水珠像亮亮的珠子。\n5. 他想畫出一本小小的故事書。",
+      "className": "comprehension-page",
+      "content": {
+        "questions": [
+          [
+            "小安喜歡看書，也喜歡畫畫。",
+            "O",
+            "課文：「喜歡看書，也喜歡畫畫。」"
+          ],
+          [
+            "小安放學後先畫畫，再完成作業。",
+            "X",
+            "課文：「先完成作業，再練習畫畫。」"
+          ],
+          [
+            "小安只想把作品留給自己看。",
+            "X",
+            "課文：「和同學分享作品」。"
+          ],
+          [
+            "小安發現葉子上的水珠像珠子。",
+            "O",
+            "課文：「葉子上的小水珠像亮亮的珠子」。"
+          ],
+          [
+            "小安的目標是畫出一本故事書。",
+            "O",
+            "課文：「我想畫出一本小小的故事書。」"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "page-5",
+      "type": "written",
+      "block": 2,
+      "title": "找出課文裡的線索",
+      "guide": "",
+      "tag": "{count} 題紙上問答",
+      "symbol": "magnifying-glass",
+      "foot": "閱讀理解 B · 文章在左邊，請用紙筆完成右側{count} 題。",
+      "reference": "1. 他觀察身邊事物。例如發現葉子上的水珠像珠子，就把它畫下來。\n2. 他把彩色筆排得很整齊。\n3. 畫出一本小小的故事書，把有趣的事情記下來。",
+      "className": "comprehension-page",
+      "content": {
+        "questions": [
+          "小安怎麼找到畫畫的材料？請舉課文中的一個例子。",
+          "哪件事看出他會整理物品？",
+          "小安的目標是什麼？"
+        ]
+      }
+    },
+    {
+      "id": "page-6",
+      "type": "zhuyin",
+      "block": 3,
+      "title": "看注音，寫完整句子",
+      "guide": "不會的字可以查字典",
+      "tag": "紙上作答 · {count} 題",
+      "symbol": "pen",
+      "foot": "{count} 題皆取自課文 · 請完整轉寫，不只填生詞。",
+      "reference": "1. 大家好，我叫林小安，今年九歲。\n2. 放學後，我先完成作業，再練習畫畫。\n3. 這就是我，你想和我做朋友嗎？",
+      "className": "",
+      "content": {
+        "items": [
+          [
+            "ㄉㄚˋ ㄐㄧㄚ ㄏㄠˇ，ㄨㄛˇ ㄐㄧㄠˋ ㄌㄧㄣˊ ㄒㄧㄠˇ ㄢ，ㄐㄧㄣ ㄋㄧㄢˊ ㄐㄧㄡˇ ㄙㄨㄟˋ。",
+            "大家好，我叫林小安，今年九歲。"
+          ],
+          [
+            "ㄈㄤˋ ㄒㄩㄝˊ ㄏㄡˋ，ㄨㄛˇ ㄒㄧㄢ ㄨㄢˊ ㄔㄥˊ ㄗㄨㄛˋ ㄧㄝˋ，ㄗㄞˋ ㄌㄧㄢˋ ㄒㄧˊ ㄏㄨㄚˋ ㄏㄨㄚˋ。",
+            "放學後，我先完成作業，再練習畫畫。"
+          ],
+          [
+            "ㄓㄜˋ ㄐㄧㄡˋ ㄕˋ ㄨㄛˇ，ㄋㄧˇ ㄒㄧㄤˇ ㄏㄢˋ ㄨㄛˇ ㄗㄨㄛˋ ㄆㄥˊ ㄧㄡˇ ˙ㄇㄚ？",
+            "這就是我，你想和我做朋友嗎？"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "page-7",
+      "type": "vocab-single",
+      "block": 4,
+      "title": "單句填空：詞語找位置",
+      "guide": "從上方{bankCount} 張詞語卡選出{count} 張，拖曳到下方句子的黃色空格；填完後按「確認答案」。",
+      "tag": "拖曳或點選",
+      "symbol": "puzzle-piece",
+      "foot": "詞語運用 A · {bankCount} 選 {count}，每個詞語只用一次。",
+      "reference": "A：完成、觀察、整齊、分享、目標。",
+      "className": "vocab-page",
+      "content": {
+        "bank": [
+          "分享",
+          "目標",
+          "觀察",
+          "完成",
+          "整齊",
+          "進步",
+          "開朗"
+        ],
+        "items": [
+          {
+            "parts": [
+              "小安先",
+              "完成",
+              "作業，再練習畫畫。"
+            ]
+          },
+          {
+            "parts": [
+              "小安仔細",
+              "觀察",
+              "葉子上的水珠。"
+            ]
+          },
+          {
+            "parts": [
+              "彩色筆排得很",
+              "整齊",
+              "。"
+            ]
+          },
+          {
+            "parts": [
+              "小安和同學",
+              "分享",
+              "作品。"
+            ]
+          },
+          {
+            "parts": [
+              "畫故事書是他的",
+              "目標",
+              "。"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-8",
+      "type": "vocab-short",
+      "block": 4,
+      "title": "短文填空：詞語進情境",
+      "guide": "先讀短文，再從上方{bankCount} 張詞語卡選出{count} 張，拖曳到短文的黃色空格；填完後按「確認答案」。",
+      "tag": "拖曳或點選",
+      "symbol": "puzzle-piece",
+      "foot": "詞語運用 B · {bankCount} 選 {count}，每個詞語只用一次。",
+      "reference": "B：開朗、專心、發現、練習、進步。",
+      "className": "vocab-page",
+      "content": {
+        "bank": [
+          "練習",
+          "進步",
+          "專心",
+          "開朗",
+          "發現",
+          "目標",
+          "整齊"
+        ],
+        "parts": [
+          "小安是一個",
+          "開朗",
+          "的孩子。他看書時很",
+          "專心",
+          "，畫畫時也很用心。有一天，他",
+          "發現",
+          "葉子上的水珠像珠子，便把它畫下來。他每天都會",
+          "練習",
+          "畫畫，希望自己持續",
+          "進步",
+          "。"
+        ]
+      }
+    },
+    {
+      "id": "page-9",
+      "type": "matching",
+      "block": 5,
+      "title": "該怎麼回答？",
+      "guide": "把右邊的回答卡拖曳到左邊對應問題下方的黃色框；{count} 張都放好後按「確認答案」。",
+      "tag": "對話配對",
+      "symbol": "comments",
+      "foot": "想一想：問題是在問喜好、活動順序，還是目標？",
+      "reference": "1 → B：我喜歡看書，也喜歡畫畫。\n2 → C：我先完成作業，再練習畫畫。\n3 → A：我想畫出一本小小的故事書。",
+      "className": "",
+      "content": {
+        "answers": [
+          {
+            "id": "goal",
+            "label": "A",
+            "text": "我想畫出一本小小的故事書。"
+          },
+          {
+            "id": "like",
+            "label": "B",
+            "text": "我喜歡看書，也喜歡畫畫。"
+          },
+          {
+            "id": "after",
+            "label": "C",
+            "text": "我先完成作業，再練習畫畫。"
+          }
+        ],
+        "questions": [
+          [
+            "你喜歡做什麼？",
+            "like"
+          ],
+          [
+            "你放學後先做什麼？",
+            "after"
+          ],
+          [
+            "你有什麼目標？",
+            "goal"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "page-10",
+      "type": "pattern",
+      "block": 5,
+      "title": "說說我的喜好",
+      "guide": "先讀課文原句和仿寫例句，再在紙上接寫兩句自己的話。",
+      "tag": "句型 {patternIndex} / {patternCount} · 紙上接寫",
+      "symbol": "wand-magic-sparkles",
+      "foot": "{patternCount} 個句型都取自課文 · 每個句型有兩個完整示例與 {count} 題接寫。",
+      "reference": "本頁為開放式仿寫，沒有唯一答案。\n檢查：句型完整、意思通順、內容能連回自己的生活。\n課文原句與仿寫例句已分別標示，可先回讀課文，再接寫。",
+      "className": "",
+      "content": {
+        "formula": "我喜歡＿＿，也喜歡＿＿。",
+        "original": "我是一個開朗的孩子，喜歡看書，也喜歡畫畫。",
+        "example": "我喜歡畫葉子，也喜歡畫小水珠。",
+        "tip": "「也」把兩個喜歡的活動連起來，讀者就能一次知道更多。",
+        "practice": [
+          "我喜歡看書，也喜歡＿＿＿＿＿＿。",
+          "我喜歡＿＿＿＿＿＿，也喜歡＿＿＿＿＿＿。"
+        ]
+      }
+    },
+    {
+      "id": "page-11",
+      "type": "pattern",
+      "block": 5,
+      "title": "把先後順序說清楚",
+      "guide": "先讀課文原句和仿寫例句，再在紙上接寫兩句自己的話。",
+      "tag": "句型 {patternIndex} / {patternCount} · 紙上接寫",
+      "symbol": "wand-magic-sparkles",
+      "foot": "{patternCount} 個句型都取自課文 · 每個句型有兩個完整示例與 {count} 題接寫。",
+      "reference": "本頁為開放式仿寫，沒有唯一答案。\n檢查：句型完整、意思通順、內容能連回自己的生活。\n課文原句與仿寫例句已分別標示，可先回讀課文，再接寫。",
+      "className": "",
+      "content": {
+        "formula": "＿＿後，我先＿＿，再＿＿。",
+        "original": "放學後，我先完成作業，再練習畫畫。",
+        "example": "畫完後，我先收好彩色筆，再和同學分享作品。",
+        "tip": "「先」寫前面的動作，「再」寫後面的動作，順序要合理。",
+        "practice": [
+          "放學後，我先完成作業，再＿＿＿＿＿＿。",
+          "畫完後，我先＿＿＿＿＿＿，再＿＿＿＿＿＿。"
+        ]
+      }
+    },
+    {
+      "id": "page-12",
+      "type": "pattern",
+      "block": 5,
+      "title": "寫下我的小目標",
+      "guide": "先讀課文原句和仿寫例句，再在紙上接寫兩句自己的話。",
+      "tag": "句型 {patternIndex} / {patternCount} · 紙上接寫",
+      "symbol": "wand-magic-sparkles",
+      "foot": "{patternCount} 個句型都取自課文 · 每個句型有兩個完整示例與 {count} 題接寫。",
+      "reference": "本頁為開放式仿寫，沒有唯一答案。\n檢查：句型完整、意思通順、內容能連回自己的生活。\n課文原句與仿寫例句已分別標示，可先回讀課文，再接寫。",
+      "className": "",
+      "content": {
+        "formula": "我想＿＿，把＿＿。",
+        "original": "我想畫出一本小小的故事書，把有趣的事情記下來。",
+        "example": "我想畫一張葉子的圖，把水珠的樣子留下來。",
+        "tip": "先說想做的事，再說想整理、留下或完成的內容。",
+        "practice": [
+          "我想畫一本故事書，把＿＿＿＿＿＿。",
+          "我想＿＿＿＿＿＿，把＿＿＿＿＿＿。"
+        ]
+      }
+    },
+    {
+      "id": "page-13",
+      "type": "position",
+      "block": 6,
+      "title": "詞語應該放在哪裡？",
+      "guide": "把每題右上角的詞語卡拖曳到同一題的合適底線上；每題放一處，{count} 題完成後按「確認答案」。",
+      "tag": "詞語位置判斷",
+      "symbol": "location-dot",
+      "foot": "每題先看詞語卡，再把詞語放到句子中的合適位置。",
+      "reference": "題目一：再放在②。放學後，我先完成作業，再練習畫畫。\n題目二：再放在②。下課後，我先喝水，再整理書包。\n題目三：仔細放在②。畫畫時，我會仔細觀察身邊的事物。\n題目四：仔細放在①。小安會仔細觀察葉子的顏色，再記下形狀。",
+      "className": "position-page",
+      "content": {
+        "items": [
+          {
+            "word": "再",
+            "parts": [
+              "放學後，我 ",
+              " 先完成作業，",
+              " 練習 ",
+              " 畫畫。"
+            ],
+            "answer": "B"
+          },
+          {
+            "word": "再",
+            "parts": [
+              "下課後，我 ",
+              " 先喝水，",
+              " 整理 ",
+              " 書包。"
+            ],
+            "answer": "B"
+          },
+          {
+            "word": "仔細",
+            "parts": [
+              "畫畫時，我 ",
+              " 會 ",
+              " 觀察身邊 ",
+              " 的事物。"
+            ],
+            "answer": "B"
+          },
+          {
+            "word": "仔細",
+            "parts": [
+              "小安會 ",
+              " 觀察葉子的顏色，",
+              " 記下 ",
+              " 形狀。"
+            ],
+            "answer": "A"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-14",
+      "type": "order",
+      "block": 6,
+      "title": "把打亂的詞語排成句子",
+      "guide": "把每題上方的詞語卡依句子順序拖曳到下方黃色答案框；排好後按該題的「確認答案」。",
+      "tag": "重組句子",
+      "symbol": "shuffle",
+      "foot": "答案框內的詞語可拖曳調整順序；確認後，再在紙上寫出整句與標點。",
+      "reference": "1. 我喜歡看書，也喜歡畫畫。\n2. 放學後，我先完成作業，再練習畫畫。",
+      "className": "",
+      "content": {
+        "items": [
+          {
+            "tokens": [
+              "也喜歡",
+              "我",
+              "畫畫",
+              "喜歡看書"
+            ],
+            "answer": [
+              "我",
+              "喜歡看書",
+              "也喜歡",
+              "畫畫"
+            ],
+            "punct": [
+              "，",
+              "。"
+            ],
+            "sentence": "我喜歡看書，也喜歡畫畫。"
+          },
+          {
+            "tokens": [
+              "再練習畫畫",
+              "我",
+              "先完成作業",
+              "放學後"
+            ],
+            "answer": [
+              "放學後",
+              "我",
+              "先完成作業",
+              "再練習畫畫"
+            ],
+            "punct": [
+              "，",
+              "，",
+              "。"
+            ],
+            "sentence": "放學後，我先完成作業，再練習畫畫。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-15",
+      "type": "combine",
+      "block": 6,
+      "title": "句型轉換：用「也」說喜好",
+      "guide": "先看左邊的改寫示範，再把右邊的兩句話改寫成一句，寫在紙上。",
+      "tag": "句型轉換 · 紙上作答",
+      "symbol": "wand-magic-sparkles",
+      "foot": "讀示範 → 改寫句子 → 在紙上寫下完整句子。",
+      "reference": "參考答案：小安喜歡觀察，也喜歡分享作品。\n檢查：保留兩個喜好，使用「也喜歡」，並有正確標點。",
+      "className": "combine-page",
+      "content": {
+        "demo": {
+          "originalHtml": [
+            "我喜歡看書。",
+            "<span class=\"combine-key\">我喜歡<\/span>畫畫。"
+          ],
+          "methodHtml": "第二句的「我喜歡」換成「也喜歡」，<br>再用逗號把兩句話接起來。",
+          "resultHtml": "我喜歡看書，<span class=\"combine-key\">也喜歡<\/span>畫畫。"
+        },
+        "practice": {
+          "original": [
+            "小安喜歡觀察。",
+            "小安喜歡分享作品。"
+          ],
+          "cue": "也喜歡",
+          "note": "讀一遍：兩件喜歡的事都寫到了嗎？"
+        },
+        "methodLabel": "這樣改",
+        "practiceTitle": "換你寫",
+        "practiceLabel": "把這兩句改寫成一句"
+      }
+    },
+    {
+      "id": "page-16",
+      "type": "combine",
+      "block": 6,
+      "title": "合併句子：用「再」連動作",
+      "guide": "先看左邊怎麼合併，再把右邊的兩個動作連成一句，寫在紙上。",
+      "tag": "合併句子 · 紙上作答",
+      "symbol": "link",
+      "foot": "讀示範 → 合併句子 → 在紙上寫下完整句子。",
+      "reference": "參考答案：我先完成作業，再練習畫畫。\n檢查：保留兩個動作，省略重複的「我」，並有正確標點。",
+      "className": "combine-page combine-sequence",
+      "content": {
+        "demo": {
+          "originalHtml": [
+            "小安把彩色筆排整齊。",
+            "<span class=\"combine-key\">小安<\/span>和同學分享作品。"
+          ],
+          "methodHtml": "第二句省略「小安」，用「再」接上動作。",
+          "resultHtml": "小安把彩色筆排整齊，<br><span class=\"combine-key\">再<\/span>和同學分享作品。"
+        },
+        "practice": {
+          "original": [
+            "我先完成作業。",
+            "我再練習畫畫。"
+          ],
+          "cue": "…再…",
+          "note": "讀一遍：兩個動作的先後順序清楚嗎？"
+        },
+        "methodLabel": "這樣合併",
+        "practiceTitle": "換你合併",
+        "practiceLabel": "把這兩句合併成一句"
+      }
+    },
+    {
+      "id": "page-17",
+      "type": "pictures",
+      "block": 7,
+      "title": "看圖，把小事寫清楚",
+      "guide": "觀察人物的動作和物品，可選用各圖下方的課文詞語，在紙上各寫一句完整的話。",
+      "tag": "{count} 格看圖寫句",
+      "symbol": "images",
+      "foot": "圖片裡沒有標準答案 · 選用合適的詞語，用自己的句子描述畫面。",
+      "reference": "參考句：\n1. 小安拿著放大鏡，仔細觀察葉子上的水珠。\n2. 他把觀察到的葉子和水珠畫在紙上。\n3. 小安和同學分享自己的作品。\n學生能寫出符合畫面的完整句子即可；詞語供選用，不必全部使用。",
+      "className": "figure-page",
+      "content": {
+        "items": [
+          {
+            "illustrationSlot": "picture-1",
+            "alt": "小安蹲在葉子旁，拿放大鏡觀察葉子上的水珠",
+            "words": [
+              "仔細",
+              "觀察",
+              "發現"
+            ]
+          },
+          {
+            "illustrationSlot": "picture-2",
+            "alt": "小安坐在桌前，對照葉子把水珠畫在紙上",
+            "words": [
+              "專心",
+              "練習",
+              "完成"
+            ]
+          },
+          {
+            "illustrationSlot": "picture-3",
+            "alt": "小安拿著自己畫的葉子作品，和旁邊的同學分享",
+            "words": [
+              "完成",
+              "分享",
+              "開朗"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "page-18",
+      "type": "plan",
+      "block": 8,
+      "title": "先在紙上記關鍵詞",
+      "guide": "照著下面{count} 個方向，在紙上記下自己的材料。先寫詞語或短語就好。",
+      "tag": "寫作準備 · 紙上記錄",
+      "symbol": "pencil",
+      "foot": "先記關鍵詞 → 下一頁把材料寫成文章。",
+      "reference": "本頁為紙本寫作準備，沒有唯一答案。\n請學生先在紙上記下稱呼、個性、兩個喜好、一件生活小事和目標。\n生活小事盡量與喜好有關，先用詞語或短語記錄即可；下一頁再組成完整句子。",
+      "className": "writing-page",
+      "content": {
+        "items": [
+          [
+            "我的稱呼",
+            "你叫什麼名字？"
+          ],
+          [
+            "我的個性",
+            "你是個怎麼樣的人？"
+          ],
+          [
+            "兩個喜好",
+            "你喜歡做哪兩件事？"
+          ],
+          [
+            "一件生活小事",
+            "回想做喜歡的活動時，你做了哪些事？"
+          ],
+          [
+            "我的目標",
+            "你想完成什麼事？"
+          ]
+        ],
+        "reminder": "想不到生活小事時，回想最近一次做喜歡的活動。記好關鍵詞，再翻到下一頁寫文章。"
+      }
+    },
+    {
+      "id": "page-19",
+      "type": "writing",
+      "block": 8,
+      "title": "今日寫作題目",
+      "guide": "拿出剛才記好的關鍵詞，仿照課文，在紙上完成一篇自我介紹。",
+      "tag": "文章請寫在紙上",
+      "symbol": "file-pen",
+      "foot": "寫完用筆檢查 · 全文不在網頁輸入。",
+      "reference": "本頁為紙本寫作，沒有唯一答案。\n請運用上一頁整理的關鍵詞。\n本課先確認：介紹清楚、有具體小事、寫出目標、句子通順。\n建議篇幅約 60～100 字，依學生程度調整。\n學生可以仿用句型，也可以用自己的說法，不必照抄提示。",
+      "className": "writing-page",
+      "content": {
+        "heading": "你好，這就是我！",
+        "requirementsHtml": "寫出你的個性、喜好、一件生活小事，<br>以及自己的目標。",
+        "items": [
+          [
+            "開頭",
+            "大家好，我叫＿＿＿＿＿＿。"
+          ],
+          [
+            "個性與喜好",
+            "我是一個＿＿＿＿的孩子。<br>我喜歡＿＿＿＿，也喜歡＿＿＿＿。"
+          ],
+          [
+            "小事",
+            "＿＿後，我先＿＿＿＿，再＿＿＿＿。"
+          ],
+          [
+            "目標",
+            "我想＿＿＿＿，把＿＿＿＿。"
+          ]
+        ],
+        "goal": "請在紙上寫出 5～7 個完整句子，再試著分成兩段。可以仿用提示，也可以用自己的說法。"
+      }
+    },
+    {
+      "id": "page-20",
+      "type": "final",
+      "block": 9,
+      "title": "完成我的第一篇介紹",
+      "foot": "第 1 課完成 · 把紙本交給老師，分享你的小故事。",
+      "reference": "老師可依五項檢核閱讀紙本。\n先回饋一項做得好的表達，再指出一處可以補充的細節。\n此處是學生自我檢查；全數勾選後，仍請交給老師閱讀。",
+      "className": "final",
+      "content": {
+        "eyebrow": "9 · 寫作檢查",
+        "headingHtml": "這就是我，<br><span class=\"accent\">準備好分享！<\/span>",
+        "introHtml": "把紙本文章放在桌上，逐項檢查。<br>完成後交給老師閱讀。",
+        "return": "回到封面",
+        "checklist": [
+          "我介紹了自己，讀者知道我是誰。",
+          "我寫出喜好，並補上一件小事。",
+          "我寫出自己的目標。",
+          "我使用了本課詞語或句型。",
+          "我檢查過漏字、錯字和標點。"
+        ]
+      }
+    }
+  ],
+  "uiText": {
+    "confirm": "確認答案",
+    "paperConfirm": "確認完成",
+    "paperCheck": "寫完打勾",
+    "finish": "完成學習",
+    "next": "下一頁",
+    "previous": "上一頁",
+    "locked": "請先完成本頁的作答或紙上勾選，再前往下一頁。",
+    "readNext": "確認讀完，前往下一頁",
+    "loadFailed": "教材暫時無法載入，請重新整理後再試。",
+    "completed": "本課學習完成！請把紙本交給老師閱讀。"
+  }
+};
+const MEDIA_ASSETS = {
+  "audio": {},
+  "images": {
+    "portrait": "<svg viewbox=\"0 0 300 430\" role=\"img\" aria-label=\"九歲的林小安穿著黃色上衣、藍色長褲，開心地揮手，旁邊有畫筆、故事書和葉子圖畫\"><circle cx=\"150\" cy=\"190\" r=\"132\" fill=\"#fef08a\"><\/circle><circle cx=\"254\" cy=\"61\" r=\"12\" fill=\"#fed7aa\"><\/circle><path d=\"M30 345Q148 302 294 344V430H0V365Z\" fill=\"#ffedd5\"><\/path><ellipse cx=\"150\" cy=\"363\" rx=\"81\" ry=\"14\" fill=\"#ea580c\" opacity=\".1\"><\/ellipse><g transform=\"translate(150 153) scale(1.7)\"><path d=\"M-19 26L-44 9L-48-13\" fill=\"none\" stroke=\"#292524\" stroke-width=\"13\" stroke-linecap=\"round\"><\/path><path d=\"M-19 26L-44 9L-48-13\" fill=\"none\" stroke=\"#fed7aa\" stroke-width=\"9\" stroke-linecap=\"round\"><\/path><path d=\"M19 26L42 49L49 35\" fill=\"none\" stroke=\"#292524\" stroke-width=\"13\" stroke-linecap=\"round\"><\/path><path d=\"M19 26L42 49L49 35\" fill=\"none\" stroke=\"#fed7aa\" stroke-width=\"9\" stroke-linecap=\"round\"><\/path><\/g><g transform=\"translate(150 153) scale(1.7)\"><path d=\"M-20 20 L-22 73 L23 73 L20 20Z\" fill=\"#fde047\" stroke=\"#292524\" stroke-width=\"3\"><\/path><path d=\"M-18 72L-18 113M18 72L18 113\" stroke=\"#2563eb\" stroke-width=\"17\" stroke-linecap=\"round\"><\/path><path d=\"M-25 117H-9M10 117H26\" stroke=\"#292524\" stroke-width=\"10\" stroke-linecap=\"round\"><\/path><circle cy=\"-7\" r=\"28\" fill=\"#fed7aa\" stroke=\"#292524\" stroke-width=\"3\"><\/circle><path d=\"M-28-7C-33-45 25-45 29-7L15-19L1-13L-10-21Z\" fill=\"#292524\"><\/path><circle cx=\"-9\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><circle cx=\"10\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><path d=\"M-7 6Q0 13 8 5\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"2.5\" stroke-linecap=\"round\"><\/path><\/g><path d=\"M48 99L42 89M60 89L59 76M80 93L86 82\" stroke=\"#ea580c\" stroke-width=\"3\" stroke-linecap=\"round\"><\/path><g transform=\"translate(227 58) rotate(12)\"><rect x=\"-30\" y=\"-28\" width=\"60\" height=\"77\" rx=\"7\" fill=\"white\" stroke=\"#d6a145\" stroke-width=\"2\"><\/rect><g transform=\"translate(1 13) scale(0.45)\"><path d=\"M-45 8Q-20-60 48-32Q45 30-45 8Z\" fill=\"#86b89a\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M-52 16L34-21M-16 0L-14-24M9-12L20 5\" fill=\"none\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M6-33Q-6-12 6-10Q21-12 6-33Z\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"><\/path><circle cx=\"5\" cy=\"-17\" r=\"2\" fill=\"white\"><\/circle><\/g><\/g><g transform=\"translate(51 360) rotate(-12)\"><rect x=\"-25\" y=\"-15\" width=\"62\" height=\"47\" rx=\"5\" fill=\"#2563eb\"><\/rect><path d=\"M-17-9H31V23H-17Z\" fill=\"#eff6ff\"><\/path><path d=\"M-20-15V32\" stroke=\"#1d4ed8\" stroke-width=\"4\"><\/path><path d=\"M-8 0H22M-8 8H14\" stroke=\"#93c5fd\" stroke-width=\"3\"><\/path><\/g><g transform=\"translate(254 332) rotate(20)\"><rect x=\"-5\" y=\"-34\" width=\"10\" height=\"60\" rx=\"3\" fill=\"#ea580c\"><\/rect><path d=\"M-5 26L0 38L5 26\" fill=\"#fed7aa\"><\/path><path d=\"M-2 33L0 38L2 33\" fill=\"#292524\"><\/path><\/g><path d=\"M31 214L39 221L31 228L23 221ZM263 235L270 242L263 249L256 242Z\" fill=\"#ea580c\" opacity=\".5\"><\/path><\/svg>",
+    "picture-1": "<svg viewbox=\"0 0 340 250\" role=\"img\" aria-label=\"小安蹲在葉子旁，拿放大鏡觀察葉子上的水珠\"><rect width=\"340\" height=\"250\" rx=\"18\" fill=\"#e8f2e9\"><\/rect><path d=\"M0 213Q120 180 340 213V250H0Z\" fill=\"#c1dbc2\"><\/path><circle cx=\"290\" cy=\"45\" r=\"23\" fill=\"#fef08a\"><\/circle><g transform=\"translate(91 101) scale(0.9)\"><path d=\"M-20 20 L-22 73 L23 73 L20 20Z\" fill=\"#fde047\" stroke=\"#292524\" stroke-width=\"3\"><\/path><path d=\"M-18 72L-18 113M18 72L18 113\" stroke=\"#2563eb\" stroke-width=\"17\" stroke-linecap=\"round\"><\/path><path d=\"M-25 117H-9M10 117H26\" stroke=\"#292524\" stroke-width=\"10\" stroke-linecap=\"round\"><\/path><circle cy=\"-7\" r=\"28\" fill=\"#fed7aa\" stroke=\"#292524\" stroke-width=\"3\"><\/circle><path d=\"M-28-7C-33-45 25-45 29-7L15-19L1-13L-10-21Z\" fill=\"#292524\"><\/path><circle cx=\"-9\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><circle cx=\"10\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><path d=\"M-7 6Q0 13 8 5\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"2.5\" stroke-linecap=\"round\"><\/path><\/g><path d=\"M110 128L156 139\" stroke=\"#fed7aa\" stroke-width=\"13\" stroke-linecap=\"round\"><\/path><path d=\"M161 134L179 116\" stroke=\"#292524\" stroke-width=\"9\" stroke-linecap=\"round\"><\/path><circle cx=\"198\" cy=\"97\" r=\"27\" fill=\"#fefce8bb\" stroke=\"#2563eb\" stroke-width=\"7\"><\/circle><g transform=\"translate(234 171) scale(0.95)\"><path d=\"M-45 8Q-20-60 48-32Q45 30-45 8Z\" fill=\"#86b89a\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M-52 16L34-21M-16 0L-14-24M9-12L20 5\" fill=\"none\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M6-33Q-6-12 6-10Q21-12 6-33Z\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"><\/path><circle cx=\"5\" cy=\"-17\" r=\"2\" fill=\"white\"><\/circle><\/g><path d=\"M276 162L285 145M285 178L305 177\" stroke=\"#ea580c\" stroke-width=\"3\" stroke-linecap=\"round\"><\/path><\/svg>",
+    "picture-2": "<svg viewbox=\"0 0 340 250\" role=\"img\" aria-label=\"小安坐在桌前，對照葉子把水珠畫在紙上\"><rect width=\"340\" height=\"250\" rx=\"18\" fill=\"#fff1df\"><\/rect><rect x=\"232\" y=\"25\" width=\"67\" height=\"53\" rx=\"7\" fill=\"#bfdbfe\" stroke=\"#fff\" stroke-width=\"8\"><\/rect><g transform=\"translate(112 80) scale(0.85)\"><path d=\"M-20 20 L-22 73 L23 73 L20 20Z\" fill=\"#fde047\" stroke=\"#292524\" stroke-width=\"3\"><\/path><path d=\"M-18 72L-18 113M18 72L18 113\" stroke=\"#2563eb\" stroke-width=\"17\" stroke-linecap=\"round\"><\/path><path d=\"M-25 117H-9M10 117H26\" stroke=\"#292524\" stroke-width=\"10\" stroke-linecap=\"round\"><\/path><circle cy=\"-7\" r=\"28\" fill=\"#fed7aa\" stroke=\"#292524\" stroke-width=\"3\"><\/circle><path d=\"M-28-7C-33-45 25-45 29-7L15-19L1-13L-10-21Z\" fill=\"#292524\"><\/path><circle cx=\"-9\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><circle cx=\"10\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><path d=\"M-7 6Q0 13 8 5\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"2.5\" stroke-linecap=\"round\"><\/path><\/g><path d=\"M126 104L183 141\" stroke=\"#fed7aa\" stroke-width=\"13\" stroke-linecap=\"round\"><\/path><path d=\"M25 151H320M50 157V238M293 157V238\" fill=\"none\" stroke=\"#b58865\" stroke-width=\"12\" stroke-linecap=\"round\"><\/path><path d=\"M133 110L218 116L198 152L114 144Z\" fill=\"#fff\" stroke=\"#d6d3d1\" stroke-width=\"2\"><\/path><g transform=\"translate(167 134) scale(0.3)\"><path d=\"M-45 8Q-20-60 48-32Q45 30-45 8Z\" fill=\"#86b89a\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M-52 16L34-21M-16 0L-14-24M9-12L20 5\" fill=\"none\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M6-33Q-6-12 6-10Q21-12 6-33Z\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"><\/path><circle cx=\"5\" cy=\"-17\" r=\"2\" fill=\"white\"><\/circle><\/g><path d=\"M186 117L199 92\" stroke=\"#2563eb\" stroke-width=\"6\" stroke-linecap=\"round\"><\/path><g transform=\"translate(264 132) scale(0.55)\"><path d=\"M-45 8Q-20-60 48-32Q45 30-45 8Z\" fill=\"#86b89a\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M-52 16L34-21M-16 0L-14-24M9-12L20 5\" fill=\"none\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M6-33Q-6-12 6-10Q21-12 6-33Z\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"><\/path><circle cx=\"5\" cy=\"-17\" r=\"2\" fill=\"white\"><\/circle><\/g><path d=\"M33 139L55 117M42 145L64 123\" stroke=\"#ea580c\" stroke-width=\"5\" stroke-linecap=\"round\"><\/path><\/svg>",
+    "picture-3": "<svg viewbox=\"0 0 340 250\" role=\"img\" aria-label=\"小安拿著自己畫的葉子作品，和旁邊的同學分享\"><rect width=\"340\" height=\"250\" rx=\"18\" fill=\"#e8eefb\"><\/rect><path d=\"M0 218H340V250H0Z\" fill=\"#cbd5e1\"><\/path><g transform=\"translate(81 90) scale(0.9)\"><path d=\"M-20 20 L-22 73 L23 73 L20 20Z\" fill=\"#fde047\" stroke=\"#292524\" stroke-width=\"3\"><\/path><path d=\"M-18 72L-18 113M18 72L18 113\" stroke=\"#2563eb\" stroke-width=\"17\" stroke-linecap=\"round\"><\/path><path d=\"M-25 117H-9M10 117H26\" stroke=\"#292524\" stroke-width=\"10\" stroke-linecap=\"round\"><\/path><circle cy=\"-7\" r=\"28\" fill=\"#fed7aa\" stroke=\"#292524\" stroke-width=\"3\"><\/circle><path d=\"M-28-7C-33-45 25-45 29-7L15-19L1-13L-10-21Z\" fill=\"#292524\"><\/path><circle cx=\"-9\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><circle cx=\"10\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><path d=\"M-7 6Q0 13 8 5\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"2.5\" stroke-linecap=\"round\"><\/path><\/g><g transform=\"translate(264 90) scale(0.9)\"><path d=\"M-20 20 L-22 73 L23 73 L20 20Z\" fill=\"#fb923c\" stroke=\"#292524\" stroke-width=\"3\"><\/path><path d=\"M-18 72L-18 113M18 72L18 113\" stroke=\"#2563eb\" stroke-width=\"17\" stroke-linecap=\"round\"><\/path><path d=\"M-25 117H-9M10 117H26\" stroke=\"#292524\" stroke-width=\"10\" stroke-linecap=\"round\"><\/path><circle cy=\"-7\" r=\"28\" fill=\"#fed7aa\" stroke=\"#292524\" stroke-width=\"3\"><\/circle><path d=\"M-28-7C-33-45 25-45 29-7L15-19L1-13L-10-21Z\" fill=\"#292524\"><\/path><circle cx=\"-9\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><circle cx=\"10\" cy=\"-6\" r=\"2.5\" fill=\"#292524\"><\/circle><path d=\"M-7 6Q0 13 8 5\" fill=\"none\" stroke=\"#9a3412\" stroke-width=\"2.5\" stroke-linecap=\"round\"><\/path><\/g><path d=\"M94 114L136 123M245 115L213 132\" stroke=\"#fed7aa\" stroke-width=\"13\" stroke-linecap=\"round\"><\/path><rect x=\"124\" y=\"82\" width=\"91\" height=\"94\" rx=\"5\" fill=\"#fff\" stroke=\"#292524\" stroke-width=\"3\"><\/rect><g transform=\"translate(170 131) scale(0.62)\"><path d=\"M-45 8Q-20-60 48-32Q45 30-45 8Z\" fill=\"#86b89a\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M-52 16L34-21M-16 0L-14-24M9-12L20 5\" fill=\"none\" stroke=\"#335c45\" stroke-width=\"3\"><\/path><path d=\"M6-33Q-6-12 6-10Q21-12 6-33Z\" fill=\"#bfdbfe\" stroke=\"#2563eb\" stroke-width=\"2\"><\/path><circle cx=\"5\" cy=\"-17\" r=\"2\" fill=\"white\"><\/circle><\/g><path d=\"M157 39h43a12 12 0 0 1 12 12v8a12 12 0 0 1-12 12h-18l-10 10v-10h-15a12 12 0 0 1-12-12v-8a12 12 0 0 1 12-12Z\" fill=\"#fde047\"><\/path><path d=\"M162 53h33M162 61h22\" stroke=\"#9a3412\" stroke-width=\"3\" stroke-linecap=\"round\"><\/path><\/svg>"
+  }
+};
+window.COURSE_DATA = COURSE_DATA;
+window.MEDIA_ASSETS = MEDIA_ASSETS;
+</script>
+<script>
+window.WritingLesson={mount(){
+'use strict';
+document.getElementById('root').innerHTML="<div class=\"workspace\">\n<header class=\"topbar\"><div class=\"brand\"><i class=\"fa-solid fa-magnifying-glass\" aria-hidden=\"true\"></i> 生活小偵探 <span>／ 國小寫作教材</span></div><div class=\"top-actions\"><label class=\"sr-only\" for=\"jump\">選擇教材區塊</label><select id=\"jump\"></select><button class=\"utility\" id=\"reference\" type=\"button\" aria-label=\"開啟教師參考解答\" title=\"教師參考解答\"><i class=\"fa-regular fa-lightbulb\" aria-hidden=\"true\"></i></button><button class=\"utility\" id=\"full\" type=\"button\" aria-label=\"切換全螢幕\"><i class=\"fa-solid fa-expand\" aria-hidden=\"true\"></i></button></div></header>\n<main class=\"stage\" aria-label=\"互動教材\"><div class=\"frame\" id=\"track\"></div></main>\n<nav class=\"nav\" aria-label=\"簡報翻頁\"><button class=\"nav-button\" id=\"prev\" type=\"button\"><i class=\"fa-solid fa-arrow-left\" aria-hidden=\"true\"></i> 上一頁</button><div class=\"nav-middle\"><div class=\"steps\" aria-label=\"教材區塊\"></div><small>← → 翻頁 · 小螢幕建議橫向閱讀 <span class=\"page-count\" id=\"count\"></span></small></div><button class=\"nav-button\" id=\"next\" type=\"button\">下一頁 <i class=\"fa-solid fa-arrow-right\" aria-hidden=\"true\"></i></button></nav>\n<p class=\"sr-only\" id=\"announcement\" role=\"status\" aria-live=\"polite\"></p>\n</div>\n<dialog class=\"reference-dialog\" id=\"reference-dialog\" aria-labelledby=\"reference-title\"><div class=\"dialog-head\"><h2 id=\"reference-title\">教師參考解答</h2><button id=\"close-reference\" type=\"button\" aria-label=\"關閉參考解答\">✕</button></div><div id=\"reference-auth\"><label for=\"reference-password\">請輸入密碼</label><div class=\"reference-auth-row\"><input id=\"reference-password\" name=\"reference-password\" type=\"password\" autocomplete=\"off\" aria-describedby=\"reference-auth-error\" autofocus><button class=\"check-btn\" type=\"button\" id=\"reference-open\">開啟解答</button></div><p id=\"reference-auth-error\" role=\"status\"></p></div><div id=\"reference-content\" hidden><p class=\"reference-intro\">先試著作答，再核對。仿寫及理由題可以有不同的合理答案。</p><div class=\"reference-body\" id=\"reference-body\"></div></div></dialog>\n";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const icon=name=>`<i class="fa-solid fa-${name}" aria-hidden="true"></i>`;
+const line=()=>'<div class="paper-line" aria-hidden="true"></div>';
+const CONTENT=window.COURSE_DATA,ASSETS=window.MEDIA_ASSETS;
+if(!CONTENT||!Array.isArray(CONTENT.pages)||!CONTENT.pages.length)throw new Error('Missing lesson pages');
+const UI=CONTENT.uiText||{};
+document.title=`第 ${CONTENT.lesson.number} 課｜${CONTENT.lesson.title}`;
+const blocks=CONTENT.blocks;
+const rawPages=CONTENT.pages;
+const references=[];
+const safeRich=value=>{const t=document.createElement('template');t.innerHTML=String(value??'');const walk=node=>{for(const el of [...node.children]){if(!['BR','SPAN','STRONG'].includes(el.tagName)){el.replaceWith(document.createTextNode(el.textContent));continue;}for(const a of [...el.attributes])if(a.name!=='class')el.removeAttribute(a.name);walk(el);}};walk(t.content);return t.innerHTML;};
+const rich=s=>safeRich(s);
+const lessonWords=CONTENT.lesson.vocabulary.map(v=>v[0]);
+const lessonParagraphs=CONTENT.lesson.paragraphs.map(p=>{let text=escapeHTML(p);for(const w of [...lessonWords].sort((a,b)=>b.length-a.length))text=text.replaceAll(escapeHTML(w),`<strong class="word">${escapeHTML(w)}</strong>`);return `<p>${text}</p>`}).join('');
+const passage=()=>`<article class="card comprehension-reading" aria-label="完整課文：${escapeHTML(CONTENT.lesson.title)}"><h3>${escapeHTML(CONTENT.lesson.title)}</h3><div class="comprehension-passage">${lessonParagraphs}</div></article>`;
+function asset(slot,alt=''){
+ const value=ASSETS.images?.[slot];
+ if(typeof value==='string'&&value.trim().startsWith('<svg')){const t=document.createElement('template');t.innerHTML=value;for(const el of t.content.querySelectorAll('*')){if(['script','foreignObject','iframe'].includes(el.tagName)){el.remove();continue;}for(const a of [...el.attributes])if(a.name.startsWith('on')||/javascript:/i.test(a.value))el.removeAttribute(a.name);}return t.innerHTML;}
+ if(typeof value==='string'&&/^(https?:|data:image\/)/.test(value))return `<img class="lesson-image" src="${escapeHTML(value)}" alt="${escapeHTML(alt)}">`;
+ return `<div class="media-fallback" role="img" aria-label="${escapeHTML(alt)}">${escapeHTML(alt||'圖片暫時無法載入')}</div>`;
+}
+function zyVertical(text){
+ const tokens=text.match(/˙?[ㄅ-ㄩ]+[ˊˇˋ]?|[，。！？；：]/g)||[];
+ return `<span class="zhuyin-vertical" role="text" aria-label="${escapeHTML(text)}">${tokens.map(token=>{if(/^[，。！？；：]$/.test(token))return `<span class="zy-punctuation" aria-hidden="true">${token}</span>`;const tone=token.match(/[ˊˇˋ˙]/)?.[0]||'',letters=token.replace(/[ˊˇˋ˙]/g,'');return `<span class="zy-unit" aria-hidden="true"><span class="zy-syllable" style="--syllable-count:${letters.length}"><span class="zy-glyphs">${[...letters].map(ch=>`<span>${ch}</span>`).join('')}</span>${tone?`<span class="zy-tone ${tone==='˙'?'neutral':''}">${tone}</span>`:''}</span></span>`}).join('')}</span>`;
+}
+const drop=(w,i)=>`<button type="button" class="drop" data-answer="${escapeHTML(w)}" aria-label="詞語第 ${i+1} 格，尚未填答"></button>`;
+const gapParts=parts=>parts.map((text,i)=>i%2?drop(text,(i-1)/2):escapeHTML(text)).join('');
+const countFor=p=>p.type==='vocabulary'?CONTENT.lesson.vocabulary.length:p.content.questions?.length??p.content.practice?.length??p.content.items?.length??(p.type==='vocab-short'?(p.content.parts.length-1)/2:p.content.checklist?.length??0);
+function wordsIn(p,text){const patterns=rawPages.filter(p=>p.type==='pattern');return String(text??'').replaceAll('{count}',countFor(p)).replaceAll('{bankCount}',p.content.bank?.length??0).replaceAll('{patternCount}',patterns.length).replaceAll('{patternIndex}',patterns.indexOf(p)+1);}
+function bodyFor(p){const c=p.content,esc=escapeHTML;
+ switch(p.type){
+ case 'cover':return `<div class="content cover-layout"><div><div class="eyebrow">${icon('fingerprint')} ${esc(c.eyebrow)}</div><h1 tabindex="-1">${rich(c.headingHtml)}</h1><p>${rich(c.introHtml)}</p><div class="pill-row">${c.pills.map(x=>`<span class="pill">${esc(x)}</span>`).join('')}</div><button class="primary" type="button" data-go="1">${esc(c.start)} ${icon('arrow-right')}</button></div><div class="cover-art" aria-hidden="true"><div class="circle"></div><span class="art-note">${esc(c.artNote)}</span>${c.tiles.map((t,i)=>`<div class="tile t${i+1}">${esc(t)}</div>`).join('')}</div></div>`;
+ case 'reading':return `<div class="reading"><article class="card diary">${lessonParagraphs}</article><figure class="xiaoan-portrait">${asset(c.illustrationSlot,c.name)}<figcaption><strong>${esc(c.name)}<span>${esc(c.age)}</span></strong><p>${esc(c.caption)}</p></figcaption></figure></div>`;
+ case 'vocabulary':return `<div class="vocabulary-grid">${CONTENT.lesson.vocabulary.map(([word,meaning,phrase],i)=>`<article class="vocabulary-card"><div class="vocabulary-heading"><span>${String(i+1).padStart(2,'0')}</span><h3>${esc(word)}</h3></div><p class="vocabulary-meaning">${esc(meaning)}</p><div class="vocabulary-context"><span>課文搭配</span><p>${esc(phrase)}</p></div></article>`).join('')}</div>`;
+ case 'truefalse':return `<div class="comprehension-layout">${passage()}<article class="card comprehension-tf"><div class="label">A · 判斷課文內容</div><h3>哪一句符合課文？</h3><div class="comprehension-questions">${c.questions.map((q,i)=>`<div class="question" data-tf="${i}" data-answer="${esc(q[1])}"><div class="question-row"><span>${i+1}. ${esc(q[0])}</span><span class="tf">${[['O','○','正確'],['X','×','不正確']].map(([v,t,l])=>`<button class="option" type="button" data-value="${v}" aria-pressed="false" aria-label="第${i+1}題${l}">${t}</button>`).join('')}</span></div></div>`).join('')}</div><div class="comprehension-actions"><button class="check-btn" type="button" data-check-reading>${esc(UI.confirm)}</button></div><p class="feedback" id="reading-feedback" role="status">選 ○ 或 ×，全部完成後按「${esc(UI.confirm)}」。</p></article></div>`;
+ case 'written':return `<div class="comprehension-layout">${passage()}<article class="card comprehension-written"><div class="label">B · 找出課文線索</div><h3>請在紙上回答</h3><ol class="written-questions">${c.questions.map(q=>`<li><p>${esc(q)}</p><div class="answer-rules" aria-hidden="true">${line()}${line()}</div></li>`).join('')}</ol></article></div>`;
+ case 'zhuyin':return `<div class="zhuyin-stack three">${c.items.map((z,i)=>`<article class="card zhuyin-item"><div class="zhuyin-sentence"><span class="num">${i+1}.</span>${zyVertical(z[0])}</div>${line()}</article>`).join('')}</div>`;
+ case 'vocab-single':case 'vocab-short':return `<div class="vocab-layout vocab-exercise" data-vocab-kind="${p.type==='vocab-single'?'single':'short'}"><aside class="card bank" aria-label="${c.bank.length} 張詞語卡"><div class="bank-grid" style="grid-template-columns:repeat(${c.bank.length},minmax(0,1fr))">${c.bank.map(w=>`<button class="drag-word" type="button" draggable="true" data-word="${esc(w)}" aria-pressed="false">${esc(w)}</button>`).join('')}</div></aside><article class="card task vocab-task">${p.type==='vocab-single'?`<ol>${c.items.map(q=>`<li>${gapParts(q.parts)}</li>`).join('')}</ol>`:`<div class="vocab-short-text">${gapParts(c.parts)}</div>`}</article><div class="score-row"><p class="feedback vocab-feedback" role="status">拖曳詞語卡到黃色空格，${countFor(p)} 格填完再按「${esc(UI.confirm)}」。</p><button class="check-btn" type="button" data-check-vocab>${esc(UI.confirm)}</button><button class="secondary" type="button" data-reset-vocab>${icon('rotate-left')} 重做本頁</button><span class="score vocab-score">已填入 0 / ${countFor(p)}</span></div></div>`;
+ case 'matching':return `<div class="dialogue-layout"><article class="card"><div class="label">問題</div><div class="interview-list">${c.questions.map((q,i)=>`<div class="interview"><h3>${i+1}. ${esc(q[0])}</h3><button type="button" class="answer-drop" data-match-answer="${esc(q[1])}" aria-label="問題${i+1}的回答"></button></div>`).join('')}</div></article><article class="card"><div class="label">回答卡</div><div class="match-answers">${c.answers.map(a=>`<button type="button" class="answer-card" draggable="true" data-match-id="${esc(a.id)}" aria-pressed="false">${esc(a.label)}．${esc(a.text)}</button>`).join('')}</div><p class="feedback" id="match-feedback" role="status">拖曳右邊的回答卡，放進左邊問題下方的黃色框。</p><div class="match-actions"><button class="check-btn" type="button" data-check-match>${esc(UI.confirm)}</button><button class="secondary" type="button" id="reset-match">重新配對</button></div></article></div>`;
+ case 'pattern':return `<div class="pattern-formula">${esc(c.formula)}</div><div class="pattern-layout"><article class="card example-box"><div class="label">課文原句</div><p>${esc(c.original)}</p><div class="label">仿寫例句</div><p>${esc(c.example)}</p></article><article class="card practice-box"><h3>換你接寫</h3>${c.practice.map((q,i)=>`<div class="practice"><span class="num">${i+1}.</span>${esc(q)}${line()}</div>`).join('')}</article></div><p class="tip">${icon('lightbulb')} ${esc(c.tip)}</p>`;
+ case 'position':return `<div class="position-drag-exercise" data-position-drag><div class="position-grid">${c.items.map((q,i)=>`<article class="card position-card" data-position="${i}" data-answer="${esc(q.answer)}"><div class="position-card-head"><div class="label">題目${['一','二','三','四','五','六'][i]||i+1}</div><button class="position-word" type="button" draggable="true" data-position-word="${esc(q.word)}">${esc(q.word)}</button></div><p class="position-task">${q.parts.map((t,j)=>esc(t)+(j<q.parts.length-1?`<button class="position-slot" type="button" data-place="${String.fromCharCode(65+j)}" aria-label="題目${i+1}位置${j+1}">＿＿</button>`:'')).join('')}</p></article>`).join('')}</div><div class="position-actions"><p class="feedback position-feedback" role="status">每題只選一處底線放入詞語，${c.items.length} 題完成後再確認答案。</p><button class="check-btn" type="button" data-check-position>${esc(UI.confirm)}</button><button class="secondary" type="button" data-reset-position>重做本頁</button></div></div>`;
+ case 'order':return `<div class="reorder-grid">${c.items.map((q,i)=>`<article class="card order-exercise" data-order="${i}"><div class="label">題目 ${i+1}</div><h3>排列詞語</h3><div class="token-bank">${q.tokens.map((t,j)=>`<button class="token" type="button" draggable="true" data-token="${j}">${esc(t)}</button>`).join('')}</div><div class="token-target" tabindex="0" role="group" aria-label="題目${i+1}答案框"><span class="empty-hint">把上方詞語卡依序拖曳到這裡</span></div><div class="order-actions"><button class="check-btn" type="button" data-check-order>${esc(UI.confirm)}</button><button class="secondary" type="button" data-reset-order>重排</button></div><p class="feedback" role="status">排好後按「${esc(UI.confirm)}」，再在紙上寫出整句與標點。</p></article>`).join('')}</div>`;
+ case 'combine':return `<div class="combine-layout"><article class="card combine-demo"><header class="combine-card-head"><span class="combine-card-icon">${icon('book-open')}</span><h3>先看示範</h3><small>從上往下讀 ↓</small></header><section class="combine-block combine-original"><h4 class="combine-label"><span>1</span>原來的兩句話</h4>${c.demo.originalHtml.map(t=>`<p>${rich(t)}</p>`).join('')}</section><section class="combine-block combine-method"><h4 class="combine-label"><span>2</span>${esc(c.methodLabel)}</h4><p>${rich(c.demo.methodHtml)}</p></section><section class="combine-block combine-result"><h4 class="combine-label"><span>3</span>完成句</h4><p>${rich(c.demo.resultHtml)}</p></section></article><article class="card combine-practice"><header class="combine-card-head"><span class="combine-card-icon">${icon('pencil')}</span><h3>${esc(c.practiceTitle)}</h3><small>紙上作答</small></header><section class="combine-block combine-practice-original"><div class="combine-label">${esc(c.practiceLabel)}</div>${c.practice.original.map(t=>`<p>${esc(t)}</p>`).join('')}</section><div class="combine-cue">試著用上<b>${esc(c.practice.cue)}</b></div><div class="combine-paper"><p class="combine-paper-title">${icon('file-pen')} 請在紙上寫出完整句子</p><div aria-hidden="true">${line()}${line()}</div><p class="combine-paper-note">${esc(c.practice.note)}</p></div></article></div>`;
+ case 'pictures':return `<div class="figure-grid">${c.items.map((q,i)=>`<article class="card figure-card">${asset(q.illustrationSlot,q.alt)}<h3>圖 ${i+1} · 你看到了什麼？</h3><div class="figure-vocab"><p class="figure-vocab-label">${icon('lightbulb')} 可用的課文詞語</p><div class="figure-vocab-list">${q.words.map(w=>`<span>${esc(w)}</span>`).join('')}</div></div><div class="figure-answer">${line()}${line()}</div></article>`).join('')}</div>`;
+ case 'plan':return `<div class="plan-layout"><div class="plan-grid">${c.items.map(([name,prompt],i)=>`<article class="card plan-card ${i>2?'wide':''}"><div class="plan-card-head"><span class="plan-number">${i+1}</span><h3>${esc(name)}</h3></div><p>${esc(prompt)}</p>${line()}</article>`).join('')}</div><p class="plan-reminder">${icon('lightbulb')} ${esc(c.reminder)}</p></div>`;
+ case 'writing':return `<article class="card writing-assignment"><header class="assignment-heading"><h3>${esc(c.heading)}</h3><p>${rich(c.requirementsHtml)}</p></header><div class="writing-starters">${c.items.map(([label,t],i)=>`<section class="writing-starter"><h4 class="writing-starter-label"><span>${String(i+1).padStart(2,'0')}</span>${esc(label)}</h4><p>${rich(t)}</p></section>`).join('')}</div><p class="writing-goal">${icon('file-pen')} ${esc(c.goal)}</p></article>`;
+ case 'final':return `<div class="content final-layout"><div><div class="stamp" aria-hidden="true">${icon('award')}</div><div class="eyebrow">${esc(c.eyebrow)}</div><h2 tabindex="-1">${rich(c.headingHtml)}</h2><p>${rich(c.introHtml)}</p><button class="return-button" type="button" data-go="0">${icon('rotate-left')} ${esc(c.return)}</button></div><div><div class="checklist">${c.checklist.map(t=>`<label class="check-row"><input type="checkbox"><span>${esc(t)}</span></label>`).join('')}</div><p class="done-note" id="done" role="status">完成 0 / ${c.checklist.length} 項 · 每個勾勾，都是進步。</p></div></div>`;
+ default:throw new Error('Unsupported page type: '+p.type);
+ }
+}
+const pages=rawPages.map(p=>{references.push(wordsIn(p,p.reference));const special=['cover','final'].includes(p.type);const body=bodyFor(p);return {...p,html:special?body:`<div class="content"><div class="eyebrow"><span class="chip">${p.block}</span>${icon(p.symbol)} ${escapeHTML(blocks[p.block])}</div><div class="title-row"><h2 tabindex="-1">${escapeHTML(p.title)}</h2><span class="tag">${escapeHTML(wordsIn(p,p.tag))}</span></div>${p.guide?`<p class="guide">${escapeHTML(wordsIn(p,p.guide))}</p>`:''}${body}</div>`,foot:wordsIn(p,p.foot)}});
+const tfData=rawPages.find(p=>p.type==='truefalse')?.content.questions||[];
+const matchData=rawPages.find(p=>p.type==='matching')?.content.answers||[];
+const orderData=rawPages.find(p=>p.type==='order')?.content.items||[];
+
+$('#track').innerHTML=pages.map((p,i)=>`<section class="slide page ${escapeHTML(p.className||'')}" ${i?'hidden inert':''} aria-labelledby="page-title-${i}" data-page="${i}" data-block="${p.block}">${p.html}<footer class="footer"><span>${escapeHTML(p.foot)}</span><b>${String(i+1).padStart(2,'0')} / ${pages.length}</b></footer></section>`).join('');
+const slides=$$('.slide');slides.forEach((s,i)=>s.querySelector('h1,h2').id='page-title-'+i);
+let current=0,noticeTimer;
+const readConfirmed=new Set(),verified=new Map(),restoredDone=new Set(),mirrorUnlocked=new Set();let progressReady=false;
+const activeTime=slides.map(()=>0),lastQuestionTime=new Map();let enteredAt=performance.now();
+const typeAt=index=>pages[index].type;
+const objectiveTypes=new Set(['truefalse','vocab-single','vocab-short','matching','position','order']);
+const readTypes=new Set(['cover','reading','vocabulary']);
+const signature=(index)=>{
+ const slide=slides[index];
+ switch(typeAt(index)){
+ case 'truefalse':return JSON.stringify([...slide.querySelectorAll('[data-tf]')].map(el=>el.dataset.choice||''));
+ case 'vocab-single':case 'vocab-short':return JSON.stringify([...slide.querySelectorAll('.drop')].map(el=>el.dataset.word||''));
+ case 'matching':return JSON.stringify([...slide.querySelectorAll('.answer-drop')].map(el=>el.dataset.matchId||''));
+ case 'position':return JSON.stringify([...slide.querySelectorAll('.position-card')].map(el=>[...el.querySelectorAll('.position-slot')].map(s=>s.dataset.word||'')));
+ case 'order':return JSON.stringify([...slide.querySelectorAll('.token-target')].map(el=>[...el.querySelectorAll('[data-placed]')].map(t=>t.dataset.placed)));
+ default:return '';
+ }
+};
+function objectiveComplete(index){return verified.get(index)===signature(index)}
+function paperComplete(index){const s=slides[index],checks=[...s.querySelectorAll('.paper-check input,.check-row input')];return checks.length>0&&checks.every(c=>c.checked)&&s.dataset.paperConfirmed==='true'}
+function pageComplete(index){if(restoredDone.has(index))return true;const type=typeAt(index);if(readTypes.has(type))return readConfirmed.has(index);if(type==='order')return objectiveComplete(index)&&paperComplete(index);if(objectiveTypes.has(type))return objectiveComplete(index);return paperComplete(index)}
+function frontier(){let i=0;while(i<slides.length-1&&(pageComplete(i)||mirrorUnlocked.has(i)))i++;return i}
+function gateMessage(text=UI.locked){$('#announcement').textContent=text;let notice=$('#gate-notice');if(!notice){notice=document.createElement('div');notice.id='gate-notice';notice.setAttribute('role','status');document.body.append(notice)}notice.textContent=text;notice.hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.hidden=true,3500)}
+function syncNav(){
+ $('#prev').disabled=current===0;$('#next').disabled=current===slides.length-1;
+ $('#next').title=readTypes.has(typeAt(current))?UI.readNext:UI.next;
+ $('#count').textContent=String(current+1).padStart(2,'0')+' / '+pages.length;
+ $('#jump').value=String(pages[current].block);
+ saveProgress();syncConfirmButtons();
+ const available=frontier();
+ $$('.step-dot').forEach(d=>{const b=Number(d.dataset.block),start=pages.findIndex(p=>p.block===b),active=b===pages[current].block;d.classList.toggle('active',active);d.classList.toggle('locked',start>available);d.setAttribute('aria-label',(b?'第 '+b+' 區：':'')+blocks[b]+(start>available?'，尚未解鎖':''));if(active)d.setAttribute('aria-current','step');else d.removeAttribute('aria-current')});
+}
+// 平台存檔：已完成的頁、紙上作答的勾選、目前頁（重新開啟可以接著做；完成送不出去時重新整理不必整課重做）
+function saveProgress(){if(!progressReady)return;EduBridge.storage.set('progress',{v:1,page:current,done:slides.map((_,i)=>i).filter(i=>pageComplete(i)),checks:slides.map(s=>[...s.querySelectorAll('.paper-check input,.check-row input')].map(c=>c.checked))})}
+// 「確認完成」確認過就停用，改了勾選才重新開放（避免重複按、重複慶祝）
+function syncConfirmButtons(){$$('[data-confirm-paper]').forEach(b=>{const done=b.closest('.slide').dataset.paperConfirmed==='true';b.disabled=done;b.textContent=done?'已確認完成 ✓':UI.paperConfirm})}
+function showPage(target,focus=true){
+ clearCelebration();const now=performance.now();activeTime[current]+=now-enteredAt;current=target;enteredAt=now;
+ slides.forEach((s,i)=>{s.hidden=i!==current;s.inert=i!==current});
+ // 平台分頁回報：page＝max(0, index−1)（封面送 0），總頁數不含封面
+ $('#track').style.transform='translateX(-'+current*100+'%)';EduBridge.progress(Math.max(0,current-1),slides.length-1,pages[current].title,Math.round(current/(slides.length-1)*100));
+ document.body.dataset.slideTheme=slides[current].matches('.cover,.final')?'dark':'light';syncNav();
+ $('#announcement').textContent=`第 ${current+1} 頁，${pages[current].title}`;
+ SessionRecorder.record('page:view',{pageId:pages[current].id,page:current+1});
+ if(focus)slides[current].querySelector('h1,h2').focus({preventScroll:true});
+}
+function requestGo(n,focus=true){
+ if(!Number.isInteger(n)||n<0||n>=slides.length)return false;
+ const limit=frontier();
+ if(n>limit){$('#jump').value=String(pages[current].block);gateMessage();syncNav();return false}
+ showPage(n,focus);return true;
+}
+function requestNext(){
+ // Only a next-page action on the currently visible reading page confirms reading.
+ if(readTypes.has(typeAt(current))){readConfirmed.add(current);SessionRecorder.record('reading:confirmed',{pageId:pages[current].id,page:current+1})}
+ return requestGo(current+1);
+}
+function recordAnswer(index,key,value,correct,type){
+ const questionId=pages[index].id+':'+key;
+ const total=activeTime[index]+(index===current?performance.now()-enteredAt:0);
+ const timeMs=Math.max(0,Math.round(total-(lastQuestionTime.get(questionId)||0)));lastQuestionTime.set(questionId,total);
+ PerformanceTracker.recordAnswer(questionId,correct,timeMs,type);
+ SessionRecorder.record('answer_submit',{questionId,correct,timeMs,questionType:type,answer:value});
+}
+function commitAnswers(index,items,type){
+ items.forEach((a,i)=>recordAnswer(index,'q'+i,a.value,a.ok,type));
+ if(items.length&&items.every(a=>a.ok))verified.set(index,signature(index));else verified.delete(index);
+ syncNav();
+}
+function invalidate(index){restoredDone.delete(index);verified.delete(index);delete slides[index].dataset.paperConfirmed;syncNav()}
+window.__eduCompletionAllowed=()=>current===slides.length-1&&slides.every((_,i)=>pageComplete(i));
+// 平台 SET_PAGE（和 PROGRESS_UPDATE 同基準，跳到 index page+1）：帶 clearedUpTo＝老師「他的畫面」鏡像（沒有學生存檔），
+// 先把 index ≤ clearedUpTo+1 視為已過；不帶＝學生端老師畫筆跳頁，只能到學生已到過的範圍，不替學生解鎖
+window.WritingLesson.setPage=(page,clearedUpTo)=>{if(!Number.isInteger(page))return;if(Number.isInteger(clearedUpTo))for(let i=0;i<=Math.min(clearedUpTo+1,slides.length-1);i++)mirrorUnlocked.add(i);const target=Math.max(0,Math.min(page+1,slides.length-1,frontier()));if(target!==current)showPage(target,false)};
+blocks.forEach((name,b)=>{const start=pages.findIndex(p=>p.block===b);if(start<0)return;const opt=document.createElement('option');opt.value=String(b);opt.textContent=(b?b+'　':'')+name;$('#jump').append(opt);const dot=document.createElement('button');dot.type='button';dot.className='step-dot';dot.textContent=b||'首';dot.dataset.block=String(b);dot.onclick=()=>requestGo(start);$('.steps').append(dot)});
+function resize(){const r=$('.stage').getBoundingClientRect(),scale=Math.max(.05,Math.min(r.width/1280,r.height/786)),style=document.documentElement.style;style.setProperty('--scale',String(scale));style.setProperty('--ui-scale',String(Math.min(1,scale)));style.setProperty('--canvas-width',r.width/scale+'px');style.setProperty('--canvas-height',r.height/scale+'px')}
+new ResizeObserver(resize).observe($('.stage'));resize();
+addTapHandler($('#prev'),()=>requestGo(current-1));addTapHandler($('#next'),requestNext);
+$$('[data-go]').forEach(b=>addTapHandler(b,()=>Number(b.dataset.go)===current+1?requestNext():requestGo(Number(b.dataset.go))));
+$('#jump').onchange=e=>requestGo(pages.findIndex(p=>p.block===Number(e.target.value)));
+document.addEventListener('keydown',e=>{if($('#reference-dialog').open||e.altKey||e.ctrlKey||e.metaKey||e.target.closest('input,textarea,select,button,[contenteditable]'))return;const target={ArrowRight:current+1,PageDown:current+1,ArrowLeft:current-1,PageUp:current-1,Home:0,End:slides.length-1};if(Object.hasOwn(target,e.key)){e.preventDefault();if(['ArrowRight','PageDown'].includes(e.key))requestNext();else requestGo(target[e.key])}});
+// Swipes outside draggable targets share the same gate as next-page clicks.
+let swipe=null;
+$('.stage').addEventListener('touchstart',e=>{if(e.touches.length!==1||e.target.closest('button,input,[draggable="true"]')){swipe=null;return}swipe={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});
+$('.stage').addEventListener('touchend',e=>{if(!swipe)return;const t=e.changedTouches[0],dx=t.clientX-swipe.x,dy=t.clientY-swipe.y;swipe=null;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5){if(dx<0)requestNext();else requestGo(current-1)}},{passive:true});
+
+$('#full').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{$('#announcement').textContent='此瀏覽器未開啟全螢幕，仍可使用教材。';}};document.addEventListener('fullscreenchange',resize);
+function lockReference(){
+ $('#reference-password').value='';$('#reference-password').removeAttribute('aria-invalid');$('#reference-auth-error').textContent='';$('#reference-body').textContent='';$('#reference-content').hidden=true;$('#reference-auth').hidden=false;$('#reference-title').textContent='教師參考解答';
+}
+$('#reference').onclick=()=>{lockReference();$('#reference-dialog').showModal();$('#reference-password').focus();};
+const unlockReference=()=>{const input=$('#reference-password');if(input.value!=='baania888'){input.value='';input.setAttribute('aria-invalid','true');$('#reference-auth-error').textContent='密碼不正確，請再試一次。';input.focus();return;}input.value='';input.removeAttribute('aria-invalid');$('#reference-auth-error').textContent='';$('#reference-title').textContent=pages[current].title+'｜參考解答';$('#reference-body').textContent=references[current];$('#reference-auth').hidden=true;$('#reference-content').hidden=false;$('#close-reference').focus();};
+$('#reference-open').onclick=unlockReference;$('#reference-password').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();unlockReference();}};
+$('#close-reference').onclick=()=>$('#reference-dialog').close();
+$('#reference-dialog').addEventListener('close',lockReference);
+$('#reference-dialog').addEventListener('click',e=>{if(e.target===$('#reference-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
+let celebrationTimer=null;
+function clearCelebration(){clearTimeout(celebrationTimer);$$('.success-celebration').forEach(el=>el.remove());$$('.success-button').forEach(el=>el.classList.remove('success-button'));}
+function celebrate(feedback,detail,completionTitle=''){
+ const slide=feedback.closest('.slide');if(!slide||slide.hidden)return;
+ const celebration=document.createElement('div');celebration.className='success-celebration';celebration.setAttribute('aria-hidden','true');
+ const colors=['#fde047','#ea580c','#2563eb','#16a34a','#fb923c'];
+ const confetti=Array.from({length:30},(_,i)=>`<span class="success-confetti" style="--x:${5+(i*31)%90}%;--color:${colors[i%colors.length]};--delay:${(i%6)*.07}s;--drift:${(i%2?-1:1)*(20+i*3)}px;--spin:${i%2?540:-540}deg"></span>`).join('');
+ const title=completionTitle||(feedback.closest('.order-exercise')?'太棒了，這題答對了！':'太棒了，全部答對！');
+ celebration.innerHTML=`${confetti}<div class="success-banner"><div class="success-medal">${icon('trophy')}</div><strong>${title}</strong><p>${escapeHTML(detail)}</p></div>`;
+ slide.append(celebration);
+ const button=completionTitle?slide.querySelector('[data-finish-learning],[data-confirm-paper]'):(feedback.closest('.order-exercise')||slide).querySelector('.check-btn');if(button)button.classList.add('success-button');
+ celebrationTimer=setTimeout(clearCelebration,2800);
+}
+function message(el,text,type=''){if(!el)return;clearCelebration();el.textContent=text;el.classList.remove('good','bad');if(type)el.classList.add(type);if(type==='good')celebrate(el,text);}
+const readingGroups=$$('[data-tf]');
+readingGroups.forEach((group,i)=>group.querySelectorAll('button').forEach(b=>b.onclick=()=>{readingGroups.forEach(g=>g.querySelectorAll('button').forEach(x=>x.classList.remove('correct','incorrect')));group.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));group.dataset.choice=b.dataset.value;const count=readingGroups.filter(g=>g.dataset.choice).length;message($('#reading-feedback'),`第 ${i+1} 題已選 ${b.dataset.value==='O'?'○':'×'}。已完成 ${count} / ${readingGroups.length} 題，全部選好後按「確認答案」。`);}));
+const readingCheck=$('[data-check-reading]');
+if(readingCheck)readingCheck.onclick=()=>{if(readingGroups.some(group=>!group.dataset.choice)){message($('#reading-feedback'),`請先完成 ${readingGroups.length} 題，再按「確認答案」。`,'bad');return;}let correct=0;readingGroups.forEach(group=>{const ok=group.dataset.choice===group.dataset.answer;correct+=ok?1:0;const selected=group.querySelector(`[data-value="${group.dataset.choice}"]`);selected.classList.add(ok?'correct':'incorrect');});message($('#reading-feedback'),correct===readingGroups.length?'全部正確！你已經找到了課文線索。':`目前答對 ${correct} / ${readingGroups.length}，紅色答案再回課文找找看。`,correct===readingGroups.length?'good':'bad');};
+// HTML5 拖曳與點選共用同一個填答判斷；每一頁的詞語題各自計分。
+// 載入時詞語卡順序固定（老師鏡像頁重新開啟同一份 HTML 時要一致）；按「重做本頁」才隨機打亂
+const seededRandom=seed=>{let t=((Number(seed)||0)+1)*2654435761>>>0;return()=>{t=t+0x6D2B79F5>>>0;let r=Math.imul(t^t>>>15,1|t);r=r+Math.imul(r^r>>>7,61|r)^r;return((r^r>>>14)>>>0)/4294967296}};
+$$('.vocab-exercise').forEach(exercise=>{
+ const wordCards=[...exercise.querySelectorAll('.drag-word')],zones=[...exercise.querySelectorAll('.drop')],feedback=exercise.querySelector('.vocab-feedback'),score=exercise.querySelector('.vocab-score');let selectedWord=null,draggedWord=null;
+ function shuffleWordCards(rand=Math.random){
+  const answers=zones.map(z=>z.dataset.answer),bank=exercise.querySelector('.bank-grid'),previous=[...bank.children].map(c=>c.dataset.word).join('|');let order=[];
+  for(let attempt=0;attempt<100;attempt++){
+   order=[...wordCards];for(let i=order.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[order[i],order[j]]=[order[j],order[i]];}
+   if(order.every((c,i)=>c.dataset.word!==answers[i])&&order.map(c=>c.dataset.word).join('|')!==previous)break;
+  }
+  if(!order.every((c,i)=>c.dataset.word!==answers[i])||order.map(c=>c.dataset.word).join('|')===previous){
+   const base=[...wordCards];
+   for(let offset=1;offset<base.length;offset++){order=base.slice(offset).concat(base.slice(0,offset));if(order.every((c,i)=>c.dataset.word!==answers[i])&&order.map(c=>c.dataset.word).join('|')!==previous)break;}
+  }
+  bank.replaceChildren(...order);
+ }
+ function selectWord(w){selectedWord=w;wordCards.forEach(c=>{const yes=c.dataset.word===w;c.classList.toggle('selected',yes);c.setAttribute('aria-pressed',String(yes));});}
+ function clearDropHints(){zones.forEach(z=>z.classList.remove('over','drop-ready','dragging'));}
+ function beginWordDrag(e,w,el){draggedWord=w;selectWord(null);e.dataTransfer.setData('text/plain',w);e.dataTransfer.effectAllowed='move';el.classList.add('dragging');zones.forEach(z=>z.classList.add('drop-ready'));}
+ function nearestDrop(e){const direct=e.target.closest('.drop');if(direct&&zones.includes(direct))return direct;const slide=exercise.closest('.slide');const scale=slide.getBoundingClientRect().width/slide.offsetWidth;let best=null,distance=Infinity;zones.forEach(z=>{const r=z.getBoundingClientRect(),dx=Math.max(r.left-e.clientX,0,e.clientX-r.right),dy=Math.max(r.top-e.clientY,0,e.clientY-r.bottom),d=Math.hypot(dx,dy);if(dx<=24*scale&&dy<=18*scale&&d<distance){best=z;distance=d;}});return best;}
+ function renderVocab(){const used=new Set(zones.map(z=>z.dataset.word).filter(Boolean));wordCards.forEach(c=>{c.disabled=used.has(c.dataset.word);c.draggable=!c.disabled;});zones.forEach((z,i)=>{z.textContent=z.dataset.word||'';z.draggable=Boolean(z.dataset.word);z.classList.toggle('filled',Boolean(z.dataset.word));z.setAttribute('aria-label',`詞語第 ${i+1} 格，${z.dataset.word?'已填入'+z.dataset.word+'，可拖曳移動或點選取回':'空白詞語格'}`);});score.textContent=`已填入 ${used.size} / ${zones.length}`;}
+ function fillWord(w,z){const card=wordCards.find(c=>c.dataset.word===w),source=zones.find(x=>x.dataset.word===w);if(!card||(!source&&card.disabled)||source===z)return;const replaced=z.dataset.word;if(source){if(replaced)source.dataset.word=replaced;else delete source.dataset.word;}zones.forEach(x=>x.classList.remove('correct','incorrect'));z.dataset.word=w;clearDropHints();selectWord(null);renderVocab();message(feedback,'已放入「'+w+'」。全部填好後，按「確認答案」。');}
+ wordCards.forEach(c=>{c.onclick=()=>{selectWord(selectedWord===c.dataset.word?null:c.dataset.word);message(feedback,selectedWord?'已選「'+selectedWord+'」，請點空格。':'選一張詞語卡再填答。');};c.ondragstart=e=>{if(c.disabled){e.preventDefault();return;}beginWordDrag(e,c.dataset.word,c);};c.ondragend=()=>{draggedWord=null;c.classList.remove('dragging');clearDropHints();};});
+ const task=exercise.querySelector('.vocab-task');
+ task.ondragover=e=>{if(!draggedWord)return;e.preventDefault();const target=nearestDrop(e);e.dataTransfer.dropEffect=target?'move':'none';zones.forEach(z=>z.classList.toggle('over',z===target));};
+ task.ondragleave=e=>{if(!task.contains(e.relatedTarget))zones.forEach(z=>z.classList.remove('over'));};
+ task.ondrop=e=>{if(!draggedWord)return;e.preventDefault();const target=nearestDrop(e);if(target)fillWord(draggedWord,target);else message(feedback,'再靠近一點黃色空格就能放入，也可以先點詞語卡，再點空格。');clearDropHints();};
+ zones.forEach(z=>{z.ondragstart=e=>{if(!z.dataset.word){e.preventDefault();return;}beginWordDrag(e,z.dataset.word,z);};z.ondragend=()=>{draggedWord=null;clearDropHints();};z.onclick=()=>{if(selectedWord){fillWord(selectedWord,z);}else if(z.dataset.word){const w=z.dataset.word;delete z.dataset.word;zones.forEach(x=>x.classList.remove('correct','incorrect'));renderVocab();selectWord(w);message(feedback,'已取回「'+w+'」，可以重新放入。');}else message(feedback,'先選一張詞語卡，再點空格。');};});
+ exercise.querySelector('[data-check-vocab]').onclick=()=>{if(zones.some(z=>!z.dataset.word)){message(feedback,`請先把 ${zones.length} 個空格都填好，再確認答案。`,'bad');return;}let correct=0;zones.forEach(z=>{const ok=z.dataset.word===z.dataset.answer;correct+=ok?1:0;z.classList.toggle('correct',ok);z.classList.toggle('incorrect',!ok);});message(feedback,correct===zones.length?`全部正確！${zones.length} 個詞語都放對了。`:`目前答對 ${correct} / ${zones.length}，紅色空格需要再調整。`,correct===zones.length?'good':'bad');};exercise.querySelector('[data-reset-vocab]').onclick=()=>{zones.forEach(z=>{delete z.dataset.word;z.classList.remove('over','correct','incorrect');});selectWord(null);draggedWord=null;clearDropHints();wordCards.forEach(c=>c.classList.remove('dragging'));shuffleWordCards();renderVocab();message(feedback,'本頁已重置，詞語卡也重新打亂了。');};shuffleWordCards(seededRandom(exercise.closest('.slide').dataset.page));renderVocab();
+});
+const answerCards=$$('.answer-card'),matchZones=$$('.answer-drop');let selectedMatch=null,draggedMatch=null;
+function selectMatch(id){selectedMatch=id;answerCards.forEach(c=>{const yes=c.dataset.matchId===id;c.classList.toggle('selected',yes);c.setAttribute('aria-pressed',String(yes));});}
+function renderMatch(){const used=new Set(matchZones.map(z=>z.dataset.matchId).filter(Boolean));answerCards.forEach(c=>{c.disabled=used.has(c.dataset.matchId);c.draggable=!c.disabled;});matchZones.forEach(z=>{z.classList.toggle('filled',Boolean(z.dataset.matchId));const a=matchData.find(a=>a.id===z.dataset.matchId);z.textContent=a?a.label+'．'+a.text:'';});}
+function fillMatch(id,z){const c=answerCards.find(c=>c.dataset.matchId===id);if(!c||c.disabled||z.dataset.matchId)return;z.dataset.matchId=id;z.classList.remove('correct','incorrect');selectMatch(null);renderMatch();message($('#match-feedback'),'已放入回答，全部完成後按「確認答案」。');}
+answerCards.forEach(c=>{c.onclick=()=>{selectMatch(selectedMatch===c.dataset.matchId?null:c.dataset.matchId);message($('#match-feedback'),selectedMatch?'回答卡已選好，請點問題下方的框。':'選一張回答卡再配對。');};c.ondragstart=e=>{if(c.disabled){e.preventDefault();return;}draggedMatch=c.dataset.matchId;e.dataTransfer.setData('text/plain',draggedMatch);e.dataTransfer.effectAllowed='move';};c.ondragend=()=>draggedMatch=null;});
+matchZones.forEach(z=>{z.ondragover=e=>{if(draggedMatch)e.preventDefault();};z.ondrop=e=>{e.preventDefault();fillMatch(draggedMatch||e.dataTransfer.getData('text/plain'),z);};z.onclick=()=>{if(z.dataset.matchId){const id=z.dataset.matchId;delete z.dataset.matchId;z.classList.remove('correct','incorrect');renderMatch();selectMatch(id);message($('#match-feedback'),'已取回回答卡，可以重新配對。');}else if(selectedMatch)fillMatch(selectedMatch,z);else message($('#match-feedback'),'先選右邊的回答卡。');};});
+const matchCheck=$('[data-check-match]');
+if(matchCheck)matchCheck.onclick=()=>{if(matchZones.some(z=>!z.dataset.matchId)){message($('#match-feedback'),`請先把 ${matchZones.length} 個回答框都填好，再按「確認答案」。`,'bad');return;}let correct=0;matchZones.forEach(z=>{const ok=z.dataset.matchId===z.dataset.matchAnswer;correct+=ok?1:0;z.classList.toggle('correct',ok);z.classList.toggle('incorrect',!ok);});message($('#match-feedback'),correct===matchZones.length?`全部正確！${matchZones.length} 組問題與回答都配對成功。`:`目前答對 ${correct} / ${matchZones.length}，紅色框再想想問題的重點。`,correct===matchZones.length?'good':'bad');};
+if($('#reset-match'))$('#reset-match').onclick=()=>{matchZones.forEach(z=>{delete z.dataset.matchId;z.classList.remove('correct','incorrect');});selectMatch(null);renderMatch();message($('#match-feedback'),'對話題已重置。');};
+$$('[data-position-drag]').forEach(exercise=>{const words=[...exercise.querySelectorAll('[data-position-word]')],slots=[...exercise.querySelectorAll('.position-slot')],cards=[...exercise.querySelectorAll('.position-card')],feedback=exercise.querySelector('.position-feedback');let selected=null,dragging=null;function selectWord(word){selected=word;words.forEach(w=>{const yes=w===word;w.classList.toggle('selected',yes);w.setAttribute('aria-pressed',String(yes));});}function render(){slots.forEach((slot,i)=>{const word=slot.dataset.word;slot.textContent=word||'＿＿';slot.classList.toggle('filled',Boolean(word));slot.classList.remove('over');slot.setAttribute('aria-label',word?slot.getAttribute('aria-label')+'，已填入'+word:slot.getAttribute('aria-label')+'，空白');});}function fill(word,slot){if(!word||!slot)return;const card=slot.closest('.position-card'),cardWord=card.querySelector('[data-position-word]')?.dataset.positionWord;if(word!==cardWord){message(feedback,'請把這一題的「'+cardWord+'」詞語卡放到空格。','bad');return;}card.querySelectorAll('.position-slot').forEach(x=>{if(x!==slot&&x.dataset.word===word){delete x.dataset.word;x.classList.remove('correct','incorrect');}});delete slot.dataset.word;slot.dataset.word=word;slots.forEach(x=>x.classList.remove('correct','incorrect'));selectWord(null);render();message(feedback,'已放入「'+word+'」，全部完成後按「確認答案」。');}words.forEach(w=>{w.onclick=()=>{selectWord(selected===w?null:w);message(feedback,selected?'已選「'+selected.dataset.positionWord+'」，請點這一題的底線位置。':'請先選一張詞語卡。');};w.ondragstart=e=>{dragging=w.dataset.positionWord;e.dataTransfer.setData('text/plain',dragging);e.dataTransfer.effectAllowed='copy';w.classList.add('dragging');};w.ondragend=()=>{dragging=null;w.classList.remove('dragging');slots.forEach(s=>s.classList.remove('over'));};});slots.forEach(slot=>{slot.ondragover=e=>{if(dragging){e.preventDefault();slot.classList.add('over');}};slot.ondragleave=()=>slot.classList.remove('over');slot.ondrop=e=>{e.preventDefault();slot.classList.remove('over');fill(dragging||e.dataTransfer.getData('text/plain'),slot);};slot.onclick=()=>{if(selected)fill(selected.dataset.positionWord,slot);else if(slot.dataset.word){const word=slot.dataset.word;delete slot.dataset.word;slots.forEach(x=>x.classList.remove('correct','incorrect'));render();selectWord(slot.closest('.position-card').querySelector('[data-position-word]'));message(feedback,'已取回「'+word+'」，可以重新放入。');}else message(feedback,'請先選這一題的詞語卡，或直接拖曳詞語卡。');};});exercise.querySelector('[data-check-position]').onclick=()=>{if(cards.some(card=>!card.querySelector('.position-slot[data-word]'))){message(feedback,`請先完成 ${cards.length} 題，每題把詞語放到一處底線，再按「確認答案」。`,'bad');return;}let correct=0;cards.forEach(card=>{const answer=card.dataset.answer,filled=card.querySelector('.position-slot[data-word]'),ok=filled.dataset.place===answer;correct+=ok?1:0;card.querySelectorAll('.position-slot').forEach(x=>x.classList.remove('correct','incorrect'));filled.classList.add(ok?'correct':'incorrect');});message(feedback,correct===cards.length?`全部正確！${cards.length} 個詞語位置都放對了。`:`目前答對 ${correct} / ${cards.length}，紅色位置再調整。`,correct===cards.length?'good':'bad');};exercise.querySelector('[data-reset-position]').onclick=()=>{slots.forEach(slot=>{delete slot.dataset.word;slot.classList.remove('correct','incorrect','over');});selectWord(null);render();message(feedback,'本頁已重置，可以重新作答。');};render();});
+
+let draggingToken=null;
+$$('.order-exercise').forEach(exercise=>{const qi=Number(exercise.dataset.order),q=orderData[qi],bank=exercise.querySelector('.token-bank'),target=exercise.querySelector('.token-target'),feedback=exercise.querySelector('.feedback');let placed=[];const bankButtons=[...bank.children];
+function renderOrder(){bankButtons.forEach((b,i)=>{b.disabled=placed.includes(i);b.draggable=!b.disabled;});target.replaceChildren();if(!placed.length){const hint=document.createElement('span');hint.className='empty-hint';hint.textContent='把上方詞語卡依序拖曳到這裡';target.append(hint);}placed.forEach(index=>{const b=document.createElement('button');b.type='button';b.className='placed-token';b.draggable=true;b.dataset.placed=String(index);b.textContent=q.tokens[index];b.setAttribute('aria-label',q.tokens[index]+'，點選取回');b.onclick=()=>{placed=placed.filter(x=>x!==index);renderOrder();message(feedback,'已取回詞語，可以調整順序。');};b.ondragstart=e=>{draggingToken={qi,index};e.dataTransfer.setData('text/plain',JSON.stringify(draggingToken));e.dataTransfer.effectAllowed='move';};b.ondragend=()=>draggingToken=null;target.append(b);});}
+function insertToken(index,before){if(!Number.isInteger(index)||index<0||index>=q.tokens.length||index===before)return;placed=placed.filter(x=>x!==index);const at=before===undefined?-1:placed.indexOf(before);if(at<0)placed.push(index);else placed.splice(at,0,index);renderOrder();message(feedback,'目前順序：'+placed.map(i=>q.tokens[i]).join(' → '));}
+bankButtons.forEach((b,index)=>{b.onclick=()=>insertToken(index);b.ondragstart=e=>{if(b.disabled){e.preventDefault();return;}draggingToken={qi,index};e.dataTransfer.setData('text/plain',JSON.stringify(draggingToken));e.dataTransfer.effectAllowed='move';};b.ondragend=()=>draggingToken=null;});
+target.ondragover=e=>{if(draggingToken?.qi===qi){e.preventDefault();e.dataTransfer.dropEffect='move';}};target.ondrop=e=>{e.preventDefault();if(draggingToken?.qi!==qi)return;const before=e.target.closest('[data-placed]');insertToken(draggingToken.index,before?Number(before.dataset.placed):undefined);};bank.ondragover=e=>{if(draggingToken?.qi===qi)e.preventDefault();};bank.ondrop=e=>{e.preventDefault();if(draggingToken?.qi!==qi)return;placed=placed.filter(i=>i!==draggingToken.index);renderOrder();message(feedback,'已將詞語放回。');};exercise.querySelector('[data-check-order]').onclick=()=>{const ok=placed.map(i=>q.tokens[i]).join('|')===q.answer.join('|');message(feedback,ok?'順序正確！'+q.sentence:placed.length<q.tokens.length?'還有詞語沒有排進來。':'再讀一次，想想主詞和動作的先後順序。',ok?'good':'bad');};exercise.querySelector('[data-reset-order]').onclick=()=>{placed=[];renderOrder();message(feedback,'已重排，從第一個詞語開始。');};renderOrder();});
+$$('.check-row input').forEach(input=>input.onchange=()=>{input.closest('.check-row').classList.toggle('done',input.checked);const count=$$('.check-row input:checked').length;$('#done').textContent=count===$$('.check-row input').length?'全部完成！請把紙本交給老師閱讀。':`完成 ${count} / ${$$('.check-row input').length} 項 · 每個勾勾，都是進步。`;});
+// 紙上作答進度獨立於答案檢核，不判斷手寫內容對錯。
+const paperSelectors={written:'.written-questions li',zhuyin:'.zhuyin-item',pattern:'.practice',order:'.order-exercise',combine:'.combine-practice',pictures:'.figure-card',plan:'.plan-card',writing:'.writing-starter'};
+const paperTasks=pages.flatMap((p,i)=>paperSelectors[p.type]?[[i,paperSelectors[p.type]]]:[]);
+function addPaperCompletion(slide,checks){
+ if(!slide||!checks.length)return;
+ slide.classList.add('has-paper-completion');
+ const footer=slide.querySelector('.footer'),bar=document.createElement('div');bar.className='paper-completion-bar';
+ bar.innerHTML=`<p class="paper-completion-status" role="status"></p><button class="check-btn" type="button" data-confirm-paper>${escapeHTML(UI.paperConfirm)}</button>`;
+ footer.firstElementChild.replaceWith(bar);
+ const status=bar.querySelector('.paper-completion-status');
+ const isFinal=slide.classList.contains('final');
+ let confirm=bar.querySelector('button');
+ if(isFinal){confirm.remove();confirm=document.createElement('button');confirm.type='button';confirm.className='finish-learning';confirm.dataset.finishLearning='';confirm.dataset.eduFinish='';confirm.innerHTML=icon('award')+' '+escapeHTML(UI.finish);$('#done').after(confirm);}
+
+ function progress(){clearCelebration();delete slide.dataset.paperConfirmed;const count=checks.filter(c=>c.checked).length;status.classList.remove('good','bad');status.textContent=`在紙上寫完一題就打勾 · 已完成 ${count} / ${checks.length}`;}
+ checks.forEach(c=>c.addEventListener('change',progress));
+ confirm.onclick=()=>{clearCelebration();const count=checks.filter(c=>c.checked).length;if(count!==checks.length){status.classList.remove('good');status.classList.add('bad');status.textContent=`還有 ${checks.length-count} 項未勾選，請在紙上寫完，再打勾。`;return;}slide.dataset.paperConfirmed='true';status.classList.remove('bad');status.classList.add('good');status.textContent=isFinal?UI.completed:'本頁已確認完成！請保留紙本，交給老師閱讀。';celebrate(status,isFinal?'你完成了本課，記得把紙本交給老師閱讀。':'你完成了本頁紙上練習，繼續加油！',isFinal?'恭喜你，完成本課！':'太棒了，練習完成！');};
+ progress();
+}
+for(const [index,selector] of paperTasks){const slide=slides[index],items=[...slide.querySelectorAll(selector)];const checks=items.map((item,i)=>{
+ const label=document.createElement('label');label.className='paper-check';label.innerHTML=`<input type="checkbox" aria-label="第 ${i+1} 項已在紙上完成"><span>${escapeHTML(UI.paperCheck)}</span>`;
+ const answerLine=[...item.querySelectorAll('.paper-line')].at(-1);
+ if(item.matches('.combine-practice')){const completion=document.createElement('div');completion.className='combine-completion';completion.append(label);item.querySelector('.combine-paper').append(completion);}
+ else if(answerLine){let hidden=answerLine.closest('[aria-hidden="true"]');while(hidden){hidden.removeAttribute('aria-hidden');hidden=answerLine.closest('[aria-hidden="true"]');}answerLine.classList.add('paper-check-line');answerLine.append(label);}else item.append(label);
+ return label.querySelector('input');
+ });addPaperCompletion(slide,checks);}
+addPaperCompletion(slides.at(-1),$$('.check-row input'));
+
+// Submit only after the existing handlers finish; preserve delayed correctness feedback.
+const orderVerified=new Map();
+function orderStamp(ex){return JSON.stringify([...ex.querySelectorAll('[data-placed]')].map(t=>t.dataset.placed))}
+const originalObjectiveComplete=objectiveComplete;
+objectiveComplete=function(index){if(typeAt(index)==='order')return [...slides[index].querySelectorAll('.order-exercise')].every(ex=>orderVerified.get(ex)===orderStamp(ex));return originalObjectiveComplete(index)};
+const indexOf=el=>Number(el.closest('.slide').dataset.page);
+function afterObjectiveCheck(button){
+ const index=indexOf(button),s=slides[index],type=typeAt(index);
+ if(type==='order'){
+  const ex=button.closest('.order-exercise'),q=pages[index].content.items[Number(ex.dataset.order)];
+  const values=[...ex.querySelectorAll('[data-placed]')].map(t=>q.tokens[Number(t.dataset.placed)]);
+  if(values.length<q.tokens.length){orderVerified.delete(ex);syncNav();return;}
+  const ok=JSON.stringify(values)===JSON.stringify(q.answer);
+  recordAnswer(index,'order-'+ex.dataset.order,values,ok,'other');
+  if(ok)orderVerified.set(ex,orderStamp(ex));else orderVerified.delete(ex);syncNav();return;
+ }
+ let items=[];
+ if(type==='truefalse'){const groups=[...s.querySelectorAll('[data-tf]')];if(groups.some(g=>!g.dataset.choice))return;items=groups.map(g=>({value:g.dataset.choice,ok:g.dataset.choice===g.dataset.answer}))}
+ if(type.startsWith('vocab-')){const zones=[...s.querySelectorAll('.drop')];if(zones.some(z=>!z.dataset.word))return;items=zones.map(z=>({value:z.dataset.word,ok:z.dataset.word===z.dataset.answer}))}
+ if(type==='matching'){const zones=[...s.querySelectorAll('.answer-drop')];if(zones.some(z=>!z.dataset.matchId))return;items=zones.map(z=>({value:z.dataset.matchId,ok:z.dataset.matchId===z.dataset.matchAnswer}))}
+ if(type==='position'){const cards=[...s.querySelectorAll('.position-card')];if(cards.some(c=>!c.querySelector('[data-place][data-word]')))return;items=cards.map(c=>{const z=c.querySelector('[data-place][data-word]');return {value:[z.dataset.word,z.dataset.place],ok:z.dataset.place===c.dataset.answer}})}
+ commitAnswers(index,items,type==='truefalse'?'truefalse':type==='matching'?'matching':'fill');
+}
+const objectiveEdit='.option,.drop,.answer-drop,.position-slot,.token,.placed-token,[data-reset-vocab],#reset-match,[data-reset-position],[data-reset-order]';
+document.addEventListener('click',event=>{
+ const button=event.target.closest('button');if(!button||!button.closest('.slide'))return;
+ if(button.matches(objectiveEdit)){
+  const index=indexOf(button);invalidate(index);
+  if(typeAt(index)==='order')orderVerified.delete(button.closest('.order-exercise'));
+ }
+ if(button.matches('[data-check-reading],[data-check-vocab],[data-check-match],[data-check-position],[data-check-order]'))queueMicrotask(()=>afterObjectiveCheck(button));
+},true);
+document.addEventListener('drop',event=>{const slide=event.target.closest('.slide');if(!slide)return;const index=Number(slide.dataset.page);invalidate(index);if(typeAt(index)==='order')orderVerified.delete(event.target.closest('.order-exercise'));},true);
+document.addEventListener('change',event=>{if(event.target.matches('.paper-check input,.check-row input')){const index=indexOf(event.target);restoredDone.delete(index);SessionRecorder.record('paper:check',{pageId:pages[index].id,checked:event.target.checked});queueMicrotask(syncNav)}},true);
+slides.forEach((slide,index)=>{
+ const confirm=slide.querySelector('[data-confirm-paper],[data-finish-learning]');if(!confirm)return;
+ const original=confirm.onclick;
+ confirm.onclick=()=>{
+  const final=typeAt(index)==='final';
+  if(final&&!slides.slice(0,-1).every((_,i)=>pageComplete(i))){gateMessage();return}
+  if(typeAt(index)==='order'&&!objectiveComplete(index)){gateMessage('請先完成每題的詞語排列並確認答案，再確認紙上練習完成。');return}
+  original();
+  if(slide.dataset.paperConfirmed!=='true')return;
+  if(!final){[...slide.querySelectorAll('.paper-check input')].forEach((check,i)=>recordAnswer(index,'paper-'+i,'completed',null,'paper'));SessionRecorder.record('paper:confirmed',{pageId:pages[index].id,count:slide.querySelectorAll('.paper-check input').length})}
+  syncNav();
+  if(final)sendTaskComplete();
+ };
+});
+// Pointer-based touch drag uses the same HTML5 handlers as mouse drag.
+let pointerDrag=null;
+document.addEventListener('pointerdown',event=>{
+ if(event.pointerType==='mouse'||event.button!==0)return;
+ const el=event.target.closest('[draggable="true"]');if(!el||el.disabled)return;
+ pointerDrag={el,id:event.pointerId,x:event.clientX,y:event.clientY,active:false,dt:new DataTransfer()};el.setPointerCapture?.(event.pointerId);
+});
+document.addEventListener('pointermove',event=>{
+ const drag=pointerDrag;if(!drag||drag.id!==event.pointerId)return;
+ if(!drag.active&&Math.hypot(event.clientX-drag.x,event.clientY-drag.y)>8){drag.active=true;drag.el.dispatchEvent(new DragEvent('dragstart',{bubbles:true,cancelable:true,dataTransfer:drag.dt}))}
+ if(!drag.active)return;event.preventDefault();document.elementFromPoint(event.clientX,event.clientY)?.dispatchEvent(new DragEvent('dragover',{bubbles:true,cancelable:true,dataTransfer:drag.dt,clientX:event.clientX,clientY:event.clientY}));
+},{passive:false});
+document.addEventListener('pointerup',event=>{
+ const drag=pointerDrag;if(!drag||drag.id!==event.pointerId)return;pointerDrag=null;
+ if(drag.active){event.preventDefault();document.elementFromPoint(event.clientX,event.clientY)?.dispatchEvent(new DragEvent('drop',{bubbles:true,cancelable:true,dataTransfer:drag.dt,clientX:event.clientX,clientY:event.clientY}));drag.el.dispatchEvent(new DragEvent('dragend',{bubbles:true,dataTransfer:drag.dt}));window.__suppressTouchClickUntil=performance.now()+300}
+});
+document.addEventListener('pointercancel',()=>{if(pointerDrag?.active)pointerDrag.el.dispatchEvent(new DragEvent('dragend',{bubbles:true,dataTransfer:pointerDrag.dt}));pointerDrag=null});
+document.addEventListener('click',event=>{if(performance.now()<(window.__suppressTouchClickUntil||0)){event.preventDefault();event.stopImmediatePropagation()}},true);
+// Optional phonetic annotation is separate from the required vertical-bopomofo exercises.
+const annotationMap=CONTENT.lesson.zhuyin||{};
+const textWalker=document.createTreeWalker($('#track'),NodeFilter.SHOW_TEXT,{acceptNode(n){return n.parentElement.closest('script,style,button,.zhuyin-vertical,.num,.paper-check')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+const textNodes=[];while(textWalker.nextNode())textNodes.push(textWalker.currentNode);
+for(const node of textNodes){if(![...node.textContent].some(ch=>annotationMap[ch]))continue;const fragment=document.createDocumentFragment();for(const ch of node.textContent){if(annotationMap[ch]){const ruby=document.createElement('ruby');ruby.append(document.createTextNode(ch));const rt=document.createElement('rt');rt.dataset.optionalZhuyin='';rt.textContent=annotationMap[ch];rt.hidden=!ZhuyinManager.enabled;ruby.append(rt);fragment.append(ruby)}else fragment.append(document.createTextNode(ch))}node.replaceWith(fragment)}
+$$('.lesson-image').forEach(img=>img.addEventListener('error',()=>{const fallback=document.createElement('div');fallback.className='media-fallback';fallback.textContent=img.alt||'圖片暫時無法載入';img.replaceWith(fallback)}));
+const savedProgress=EduBridge.storage.get('progress',null);let startPage=0;
+if(savedProgress&&savedProgress.v===1){
+ (savedProgress.checks||[]).forEach((states,i)=>{const s=slides[i];if(!s||!Array.isArray(states))return;s.querySelectorAll('.paper-check input,.check-row input').forEach((c,j)=>{if(states[j]===true&&!c.checked){c.checked=true;c.dispatchEvent(new Event('change',{bubbles:true}))}})});
+ (savedProgress.done||[]).forEach(i=>{const s=slides[i];if(!Number.isInteger(i)||!s)return;restoredDone.add(i);if(!s.querySelector('[data-confirm-paper],[data-finish-learning]'))return;s.dataset.paperConfirmed='true';const st=s.querySelector('.paper-completion-status');if(st){st.classList.remove('bad');st.classList.add('good');st.textContent=s.classList.contains('final')?UI.completed:'本頁已確認完成！請保留紙本，交給老師閱讀。'}});
+ if(Number.isInteger(savedProgress.page))startPage=savedProgress.page;
+}
+progressReady=true;
+showPage(Math.max(0,Math.min(startPage,frontier())),false);
+return {pages:pages.length};
+}};
+
+</script>
+<script>
+(()=>{const start=()=>{try{EduPlatform.init(window.COURSE_DATA.id);WritingLesson.mount();EduPlatform.ready()}catch(error){console.error('Lesson initialization failed',error);const root=document.getElementById('root');root.innerHTML='';const panel=document.createElement('div');panel.className='boot-status';const message=document.createElement('p');message.textContent=window.COURSE_DATA?.uiText?.loadFailed||'教材暫時無法載入，請重新整理後再試。';const retry=document.createElement('button');retry.textContent='重新載入';retry.onclick=()=>location.reload();panel.append(message,retry);root.append(panel)}};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start()})();
+</script>
+</body></html>
