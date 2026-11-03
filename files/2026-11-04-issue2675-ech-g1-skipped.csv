@@ -1,0 +1,350 @@
+member_id_prefix,task_id,course_id,task_title,kind,scheduled_date,status_before,reason
+019dafed-3c6c,task_1m10eqv6chk252hh4qr,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6cjwsvnwpzx7,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6c0pbytxve2t,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+019dafed-3c6c,task_1m10eqv6ccdge06hen3,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6cxm8bhycz2n,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6d7es5gqj3qj,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+019dafed-3c6c,task_1m10eqv6dgbar2m06xb,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6d5va7ss4xm0,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6d01fh6fqhsj,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+019dafed-3c6c,task_1m10eqv6dpc14cwzd1r,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6dydme5y662c,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6dzzc3dp8bbq,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+019dafed-3c6c,task_1m10eqv6e5td5jcj8h2,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6e9afdpmpndn,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6erg09c3rgfc,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+019dafed-3c6c,task_1m10eqv6eb01sj9c1sj,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6e7xqk99bjs0,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6epnh1terv74,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+019dafed-3c6c,task_1m10eqv6edgw1637g6c,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6eev9ktb1a16,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+019dafed-3c6c,task_1m10eqv6e1j5k7y3yax,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmmxha352vjhm9,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmxd1sqt5k46k,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmxc8a23b6765,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmmyvr70q38j60,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmyw3275bzfjz,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmy1817xnm3a7,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmmyjfc95xjfw5,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmye5hfaqdyh2,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmyzd4df3q8an,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmmyvbx4eey7pg,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmywqbaeyszj7,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmz7w114jnek3,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmmzspqfzsvthh,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmzxffj3m08rb,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmzvmhm8990ac,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmmzffrwhz9jqy,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmmzx95exgr4x5,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmn04xryeqky50,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c0bd,task_1m25ffmn0mmrxcaxgar,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmn0nn3wg00te5,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bd,task_1m25ffmn0yta8d6p72x,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv47xpdfqm9yy,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv42skw7vm8pq,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv4ht2bbbpvtq,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv5ge2rc9et0v,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv5hb6j6ewnr4,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv5vwvfahwvcv,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv5qe8p23d420,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv5tyn0ha9jse,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv5htt70mb8qz,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv5a8b6nd5ft7,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv5addznx34wz,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv56kdewhs3z1,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv6nwy4mtgcrs,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv6af1pnchpxg,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv6vfvyr25te0,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv6rdgrhk6s49,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv66z38wdf6jb,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv6ds05pev365,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c0bf,task_1m25ffpv6apcpmg4t2b,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv6ehet33b34x,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0bf,task_1m25ffpv64c1p5rkwyt,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8q41fp4vwp9w,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8qt7566zkwa4,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8qhxzg4b27m5,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8qx8z684qz7e,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8qwk6cbtn38s,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8qfggz1v5jdg,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8rpbkptxxram,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8rhep9rjdf21,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8re6c5c2h9b6,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8rha2r03a0xs,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8rj21frgf19d,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8r74n0emyh54,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8r33275rvdqd,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8ram4nmb0wv2,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8rtaktwms6bf,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8rdzdfg7vz88,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8r58b733ajtb,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8rdwcmr822d3,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c0ce,task_1m25ffr8rszr68vws5c,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8s5trpa55671,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0ce,task_1m25ffr8sksesrzcd59,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs157pjep6p3jm,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs154c2s1626ah,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs154ma222jwp9,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs15a838py203h,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs15xdycymw7yf,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs15kybe5kvarr,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs152jm5k7xs47,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs15e6jhp3f3zx,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs16dx60xsgxqt,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs16s479kzrrzx,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs16fcdh9ysg2p,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs1621zrykyjvk,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs168qd20xp8ne,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs16j28mx25vga,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs16r4pp1nhr7b,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs17hvhq25fg0h,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs1730bnn7ar1v,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs171mtv6s6ewg,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c0d3,task_1m25ffs17mvkn9tfgdj,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs17ny7njeg10z,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c0d3,task_1m25ffs170s0kek5yyq,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqnbb41e762bpt,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnb40w0rm538n,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnbq2avfb37gf,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqnbje28rsc8kb,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnb01d3zvtgpw,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnbzfgg0t89bb,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqnb1j3j2zj7wq,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnb73pn273nzw,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnbgsg1zxnbgw,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqnc4nrvnb8mew,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnc6581erhxxa,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnca9h1vpfk0w,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqncp4hsyc7t8k,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqncvwawzc00h4,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnc4vae52g3fc,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqncv4w8nk9rhv,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqncp7rf85gfx7,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqnc40w56kwbg7,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c152,task_1m25ffqncdrq3v17tm9,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqndp949zkg8z6,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c152,task_1m25ffqndgqm8bebj82,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft66ekxswzfy9z,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft66d32fhfaqpd,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft66yf8h79532n,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft6628aqw4bz8g,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft6611fg5apsvy,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft665f2be1kc42,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft67r8wc5j9121,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft6715edj6efnn,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft67tgqapqmh7r,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft67ybjbrk9zn3,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft67bdxz4ct2xp,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft67v6myy5wmrc,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft67nk62dwt1gx,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft67x1nfm0vfjw,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft672asjecnctq,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft6bvxxmn58bnw,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft6bqtndfx8977,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft6b1hc0mhhwxr,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c2b3,task_1m25fft6bcvpf74ybvr,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft6bf7h9bfpke1,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c2b3,task_1m25fft6cxv5e2d26kg,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4tw7v0r1m503,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4tgqz89dy4pv,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4twzkkk78dhq,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4trcwzjyen5b,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4t8ryz9qd3hw,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4tdh6h8x1cnk,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4tmtsf876d97,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4twpqm5r1338,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4t3s985xp02a,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4ve65t6pyk08,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vfxqf78d8g7,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vt9wppq8hdn,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4vwd5fz9yraj,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vp8wphy2gky,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vxq105fnyk3,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4vgw1ra1fx3t,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vdzjp939xsx,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vqhzmmr3kx5,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c3d7,task_1m25ffw4v113gqb15sn,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vp911ayxkzc,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d7,task_1m25ffw4vrxzdb7agq1,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwnssw90jbncp6,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwnsn2wzg708ja,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwnt6g6crv9kfj,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwnt9rxj985fhc,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwnthbgxq2aaqt,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntsz9czh0bms,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwnt4agxtsvr4m,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwnt5tb3p55wy3,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwnt5f6796evne,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwntyemkzqmwxt,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntvczd93j4tr,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntpdyx6gxjb0,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwntbpz1p8k1vd,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntnstf3c18wj,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntacvfe2p7z0,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwntq1wnd27naw,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntj8e2kqnjk5,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntcmxmnx09dk,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c3d8,task_1m25ffwntnx0ybbfdgd,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntq6bkc5fwnr,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3d8,task_1m25ffwntm8s5xz42gn,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk2n0w3vbyjhb,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk3q5wv1vctvd,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk3v7cc49wqrq,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk3fea9vb13yx,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk30tzzbb94ty,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk3mb2d622ajj,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk37pp6xh9vff,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk3e4xnm9y01s,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk3nft4t5b5b9,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk4b4f1naqvgd,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk4np1ke4pz89,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk4h2cyysntd3,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk48b9r7ycca9,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk4e8sgz3jyfa,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk40f4v4hrsrn,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk42hxpmhzdqa,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk4qnp27v02zp,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk4arebyez74x,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c3f1,task_1m25ffvk4qbne846c42,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk59wcwxhsezb,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c3f1,task_1m25ffvk5pdb1rrg25t,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0hb0ffnh3mtt,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0hcf1cx20krq,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0hd8h7w2r79g,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0hkbvnrb5ztr,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0h3cbpnj3mcw,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0ha851mvgqep,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0hb9gcqgve7z,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0hz32spe0j25,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0ht2nknp118n,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0jrsa4s6rs9f,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0jpanvsz2mpf,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0jm8v2yvbqb2,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0jw5ke4hhbr1,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0jc8hkm4j050,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0jkq4cq01732,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0jbvhadg711q,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0j0y71yvj3pe,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0jhhrqyxpc0r,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c409,task_1m25ffv0j49fbnbbmjh,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0kkeyaqka8e4,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c409,task_1m25ffv0kzbck5hedcz,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxbzhp67nnytby,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0k7kr7xzfjv,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc06p6kq1g88g,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxc0rwg46m3y6w,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0dk5gnns2m6,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0dzt6bdmt1z,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxc0zymbkd67f7,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0ps86apkr8e,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0gkztbvjbgn,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxc0g1mjs32g8w,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0h86vjp9jkj,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc069ddshxfm1,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxc0cz1smnkfwe,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0qaskv5f5fq,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0gg38pamq1z,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxc0v25nfe91nw,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc0v6zkypkkkp,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc14w75wtxxgz,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c5cc,task_1m25ffxc1yvkfesa32k,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc1qd29nfdap6,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5cc,task_1m25ffxc19fey64gjwm,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz2qh0jxk86r6,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz2qdxnh4wp6a,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz2c6n280pczn,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz2wy5xqx2mek,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz22yhn0gvsz1,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz3aa28bgtwch,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz34a032wxynp,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz3ysyn1000ex,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz31jhasyx5v5,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz3wj0nx9wx9q,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz387fakb9ydv,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz3bgshyszcf3,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz36xzvgkcftn,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz4a4ph6v47t7,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz4ehw2g9f3na,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz42zwvrkkkm0,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz4edepyaw7hj,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz4zhv5nzdbz8,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c5dd,task_1m25ffxz4zxxe4rr710,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz4j88pkmdc7f,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5dd,task_1m25ffxz4c1w2jxhqcm,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhf20r89ckwsw,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhfqssd3mk7x5,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhfr4g3w1s64q,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhf0cxn6s408a,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhf144ctvjsfd,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhfqhy7arwjv6,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhgfjmhyk1cna,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhg1y4kjkw4vj,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhg7v08x2yat1,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhg1kc5hs425w,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhg37abcv0q9b,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhgt4cbmw5wr3,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhgk6479rcxh1,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhgqfampknak4,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhgm896a4y0n4,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhhkmd5nv3jcy,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhh1g5jybhq8y,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhhy48htthf35,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a08af7-c5fa,task_1m25ffyhh98yjfynzhj,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhha5cyvwe91j,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a08af7-c5fa,task_1m25ffyhhsfxp1esvva,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w911m344wcxk75,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w91190b89q69yy,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w9121t8tz9htdk,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w91236sdfx8gz3,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w9124kg3aw1ckp,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w912zw47cxzhdb,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w912yqw48pqfg6,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w912d105e5gn9j,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w912b65tah5vsp,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w912tdkjx5k8w8,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w913ap6718jmch,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w913t5he7k3qgz,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w913kyj3f96846,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w9134ts2mxm4mx,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w913kp9fxn58be,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w913xn6v8t7n20,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w9136rngjgaxeb,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w913s2z77tv5bk,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a0909e-21a7,task_1m289w913jmw8cqm2wg,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w914k2msqrd9d2,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0909e-21a7,task_1m289w914rcm2tqpx8d,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9a2erejvs39e,course_seed_mat_c3ztcd37x1,1 小船 - 測驗1,測驗1,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9a02fn2wj5e3,course_seed_mat_c3ztcd37x1,1 小船 - 測驗2,測驗2,2026-11-10,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9ads553am95k,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-10,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9a3awxzyhrn3,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗1,測驗1,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9aw8vcw3qb67,course_seed_mat_c3ztcd37x1,2 印手印 - 測驗2,測驗2,2026-11-11,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9akqwwgz8025,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-11,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9ay6gqafy6eq,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗1,測驗1,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9amvngqextqf,course_seed_mat_c3ztcd37x1,3 吹泡泡 - 測驗2,測驗2,2026-11-17,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9ayxw0rwgx4c,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-18,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9a8p3st19ctw,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9azw3893v0a4,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-25,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9af70586smnx,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9b2qecarg0jt,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9b456xgpp6eg,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9b25xcx3rqn9,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9b87zpn74cnh,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9bqmwb26r8n7,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9bv3djtjnkdw,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a090bc-5683,task_1m28brp9bmqwdt6px48,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9bctp4220hf6,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a090bc-5683,task_1m28brp9b26je3s48dk,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
+01a0f632-33b3,st_1m3xqa1zg705gshbzp9,course_seed_mat_c3ztcd37x1,4 你好 - 測驗1,測驗1,2026-11-04,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,st_1m3xqa1zgt12dnqd9js,course_seed_mat_c3ztcd37x1,4 你好 - 測驗2,測驗2,2026-11-04,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,st_1m3xqa1zg4qqmak2kza,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-11-04,pending,第 2 組留排在前面的那份
+01a0f632-33b3,task_1m5811fg7kzsddbjdx4,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-01,pending,第 2 組留排在前面的那份
+01a0f632-33b3,task_1m5811fg854rhp54y0h,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗1,測驗1,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,task_1m5811fg8jcbfcdv120,course_seed_mat_c3ztcd37x1,5 外星人 - 測驗2,測驗2,2026-12-02,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,task_1m5811fg81ys5pqxdvp,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-08,pending,第 2 組留排在前面的那份
+01a0f632-33b3,task_1m5811fg8rbhek4c5qv,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗1,測驗1,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,task_1m5811fg8kvdm6pw678,course_seed_mat_c3ztcd37x1,6 小金魚 - 測驗2,測驗2,2026-12-09,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,task_1m5811fg8hz74rcykjt,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-15,pending,第 2 組留排在前面的那份
+01a0f632-33b3,task_1m5811fg9knwy3rth2c,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗1,測驗1,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,task_1m5811fg9g0tcd8evvt,course_seed_mat_c3ztcd37x1,7 紅紅的春 - 測驗2,測驗2,2026-12-16,pending,單元有第 2 組，第 1 組的卷都跳過
+01a0f632-33b3,task_1m5811fg9z05frx9w5q,course_seed_mat_c3ztcd37x1,練習2（國字注音圈詞）,練習2,2026-12-22,pending,第 2 組留排在前面的那份
