@@ -1,0 +1,509 @@
+﻿uid,exam_id,卷名,年級科目,題號,學生數,結論,理由,改前來源,改前題幹,改前選項,改前答案,改前解析,改後題幹,改後選項,改後答案,改後解析,會寫的欄位,格式檢查
+3094806b1a6944b8a86059dd01313760,6a4214f9a01c2e916e7dbb12,SUMMER-115S1-G9-JPC_115會考國7_修辭與寫作_30_4,9年級國文,7,4,要修,原改後版本的(C)曡、(D)牀是異體字，不是錯字，不該當成字形錯誤的選項。教育部《成語典》釋義為「比喻重複模仿，沒有創新。後多用來比喻重複累贅」（題幹寫「毫無創新」其實有據）；《成語典》、《重編國語辭典》都沒收「迭床架屋」，但漢典把它列為相關寫法，且「迭／疊」在「重迭／重疊」可通用，當錯誤選項有兩解疑慮，所以改用明確的錯字。,第2批改後,下列詞語何者字形正確，且可比喻文章結構重複累贅、毫無創新？,"(A) 疊床架屋
+(B) 疊床駕屋
+(C) 曡床架屋
+(D) 疊牀駕屋",A,比喻重複累贅或刻意造作，應寫作「疊床架屋」。(B)「駕」應作「架」；(C)「曡」為異體字，標準字體應作「疊」；(D)「牀」為異體字，「駕」應作「架」。,下列詞語何者字形正確，且可比喻文章結構重複累贅？,"(A) 疊床架屋
+(B) 疊床駕屋
+(C) 碟床架屋
+(D) 疊床假屋",A,「疊床架屋」比喻重複模仿，沒有創新，後多用來比喻重複累贅，應寫作「疊床架屋」。(B)「駕」應作「架」；(C)「碟」應作「疊」；(D)「假」應作「架」。,content、options、answer,
+081975ab74a24c5b980fa34b0367c68b,6a438d39f3a25b6954b85a98,115上7翰林國文self_study-3_10,7年級國文,4,4,要修,原題幹直接寫出作者，必須改；改後題幹選項正確，但解析加的出處書名《今天：366天，每天打開一道門》無法查證，屬自編風險，建議刪去出處書名。,第2批改後,關於〈行動的水滴才能匯流大河〉一文，其作者為下列何者？,"(A) 村上春樹
+(B) 吉米・阿卡納
+(C) 郝廣才
+(D) 蘇珊・赫傑克",C,〈行動的水滴才能匯流大河〉一文選自郝廣才《今天：366天，每天打開一道門》，作者為郝廣才。(A)村上春樹為文中所引用名言之日本作家；(B)吉米・阿卡納為文中萊恩的筆友；(D)蘇珊・赫傑克為萊恩的母親。,關於〈行動的水滴才能匯流大河〉一文，其作者為下列何者？,"(A) 村上春樹
+(B) 吉米・阿卡納
+(C) 郝廣才
+(D) 蘇珊・赫傑克",C,〈行動的水滴才能匯流大河〉的作者為郝廣才。(A)村上春樹為文中所引用名言的日本作家；(B)吉米・阿卡納為文中萊恩的烏干達筆友；(D)蘇珊・赫傑克為萊恩的母親。,answer,
+7993ee8045e540ffbb077f25044c802c,6a3d1e1502bca9f5269aa2eb,115上8翰林國文self_study-3_10,8年級國文,14,3,還原,第4題刪去釋義後已不再洩答，本題原題（考懵懂詞義、取材課文）其實可保留；改後題幹「安藤忠雄每天工作時都在琢磨如何用木頭做出更好的家具」是課文沒有的自編情節，把虛構事蹟當人物事實。建議還原原題。,第2批改後,安藤忠雄每天工作時，都在「琢磨」如何用木頭做出更好的家具。句中的「琢磨」最接近哪一種意思？,"(A) 思索、研究
+(B) 驕傲、刻意自我炫耀
+(C) 害怕、無法行動
+(D) 憤怒、急著爭辯",A,「琢磨」本指雕刻玉石，引申為思索、研究，以及在技藝或學問上不斷鑽研求進步；不是驕傲炫耀、害怕或憤怒。,小時候的安藤忠雄在「懵懂」之間，感受到用木頭做東西的樂趣。句中的「懵懂」最接近哪一種意思？,"(A) 糊塗、心裡不明白
+(B) 驕傲、刻意自我炫耀
+(C) 害怕、無法行動
+(D) 憤怒、急著爭辯",A,「懵懂」表示糊塗、心裡不明白，常用來形容年幼或尚未完全理解事情的狀態；不是驕傲炫耀、害怕或憤怒。,content、options、answer,提醒：還原：四欄寫回 review/questions.jsonl 原文
+8e242eaeff1d48d5abda78a194c447f9,6a421009a01c2e916e7db7f4,SUMMER-115S1-G9-JPC_115會考國5_應用文_30,9年級國文,20,3,要修,原題幹把稱謂與信末請安語連寫、膝下福安雙誤，必須改；改後考信末請安語方向正確、C唯一，但解析列的「敬請　講安」非常見師長請安語，有自編之虞，改為「誨安」。,第2批改後,學生寫給老師的信中，信末的結尾祝候語寫道「敬請　福安」，關於此處的修正方式，下列何者最恰當？,"(A) 「敬請」應改為「順頌」並移到信首處
+(B) 「福安」應改為「收」
+(C) 「福安」應改為「教安」或同類請安語
+(D) 結尾祝候語必須移到開頭稱謂下方",C,寫給師長的結尾祝候語（請安語）宜用「敬請　教安」、「敬請　道安」或「敬請　講安」等；「福安」、「金安」多用於祖父母或父母等長輩。(A)「順頌」用於平輩或晚輩，且結尾祝候語應置於信末正文之後；(B)「收」為明信片等信封上的啟封詞；(D)結尾祝候語應置於信末而非開頭稱謂下方。,學生寫給老師的信中，信末的結尾祝候語寫道「敬請　福安」，關於此處的修正方式，下列何者最恰當？,"(A) 「敬請」應改為「順頌」並移到信首處
+(B) 「福安」應改為「收」
+(C) 「福安」應改為「教安」或同類請安語
+(D) 結尾祝候語必須移到開頭稱謂下方",C,寫給師長的結尾祝候語（請安語）宜用「敬請　教安」、「敬請　誨安」等；「福安」、「金安」多用於祖父母或父母。(A)「順頌」多用於平輩，且結尾祝候語應置於信末正文之後；(B)「收」為信封或明信片上的啟封詞；(D)結尾祝候語應置於信末，而非開頭稱謂下方。,answer,
+66c4a852b1534a06868339fa5df8a303,6a420fdca01c2e916e7db7ca,SUMMER-115S1-G9-JPC_115會考國5_應用文_10,9年級國文,19,2,要修,原題幹直接寫出正確字形，必須改；改考弄璋之喜正確，但題幹「喜獲麟兒」的「麟」提示同卷第1題正解「天賜石麟」，改說「生男孩」。,第2批改後,祝賀他人喜獲麟兒常用「ㄋㄨㄥˋ ㄓㄤ ㄓ ㄒㄧˇ」。下列哪一個寫法正確？,"(A) 弄璋之喜
+(B) 弄章之喜
+(C) 弄彰之喜
+(D) 弄樟之喜",A,祝賀生男的題辭是「弄璋之喜」，典出《詩經‧小雅‧斯干》，「璋」為美玉，字形從玉（斜玉旁），不可誤寫為「章」、「彰」或「樟」。,祝賀他人生男孩常用「ㄋㄨㄥˋ ㄓㄤ ㄓ ㄒㄧˇ」。下列哪一個寫法正確？,"(A) 弄璋之喜
+(B) 弄章之喜
+(C) 弄彰之喜
+(D) 弄樟之喜",A,祝賀生男的題辭是「弄璋之喜」，典出《詩經‧小雅‧斯干》，「璋」為玉器，字從玉部（斜玉旁），不可誤寫為「章」、「彰」或「樟」。,content、answer,
+5ee7004b9d094983beb8f9c9ecdac15d,6a421478a01c2e916e7dbaa9,SUMMER-115S1-G9-JPC_115會考國7_修辭與寫作_30_2,9年級國文,16,2,要修,原(D)是敘述句且寫出正字，必須改；改後(D)可用，但(A)「臨時慌亂措手不即」、(C)「不合常理或邏輯」都是短句不是詞語，與題幹「詞語」不符，順手整理成四個詞語。,第2批改後,下列詞語何者字形正確？,"(A) 臨時慌亂措手不即
+(B) 防患未燃
+(C) 不合常理或邏輯
+(D) 令人堂目結舌",C,(C)「不合常理或邏輯」字形正確；(A)「措手不即」應作「措手不及」；(B)「防患未燃」應作「防患未然」；(D)「堂目結舌」應作「瞠目結舌」。,下列詞語何者字形正確？,"(A) 措手不即
+(B) 防患未燃
+(C) 不合邏輯
+(D) 堂目結舌",C,(C)「不合邏輯」字形正確；(A)「措手不即」應作「措手不及」；(B)「防患未燃」應作「防患未然」；(D)「堂目結舌」應作「瞠目結舌」。,options、answer,
+da717234ec50480c8afc02046193bbab,6a421557a01c2e916e7dbb66,SUMMER-115S1-G9-JPC_115會考國8_文言理解(一)_30,9年級國文,11,2,要修,原題「蜩」確為「蝸」之誤，但改後題幹「山抱玉則鑿，水懷珠則竭」查無出處，疑為 AI 拼湊（理由欄自己前後說出自《大唐新語》又說《劉子‧韜光》）。第9題已改考「晶瑩」，與「螢以光見獲」的洩題已消失，建議回到原引文、只把「蜩」改「蝸」（與第二卷第3題現行版一致）。另：同卷第16題選項(D)「名聲太盛容易招致禍患」與本題正解幾乎同句，屬既有的互相提示，非本次修法造成。,第2批改後,「山抱玉則鑿，水懷珠則竭，故愛身者，不貴赫赫之名。」這段話最主要提醒人們什麼？,"(A) 才能越多越應高調展現
+(B) 名聲太盛可能招來危害
+(C) 沉默寡言才能免於責罰
+(D) 追求財富是成功的關鍵",B,山因藏有美玉而被開鑿，水因懷有珍珠而被淘乾，結論說珍惜自身的人不看重顯赫的名聲，旨在提醒人們顯露鋒芒或名聲太盛可能招來危害，故選(B)。(A)與文意相反；(C)文中未提及免於責罰；(D)玉、珠在此比喻外露的才名，非鼓勵追求財富。,「蝸以涎見覓，蟬以聲見黏，螢以光見獲。故愛身者，不貴赫赫之名。」這段話最主要提醒人們什麼？,"(A) 才能越多越應高調展現
+(B) 名聲太盛可能招來危害
+(C) 沉默寡言才能免於責罰
+(D) 追求光亮是成功的關鍵",B,蝸牛因黏液留下痕跡而被找到、蟬因鳴聲而被黏捕、螢火蟲因光亮而被捕獲，都是顯露特點而受害；結論說愛惜自身的人不看重顯赫的名聲，表示名聲太盛可能招來危害。,content、options、answer,
+fc90700334f44c5bbbb70b91be3b6cc0,6a547366c8b92fe5db0d179c,115會考國12_文言文意(二)_30_4,9年級國文,1,2,要修,原題只放白話摘要、洩「近來」且子題引句無所本，必須改；改後補的文言全文是 AI 憑記憶重建，無法核對原典（同系列另一卷摘要還有「俗務繁忙、拖延致謝」一段，這裡沒有），且末句「雖華錦白璧，心所不愛，重於此物萬萬矣」照字面是說華錦白璧比石屏貴重萬萬倍，與子題2與語譯（石屏更珍貴）相反。改末句語意並標「改寫」，避免把未經核對的文字當司馬光原文。,第2批改後,"請閱讀下文，並回答問題：
+　　令子相訪，獲所惠書並石月屏，捧玩無已，且慚且喜。比來，數於都下朋從處見此屏，圓融瑩潔，非刻非繪，如秋高氣清，良由山澤奇氣所鍾。素所愛尚，但恨無從得耳；不意不求而至，良可喜也。雖華錦白璧，心所不愛，重於此物萬萬矣。
+【子題1】「比來，數於都下朋從處見此屏」的「比來」意義為何？
+(A) 近來
+(B) 立刻
+(C) 比較之後
+(D) 前往邊境
+答：A　解析：「比來」表示最近、近來。(B)「比」無立刻之意；(C)非比較之義；(D)非前往邊境。
+【子題2】司馬光以華錦、白璧和石月屏相比，主要想表達什麼？
+(A) 石月屏的市價必定高於華錦白璧
+(B) 華錦白璧都是仿造品
+(C) 個人珍愛不完全由世俗價格決定
+(D) 收到昂貴禮物必須拒絕
+答：C　解析：文中以昂貴的華錦、白璧作對照，言「雖華錦白璧，心所不愛，重於此物萬萬矣」，說明個人的珍愛程度取決於心之所尚，而非完全由世俗價格決定。
+【子題3】「非刻非繪，如秋高氣清」最著重石月屏哪一特色？
+(A) 人工雕飾繁複
+(B) 色彩濃豔如春花
+(C) 尺寸巨大笨重而難以搬運
+(D) 天然生成而清朗可賞
+答：D　解析：「非刻非繪」強調非人工雕琢彩繪、乃天然生成，「如秋高氣清」則凸顯其清朗可賞的質感，故選(D)。
+【子題4】這封信的主要寫作目的為何？
+(A) 請友人代售石月屏
+(B) 收到贈禮後表達欣喜與謝意
+(C) 批評友人贈禮過於廉價
+(D) 邀請眾人共同評定寶物的市場價格
+答：B　解析：信中敘述收到友人託兒子送來的書信與石月屏，並表達賞玩時的欣喜與珍愛之情，主要目的在於向贈禮的友人表達欣喜與謝意。",,1A、2C、3D、4B,【語譯】令郎前來拜訪，收到您所惠賜的書信與石月屏，我捧在手中賞玩不已，既感慚愧又覺欣喜。近來，我曾多次在京城的朋友處見到這種屏風，質地圓潤晶瑩潔淨，既非人工雕刻也非彩筆繪製，如同秋日高空般清朗，實在是由山澤間的奇異靈氣所孕育聚集而成。這本是我素來喜愛推崇之物，只恨無從取得罷了；沒想到如今未經懇求便能得到，真是令人欣喜。雖然華美的錦緞與潔白的美玉十分昂貴，但並非我心中所好，這件石月屏在我心中的分量比它們貴重千萬倍啊。,"請閱讀下文，並回答問題：
+　　令子相訪，獲所惠書並石月屏，捧玩無已，且慚且喜。比來，數於都下朋從處見此屏，圓融瑩潔，非刻非繪，如秋高氣清，良由山澤奇氣所鍾。素所愛尚，但恨無從得耳；不意不求而至，良可喜也。雖華錦白璧，心所不愛，此物之可貴，過之萬萬矣。（改寫自司馬光答謝友人贈石月屏書信）
+【子題1】「比來，數於都下朋從處見此屏」的「比來」意義為何？
+(A) 近來
+(B) 立刻
+(C) 比較之後
+(D) 前往邊境
+答：A　解析：「比來」表示最近、近來。(B)「比」無立刻之意；(C)非比較之義；(D)非前往邊境。
+【子題2】司馬光以華錦、白璧和石月屏相比，主要想表達什麼？
+(A) 石月屏的市價必定高於華錦白璧
+(B) 華錦白璧都是仿造品
+(C) 個人珍愛不完全由世俗價格決定
+(D) 收到昂貴禮物必須拒絕
+答：C　解析：文中以昂貴的華錦、白璧作對照，言「雖華錦白璧，心所不愛，此物之可貴，過之萬萬矣」，說明個人的珍愛程度取決於心之所尚，而非完全由世俗價格決定。
+【子題3】「非刻非繪，如秋高氣清」最著重石月屏哪一特色？
+(A) 人工雕飾繁複
+(B) 色彩濃豔如春花
+(C) 尺寸巨大笨重而難以搬運
+(D) 天然生成而清朗可賞
+答：D　解析：「非刻非繪」強調非人工雕琢彩繪、乃天然生成，「如秋高氣清」則凸顯其清朗可賞的質感，故選(D)。
+【子題4】這封信的主要寫作目的為何？
+(A) 請友人代售石月屏
+(B) 收到贈禮後表達欣喜與謝意
+(C) 批評友人贈禮過於廉價
+(D) 邀請眾人共同評定寶物的市場價格
+答：B　解析：信中敘述收到友人託兒子送來的書信與石月屏，並表達賞玩時的欣喜與珍愛之情，主要目的在於向贈禮的友人表達欣喜與謝意。",,1A、2C、3D、4B,【語譯】令郎前來拜訪，收到您所惠賜的書信與石月屏，我捧在手中賞玩不已，既感慚愧又覺欣喜。近來，我曾多次在京城的朋友處見到這種屏風，質地圓潤晶瑩潔淨，既非人工雕刻也非彩筆繪製，如同秋日高空般清朗，實在是由山澤間的奇異靈氣所孕育聚集而成。這本是我素來喜愛推崇之物，只恨無從取得罷了；沒想到如今未經懇求便能得到，真是令人欣喜。雖然華美的錦緞與潔白的美玉十分昂貴，但並非我心中所好，這件石月屏在我心中的分量比它們貴重千萬倍啊。,content、sub_questions,
+c72c6f4a30c742a8b91fd849749542ab,6a547366c8b92fe5db0d179c,115會考國12_文言文意(二)_30_4,9年級國文,4,2,要修,原題白話摘要洩子題2且引句無所本，必須改；乙文與《後漢書．陳寔傳》相符，但甲文鄭板橋一段沒有標出處，且屬民間傳說，AI 版本與常見流傳文字不同（如常見「以詩書畫三絕」「公餘輒與文士暢飲詠詩」、末句多作「趁著月黑趕豪門」），像是自行改寫。補標「改寫自鄭板橋遇盜的民間傳說」，不把它當成原典。,第2批改後,"請閱讀以下兩則短文，並回答問題：
+【甲】
+鄭燮，號板橋，清乾隆元年進士，以畫竹、蘭為世所稱。曾任范縣令，愛民如子。室無賄賂，案無留牘。公之餘輒畫竹石，間作詩詞。一夜有盜入室，板橋覺之，念其家無長物，乃於枕上吟曰：「細雨濛濛夜沉沉，梁上君子進我門。腹內詩書存千卷，床頭金銀無半文。出門休驚黃尾犬，越牆莫損蘭花盆。天寒不及披衣送，趁著月黑趕緊奔。」盜聞之，慚而去。
+
+【乙】
+時歲荒民儉，有盜夜入其室，止於梁上。寔陰見，乃起自整拂，呼命子孫，正色訓之曰：「夫人不可不自勉。不善之人未必本惡，習以性成，遂至於此。梁上君子者是矣！」盜大驚，自投於地，稽顙歸罪。寔徐譬之曰：「視君狀貌，不似惡人，宜深剋己反善。然此當由貧困。」令遺絹二匹。自是一縣無復盜竊。（改寫自《後漢書．陳寔傳》）
+【子題1】兩人的共同態度最接近何者？
+(A) 以厚道方式對待行竊者
+(B) 主張竊賊一律重刑
+(C) 刻意炫耀家中財物
+(D) 認為偷竊完全無錯
+答：A　解析：兩人都未以暴力處置，而以體諒、勸導或善意回應。
+【子題2】「梁上君子」在陳寔的話中指誰？
+(A) 躲在屋梁上的竊賊
+(B) 正在讀書的子孫
+(C) 前來判案的官吏
+(D) 贈送絹布的鄰人
+答：A　解析：竊賊藏在屋梁上，因此被陳寔委婉稱為「梁上君子」。
+【子題3】陳寔說「不善之人未必本惡，習以性成」主要否定哪一看法？
+(A) 人的錯誤可能受習慣與環境影響
+(B) 犯錯者天生永遠邪惡、無法改變
+(C) 勸導有機會促使人反省
+(D) 貧困可能使人一時失足
+答：B　解析：他明說「未必本惡」，認為人並非天生邪惡，而是受習慣影響，仍可反省改過。
+【子題4】鄭板橋怕竊賊損傷蘭花，陳寔贈絹，兩個細節共同強化什麼？
+(A) 兩人都不在意地方治安
+(B) 兩人都支持夜間行竊
+(C) 兩人家中都有大量財寶
+(D) 兩人面對衝突仍保有體恤與善意
+答：D　解析：一人顧及竊賊安全與花木，另一人設法解除其貧困，兩者都在衝突中保有體恤與善意。",,1A、2A、3B、4D,【語譯】鄭板橋夜間遇竊，知道家中無物可偷，便吟詩提醒竊賊離去，還擔心他越牆時損傷蘭花。陳寔遇到躲在梁上的竊賊，沒有立刻責打，而是教導子孫：不善之人未必本惡，常因習慣與困境至此。他勸竊賊反省向善，又判斷其因貧困所迫，贈送兩匹絹；此後全縣不再有盜竊。四小題依題面資訊逐項辨析，答案皆唯一。,"請閱讀以下兩則短文，並回答問題：
+【甲】
+鄭燮，號板橋，清乾隆元年進士，以畫竹、蘭為世所稱。曾任范縣令，愛民如子。室無賄賂，案無留牘。公之餘輒畫竹石，間作詩詞。一夜有盜入室，板橋覺之，念其家無長物，乃於枕上吟曰：「細雨濛濛夜沉沉，梁上君子進我門。腹內詩書存千卷，床頭金銀無半文。出門休驚黃尾犬，越牆莫損蘭花盆。天寒不及披衣送，趁著月黑趕緊奔。」盜聞之，慚而去。（改寫自鄭板橋遇盜的民間傳說）
+
+【乙】
+時歲荒民儉，有盜夜入其室，止於梁上。寔陰見，乃起自整拂，呼命子孫，正色訓之曰：「夫人不可不自勉。不善之人未必本惡，習以性成，遂至於此。梁上君子者是矣！」盜大驚，自投於地，稽顙歸罪。寔徐譬之曰：「視君狀貌，不似惡人，宜深剋己反善。然此當由貧困。」令遺絹二匹。自是一縣無復盜竊。（改寫自《後漢書．陳寔傳》）
+【子題1】兩人的共同態度最接近何者？
+(A) 以厚道方式對待行竊者
+(B) 主張竊賊一律重刑
+(C) 刻意炫耀家中財物
+(D) 認為偷竊完全無錯
+答：A　解析：兩人都未以暴力處置，而以體諒、勸導或善意回應。
+【子題2】「梁上君子」在陳寔的話中指誰？
+(A) 躲在屋梁上的竊賊
+(B) 正在讀書的子孫
+(C) 前來判案的官吏
+(D) 贈送絹布的鄰人
+答：A　解析：竊賊藏在屋梁上，因此被陳寔委婉稱為「梁上君子」。
+【子題3】陳寔說「不善之人未必本惡，習以性成」主要否定哪一看法？
+(A) 人的錯誤可能受習慣與環境影響
+(B) 犯錯者天生永遠邪惡、無法改變
+(C) 勸導有機會促使人反省
+(D) 貧困可能使人一時失足
+答：B　解析：他明說「未必本惡」，認為人並非天生邪惡，而是受習慣影響，仍可反省改過。
+【子題4】鄭板橋怕竊賊損傷蘭花，陳寔贈絹，兩個細節共同強化什麼？
+(A) 兩人都不在意地方治安
+(B) 兩人都支持夜間行竊
+(C) 兩人家中都有大量財寶
+(D) 兩人面對衝突仍保有體恤與善意
+答：D　解析：一人顧及竊賊安全與花木，另一人設法解除其貧困，兩者都在衝突中保有體恤與善意。",,1A、2A、3B、4D,【語譯】鄭板橋夜間遇竊，知道家中無物可偷，便吟詩提醒竊賊離去，還擔心他越牆時損傷蘭花。陳寔遇到躲在梁上的竊賊，沒有立刻責打，而是教導子孫：不善之人未必本惡，常因習慣與困境至此。他勸竊賊反省向善，又判斷其因貧困所迫，贈送兩匹絹；此後全縣不再有盜竊。四小題依題面資訊逐項辨析，答案皆唯一。,content,
+d44058c313ea42f791ca4b7ad6f19704,6a547366c8b92fe5db0d179e,115會考國12_文言文意(二)_30_3,9年級國文,4,2,要修,（併修既有問題）原故事把《莊子．徐無鬼》吳王射狙（顏不疑是吳王的朋友，不是射手）和養由基射猿混在一起，「以能驕人者，終必困於能」也查無出處。改用維基文庫核對過的《淮南子．說山訓》原文「楚王有白蝯……有先中中者也」；子題2原本考那句無出處引文，改考原文句意。答案代號維持1A、2B、3C、4D，同卷其他題（草、送別詩、韓憑、雁）不重疊。,第2批改後,"吳王夜間看見猴子攀樹，命侍從顏不疑用弓射擊。猴子敏捷閃避箭矢，吳王又命善射者養由基出手。猴子一見養由基便抱樹悲號，因為知道自己無法逃脫。吳王由此感嘆：「以能驕人者，終必困於能。」
+【子題1】猴子見顏不疑與見養由基時反應不同，原因何者最合理？
+(A) 牠能判斷兩人射術高下
+(B) 牠只是因為害怕夜晚昏暗的景象
+(C) 顏不疑拒絕射箭
+(D) 養由基沒有攜弓
+答：A　解析：猴子面對顏不疑能閃箭，見養由基卻悲號，顯示牠能判斷兩人射術高下，不只是害怕夜色。
+【子題2】「以能驕人者，終必困於能」中的兩個「能」如何理解？
+(A) 前者指能夠，後者指可能
+(B) 前者指才能，後者指更強的才能或能者
+(C) 兩者都指體力不足
+(D) 兩者都指弓箭名稱
+答：B　解析：恃才驕人者終會受制於更強才能，前後語意互相照應。
+【子題3】這則故事藉猴子遭遇告誡人們什麼？
+(A) 應完全隱藏所有能力
+(B) 只要逃得快便不會失敗
+(C) 不可恃才自傲，須知強中更有強中手
+(D) 射箭比治理國家重要
+答：C　解析：猴子以敏捷自恃，遇到更強射手便無法逃脫。
+【子題4】下列俗諺何者最能呼應寓意？
+(A) 路遙知馬力
+(B) 早起的鳥兒有蟲吃
+(C) 三個臭皮匠勝過一個諸葛亮
+(D) 一山還有一山高
+答：D　解析：一山還有一山高提醒人外有人，不宜自滿。",,1A、2B、3C、4D,四小題須分別依題組明示線索、語義關係與合理推論作答，答案依序唯一。,"請閱讀以下短文，並回答問題：
+　　楚王有白蝯，王自射之，則搏矢而熙；使養由基射之，始調弓矯矢，未發而蝯擁柱號矣，有先中中者也。（節錄自《淮南子．說山訓》）
+【注】蝯：同「猿」。熙：通「嬉」，嬉戲。
+【子題1】白猿面對楚王與面對養由基時反應不同，原因何者最合理？
+(A) 牠能判斷兩人射術高下
+(B) 牠只是剛好玩累了
+(C) 楚王拒絕射箭
+(D) 養由基沒有攜弓
+答：A　解析：楚王親自射牠，牠能接住箭來嬉戲；養由基才調弓校箭，牠就抱柱哀號，顯示牠能判斷兩人射術高下。楚王確實射了箭，養由基也正在調弓，故(C)(D)錯誤。
+【子題2】「始調弓矯矢，未發而蝯擁柱號矣」描述了什麼情況？
+(A) 養由基連射數箭才射中白猿
+(B) 養由基尚未放箭，白猿已抱柱哀號
+(C) 白猿接住養由基的箭後在柱旁嬉戲
+(D) 楚王親自射中白猿
+答：B　解析：「始調弓矯矢」指養由基才剛調弓、校正箭矢，「未發」是還沒射出，白猿就已「擁柱號」，抱著柱子哀號。
+【子題3】這則故事藉白猿遭遇告誡人們什麼？
+(A) 應完全隱藏所有能力
+(B) 只要逃得快便不會失敗
+(C) 不可恃才自傲，須知強中更有強中手
+(D) 射箭比治理國家重要
+答：C　解析：白猿面對楚王時仗著敏捷接箭嬉戲，遇到神射手養由基便無計可施，可見不可恃才自傲。
+【子題4】下列俗諺何者最能呼應寓意？
+(A) 路遙知馬力
+(B) 早起的鳥兒有蟲吃
+(C) 三個臭皮匠勝過一個諸葛亮
+(D) 一山還有一山高
+答：D　解析：一山還有一山高提醒人外有人，不宜自滿。",,1A、2B、3C、4D,【語譯】楚王有一隻白猿，楚王親自射牠，牠就接住箭來嬉戲；讓養由基射牠，養由基才調好弓、校正箭，還沒射出，白猿就抱著柱子哀號了，這是因為在射中之前就已注定射中。,content、answer、sub_questions,
+47590aab67cc4af8b7f792fae5f308b0,6a3d14e436cd98081c795f98,115上8適翰版國文 10 畫的哀傷_10_進度卷_3,8年級國文,11,1,要修,（併修既有問題）r191 改的(B)沒有錯，但題幹自己把答案敘述出來了（重訪舊地、友人早逝、追念青春）。改成從篇名「畫」和「哀傷」的關係來問，不在題幹給線索；第20題考的是「造成心境的原因」，問的角度不同。答案維持D。,第2批改後,主角成年後重訪舊地，想起年少時與友人一起作畫、競爭的往事，又得知友人早已逝去，因而追念青春與故人。下列哪一項最能說明〈畫的哀傷〉篇名中的「哀傷」？,"(A) 學生作品展當天人太多而吵鬧
+(B) 買不到昂貴的粉彩筆而無法參加展覽
+(C) 校長經常用退學威脅岡本
+(D) 成年後追念早逝友人與逝去青春的感傷",D,題幹指出主角成年後重訪舊地，得知友人早逝並追念青春，所以篇名的哀傷來自對早逝友人與逝去青春的感傷；並非因展覽吵鬧、買不到粉彩筆或校長威脅退學。,〈畫的哀傷〉篇名把「畫」與「哀傷」連在一起。下列哪一項說明最恰當？,"(A) 學生作品展當天人太多而吵鬧
+(B) 買不到昂貴的粉彩筆而無法參加展覽
+(C) 校長經常用退學威脅岡本
+(D) 繪畫串起作者與早逝友人的少年回憶，追念時令人感傷",D,篇名的「畫」指少年時岡本與志村以畫競爭、結伴寫生的往事，「哀傷」則來自成年後追念早逝友人與逝去的青春，故選(D)；並非因展覽吵鬧、買不到粉彩筆或校長威脅退學。,content、options、answer,
+fee0c4a6c51c4ca4a1665e3da7d74659,6a422c620a425852dffca75c,115上7康軒國文self_study-3_20_2,7年級國文,6,1,要修,原題幹「自我評量延伸文章題名寫作…」語意不通，確實要改；但改後解析稱《　》為「甲式書名號」、〈　〉為「乙式書名號」有誤（教育部《重訂標點符號手冊》甲式是波浪線﹏，《　》〈　〉同屬乙式），且「《曹操掉下去了》原為王文華所著的兒童小說」無法查證（審題意見認為課文是單篇）。題幹拿掉有爭議的書名舉例，解析改正。,第2批改後,王文華著有《曹操掉下去了》，辛永勝、楊朝景則寫下〈鐵窗花：民間師傅的手作美學〉。關於《　》與〈　〉的使用，下列說明何者最恰當？,"(A) 《　》只能標示人物對話，〈　〉只能標示注音
+(B) 《　》常標示書籍等作品，〈　〉常標示篇章名稱
+(C) 《　》與〈　〉都只能用來標示錯別字
+(D) 《　》用來標示數字，〈　〉用來標示年代",B,《曹操掉下去了》原為王文華所著的兒童小說（書籍），《　》（甲式書名號）多用於書籍、報刊等完整作品名稱；〈　〉（乙式書名號）常用於單篇文章或篇章名稱，故選 (B)。(A) 標示對話用引號；(C)、(D) 皆非書名號的用途。,關於書名號《　》與〈　〉的使用，下列說明何者最恰當？,"(A) 《　》只能標示人物對話，〈　〉只能標示注音
+(B) 《　》常標示書籍等作品，〈　〉常標示篇章名稱
+(C) 《　》與〈　〉都只能用來標示錯別字
+(D) 《　》用來標示數字，〈　〉用來標示年代",B,《　》與〈　〉都是書名號（乙式）：《　》多用於書籍、報刊等完整作品名稱，〈　〉常用於單篇文章或篇章名稱，例如第13題的〈鐵窗花：民間師傅的手作美學〉是單篇文章。(A)標示對話用引號；(C)、(D)皆非書名號的用途。,content、answer,
+1484d4a0bed44bc88fa5926ed21e8c13,6a421557a01c2e916e7dbb66,SUMMER-115S1-G9-JPC_115會考國8_文言理解(一)_30,9年級國文,16,2,要修,(D)「名聲太盛容易招致禍患」和同卷第11題正解「名聲太盛可能招來危害」幾乎同一句，兩題互相提示。換成和全卷都不重疊的誘答（避開第5題的友誼、第6題的深思熟慮、第12題的反覆閱讀），答案維持A。,快照原文,「工欲善其事，必先利其器」這句話最適合用來提醒下列哪一件事？,"(A) 做事前應先備妥合適條件
+(B) 遇到困難時不可半途而廢
+(C) 待人接物要推己及人
+(D) 名聲太盛容易招致禍患",A,句中的「利其器」指先讓工具或條件完善，因此重點是做事前要準備好。,「工欲善其事，必先利其器」這句話最適合用來提醒下列哪一件事？,"(A) 做事前應先備妥合適條件
+(B) 遇到困難時不可半途而廢
+(C) 待人接物要推己及人
+(D) 生活節儉才能累積財富",A,句中的「利其器」指先讓工具或條件完善，因此重點是做事前要準備好。(B)談堅持、(C)談待人、(D)談節儉，皆與句意無關。,options、answer,
+01bb0a8a79a8485e803bc243ea980247,6a32c327ace855db6054363d,115上7適翰版英文 review-2 Review 2_10_進度卷_1,7年級英語,6,5,要修,改題本身合理，但 (B) Are you watching a movie. 字序其實是正確問句，只靠句號判錯，答案不唯一（原題也有此病）；把 (B) 換成明確錯誤語序。,第2批改後,Choose the correct word order: you / watching / are / a movie,"(A) You watching are a movie.
+(B) Are you watching a movie.
+(C) You are watching a movie.
+(D) Watching you are a movie.",C,現在進行式直述句的順序是主詞 You + be 動詞 are + V-ing watching + 受詞 a movie。其它選項如 (A)、(D) 語序錯誤，(B) 為疑問句語序但結尾卻是句號，故選 (C)。,Choose the correct word order: you / watching / are / a movie,"(A) You watching are a movie.
+(B) You are a movie watching.
+(C) You are watching a movie.
+(D) Watching you are a movie.",C,現在進行式直述句的順序是主詞 You + be 動詞 are + V-ing watching + 受詞 a movie，故選 (C)。(A)、(B)、(D) 的 be 動詞、V-ing 或受詞位置錯誤。,options、answer,
+cc62eb1b04294b8bb80d3f91a18263ee,6a320806ab203e23971fe58e,115上8適康版英文 review-1 Review 1_10_進度卷_1,8年級英語,18,2,要修,改後題幹 Leo sent a postcard to Amy 仍示範「授與動詞+物+to+人」，解析還寫 send 用 to 不用 for，等於提示#11（gave the computer ___ Ivy → to）。改用 buy…for 的改寫題，避開#11 考點。,第2批改後,"Which sentence has the same meaning as ""Leo sent a postcard to Amy""?","(A) Leo sent Amy a postcard.
+(B) Leo sent a postcard for Amy.
+(C) Leo sent to Amy a postcard.
+(D) Leo Amy sent a postcard.",A,授與動詞 send 可用「send + 人 + 物」改寫「send + 物 + to + 人」，因此 Leo sent Amy a postcard. 與原句語意相同。(B) send 搭配的介系詞應為 to 而非 for；(C)、(D) 語序錯誤。,"Which sentence has the same meaning as ""Leo bought Amy a postcard""?","(A) Leo bought a postcard for Amy.
+(B) Leo bought a postcard with Amy.
+(C) Leo bought for Amy a postcard.
+(D) Leo Amy bought a postcard.",A,buy 可用「buy + 人 + 物」或「buy + 物 + for + 人」兩種說法，因此 Leo bought a postcard for Amy. 與原句意思相同，選 (A)。(B) with Amy 是「和 Amy 一起買」，意思不同；(C)、(D) 語序錯誤。,content、options、answer,提醒：英文字典查不到（多為人名地名，請人看）：postcard
+2b4904e96b234d9bb4cf1329a94f0f05,6a4203d74f9b8c6f9c399e7d,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_30_2,9年級英語,19,2,要修,改後正解 The aunt who lives… 與#8（The woman ___ gave us directions → who）同結構，等於直接給答案。改考關係子句的主詞動詞一致，避開 who/which 選擇。,第2批改後,Which sentence is correct?,"(A) The aunt who live near the park is a doctor.
+(B) The aunt which lives near the park is a doctor.
+(C) The aunt lives near the park who is a doctor.
+(D) The aunt who lives near the park is a doctor.",D,先行詞 the aunt 指人且為單數，關係子句缺主詞，應使用關係代名詞 who，且子句動詞需用單數動詞 lives，故選 (D)。(A) 動詞應為 lives；(B) 先行詞指人不可用 which；(C) 關係子句位置錯誤，應緊接在先行詞 the aunt 之後。,Which sentence is correct?,"(A) The books that is on the desk are mine.
+(B) The books that are on the desk is mine.
+(C) The books are on the desk that are mine.
+(D) The books that are on the desk are mine.",D,先行詞 the books 為複數，關係子句 that are on the desk 的動詞要用 are，主要子句 The books … are mine 的動詞也要用 are，故選 (D)。(A) 關係子句動詞應為 are；(B) 主要子句動詞應為 are；(C) 關係子句應緊接在先行詞 the books 之後。,options、answer,
+564be73ba81d4d949bd9587d9c4efa8e,6a4203f34f9b8c6f9c399fe9,SUMMER-115S1-G9-JEN_115會考英8_不定詞動名詞與重要句型_40_3,9年級英語,13,1,要修,題幹改法正確；但解析說 (D)「應為 Jack was honest to tell the truth」，這句本身不自然，解析示範了錯誤英文；只改解析。,第2批改後,Which sentence is grammatically CORRECT?,"(A) It was honest for Jack telling the truth.
+(B) It was honest Jack to tell the truth.
+(C) It was honest of Jack to tell the truth.
+(D) Jack was honest for telling to the truth.",C,honest（誠實的）用來評價人（Jack）的人格特質，應搭配介系詞 of 與不定詞片語，句型為「It + be + adj. + of + someone + to V」，故選 (C)。(A) 介系詞誤用 for 且後應接 to tell；(B) 缺少介系詞 of；(D) 結構錯誤，應為 Jack was honest to tell the truth。,Which sentence is grammatically CORRECT?,"(A) It was honest for Jack telling the truth.
+(B) It was honest Jack to tell the truth.
+(C) It was honest of Jack to tell the truth.
+(D) Jack was honest for telling to the truth.",C,honest（誠實的）用來評價人（Jack）的人格特質，句型為「It + be + adj. + of + 人 + to V」，故選 (C)。(A) 介系詞應為 of，且後面要用 to tell；(B) 缺少介系詞 of；(D) for 用法不當，且 tell the truth 中間不加 to。,answer,提醒：英文字典查不到（多為人名地名，請人看）：adj
+ad007a5444534afc85bfa77593d3a498,6a3208c2ab203e23971fe660,115上8適康版英文 review-2 Review 2_10_進度卷_1,8年級英語,18,2,要修,改題方向可（#6 已改，原#18 留著仍會洩#6），但 (A) Before you go to bed brush your teeth. 只差逗號，短子句省逗號在英文中常見，不宜當錯；換成明確文法錯誤的選項。,第2批改後,Choose the correct sentence.,"(A) Before you go to bed brush your teeth.
+(B) You go to bed before, brush your teeth.
+(C) Brush your teeth before you go to bed.
+(D) Before brush your teeth, you go to bed.",C,連接詞 before 引導時間副詞子句「before you go to bed」，放在主要子句「Brush your teeth」之後時中間不加逗號，故 (C) 正確。(A) 連接詞子句放句首時逗號不可省略；(B) before 應置於子句開頭而非句尾；(D) 語意與子句搭配顛倒（變成刷牙前先去睡覺）。,Choose the correct sentence.,"(A) Brush your teeth before you going to bed.
+(B) You go to bed before, brush your teeth.
+(C) Brush your teeth before you go to bed.
+(D) Before brush your teeth, you go to bed.",C,連接詞 before 後接完整子句「主詞 + 動詞」，Brush your teeth before you go to bed.（睡覺前要刷牙）正確，故選 (C)。(A) before 子句缺正確動詞（you going 應為 you go）；(B) before 應放在子句開頭；(D) before 後缺主詞，且語意變成刷牙前先去睡覺。,options、answer,
+585ce8f0e82846aebb693e4aaa676023,6a54d25b9f7f53f81c197feb,115會考英12_複習策略2_30_3,9年級英語,2,2,要修,子題4改後說「the text only says he walked out of the room」，但本篇對話寫的是 Ben looked away and became quiet，同一人物前後矛盾；改成與對話一致。其餘子題與圖不變。,第2批改後,"Emma: I chose “Ben was angry,” but the only clue was that he looked away and became quiet.
+Nick: That clue may show he felt uncomfortable, but “angry” is too strong.
+Emma: So I should choose the smallest idea that the clue can support?
+Nick: Exactly. First, underline the words that show an action or result. Then ask whether your answer adds a new story.
+Emma: I see. If my answer needs information that is not there, I should cross it out.
+【子題1】Which response would naturally follow Nick's first explanation?
+(A) Then every quiet person must be angry and unwilling to speak to anyone.
+(B) Then I should ignore actions and use my own experience.
+(C) Then I need an answer that does not go beyond the clue.
+(D) Then the longest answer is probably the safest one.
+答：C　解析：Nick 說 angry 超過現有線索能支持的程度，因此自然回應是答案不可超出線索。
+【子題2】Emma underlined the key sentence ______ she could check her answer.
+(A) although
+(B) so that
+(C) unless
+(D) but
+答：B　解析：後半句說明畫出關鍵句的目的，因此使用 so that 表示「以便、為了讓」。
+【子題3】In “If my answer needs information that is not there,” what does “there” refer to?
+(A) Emma's own experience with similar situations
+(B) The answer sheet
+(C) Nick's next question
+(D) The words and clues provided
+答：D　解析：前文持續討論能否由 clue 支持答案，there 指現有文字與線索中，而非個人經驗或答案紙。
+【子題4】Emma: This choice says Ben shouted at his friend, but the text only says he walked out of the room.
+Nick: ______
+(A) Right. That choice adds a new story, so you should cross it out.
+(B) Right. Walking out of a room and shouting mean the same thing.
+(C) No. You should always choose the most exciting answer.
+(D) No. The clue clearly shows that he shouted.
+答：A　解析：原文只說走出房間，選項卻說對朋友大吼，屬於對話中提到「加入原文沒有的新故事（adds a new story）」，應予以刪除，故選 (A)。",,Sub-questions: 1-C; 2-B; 3-D; 4-A,四小題檢查自然回應、目的連接詞、代名詞指涉與對話中的語意判斷。,"Emma: I chose “Ben was angry,” but the only clue was that he looked away and became quiet.
+Nick: That clue may show he felt uncomfortable, but “angry” is too strong.
+Emma: So I should choose the smallest idea that the clue can support?
+Nick: Exactly. First, underline the words that show an action or result. Then ask whether your answer adds a new story.
+Emma: I see. If my answer needs information that is not there, I should cross it out.
+【子題1】Which response would naturally follow Nick's first explanation?
+(A) Then every quiet person must be angry and unwilling to speak to anyone.
+(B) Then I should ignore actions and use my own experience.
+(C) Then I need an answer that does not go beyond the clue.
+(D) Then the longest answer is probably the safest one.
+答：C　解析：Nick 說 angry 超過現有線索能支持的程度，因此自然回應是答案不可超出線索。
+【子題2】Emma underlined the key sentence ______ she could check her answer.
+(A) although
+(B) so that
+(C) unless
+(D) but
+答：B　解析：後半句說明畫出關鍵句的目的，因此使用 so that 表示「以便、為了讓」。
+【子題3】In “If my answer needs information that is not there,” what does “there” refer to?
+(A) Emma's own experience with similar situations
+(B) The answer sheet
+(C) Nick's next question
+(D) The words and clues provided
+答：D　解析：前文持續討論能否由 clue 支持答案，there 指現有文字與線索中，而非個人經驗或答案紙。
+【子題4】Emma: This choice says Ben shouted at his friend, but the dialogue only says he looked away and became quiet.
+Nick: ______
+(A) Right. That choice adds a new story, so you should cross it out.
+(B) Right. Looking away and shouting mean the same thing.
+(C) No. You should always choose the most exciting answer.
+(D) No. The clue clearly shows that he shouted.
+答：A　解析：對話只說 Ben 轉開視線、變得安靜，選項卻說他對朋友大吼，屬於對話中提到「加入原文沒有的新故事（adds a new story）」，應刪掉，故選 (A)。(B) 轉開視線與大吼意思不同；(C) 與 Nick 的建議相反；(D) 線索並未顯示他大吼。",,Sub-questions: 1-C; 2-B; 3-D; 4-A,四小題檢查自然回應、目的連接詞、代名詞指涉與對話中的語意判斷。,sub_questions,"提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符
+提醒：英文字典查不到（多為人名地名，請人看）：became"
+22e7d90a09fc4529a1c85edf724a648d,6a32c3abace855db605436a6,115上7適翰版英文 review-2 Review 2_10_進度卷_2,7年級英語,16,5,要修,同類問題補修（與 01bb0a8a 同病）：(B) Are they reading books. 字序是正確問句，只因句號判錯，答案不唯一；把 (B) 換成明確錯誤語序。,快照原文,Choose the correct word order: they / are / reading / books,"(A) They reading are books.
+(B) Are they reading books.
+(C) They are reading books.
+(D) Reading they are books.",C,現在進行式直述句順序是主詞 They + are + V-ing reading + 受詞 books。,Choose the correct word order: they / are / reading / books,"(A) They reading are books.
+(B) They are books reading.
+(C) They are reading books.
+(D) Reading they are books.",C,現在進行式直述句順序是主詞 They + be 動詞 are + V-ing reading + 受詞 books，故選 (C)。(A)、(B)、(D) 的 be 動詞、V-ing 或受詞位置錯誤。,options、answer,
+4fdd75fbf53d47839e82d6aedd3d2986,6a338016345023733bf6f625,115上7適南版英文 review-2 REVIEW II_10_進度卷_2,7年級英語,1,3,要修,題幹問「複數形正確的句子」，(D) Are there many animals on the farm. 複數形完全正確、只是問句配句號，判錯理由只剩標點；改成複數形錯誤的直述句。,快照原文,Pick the sentence with the correct plural form.,"(A) There is many animals on the farm.
+(B) Many animals there are on the farm.
+(C) There are many animals on the farm.
+(D) Are there many animals on the farm.",C,Many animals 是複數名詞，直述句應使用 There are many animals ...。,Pick the sentence with the correct plural form.,"(A) There is many animals on the farm.
+(B) Many animals there are on the farm.
+(C) There are many animals on the farm.
+(D) There are many animal on the farm.",C,many animals 是複數名詞，直述句應使用 There are many animals ...，故選 (C)。(A) 複數名詞不可搭配 is；(B) 語序錯誤；(D) many 後面的名詞要用複數 animals。,options、answer,
+f2d4b4eb8b3e45c6a733c2f2887b532a,6a338016345023733bf6f625,115上7適南版英文 review-2 REVIEW II_10_進度卷_2,7年級英語,19,3,要修,題幹只要「關於一個烤箱的正確句子」，(C) Is there an oven in the kitchen. 文法正確、只是問句配句號，判錯理由只剩標點；改成冠詞錯誤的句子。,快照原文,Pick the correct sentence about one oven.,"(A) There is an oven in the kitchen.
+(B) There are an oven in the kitchen.
+(C) Is there an oven in the kitchen.
+(D) There aren't an oven in the kitchen.",A,An oven 是單數名詞，肯定直述句應使用 There is。,Pick the correct sentence about one oven.,"(A) There is an oven in the kitchen.
+(B) There are an oven in the kitchen.
+(C) There is a oven in the kitchen.
+(D) There aren't an oven in the kitchen.",A,an oven 是單數名詞，肯定直述句應使用 There is，故選 (A)。(B)、(D) 單數名詞不可搭配 are／aren't；(C) oven 以母音音素開頭，冠詞要用 an。,options、answer,
+e8510f9108414a7fbabdb3099c88ed88,6a317c2d22da51f836da8849,115上8適翰版英文 review-1 Review 1_10_進度卷_1,8年級英語,11,1,要修,(A) You are in Pop City? 是口語常用的直述句問句（語調上揚），可被視為正確，答案不唯一；換成明確錯誤語序。,快照原文,Choose the correct word order.,"(A) You are in Pop City?
+(B) In Pop City are you?
+(C) Are in Pop City you?
+(D) Are you in Pop City?",D,be 動詞疑問句的基本語序是 Be 動詞 + 主詞 + 地點，因此 Are you in Pop City? 正確。,Choose the correct word order.,"(A) You in Pop City are?
+(B) In Pop City are you?
+(C) Are in Pop City you?
+(D) Are you in Pop City?",D,be 動詞疑問句的基本語序是 Be 動詞 + 主詞 + 地點，因此 Are you in Pop City? 正確，故選 (D)。(A)、(B)、(C) 的 be 動詞、主詞或地點位置錯誤。,options、answer,
+9089e61eb4974910b2e56204f942d42f,6a337e8b345023733bf6f4ff,115上7適南版英文 review-1 REVIEW I_20_進度卷_1,7年級英語,18,1,要修,正解 Where are you from? 直接洩漏同卷#9（___ are you from? 答 Where）；只改#9 題幹仍會被 Where 問句提示，故改#18 為不涉及疑問詞的 be 動詞問句語序題（同時取代先前只換 (D) 的版本，(D) 口語可成立的問題一併消除）。已核對同卷 20 題無新洩答。,快照原文,Choose the correct question.,"(A) Where you are from?
+(B) From where you are?
+(C) Where are you from?
+(D) You are from where?",C,英文疑問句要把 be 動詞 are 放在主詞 you 前面，所以 Where are you from? 是自然且正確的問句。,Choose the correct question.,"(A) Father your is a teacher?
+(B) Your father a teacher is?
+(C) Is your father a teacher?
+(D) Is your father teacher a?",C,be 動詞問句要把 be 動詞 is 放在主詞 your father 前面，後面接 a teacher，所以 Is your father a teacher? 是正確問句，故選 (C)。(A)、(B)、(D) 的 be 動詞、所有格或冠詞位置錯誤。,options、answer,
+cc79e1c5fecd4040a92208557a50d1af,6a337e8b345023733bf6f4ff,115上7適南版英文 review-1 REVIEW I_20_進度卷_1,7年級英語,19,1,要修,題幹 How old is your daughter? 與正解 She is five years old. 洩漏#12（___ is your sister? She is five years old. 答 How old），選項 They are tigers. 也洩#17；改成不涉及年齡與 they 的 be 動詞問答。,快照原文,How old is your daughter?,"(A) It is a goat.
+(B) He is my father.
+(C) They are tigers.
+(D) She is five years old.",D,問題問女兒幾歲，回答要說 She is five years old. 其他選項回答事物、人物關係或動物，不是在回答年齡。,Are you a student?,"(A) It is a pen.
+(B) He is my uncle.
+(C) No, it isn't.
+(D) Yes, I am.",D,"問句 Are you...? 問的是「你」，肯定回答要用 Yes, I am.，故選 (D)。(A)、(B) 沒有回答問題；(C) 主詞應為 I，不能用 it。",content、options、answer,
+dc34db49c3c3418eb3a2a8b992e97a4b,6a337e8b345023733bf6f4ff,115上7適南版英文 review-1 REVIEW I_20_進度卷_1,7年級英語,15,1,要修,原題 Karen is my sister. ___ is five years old. 與#12題幹 your sister? She is five years old. 幾乎相同，#12 直接給出 She；改題幹情境。,快照原文,Karen is my sister. ______ is five years old.,"(A) He
+(B) They
+(C) She
+(D) It",C,Karen is my sister 表示 Karen 是女性單數，因此下一句主詞用 She。He 指男性，They 指複數，It 指物或動物。,Karen is a nice girl. ______ is my classmate.,"(A) He
+(B) They
+(C) She
+(D) It",C,Karen is a nice girl 表示 Karen 是女性單數，下一句主詞用 She，故選 (C)。He 指男性，They 指複數，It 指物或動物。,content、answer,
+cc07c0d0624042868c62129696ba3276,6a337e8b345023733bf6f4ff,115上7適南版英文 review-1 REVIEW I_20_進度卷_1,7年級英語,17,1,要修,"題幹 Are those lions? No, they are tigers. 直接洩漏#13（Those ___ tigers. 答 are）；改情境避開 those／tigers。",快照原文,"Are those lions? No, ______ are tigers.","(A) they
+(B) it
+(C) he
+(D) she",A,those 是複數，因此回答時用 they。it、he、she 都是單數，不能自然接 are tigers。,"Are your sisters at home? No, ______ are at school.","(A) they
+(B) it
+(C) he
+(D) she",A,your sisters 是複數，回答時代名詞用 they，故選 (A)。it、he、she 都是單數，不能接 are。,content、answer,
+39707ef2e11743cebfb97559514bd3c4,6a0e8640a7941eaf4b61ed86,115上7適康版英文 review-1 Review 1 第一次複習_20_進度卷_2,7年級英語,14,1,要修,與#16（Pigs eat plants and other animals → Pigs are plant and meat eaters）同內容互洩；改成只吃植物的動物。,快照原文,Humans eat plants and other animals. ___.,"(A) They are plant and meat eaters.
+(B) They are only plants.
+(C) They are not animals or humans.
+(D) They are my pencils.",A,吃植物也吃其他動物的人類，可歸類為 plant and meat eaters。,Cows eat only plants. ___.,"(A) They are plant eaters.
+(B) They are only plants.
+(C) They are not animals.
+(D) They are my pencils.",A,牛只吃植物，所以是 plant eaters（草食動物），故選 (A)。(B) 牛不是植物；(C) 牛是動物；(D) 語意不合。,content、options、answer,
+95579b4d22ab45f6abf63c22cb866a21,6a32c201ace855db60543580,115上7適翰版英文 review-1 Review 1_20_進度卷_1,7年級英語,15,1,要修,填入後 She is a happy student 與#20題幹 She is a ___ girl（答 happy）互洩；改題幹避開 happy／a … girl。,快照原文,Betty is a girl. ______ a happy student.,"(A) She is
+(B) They are
+(C) We am
+(D) You is",A,"Betty is one girl, so She is matches the subject and the be verb.",Betty is in my class. ______ from Taiwan.,"(A) She is
+(B) They are
+(C) We am
+(D) You is",A,Betty 是一位女生，主詞要用 She，be 動詞用 is，故選 (A) She is from Taiwan.。(B) They are 是複數；(C) We am、(D) You is 主詞與 be 動詞不合。,content、answer,提醒：英文字典查不到（多為人名地名，請人看）：Taiwan
+2c4353d434cd4b6a8ad2d2a301a8ab4f,6a320806ab203e23971fe58e,115上8適康版英文 review-1 Review 1_10_進度卷_1,8年級英語,17,2,要修,正解 It is raining now. 直接洩漏#12（It is ___ now. 答 raining）；圖中其實沒有 now 標示（原解析有誤），(C) It seldom snows here. 也直接示範#16 的答案。改成描述圖中人物，並換掉 (C)。,快照原文,Which sentence best describes the picture?,"(A) It is raining now.
+(B) It was snowy yesterday.
+(C) It seldom snows here.
+(D) There was a little snow.",A,圖片中有雨滴與 now 標示，最符合現在正在下雨的句子是 It is raining now。,Which sentence best describes the picture?,"(A) The boy is standing by the window.
+(B) It was snowy yesterday.
+(C) The boy is sleeping in bed.
+(D) There was a little snow.",A,圖中男孩站在窗邊看著窗外下雨，故選 (A)。(B)、(D) 圖中沒有下雪；(C) 男孩沒有在床上睡覺。,options、answer,提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符
+13ea4dc4ad9f499c88e1a4e739e306c7,6a3208b0ab203e23971fe60c,115上8適康版英文 review-1 Review 1_20_進度卷_2,8年級英語,20,1,要修,題幹 I stayed at home 洩漏#11（we ___ at home 答 stayed）；改主要子句。,快照原文,"______ I had a cold, I stayed at home.","(A) Because
+(B) So
+(C) But
+(D) Or",A,前半句說明待在家的原因，because 可放在句首引導原因子句。,"______ I had a cold, I went to bed early.","(A) Because
+(B) So
+(C) But
+(D) Or",A,前半句「我感冒了」是後半句「我早早上床睡覺」的原因，because 可放在句首引導原因子句，故選 (A)。so、but、or 不能放在句首引導此原因子句。,content、answer,
+7c79eaa447a34d2b8dbf80af1e0039ca,6a3208b0ab203e23971fe60c,115上8適康版英文 review-1 Review 1_20_進度卷_2,8年級英語,15,1,要修,題幹 A: Could I leave a message? 直接給出#18的正解句子（Could I leave a message?）；改成不含該句的情境。,快照原文,"A: Could I leave a message? B: Sure. ______ A: Yes, he does.","(A) Does he have your number?
+(B) What was the weather like?
+(C) Do you like pies?
+(D) Is this a hoody?",A,對方同意留言後，可接著確認他是否有來電者的電話號碼。,"A: Please ask Ben to call me back. B: Sure. ______ A: Yes, he does.","(A) Does he have your number?
+(B) What was the weather like?
+(C) Do you like pies?
+(D) Is this a hoody?",A,"對方答應轉告 Ben 回電，接著確認 Ben 是否有來電者的電話號碼；A 回答 Yes, he does. 也對應 Does he...? 問句，故選 (A)。",content、answer,提醒：英文字典查不到（多為人名地名，請人看）：hoody
+6d8fb03174084738bfebb698e3207fcd,6a317c2d22da51f836da8849,115上8適翰版英文 review-1 Review 1_10_進度卷_1,8年級英語,7,1,要修,與#20題幹 Does it snow in your town? 同句型同內容，直接洩漏答案 Does；改主詞與動詞。,快照原文,Choose the correct question: ______ it snow there?,"(A) Is
+(B) Are
+(C) Does
+(D) Do",C,主詞是 it，且主要動詞是原形 snow，現在簡單式疑問句要用 Does。,Choose the correct question: ______ your brother like math?,"(A) Is
+(B) Are
+(C) Does
+(D) Do",C,主詞 your brother 是第三人稱單數，主要動詞是原形 like，現在簡單式疑問句要用 Does，故選 (C)。Is、Are 不能接原形動詞；Do 不搭配第三人稱單數。,content、answer,
+86c3ab26ec924679b586e635d5da19fe,6a337fbf345023733bf6f5d1,115上7適南版英文 review-2 REVIEW II_20_進度卷_1,7年級英語,17,1,要修,題幹 Are there any books on the desk? 洩漏#13（There aren’t ___ books on the desk. 答 any）；刪去 any，作答不受影響。,快照原文,A: Are there any books on the desk? B: ______,"(A) No, there isn’t.
+(B) Yes, there are.
+(C) Yes, it is.
+(D) No, it aren’t.",B,"問句使用 Are there any books，肯定簡答應使用 Yes, there are.。",A: Are there books on the desk? B: ______,"(A) No, there isn’t.
+(B) Yes, there are.
+(C) Yes, it is.
+(D) No, it aren’t.",B,"問句使用 Are there books，肯定簡答應使用 Yes, there are.，故選 (B)。(A) 應為 there aren’t；(C)、(D) 主詞應為 there。",content、answer,
+0a2e199f6437480f92601fc391a7de38,6a3208c2ab203e23971fe660,115上8適康版英文 review-2 Review 2_10_進度卷_1,8年級英語,1,2,要修,正解 I watch videos and listen to music. 直接洩漏#4（I ___ to music every night. 答 listen）；只換正解選項內容。,快照原文,A: What do you do in your free time? B: ______,"(A) Because I was little and busy then.
+(B) They come from my school.
+(C) It is important to help.
+(D) I watch videos and listen to music.",D,問句詢問空閒時間做什麼，I watch videos and listen to music 是自然且完整的回答。,A: What do you do in your free time? B: ______,"(A) Because I was little and busy then.
+(B) They come from my school.
+(C) It is important to help.
+(D) I watch videos and play basketball.",D,問句詢問空閒時間做什麼，I watch videos and play basketball. 是自然且完整的回答，故選 (D)。其他選項沒有回答空閒時間的活動。,options、answer,
+bd5e33c1cc0c43918d5c9ce1d8a440e3,6a3208c2ab203e23971fe660,115上8適康版英文 review-2 Review 2_10_進度卷_1,8年級英語,7,2,要修,填入後 wants to be a doctor 與#17題幹 want to be a YouTuber 同句型同內容，洩漏答案 to be；改動詞。,快照原文,Choose the correct phrase: Ben wants ______ a doctor.,"(A) be
+(B) to be
+(C) being
+(D) was",B,want 後面接不定詞 to be，表示想成為某種身分或職業。,Choose the correct phrase: Ben hopes ______ a doctor someday.,"(A) be
+(B) to be
+(C) being
+(D) was",B,hope 後面接不定詞 to V，hopes to be a doctor 表示希望將來成為醫生，故選 (B)。,content、answer,
+cc0567a9dabf49e99420e74d991205d1,6a41ff014f9b8c6f9c399429,SUMMER-115S1-G9-JNA_115會考理2_波動與聲音_10_2,9年級自然,12,2,要修,題幹問「在聲音三要素的哪一項特徵上差異最明顯」，但四個選項都是敘述句而非三要素名稱（(A)(B)(D)與三要素無關），問句與選項不對應；改成「下列關於兩者的比較何者正確」即可，答案仍 C。,第2批改後,生活中常聽到的「白噪音」（如雨聲、海浪聲），是包含可聽範圍內各種不同頻率且能量分布均勻的複合聲波，與單一頻率音叉發出的單純聲音不同。若比較白噪音與單一音叉所發出的聲音，兩者在「聲音三要素」的哪一項特徵上差異最明顯？,"(A) 兩者一定都是人耳聽不見的超聲波
+(B) 兩者在相同空氣中的傳播速率必不相同
+(C) 兩者的波形與音色不同
+(D) 白噪音不需要介質就能傳播",C,單一音叉發出的是單一頻率、波形接近正弦波的單音；白噪音則是由各種不同頻率的聲波混合而成，波形複雜，因此兩者的波形與「音色」差異最明顯。(A) 題幹已說明為可聽範圍內的聲波，非超聲波；(B) 同一介質（相同空氣條件）中聲速相同；(D) 所有聲波皆為力學波，都需要介質才能傳播。,生活中常聽到的「白噪音」（如雨聲、海浪聲），是由可聽範圍內許多不同頻率的聲波混合而成的複合聲音；單一音叉發出的則是接近單一頻率的單純聲音。下列關於白噪音與單一音叉聲音的比較，何者正確？,"(A) 兩者一定都是人耳聽不見的超聲波
+(B) 兩者在相同空氣中的傳播速率必不相同
+(C) 兩者的波形與音色不同
+(D) 白噪音不需要介質就能傳播",C,單一音叉發出的是單一頻率、波形接近正弦波的單音；白噪音則由各種不同頻率的聲波混合而成，波形複雜，因此兩者的波形與音色不同。(A) 題幹已說明為可聽範圍內的聲音，不是超聲波；(B) 在相同空氣條件下聲速相同；(D) 聲波都需要介質才能傳播。,content、answer,
+9dfb62f96ae9431cae6acfc0c7c6cde7,6a41ff084f9b8c6f9c3994f5,SUMMER-115S1-G9-JNA_115會考理3_光_10_2,9年級自然,13,2,要修,題幹開頭「若改以單一紅光」的「改以」承接已不存在的白光情境，單獨看語意不完整；刪「若改」即可，內容與答案 C 正確。,第2批改後,若改以單一紅光射入三稜鏡中，下列關於紅光通過三稜鏡後的敘述何者正確？,"(A) 紅光會再分散成多種色光
+(B) 紅光完全不會發生偏折
+(C) 紅光仍為紅光，不會再分散成其他色光
+(D) 紅光不能穿過三稜鏡",C,白光是複合光，通過三稜鏡會色散成多種色光；而紅光屬於單色光，通過三稜鏡時雖會發生折射偏折，但不會再分散成其他色光，因此(C)正確，(A)(B)(D)錯誤。,以單一紅光射入三稜鏡，下列關於紅光通過三稜鏡後的敘述何者正確？,"(A) 紅光會再分散成多種色光
+(B) 紅光完全不會發生偏折
+(C) 紅光仍為紅光，不會再分散成其他色光
+(D) 紅光不能穿過三稜鏡",C,白光是複合光，通過三稜鏡會色散成多種色光；紅光屬於單色光，通過三稜鏡時雖會發生折射偏折，但不會再分散成其他色光，故選(C)。(A) 單色光不會再色散；(B) 紅光斜射進出稜鏡仍會偏折；(D) 紅光可以穿過透明的三稜鏡。,content、answer,
+5f58d1072df04b99b8e3eff3ef4cfaed,6a41fee84f9b8c6f9c3990da,SUMMER-115S1-G9-JNA_115會考生9_ 遺傳_10_2,9年級自然,12,1,要修,已核 _v2 圖，內容與答案 A 正確；但題幹與選項的 X^A、X^aY 等仍是裸寫 ^ 未包 $…$（同批#19 就是因此修正），前端會直接顯示 ^ 符號。,第2批改後,題目圖片呈現某性聯隱性遺傳疾病的棋盤方格（X^A 代表正常顯性等位基因，X^a 代表致病隱性等位基因）。下列哪一種基因型的子代會表現患病？,"(A) X^aY
+(B) X^AX^A
+(C) X^AY
+(D) X^AX^a",A,隱性致病等位基因（X^a）位於 X 染色體上時，男性（X^aY）僅有一條 X 染色體且帶有致病等位基因，無顯性正常等位基因（X^A）可掩蓋，因此會表現患病；(B)、(C) 不含致病基因故表現正常；(D) 具有一個顯性正常等位基因（X^A），故表現型為正常（帶因者）。,題目圖片呈現某性聯隱性遺傳疾病的棋盤方格（$X^A$ 代表正常顯性等位基因，$X^a$ 代表致病隱性等位基因）。下列哪一種基因型的子代會表現患病？,"(A) $X^aY$
+(B) $X^AX^A$
+(C) $X^AY$
+(D) $X^AX^a$",A,致病隱性等位基因 $X^a$ 位於 X 染色體上；男性 $X^aY$ 只有一條 X 染色體，且帶有致病等位基因，沒有正常顯性等位基因 $X^A$ 可以掩蓋，因此會表現患病。(B)、(C) 不含致病等位基因，表現正常；(D) $X^AX^a$ 具有一個正常顯性等位基因，表現型正常（帶因者）。,content、options、answer,提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符
+ab1bd26f03954277b612869c3aa5c16c,6a4220070a425852dffc9d1f,115上8適翰版理化 5-5 熱的傳播方式_50_進度卷_1,8年級理化,7,1,要修,海陸風改寫內容正確，但(A)(C)都寫「空氣受熱上升」，等於直接告訴同卷#13、#18 的答案（熱空氣密度小而上升）；這正是先前洩題檢查擋下的問題，只換了說法沒有真正避開。選項改為只比較升降溫快慢與風向，答案仍 A。,第2批改後,晴朗的夏日白天與夜晚，海邊會因為陸地與海水的溫度變化快慢不同，產生方向相反的「海風」與「陸風」。若從熱傳播與比熱的觀點分析，下列敘述何者最合理？,"(A) 白天陸地比海水升溫快，陸地上的空氣受熱上升，風由海面吹向陸地
+(B) 白天海水比陸地升溫快，海面上的空氣受熱上升，風由陸地吹向海面
+(C) 夜晚陸地比海水降溫慢，陸地上的空氣受熱上升，風由海面吹向陸地
+(D) 海風與陸風的形成完全是因為水與沙石之間的熱傳導，與空氣對流無關",A,因為陸地（沙石）比熱較海水小，白天受太陽照射時，陸地升溫較快，上方空氣受熱上升，海面較冷的空氣流向陸地補充，形成由海面吹向陸地的「海風」；夜晚陸地降溫較快，海面溫度相對較高，海面上方空氣上升，陸地較冷空氣流向海面，形成「陸風」，兩者皆屬於熱對流現象。,晴朗的夏日白天與夜晚，海邊會因為陸地與海水的溫度變化快慢不同，產生方向相反的「海風」與「陸風」。若從熱傳播與比熱的觀點分析，下列敘述何者最合理？,"(A) 白天陸地比海水升溫快，風由海面吹向陸地
+(B) 白天海水比陸地升溫快，風由陸地吹向海面
+(C) 夜晚陸地比海水降溫慢，風由海面吹向陸地
+(D) 海風與陸風的形成只與水和沙石之間的熱傳導有關，與空氣流動無關",A,陸地（沙石）的比熱比海水小，白天受太陽照射時陸地升溫較快，陸地上方空氣受熱上升，海面上較冷的空氣流向陸地補充，形成由海面吹向陸地的海風；夜晚陸地降溫較快，風改由陸地吹向海面，形成陸風。兩者都是空氣的熱對流現象。(B) 白天海水升溫較慢；(C) 夜晚陸地降溫較快，且風由陸地吹向海面；(D) 海陸風是空氣對流造成的。,options、answer,
+7aa670d9bd184cfcb36d3a6bff776783,6a41fee84f9b8c6f9c3990da,SUMMER-115S1-G9-JNA_115會考生9_ 遺傳_10_2,9年級自然,17,1,要修,格式補修：不在 191 題內、未曾寫入 prod，與同卷 #12 同樣是裸寫上標 I^Bi、I^B，沒有包 $…$，前端會直接顯示 ^；內容與答案 A 正確，只包 $。,快照原文,題目圖片列出 ABO 血型與基因型對照。基因型 I^Bi 對應的血型為何？,"(A) B 型
+(B) A 型
+(C) AB 型
+(D) O 型",A,I^B 是 B 型等位基因，i 是隱性等位基因；I^Bi 會表現 B 型血。,題目圖片列出 ABO 血型與基因型對照。基因型 $I^Bi$ 對應的血型為何？,"(A) B 型
+(B) A 型
+(C) AB 型
+(D) O 型",A,$I^B$ 是 B 型等位基因，$i$ 是隱性等位基因；$I^Bi$ 會表現 B 型血。,content、answer,提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符
+ec464c68dd3b459ea857665d5a53091a,6a38b62c63659435c1433814,115上8適翰版歷史 6-2 城市風貌與社會文化變遷_10_進度卷_2,8年級歷史,17,2,要修,改後方向（史料判讀西式飲食文化傳入）可行，但題幹以引號呈現的「以銅機器用鏹水（強酸）化大理石，取其卡朋氣…其聲如爆竹」查無可靠原文出處（僅查到《滬游雜記》描述機器壓氣入瓶、開瓶易爆塞，見 https://www.ourchinastory.com/zh/13297 ），屬疑似自編引文；改為「大意」敘述，不加引號。另同卷第20題題幹「豐富了市民的飲食文化」對本題B有輕度提示，因答案明顯仍可接受。,第2批改後,清末文獻記載某種夏季消暑飲品的製作方法：「以銅機器用鏹水（強酸）化大理石，取其卡朋氣（二氧化碳），以水合之，即成清涼飲品，盛於玻璃瓶中，開塞時其聲如爆竹。」上述這種新奇飲品在清末上海等城市的流行，主要反映了當時哪一種歷史現象？,"(A) 傳統中醫煉丹技術的復興
+(B) 西式飲食文化傳入通商口岸
+(C) 內陸農村傳統手工業的轉型
+(D) 朝廷全面禁止民眾飲用茶水",B,題幹引文描述的是清末傳入通商口岸的西式汽水（當時俗稱荷蘭水），利用強酸與大理石反應產生二氧化碳溶於水中製成，反映了19世紀中期以後西式飲食文化傳入通商口岸並豐富市民生活的情形，故選(B)。(A)此為西式化學製水技術，非傳統中醫煉丹；(C)主要流行於通商口岸城市而非內陸農村；(D)清廷並無禁止飲茶的政策。,清末文獻記載某種夏季消暑飲品的製法，大意是：用機器以強酸溶解大理石取得二氧化碳，再與水調和後裝入玻璃瓶，開瓶時瓶塞會爆出。這種新奇飲品在清末上海等城市流行，主要反映了當時哪一種歷史現象？,"(A) 傳統中醫煉丹技術的復興
+(B) 西式飲食文化傳入通商口岸
+(C) 內陸農村傳統手工業的轉型
+(D) 朝廷全面禁止民眾飲用茶水",B,題幹描述的是清末傳入通商口岸的西式汽水（當時稱荷蘭水），以強酸與大理石反應產生二氧化碳溶於水中製成，反映西式飲食文化傳入通商口岸、豐富市民生活的情形，故選(B)。(A)此為西式製水技術，與中醫煉丹無關；(C)主要流行於通商口岸城市而非內陸農村；(D)清廷並無禁止飲茶的政策。,content、answer,
+924c66e8212e4d22b51f00d5e6462bc6,6a41fb774f9b8c6f9c3982ef,SUMMER-115S1-G9-JSO_115會考地4_台灣的區域發展_10_2,9年級社會,18,1,要修,改後選項正確、已消除與第12、17題的洩題；但解析稱連江為「福建省（離島地區）特色」，與本卷五大區域分法（北、中、南、東、金馬地區）不一致，改稱「金馬地區」。,第2批改後,在五大區域的發展重點中，哪一項屬於北部區域的特色？,"(A) 臺北是政治經濟中心，新北人口最多
+(B) 臺中為中部核心都市，彰化為花卉產地
+(C) 花蓮原住民族人口最多
+(D) 連江有花崗岩地形與藍眼淚奇景",A,北部區域的重點包含臺北為政治經濟中心、新北人口最多，以及基隆、桃園作為海空門戶。(B)為中部區域特色；(C)為東部區域特色；(D)為福建省（離島地區）特色。,在五大區域的發展重點中，哪一項屬於北部區域的特色？,"(A) 臺北是政治經濟中心，新北人口最多
+(B) 臺中為中部核心都市，彰化為花卉產地
+(C) 花蓮原住民族人口最多
+(D) 連江有花崗岩地形與藍眼淚奇景",A,北部區域的重點包含臺北為政治經濟中心、新北人口最多，以及基隆、桃園作為海空門戶。(B)為中部區域特色；(C)為東部區域特色；(D)為金馬地區（離島）特色。,answer,
+f93e7f414c38453f999541c07e3849a1,6a32457fea19866e0c1fb5a8,115上7適南版公民 5-2 如何解決校園生活人際與公共事務的爭議？_10_進度卷_1,7年級公民,18,2,要修,原題「並非最初提案或動議」用語可議但非錯（其實可小改即可）；重寫題答案「宣布散會」正確、不洩題，但解析自編七步流程漏了同單元另卷第14題「選出主席、司儀、紀錄」為第一步，彼此不一致，改為不列完整步驟的解析。,第2批改後,在班會進行的標準流程中，下列哪一個項目是安排在最後進行的？,"(A) 主席報告
+(B) 宣布散會
+(C) 提案討論
+(D) 臨時動議",B,班會的進行流程依序通常為：一、主席宣布開會；二、宣讀上次會議紀錄；三、報告事項（主席報告、班級幹部報告等）；四、提案討論；五、臨時動議；六、導師講評或指導；七、宣布散會。因此最後進行的項目是宣布散會。,在班會進行的標準流程中，下列哪一個項目是安排在最後進行的？,"(A) 主席報告
+(B) 宣布散會
+(C) 提案討論
+(D) 臨時動議",B,班會在臨時動議等議程進行完畢、老師講評後，最後由主席宣布散會，結束整個會議，故選(B)。(A)主席報告屬報告事項、(C)提案討論與(D)臨時動議都在散會之前進行。,answer,
+c681f16ba6584676ab938de2a861626d,6a41fba44f9b8c6f9c3985ce,SUMMER-115S1-G9-JSO_115會考歷2_清帝國時期_10,9年級社會,8,1,要修,原題被第1題選項(B)洩答屬實；改考三大民變（朱一貴、林爽文、戴潮春）正確；但解析稱牡丹社事件為「原住民抗日事件」有誤，牡丹社事件是日本以琉球漂民遇害為藉口出兵臺灣，修正解析。,第2批改後,清帝國統治時期，臺灣曾發生多次重大民變。若要完整列舉清代臺灣「三大民變」，除了朱一貴事件、林爽文事件之外，還應包含哪一事件？,"(A) 郭懷一事件
+(B) 戴潮春事件
+(C) 牡丹社事件
+(D) 噍吧哖事件",B,清代臺灣三大民變分別為朱一貴事件、林爽文事件與戴潮春事件。(A)郭懷一事件發生於荷蘭統治時期；(C)牡丹社事件為日本出兵臺灣的原住民抗日事件；(D)噍吧哖事件（西來庵事件）發生於日治時期。,清帝國統治時期，臺灣曾發生多次重大民變。若要完整列舉清代臺灣「三大民變」，除了朱一貴事件、林爽文事件之外，還應包含哪一事件？,"(A) 郭懷一事件
+(B) 戴潮春事件
+(C) 牡丹社事件
+(D) 噍吧哖事件",B,清代臺灣三大民變分別為朱一貴事件、林爽文事件與戴潮春事件。(A)郭懷一事件發生於荷蘭統治時期；(C)牡丹社事件是日本以琉球漂民遇害為藉口出兵臺灣的事件，並非民變；(D)噍吧哖事件（西來庵事件）發生於日治時期。,answer,
