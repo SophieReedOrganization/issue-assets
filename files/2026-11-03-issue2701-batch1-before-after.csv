@@ -1,0 +1,855 @@
+﻿uid,exam_id,卷名,年級科目,題號,學生數,結論,理由,改前題幹,改前選項,改前答案,改前解析,改後題幹,改後選項,改後答案,改後解析,會寫的欄位,格式檢查
+703c21e747794786978af5988d222556,6a32c1a4ace855db6054356b,115上7適翰版英文 review-1 Review 1_10_進度卷_1,7年級英語,18,5,改,the／my 填入皆合文法語意，答案不唯一，且與同卷第5題(an old man)考點重複；AI 修法可用。,Fill in the blank: Ben is ___ old student.,"(A) a
+(B) the
+(C) an
+(D) my",C,old 以母音音素開頭，前面要用 an，所以句子是 Ben is an old student.,Fill in the blank: That is ___ ugly dog.,"(A) a
+(B) he
+(C) an
+(D) she",C,單數可數名詞 dog 前需有冠詞或限定詞，而形容詞 ugly 以母音音素開頭，故不定冠詞要用 (C) an，不能用 (A) a。(B) he 與 (D) she 為主格代名詞，不可直接修飾名詞。,content、options、answer,
+f788028ce45041eeacce1d94ae59bfcb,6a32c275ace855db605435d4,115上7適翰版英文 review-1 Review 1_10_進度卷_2,7年級英語,9,5,改,her 填入成立（Yuki is her nice classmate），答案不唯一；改 she 後唯一。,Fill in the blank: Yuki is ___ nice classmate.,"(A) an
+(B) a
+(C) her
+(D) they",B,nice 的開頭音是子音音素，單數名詞 classmate 前可用 a。,Fill in the blank: Yuki is ___ nice classmate.,"(A) an
+(B) a
+(C) she
+(D) they",B,單數可數名詞 classmate 前需要冠詞或所有格等限定詞；nice 的開頭音為子音音素，故用不定冠詞 (B) a，不能用 (A) an。(C) she 與 (D) they 皆為主格代名詞，不可放在名詞片語前修飾名詞。,options、answer,
+276e282a94dc4e53982aaea85bdd2903,6a32c275ace855db605435d4,115上7適翰版英文 review-1 Review 1_10_進度卷_2,7年級英語,15,5,改-已修正,原答案正確但 male sibling 超出七上程度、且第8題已出現 brother；AI 改考 cousin 又被第17題(Danny's cousin)洩題，改考同卷未出現的 sister。,Which word names a male sibling?,"(A) cousin
+(B) wife
+(C) brother
+(D) telephone",C,A male sibling 是兄弟，英文單字是 brother。,Choose the word that means「姊妹」.,"(A) cousin
+(B) wife
+(C) sister
+(D) telephone",C,「姊妹」的英文是 sister，故選 (C)。(A) cousin 是「表（堂）兄弟姊妹」；(B) wife 是「妻子」；(D) telephone 是「電話」。,content、options、answer,
+414dad3bbaa4404595445d2ee57978ea,6a337e85345023733bf6f4ea,115上7適南版英文 review-1 REVIEW I_10_進度卷_1,7年級英語,15,3,改,old 也是合理形容詞，答案不唯一；改 who 後唯一。,Fill in the blank: The bear is strong and ______.,"(A) from
+(B) old
+(C) hairy
+(D) those",C,「hairy」表示多毛的，和 bear 的描述搭配自然。,Fill in the blank: The bear is strong and ______.,"(A) from
+(B) who
+(C) hairy
+(D) those",C,對等連接詞「and」連接兩個形容詞作主詞補語，用來描述熊的特徵；選項中只有 (C) hairy（多毛的）為形容詞，故選 (C)。(A) from 為介系詞、(B) who 為疑問代名詞、(D) those 為指示代名詞／限定詞，詞性與語意皆不合。,options、answer,
+268c85e0c86f4148821475a1c439b4bc,6a338016345023733bf6f625,115上7適南版英文 review-2 REVIEW II_10_進度卷_2,7年級英語,6,3,改-已修正,原答案 may 本身唯一，但 if the teacher asks 語意不順；AI 修後題幹的洗手、點心洩漏同卷第12題答案（wash both hands），改用與同卷無關的情境。,You ____ bring a mask if the teacher asks.,"(A) may
+(B) which
+(C) everywhere
+(D) snack",A,May 可作情態助動詞，後面接動詞原形 bring，句子語意自然。,"Finish your homework first, and then you ____ watch TV.","(A) may
+(B) which
+(C) everywhere
+(D) snack",A,may 為情態助動詞，表示「可以（許可）」，後面接原形動詞 watch，句意為「先寫完功課，然後你就可以看電視」。(B) which（哪一個）、(C) everywhere（到處）、(D) snack（點心）詞性與語意皆不合。,content、answer,
+52a6e9417383449d88e3041c104cacd9,6a4203aa4f9b8c6f9c399b74,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_30_4,9年級英語,12,3,改,無上下文時 girl's room 也成立；加 two 後只能用複數所有格 girls'。,The ______ room is next to the library in this school.,"(A) girl's
+(B) girl
+(C) girls
+(D) girls'",D,girls 為複數名詞，表示「女孩們的房間」要在 s 後加撇號，形成 girls’ room。,The two ______ room is next to the library in this school.,"(A) girl's
+(B) girl
+(C) girls
+(D) girls'",D,空格前有 two，可知為兩位女孩共用的房間，應使用複數名詞的所有格；girls 為規則複數名詞，字尾已有 s，所有格只需在 s 後加撇號，故選 (D) girls'。(A) 為單數名詞的所有格，不可與 two 連用；(B)、(C) 非所有格形式。,content、answer,
+8689f5e891954ab9b745d37936c86331,6a4203c04f9b8c6f9c399cee,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_30,9年級英語,2,3,改-已修正,something more important 合文法語意，原題雙解；AI 改用不存在的 importanter，依使用者規定不用非真實字，改用真實但位置錯誤的 the most important。,I want to tell you something ______ before you leave.,"(A) importance
+(B) importantly
+(C) more important
+(D) important",D,something 這類不定代名詞由形容詞後位修飾，因此 something important 是自然且正確的用法。,I want to tell you something ______ before you leave.,"(A) importance
+(B) importantly
+(C) the most important
+(D) important",D,something 這類不定代名詞由形容詞放在後面修飾，故選形容詞原級 (D) important。(A) importance 為名詞、(B) importantly 為副詞，皆不可修飾代名詞；(C) 最高級 the most important 需在比較範圍中使用，且不可放在 something 後面作後位修飾。,options、answer,
+ac78c98924a4425fb3d739e9187f655e,6a4203cb4f9b8c6f9c399d96,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_30_3,9年級英語,15,3,改,無時間線索，did 也成立；改 do 後唯一。,"Mom: When ______ your sister have music class?
+Eric: In the afternoon.","(A) did
+(B) does
+(C) has
+(D) is",B,答句描述固定課程時間，問句使用現在簡單式；主詞 your sister 需用 does。,"Mom: When ______ your sister have music class?
+Eric: In the afternoon.","(A) do
+(B) does
+(C) has
+(D) is",B,問句中有一般動詞原形 have，形成疑問句需使用助動詞，故排除 (C) has 與 (D) is；主詞 your sister 為第三人稱單數，助動詞應使用 (B) does，而非 (A) do。,options、answer,
+a19bc2812b20449f8000abaa4cca553f,6a4203e24f9b8c6f9c399ee6,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_30_4,9年級英語,19,3,改,tell me why the museum opens on Mondays 合文法且可解讀；改 what 後唯一。,Please tell me ______ the museum opens on Mondays.,"(A) why
+(B) who
+(C) that to
+(D) whether",D,tell me 後詢問「是否開放」，需用 whether 引導名詞子句。,Please tell me ______ the museum opens on Mondays.,"(A) what
+(B) who
+(C) that to
+(D) whether",D,名詞子句 the museum opens on Mondays 結構完整（不缺主詞或受詞），故不可選疑問代名詞 (A) what 或 (B) who；(C) that to 語法錯誤；應選連接詞 (D) whether 引導名詞子句，表示詢問博物館星期一「是否」有營業。,options、answer,
+8b8595bec4ae4236ae9e01235cebc69c,6a3208c2ab203e23971fe660,115上8適康版英文 review-2 Review 2_10_進度卷_1,8年級英語,2,2,改-已修正,原答案 D 正確（B 屬非標準用法），但同卷第1題選項 C「It is important to help.」直接洩漏本題答案，第14題又同用 helping people；AI 改用 share love 用語不自然，改用 save water。,Choose the correct sentence.,"(A) It important help people.
+(B) It is important helping people.
+(C) It is help people important.
+(D) It is important to help people.",D,It is important to help people 是正確句型，it 作形式主詞，後面用 to help people。,Choose the correct sentence.,"(A) It important save water.
+(B) It is important save water.
+(C) It is save water important.
+(D) It is important to save water.",D,虛主詞句型「It is + 形容詞 + to V」中，it 作形式主詞，後面接不定詞 to save water 作真正主詞。(A) 缺少動詞 is 與 to；(B) 缺少 to；(C) 語序錯誤且缺少 to，故選 (D)。,options、answer,
+f87521bc916f4b28989baed304c57304,6a4203ad4f9b8c6f9c399bc8,SUMMER-115S1-G9-JEN_115會考英5_時式_30,9年級英語,20,2,改,疑問句尾 already 表驚訝亦合文法，答案不唯一；改否定句後只有 yet。,Have you finished your science report ______?,"(A) already
+(B) just
+(C) ago
+(D) yet",D,現在完成式疑問句要表「已經……了嗎」時，yet 常置於句尾。,I haven't finished my science report ______.,"(A) already
+(B) just
+(C) ago
+(D) yet",D,現在完成式的否定句中，表示「還沒……」時，常在句尾使用 yet。(A) already 與 (B) just 多用於肯定句；(C) ago 需搭配過去簡單式且前接一段時間。,content、answer,
+9dde37104b15480fba5cf8f862c055dc,6a4203b04f9b8c6f9c399c07,SUMMER-115S1-G9-JEN_115會考英5_時式_10_2,9年級英語,7,2,改,Did 問過去習慣也成立；改 Were 後唯一。,Choose the best answer: ______ your parents work on Saturdays?,"(A) Do
+(B) Does
+(C) Did
+(D) Are",A,your parents 是複數主詞，詢問現在習慣用 Do 開頭。,Choose the best answer: ______ your parents work on Saturdays?,"(A) Do
+(B) Does
+(C) Were
+(D) Are",A,句中有原形一般動詞 work，形成疑問句需使用助動詞，故排除 be 動詞 (C) Were 與 (D) Are；主詞 your parents 為複數，詢問現在每週六的習慣，助動詞應用 (A) Do，而非單數的 (B) Does。,options、answer,
+e60333a91d1b428f9d1ca2a0cf774055,6a4203b04f9b8c6f9c399c07,SUMMER-115S1-G9-JEN_115會考英5_時式_10_2,9年級英語,11,2,改,were friends for ten years（過去十年是朋友）成立；改 has been 後唯一。,Choose the best answer: We ______ friends for ten years.,"(A) are
+(B) have been
+(C) were
+(D) will be",B,for ten years 表示持續一段時間到現在，應用現在完成式 have been。,Choose the best answer: We ______ friends for ten years.,"(A) are
+(B) have been
+(C) has been
+(D) will be",B,for ten years 表示持續一段時間到現在，應用現在完成式；主詞 We 為複數，故選 have been。選項 (A) 現在簡單式、(D) 未來簡單式皆不合持續至今的語意，選項 (C) has been 與複數主詞 We 不合。,options、answer,
+b4cfcb3e258e424bb21548749556a732,6a4203b04f9b8c6f9c399c07,SUMMER-115S1-G9-JEN_115會考英5_時式_10_2,9年級英語,19,2,改,this Friday 可指剛過去的週五，came 也成立；改 comes 後唯一。,Choose the best answer: My cousins ______ to dinner this Friday.,"(A) came
+(B) come yesterday
+(C) have come last year
+(D) are coming",D,this Friday 指未來安排，come 可用現在進行式 are coming 表未來。,Choose the best answer: My cousins ______ to dinner this Friday.,"(A) comes
+(B) come yesterday
+(C) have come last year
+(D) are coming",D,主詞 My cousins 為複數，(A) comes 主詞與動詞單複數不一致；(B) yesterday 應搭配過去式 came；(C) last year 為明確過去時間點，不可與現在完成式連用。this Friday 指未來安排時，來往動詞 come 可用現在進行式 are coming 表未來，故選 (D)。,options、answer,
+0d5f1abb0b28441584feaad590395a8b,6a4203b04f9b8c6f9c399c1f,SUMMER-115S1-G9-JEN_115會考英5_時式_30_2,9年級英語,2,2,改-已修正,原題問 Which sentence is correct，(A) 文法正確，雙解；AI 修後題幹仍直接給出 was waiting / cut in 時態，且解析對 (B) 描述錯誤，改為挖空題。,A person was waiting in line when another person cut in. Which sentence is correct?,"(A) I stood in line before lunch yesterday.
+(B) I have stood in line when a man cuts in.
+(C) I will stand in line when a man cut in.
+(D) I was standing in line when a man cut in.",D,cut in 是過去短暫動作，當時正在排隊是持續中的動作，因此用 was standing。,"Yesterday, I ______ in line at the store when a man cut in.","(A) stand
+(B) have stood
+(C) will stand
+(D) was standing",D,cut in（插隊）是過去發生的短暫動作，「我正在排隊」是當時持續進行中的動作，主要子句用過去進行式 was standing，故選 (D)。(A) 現在式、(B) 現在完成式、(C) 未來式，皆與 Yesterday 及過去式 cut in 不合。,content、options、answer,
+a09de9277c3d4569a49dbf403f1a4d97,6a4203b04f9b8c6f9c399c1f,SUMMER-115S1-G9-JEN_115會考英5_時式_30_2,9年級英語,5,2,改,did 問過去頻率亦成立；改 have 後唯一。,How often ______ the twins practice tennis?,"(A) does
+(B) do
+(C) did
+(D) are",B,the twins 是複數主詞，詢問現在的習慣頻率時用 do 加原形動詞。,How often ______ the twins practice tennis?,"(A) does
+(B) do
+(C) have
+(D) are",B,句中主要動詞為原形動詞 practice，且主詞 the twins 為複數，詢問習慣頻率時需使用助動詞 do。(A) does 用於第三人稱單數主詞；(C) have 後方需接過去分詞；(D) are 為 be 動詞，後方不可直接接原形動詞。,options、answer,
+8dbcc043841a4876869e535f6d5f62d1,6a4203b04f9b8c6f9c399c1f,SUMMER-115S1-G9-JEN_115會考英5_時式_30_2,9年級英語,20,2,改,this morning 可搭配 has come in / came in，答案不唯一；改 tomorrow 後唯一。,"I am not sure if Kevin ______ this morning, but if he does, I will give him your message.","(A) comes in today
+(B) has come in
+(C) came in
+(D) will come in",D,第一個 if 表「是否」，且事情尚未確定是否會發生，因此可用 will come in。,"I am not sure if Kevin ______ tomorrow, but if he does, I will give him your message.","(A) comes in
+(B) has come in
+(C) came in
+(D) will come in",D,第一個 if 引導名詞子句表「是否」，搭配明確的未來時間 tomorrow，動詞需用未來式 will come in，故選 (D)。後句的 if 引導條件副詞子句表「如果」，則用現在簡單式 does 代替未來式；(A) 為現在簡單式，不可用於表未來時間的 if 名詞子句；(B) 為現在完成式、(C) 為過去簡單式，皆與 tomorrow 時間不符。,content、options、answer,
+544f24bace0641aea2ecb5051a629d54,6a4203c64f9b8c6f9c399d2d,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_10_2,9年級英語,11,2,改,anything more 合文法語意，雙解；改 interestingly 後唯一。,Did you hear anything ______ after class?,"(A) importantly
+(B) interesting
+(C) carefully
+(D) more",B,anything 後面的形容詞要後位修飾，anything interesting 表示任何有趣的事。,Did you hear anything ______ after class?,"(A) importantly
+(B) interesting
+(C) carefully
+(D) interestingly",B,不定代名詞 anything 後面需由形容詞作後位修飾，故選形容詞 (B) interesting（anything interesting 表示任何有趣的事）。(A) importantly、(C) carefully、(D) interestingly 皆為副詞，不可修飾代名詞 anything。,options、answer,
+f184d8e704af4ba4a11f072404eb7a21,6a4203d44f9b8c6f9c399e14,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_30,9年級英語,17,2,改-已修正,原答案大致可接受，但 who drives（習慣）與 driving（正在）語意不完全等同；採 AI 改 who is driving，但其解析稱 (A) 文法錯誤不實（可視為省略 that 的名詞子句），改寫解析。,Which sentence has the same meaning as “Do you know the man who drives a sports car?”,"(A) Do you know the man drove a sports car?
+(B) Do you know the man to drive a sports car?
+(C) Do you know the man drives a sports car?
+(D) Do you know the man driving a sports car?",D,主動關係子句 who drives a sports car 可簡化為現在分詞片語 driving a sports car 修飾 man。,Which sentence has the same meaning as “Do you know the man who is driving a sports car?”,"(A) Do you know the man drove a sports car?
+(B) Do you know the man to drive a sports car?
+(C) Do you know the man drive a sports car?
+(D) Do you know the man driving a sports car?",D,主動且正在進行的關係子句 who is driving a sports car 可省略 who is，簡化為現在分詞片語 driving a sports car 修飾 the man，故選 (D)。(A) 若視為省略 that 的名詞子句，意思變成「你知道那個男人開過跑車嗎」，與原句不同；(B) to drive 表「要（去）開跑車的人」，語意不同；(C) drive 為原形動詞，與主詞 the man 不一致且無連接詞，文法錯誤。,content、options、answer,
+fb84ebedc86f4232bbdd18a0609ae8ae,6a4203d64f9b8c6f9c399e47,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_10_2,9年級英語,5,2,改,choose coffee and milk 亦成立；加「只能一杯」語境後唯一。,You can choose coffee ______ milk.,"(A) so
+(B) and
+(C) or
+(D) but",C,coffee 和 milk 是兩個可選項，choose 表示選擇，因此使用 or。,You can only have one free drink. You can choose coffee ______ milk.,"(A) so
+(B) and
+(C) or
+(D) but",C,題幹說明「你只能有一杯免費飲料」，表示 coffee 和 milk 只能二選一，因此使用連接詞 or（或者）。so 表結果，and 表兩者皆有（與只能有一杯矛盾），but 表轉折，皆不合語意。,content、answer,
+d1a3bdfba2374d6e88c0d6b6e8b5fc00,6a4203d64f9b8c6f9c399e47,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_10_2,9年級英語,6,2,改,when（何時）亦成立，且原題 what 也可（what Mom would eat）；加 dinner、改 who 後唯一。,Dad asked me ______ Mom would eat at home tonight.,"(A) what
+(B) when
+(C) whose
+(D) whether",D,句意是「爸爸問我媽媽今晚是否會在家吃飯」，whether 可引導表示「是否」的名詞子句。,Dad asked me ______ Mom would eat dinner at home tonight.,"(A) what
+(B) who
+(C) whose
+(D) whether",D,空格後的子句「Mom would eat dinner at home tonight」結構與句意完整（主詞 Mom、動詞 eat、受詞 dinner），句意是「爸爸問我媽媽今晚是否會在家吃晚餐」，故選 (D) whether 引導表示「是否」的名詞子句。(A) what 與 (B) who 需在子句中作主詞或受詞，(C) whose 後方需接名詞，皆不合文法。,content、options、answer,
+63fd78e1363d491b903c67cd5c23c402,6a4203d64f9b8c6f9c399e47,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_10_2,9年級英語,12,2,改,why 填入亦合文法；加 or not 後唯一。,I do not know ______ Peter told the truth.,"(A) why
+(B) where
+(C) whose
+(D) whether",D,句意是「我不知道 Peter 是否說了實話」，whether 表示是否，能引導後面的名詞子句。,I do not know ______ Peter told the truth or not.,"(A) why
+(B) where
+(C) whose
+(D) whether",D,句尾有 or not，句意是「我不知道 Peter 是否說了實話」，whether ... or not 表示「是否……」，能引導後面的名詞子句。(A) why（為什麼）、(B) where（哪裡）、(C) whose（誰的）皆不與 or not 搭配。,content、answer,
+15df588c6c2e4d68905001f9c2ba6fad,6a4203d64f9b8c6f9c399e47,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_10_2,9年級英語,20,2,改,left 亦成立；加 tomorrow 後唯一。,Do you know when the train ______?,"(A) leave
+(B) left
+(C) will leave
+(D) leaving",C,間接問句中仍可保留未來式，但語序要用直述句：when the train will leave。,Do you know when the train ______ tomorrow?,"(A) leave
+(B) left
+(C) will leave
+(D) leaving",C,when 引導間接問句（名詞子句）作 know 的受詞時，並非時間副詞子句，若表達未來時間（tomorrow）仍須使用未來式 will leave。(A) 主詞 the train 為單數且時態不符；(B) 過去式與 tomorrow 時間不符；(D) 分詞不可單獨作子句的動詞。,content、answer,
+93060213b5cd4060aa0e097c4b100209,6a4203ea4f9b8c6f9c399f6f,SUMMER-115S1-G9-JEN_115會考英8_不定詞動名詞與重要句型_10_2,9年級英語,17,2,改,(D) can lift the box easily 也符合「成功抬起」，看圖易生爭議；改為語序錯誤誘答後唯一。,A student successfully lifts a box in the picture. Which sentence best describes this situation?,"(A) The student is not strong enough for this box.
+(B) The box is so heavy that no one can move it.
+(C) The student is strong enough to lift the box.
+(D) The student can lift the box easily.",C,圖片中學生已經成功抬起箱子，表示能力足夠完成動作，因此 strong enough to lift the box 最符合。,A student successfully lifts a box in the picture. Which sentence best describes this situation?,"(A) The student is not strong enough for this box.
+(B) The box is so heavy that no one can move it.
+(C) The student is strong enough to lift the box.
+(D) The student is enough strong to lift the box.",C,圖片中學生已經成功抬起箱子，表示能力足夠完成動作，句型為「形容詞 + enough + to V」，因此 (C) strong enough to lift the box 正確。(A)、(B) 語意與圖片不符；(D) enough 修飾形容詞時應置於形容詞之後，語序錯誤。,options、answer,"提醒：題幹尾端的 [有圖] 是匯出標記，已去掉（題目圖片 metadata.image_url 保留）
+提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符"
+8bf8acbd8ba64982b92f08adf3b9926c,6a0e8587a7941eaf4b61ecb4,115上7適康版英文 review-2 Review 2 第二次複習_20_進度卷_1,7年級英語,17,1,改-已修正,原答案正確，但與第16題（Please be quiet）考點重複、第20題選項 Be quiet 洩題；AI 改考 don't 又被第11、19題洩漏，改考同卷未出現的動詞 wash 開頭祈使句。,Please ______ quiet in the library.,"(A) be
+(B) do
+(C) can
+(D) use",A,祈使句中要表達「請安靜」應使用 Please be quiet.，因此空格要填 be。,Please ______ your hands before lunch.,"(A) wash
+(B) be
+(C) can
+(D) are",A,祈使句以原形動詞開頭，句意為「午餐前請洗手」，故選 (A) wash。(B) be 後面不能直接接受詞 your hands；(C) can 為助動詞、(D) are 為 be 動詞，皆不可置於 Please 後形成此祈使句。,content、options、answer,
+8e7fde5b9a5d46c4835f2ea7f513c578,6a317c2d22da51f836da8849,115上8適翰版英文 review-1 Review 1_10_進度卷_1,8年級英語,15,1,改,"and 構成是非問句亦成立；加 B 回答 Pizza, please 後唯一。",Do you want hamburgers ______ pizza for lunch?,"(A) and
+(B) so
+(C) because
+(D) or",D,題目是在兩種食物中選一種，英文二選一問題使用 or。,"A: Do you want hamburgers ______ pizza for lunch?
+B: Pizza, please.","(A) and
+(B) so
+(C) because
+(D) or",D,"由 B 回答「Pizza, please.（請給我披薩。）」可知 A 是在詢問兩種食物中要選哪一種，英文表示「二選一」的選擇疑問句需使用連接詞 or（或者；還是），故選 (D)。(A) and 表「和」，若用 and 則為一般是非疑問句，需先以 Yes/No 回答；(B) so（所以）與 (C) because（因為）皆為連接子句的連接詞，不合此處語意與結構。",content、answer,
+f257c974fb6f4a058ea008fe22f71d3c,6a317c2d22da51f836da8849,115上8適翰版英文 review-1 Review 1_10_進度卷_1,8年級英語,18,1,改,made a card with me 合理；改 at 後唯一。,My sister made a card ______ me.,"(A) for
+(B) to
+(C) with
+(D) as",A,make something for someone 表示替某人做某物，因此使用 for；with me 會變成和我一起做，不符合句意。,My sister made a card ______ me.,"(A) for
+(B) to
+(C) at
+(D) as",A,make 為授與動詞，搭配介系詞 for（make + 物 + for + 人），表示「為某人製作某物」，故選 (A)；其餘介系詞 to、at、as 皆不符此授與動詞句型。,options、answer,
+d7183ec565484850922265b1cf38c686,6a317cc422da51f836da88b2,115上8適翰版英文 review-1 Review 1_10_進度卷_2,8年級英語,9,1,改,灰天也可能下雨／下雪；改 sunny、warm 後唯一。,The sky is gray. It is ______.,"(A) hot
+(B) cloudy
+(C) snowy
+(D) rainy",B,天空灰灰的通常表示多雲或陰天，因此 cloudy 最符合句意。,The sky is gray. It is ______.,"(A) hot
+(B) cloudy
+(C) sunny
+(D) warm",B,天空灰灰的（gray）表示多雲或陰天，因此 (B) cloudy（多雲的／陰天的）最符合句意。(A) hot（炎熱的）、(C) sunny（晴朗的）、(D) warm（溫暖的）皆與灰暗的天空無關。,options、answer,
+b64f0de7c2cb4354a39d099fd6a69081,6a317cc422da51f836da88b2,115上8適翰版英文 review-1 Review 1_10_進度卷_2,8年級英語,10,1,改,because 亦成立；改 or 後唯一。,We stay home ______ it rains.,"(A) after
+(B) because
+(C) when
+(D) and",C,it rains 表示發生下雨這件事的時候，We stay home when it rains. 是自然句子。,We stay home ______ it rains.,"(A) after
+(B) or
+(C) when
+(D) and",C,when 表示「當……的時候」，句意為「當下雨時，我們待在家」，符合時間條件與語意邏輯；(A) after（在……之後）、(B) or（或者／否則）、(D) and（和／而且）放入句中語意皆不合常理，故選 (C)。,options、answer,
+b4d8ea20bc0a49baa95330b5bc007368,6a32080dab203e23971fe5a3,115上8適康版英文 review-1 Review 1_20_進度卷_1,8年級英語,3,1,改,It is rainy now 亦正確；改 rained 後唯一。,Take an umbrella. It is ______ now.,"(A) raining
+(B) rainy
+(C) rain
+(D) rains",A,is 後面接現在分詞形成現在進行式，表示現在正在下雨，所以用 raining。,Take an umbrella. It is ______ now.,"(A) raining
+(B) rained
+(C) rain
+(D) rains",A,句中有時間副詞 now 且空格前有 be 動詞 is，後面應接現在分詞形成現在進行式（is + V-ing），表示「現在正在下雨」，故選 (A) raining。(B) 為過去式動詞、(C) 為原形動詞或名詞、(D) 為第三人稱單數現在式動詞，皆不可直接置於 is 之後描述正在進行的動作。,options、answer,
+0dfc379b3abc4bf5bf09088455b762c0,6a32c201ace855db60543580,115上7適翰版英文 review-1 Review 1_20_進度卷_1,7年級英語,14,1,改,鉛筆在桌後地板上也成立；改 in 後唯一。,The pencil is ______ the desk. It is on the floor.,"(A) above
+(B) on
+(C) behind
+(D) under",D,"If the pencil is on the floor and the desk is over it, the pencil is under the desk.",The pencil is ______ the desk. It is on the floor.,"(A) above
+(B) on
+(C) in
+(D) under",D,"If the pencil is on the floor and the desk is over it, the pencil is under the desk. The prepositions above, on, and in do not match being on the floor.",options、answer,
+b90ef8ee617a4614aaddab369c718d33,6a32c28face855db605435e9,115上7適翰版英文 review-1 Review 1_20_進度卷_2,7年級英語,8,1,改,behind、in front of 亦成立；改 between、from 後唯一。,The blue bag is ______ the table. It is not under the table.,"(A) behind
+(B) in
+(C) in front of
+(D) on",D,"A bag that sits on the table is on the table, not under it.",The blue bag is ______ the table. It is not under the table.,"(A) between
+(B) in
+(C) from
+(D) on",D,"A bag resting on the surface of a table is ""on"" the table. ""Between"" requires two objects or a plural noun, ""in"" means inside, and ""from"" does not show location here.",options、answer,
+345aecaca6f7484684a13a2f293d5e30,6a32c28face855db605435e9,115上7適翰版英文 review-1 Review 1_20_進度卷_2,7年級英語,17,1,改,Tom's parents 合文法語意；改 they 後唯一。,Tom and Sue love ______ parents.,"(A) their
+(B) Tom's
+(C) she
+(D) he",A,"Tom and Sue means two people, so their parents is the correct phrase. Tom's would mean only Tom's parents, not both Tom and Sue's parents.",Tom and Sue love ______ parents.,"(A) their
+(B) they
+(C) she
+(D) he",A,名詞 parents 前方需要用所有格來修飾，主詞 Tom and Sue 為第三人稱複數，對應的所有格為 their，故選 (A)。(B) they、(C) she、(D) he 皆為主格代名詞，不可直接修飾名詞。,options、answer,
+c38faa2bab0a4daa855deeb0f3dcd84f,6a32c28face855db605435e9,115上7適翰版英文 review-1 Review 1_20_進度卷_2,7年級英語,20,1,改,our smart boy 成立；改 we 後唯一。,Kevin is ______ smart boy.,"(A) an
+(B) a
+(C) our
+(D) they",B,"Smart begins with a consonant sound, so a smart boy is correct.",Kevin is ______ smart boy.,"(A) an
+(B) a
+(C) we
+(D) they",B,"Smart begins with a consonant sound, so a smart boy is correct. An is used before a vowel sound, and we and they are subject pronouns that cannot modify boy.",options、answer,
+7f637bf48193446e87e7983ba2849723,6a32c3ceace855db605436bb,115上7適翰版英文 review-2 Review 2_20_進度卷_2,7年級英語,5,1,改,write the schedule 語意說得通；改 drink 後唯一。,Choose the best word: Let's ___ the schedule before we choose a time.,"(A) run
+(B) eat
+(C) write
+(D) check",D,Check the schedule means look at the list of times before choosing. The other verbs do not naturally fit this use.,Choose the best word: Let's ___ the schedule before we choose a time.,"(A) run
+(B) eat
+(C) drink
+(D) check",D,Check the schedule（確認時刻表／行程表）表示在選擇時間前先查看時刻表，語意最符合情境；(A) run（跑）、(B) eat（吃）、(C) drink（喝）皆無法與 the schedule 合理搭配，故選 (D)。,options、answer,
+f4b5fa3f33b54cd2a32e7dff73126677,6a4203a04f9b8c6f9c399a78,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10,9年級英語,9,1,改,(A) a pizza 用法正確，雙解；改 a pizzas 後唯一。,Choose the natural sentence.,"(A) We have a pizza for dinner every night.
+(B) We have many pizza for dinner.
+(C) We have pizza for dinner.
+(D) We have much pizzas for dinner.",C,pizza 表示食物概念時可作不可數名詞，have pizza for dinner 是自然用法。,Choose the natural sentence.,"(A) We have a pizzas for dinner.
+(B) We have many pizza for dinner.
+(C) We have pizza for dinner.
+(D) We have much pizzas for dinner.",C,pizza 表示食物概念時可作不可數名詞，have pizza for dinner 是自然用法。(A) 不定冠詞 a 後方不可接複數名詞 pizzas；(B) many 後方應接複數名詞 pizzas；(D) much 後方應接不可數名詞 pizza。,options、answer,
+219534cf0aa0451e84aa5f59cbea8ddd,6a4203a34f9b8c6f9c399ae1,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10_2,9年級英語,1,1,改,her 指另一人亦成立；改 my 後唯一。,Fill in the blank: Sara gave ______ a glass of water after running.,"(A) herself
+(B) hers
+(C) her
+(D) she",A,受詞與主詞 Sara 是同一人時，要用反身代名詞 herself。,Fill in the blank: Sara gave ______ a glass of water after running.,"(A) herself
+(B) hers
+(C) my
+(D) she",A,空格位置為動詞 gave 的間接受詞，且主詞為 Sara，填入反身代名詞 (A) herself 表示「給她自己」。(B) hers 為所有格代名詞（相當於 her + 名詞），不合語意；(C) my 為所有格，後面須接名詞；(D) she 為主格，不可作受詞。,options、answer,
+96473a92c6fc4375ab6dd212f9f111f7,6a4203d54f9b8c6f9c399e29,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_40,9年級英語,12,1,改,Not only 句首倒裝屬高中範圍，且 but also she 有爭議；AI 改為一般 not only…but also 連接動詞片語，正確。,"Not only did Mia finish the report before dinner, ______ checked every chart with her teammate.","(A) but she also
+(B) but also she
+(C) she also but
+(D) and she also",A,Not only 放在句首時，前半句使用倒裝 did Mia finish；後半句應以 but she also 接續，形成 not only...but also 的平行結構，表示「不但完成報告，也檢查圖表」。,Mia not only finished the report before dinner ______ checked every chart with her teammate.,"(A) but also
+(B) and also
+(C) or else
+(D) so that",A,not only... but also... 為對等連接詞片語，表示「不但……而且……」，此處用來連接兩個過去式動詞片語 finished the report before dinner 與 checked every chart with her teammate，形成平行結構；不能搭配 and also、or else 或 so that。,content、options、answer,
+a3cd7ee9c2784f288a37ba93e034147e,6a32c327ace855db6054363d,115上7適翰版英文 review-2 Review 2_10_進度卷_1,7年級英語,3,5,改-已修正,原答案正確，但第14題同考 on + 星期、第16、20題題幹直接給出 on Thursday / on Friday evening；AI 改考 in the afternoon 又被第8題選項洩漏，改考同卷未出現的 What day。,I am free ______ Sunday afternoon.,"(A) in
+(B) at
+(C) on
+(D) to",C,表示在星期幾或星期幾下午，常用介系詞 on。,"A: ______ is it today?
+B: It's Sunday.","(A) What time
+(B) How old
+(C) What day
+(D) Who",C,回答 It's Sunday. 是星期幾，問「今天星期幾」用 What day is it today?，故選 (C)。(A) What time 問幾點；(B) How old 問年紀；(D) Who 問人，皆不合答句。,content、options、answer,
+c075e5d7c3854094939dc7d27af2d1e3,6a4203e04f9b8c6f9c399ebc,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_30_3,9年級英語,3,3,改,whether 亦合文法語意；改 who 後唯一。,Tell me ______ you missed the first bus this morning.,"(A) why
+(B) that
+(C) whether
+(D) which",A,missed the first bus 需要原因說明，tell me 後接 why 引導名詞子句。,Tell me ______ you missed the first bus this morning.,"(A) why
+(B) that
+(C) who
+(D) which",A,空格後為結構與語意完整的句子（you missed the first bus this morning），不缺主詞或受詞，故排除疑問代名詞 (C) who 與 (D) which；tell me 後方詢問未知資訊，不接無疑問語意的 (B) that；由語意「告訴我你今早為什麼沒搭上第一班公車」可知應選疑問副詞 (A) why 引導名詞子句。,options、answer,
+08f3c3197bea4d6195cc1233c1aa0ea8,6a4203e04f9b8c6f9c399ebc,SUMMER-115S1-G9-JEN_115會考英7_連接詞與子句_30_3,9年級英語,11,3,改-已修正,what 亦可作子句主詞（如風吹開門），雙解；且同卷第7題答案「Nobody knows who broke it」直接洩漏 who，AI 修法仍以 who 為答案，改考 what。,Nobody knows ______ opened the locked door last night.,"(A) what
+(B) which
+(C) that
+(D) who",D,空格在名詞子句中作主詞，表示「誰打開門」，應用 who。,Nobody knows ______ happened in the classroom last night.,"(A) who
+(B) that
+(C) where
+(D) what",D,空格在名詞子句中同時作連接詞與主詞，後接動詞 happened，指「發生了什麼事」，故選 (D) what。(A) who 指人，人不能 happen；(B) that 引導名詞子句時不可充當主詞；(C) where 為疑問副詞，不可作主詞。,content、options、answer,
+259e913fd702416784aa853d45d97f6d,6a3208c2ab203e23971fe660,115上8適康版英文 review-2 Review 2_10_進度卷_1,8年級英語,4,2,改,listened 表過去習慣亦成立；改 to listen 後唯一。,Choose the correct word: I ______ to music every night.,"(A) listen
+(B) listens
+(C) listening
+(D) listened",A,主詞 I 搭配現在簡單式動詞原形 listen，用來表達每天晚上的習慣。,Choose the correct word: I ______ to music every night.,"(A) listen
+(B) listens
+(C) listening
+(D) to listen",A,時間副詞 every night 表達經常性的習慣，主詞 I 應搭配現在簡單式原形動詞 listen。(B) listens 為第三人稱單數動詞；(C) listening 與 (D) to listen 皆非完整動詞，不可直接作本句主要動詞。,options、answer,
+66082065bf0443c999bc5d08ed0fabc3,6a317c2d22da51f836da8849,115上8適翰版英文 review-1 Review 1_10_進度卷_1,8年級英語,14,1,改,and 亦合文法語意；改 before 後唯一。,I like math ______ I am good at numbers.,"(A) and
+(B) but
+(C) because
+(D) after",C,I am good at numbers 是喜歡數學的原因，所以要用 because 連接。,I like math ______ I am good at numbers.,"(A) before
+(B) but
+(C) because
+(D) after",C,I am good at numbers（我對數字很在行）是喜歡數學的原因，因此用連接詞 because（因為）連接；before（在……之前）、but（但是）與 after（在……之後）皆不符合前後句的因果語意。,options、answer,
+15f73f823dee49e3b83b4d007715c5be,6a317c2d22da51f836da8849,115上8適翰版英文 review-1 Review 1_10_進度卷_1,8年級英語,19,1,改,with my brother（和弟弟一起買）成立；改 of 後唯一。,I bought a sandwich ______ my brother.,"(A) to
+(B) for
+(C) with
+(D) on",B,buy 表示替某人買東西時常用 for，結構是 buy something for someone。,I bought a sandwich ______ my brother.,"(A) to
+(B) for
+(C) of
+(D) on",B,buy 為授與動詞，表示「買某物給某人」時需搭配介系詞 for，句型為「buy + 物 + for + 人」，故選 (B)。(A) to 常搭配 give、send、show 等動詞；(C) of、(D) on 則不合語意與文法。,options、answer,
+3df74ec2e71349bc87ac8baac5de7cee,6a4203c04f9b8c6f9c399cee,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_30,9年級英語,17,3,改-已修正,原答案 C 正確，但選項 A 的 expensiver 為不存在的字；依使用者規定不用非真實字作誘答，改為真實字但結構錯誤的 expensive and expensive。,Choose the natural English sentence.,"(A) Everything is becoming expensiver and expensiver.
+(B) Everything is becoming most and most expensive.
+(C) Everything is becoming more and more expensive.
+(D) Everything is becoming much expensive and much expensive.",C,多音節形容詞 expensive 表示「越來越」時，用 more and more + 原級形容詞。,Choose the natural English sentence.,"(A) Everything is becoming expensive and expensive.
+(B) Everything is becoming most and most expensive.
+(C) Everything is becoming more and more expensive.
+(D) Everything is becoming much expensive and much expensive.",C,多音節形容詞 expensive 表示「越來越……」時，用「more and more + 原級形容詞」，故選 (C)。(A) 原級重複不能表示「越來越」；(B) 不可用 most and most；(D) much 不能直接修飾原級形容詞，也沒有此句型。,options、answer,
+903bd57dbc374671a9857a860d61ec88,6a4203c04f9b8c6f9c399cee,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_30,9年級英語,19,3,改-已修正,依使用者規定不用不存在的字當選項：原選項 twentieth-three、twenty-threeth 不存在，改用真實的序數／基數詞當誘答。,Choose the correct ordinal number for twenty-three.,"(A) twenty-three
+(B) twentieth-three
+(C) twenty-threeth
+(D) twenty-third",D,複合數字的序數只把最後一個數改成序數，因此 twenty-three 變成 twenty-third。,Choose the correct ordinal number for twenty-three.,"(A) twenty-three
+(B) twentieth
+(C) twenty-first
+(D) twenty-third",D,複合數字的序數只把最後一個數改成序數，twenty-three 的序數是 twenty-third，故選 (D)。(A) twenty-three 是基數；(B) twentieth 是「第二十」；(C) twenty-first 是「第二十一」。,options、answer,
+916f1252dd3b46a9896d78c8ce13b50c,6a4203c64f9b8c6f9c399d2d,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_10_2,9年級英語,2,2,改-已修正,依使用者規定不用不存在的字當選項：原選項 twentieth-three、twenty-threeth 不存在，改用真實的序數／基數詞當誘答。,March 23 is read as March ______.,"(A) twenty-third
+(B) twenty-three
+(C) twentieth-three
+(D) twenty-threeth",A,日期中的 23 要用序數 twenty-third。,March 23 is read as March ______.,"(A) twenty-third
+(B) twenty-three
+(C) twentieth
+(D) thirty-second",A,日期要用序數，23 的序數是 twenty-third，故選 (A)。(B) twenty-three 是基數；(C) twentieth 是「第二十」；(D) thirty-second 是「第三十二」。,options、answer,
+02c4521b1c694d27891a14f5cebaba45,6a4203c74f9b8c6f9c399d53,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_30_2,9年級英語,19,3,改-已修正,依使用者規定不用不存在的字當選項：原選項 nineth、nintieth、nineith 皆不存在，改用真實序數詞當誘答。,Choose the correct ordinal number for nine.,"(A) nineth
+(B) ninth
+(C) nintieth
+(D) nineith",B,nine 的序數是不規則拼法 ninth，去 e 加 th。,Choose the correct ordinal number for nine.,"(A) nine
+(B) ninth
+(C) ninetieth
+(D) nineteenth",B,nine 的序數是不規則拼法 ninth（去 e 加 th），故選 (B)。(A) nine 是基數；(C) ninetieth 是「第九十」；(D) nineteenth 是「第十九」。,options、answer,
+0c6bc6b168d442a49bbbb9e6798b0509,6a4203ce4f9b8c6f9c399dc0,SUMMER-115S1-G9-JEN_115會考英6_形容詞副詞助動詞疑問詞_30_4,9年級英語,6,3,改-已修正,依使用者規定不用不存在的字當選項：原選項 difficulter 不存在，改為真實字但結構錯誤的 difficult and difficult。,Choose the natural sentence.,"(A) The problem is getting more and more difficult.
+(B) The problem is getting difficulter and difficulter.
+(C) The problem is getting most and most difficult.
+(D) The problem is getting much and much difficult.",A,difficult 是多音節形容詞，表示越來越難時使用 more and more difficult。,Choose the natural sentence.,"(A) The problem is getting more and more difficult.
+(B) The problem is getting difficult and difficult.
+(C) The problem is getting most and most difficult.
+(D) The problem is getting much and much difficult.",A,difficult 是多音節形容詞，表示「越來越難」用「more and more + 原級」，故選 (A)。(B) 原級重複不能表示「越來越」；(C) 不可用 most and most；(D) 沒有 much and much 的用法。,options、answer,
+a875bf0ba97f42ec87084625af2c14b4,6a0e8537a7941eaf4b61ec36,115上7適康版英文 review-1 Review 1 第一次複習_10_進度卷_1,7年級英語,20,48,改-已修正,依使用者規定不用不存在的字當選項：原選項 rabbites 不存在，改為 a rabbit。,"Complete the phrase: one rabbit, two ___.","(A) rabbit
+(B) rabbites
+(C) rabbits
+(D) rabbit's",C,rabbit 的規則複數是在字尾加 s，形成 rabbits。,"Complete the phrase: one rabbit, two ___.","(A) rabbit
+(B) a rabbit
+(C) rabbits
+(D) rabbit's",C,two 後面接複數名詞，rabbit 的規則複數是在字尾加 s，形成 rabbits，故選 (C)。(A) 為單數；(B) a 只能接單數；(D) rabbit's 是所有格。,options、answer,
+7d4424e1d14b484186f66d290233e708,6a0e8633a7941eaf4b61ed71,115上7適康版英文 review-1 Review 1 第一次複習_10_進度卷_2,7年級英語,18,48,改-已修正,依使用者規定不用不存在或當複數有爭議的字：原選項 manies 不存在、mans 作複數有爭議，改為 a man、man's。,"Complete the phrase: one man, two ___.","(A) mans
+(B) man
+(C) manies
+(D) men",D,man 的複數是不規則變化 men。,"Complete the phrase: one man, two ___.","(A) a man
+(B) man
+(C) man's
+(D) men",D,man 的複數是不規則變化 men，故選 (D)。(A) a man 與 (B) man 都是單數，不能接在 two 後面；(C) man's 是所有格。,options、answer,
+21dc0ad97f2d4d90975be81add87ce8c,6a0e8640a7941eaf4b61ed86,115上7適康版英文 review-1 Review 1 第一次複習_20_進度卷_2,7年級英語,13,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 childs、childes 不存在，改為 child、child's。,"Complete the phrase. one child, two ___.","(A) childs
+(B) children
+(C) childes
+(D) a child",B,child 的複數是不規則變化 children。,"Complete the phrase. one child, two ___.","(A) child
+(B) children
+(C) child's
+(D) a child",B,child 的複數是不規則變化 children，故選 (B)。(A) 為單數；(C) child's 是所有格；(D) a child 為單數，不能接在 two 後面。,options、answer,
+30c85397cb964c49be5de4d671ef7ba1,6a4203a04f9b8c6f9c399a78,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10,9年級英語,4,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 childs、childes 不存在，改為主詞與動詞不一致的真實字句子。,Choose the correct sentence.,"(A) The childs are playing in the park.
+(B) The childes are in the park.
+(C) The child are in the park.
+(D) The children are in the park.",D,child 的不規則複數是 children，複數主詞要搭配 are。,Choose the correct sentence.,"(A) The child are playing in the park.
+(B) The children is playing in the park.
+(C) A children are playing in the park.
+(D) The children are playing in the park.",D,child 的不規則複數是 children，複數主詞要搭配 are，故選 (D)。(A) 單數 child 不可接 are；(B) 複數 children 不可接 is；(C) children 為複數，前面不可加 a。,options、answer,
+c5349d76b9214d6995fc99a298a9b703,6a4203a04f9b8c6f9c399a78,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10,9年級英語,17,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 watchs 不存在，改為所有格 watch's。,Choose the word that correctly completes the sentence: I have two ______ in my bag.,"(A) watch
+(B) watches
+(C) watchs
+(D) watching",B,two 後面要接可數名詞複數。watch 字尾是 -ch，複數要加 -es，正確形式是 watches。,Choose the word that correctly completes the sentence: I have two ______ in my bag.,"(A) watch
+(B) watches
+(C) watch's
+(D) watching",B,two 後面要接可數名詞複數，watch 字尾是 -ch，複數加 -es，故選 (B) watches。(A) 為單數；(C) watch's 是所有格；(D) watching 是動名詞／現在分詞。,options、answer,
+6ab99f3d6cc64a34a7958572c9188198,6a4203a04f9b8c6f9c399a78,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10,9年級英語,20,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 tomatos、tomaties、tomatoies 皆不存在；題型改為填空，以真實字形當誘答。,Choose the correct plural form: tomato → ______.,"(A) tomatos
+(B) tomaties
+(C) tomatoies
+(D) tomatoes",D,tomato 的複數常用 tomatoes，字尾 -o 的名詞有些加 -es。,Fill in the blank: I need three ______ for the salad.,"(A) tomato
+(B) tomato's
+(C) a tomato
+(D) tomatoes",D,three 後面接複數名詞，tomato 的複數是加 -es 的 tomatoes，故選 (D)。(A) 為單數；(B) tomato's 是所有格；(C) a tomato 為單數，不能接在 three 後面。,content、options、answer,
+d2d6cc8a485c4808af24c159a5ef7d9a,6a4203a34f9b8c6f9c399ae1,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10_2,9年級英語,4,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 tomatoies、tomatos 不存在，改為 tomato's、a tomato。,Complete the sentence: I bought two ______ at the market.,"(A) tomatoes
+(B) tomato
+(C) tomatoies
+(D) tomatos",A,two 後面要接複數名詞；tomato 的常用複數是 tomatoes。,Complete the sentence: I bought two ______ at the market.,"(A) tomatoes
+(B) tomato
+(C) tomato's
+(D) a tomato",A,two 後面要接複數名詞，tomato 的複數是 tomatoes，故選 (A)。(B) 為單數；(C) tomato's 是所有格；(D) a tomato 為單數，不能接在 two 後面。,options、answer,
+75f8aea6081f47f6b7fd0e10c7f972ef,6a4203a34f9b8c6f9c399ae1,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10_2,9年級英語,9,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 classs 不存在，改為所有格 class's。,Fill in the blank: Our school has three English ______ this afternoon.,"(A) class
+(B) classs
+(C) classes
+(D) classing",C,class 字尾是 -s 音，複數要加 -es，three 後面接複數 classes。,Fill in the blank: Our school has three English ______ this afternoon.,"(A) class
+(B) class's
+(C) classes
+(D) classing",C,three 後面接複數名詞，class 字尾是 -s，複數加 -es，故選 (C) classes。(A) 為單數；(B) class's 是所有格；(D) classing 不是名詞複數。,options、answer,
+e52c2739765146e6977c63283a433bc1,6a4203a34f9b8c6f9c399ae1,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10_2,9年級英語,15,1,改-已修正,依使用者規定不用不存在的字當選項：原選項 mousees 不存在；另 mouses 可作電腦滑鼠的複數，配「很小」的題幹可能有爭議，一併換掉。,"Complete the sentence: My brother has two ______, and both are very small.","(A) mouse
+(B) mouses
+(C) mousees
+(D) mice",D,mouse 的不規則複數是 mice；two 後面要接複數名詞。,"Complete the sentence: My brother has two ______, and both are very small.","(A) mouse
+(B) mouse's
+(C) a mouse
+(D) mice",D,mouse 的不規則複數是 mice，two 後面要接複數名詞，故選 (D)。(A) 為單數；(B) mouse's 是所有格；(C) a mouse 為單數，不能接在 two 後面。,options、answer,
+de4f658ab90b4b4d9d70aa37bb3342fe,6a337e85345023733bf6f4ea,115上7適南版英文 review-1 REVIEW I_10_進度卷_1,7年級英語,17,3,改-已修正,mouses 雖是真實的字（電腦滑鼠複數／動詞），但當動物複數不成立且易起爭議；依使用者「不用不存在的字」規定的精神換成所有格 mouse's。,"Choose the correct word: one mouse, two ______.","(A) mouses
+(B) mouse
+(C) goose
+(D) mice",D,「mouse」的複數形是「mice」，不是「mouses」。,"Choose the correct word: one mouse, two ______.","(A) mouse's
+(B) mouse
+(C) goose
+(D) mice",D,mouse 的複數是不規則變化 mice，故選 (D)。(A) mouse's 是所有格；(B) 為單數；(C) goose 是另一種動物。,options、answer,
+6ac8a40d6f1f4f8daec621745b05caf0,6a337e85345023733bf6f4ea,115上7適南版英文 review-1 REVIEW I_10_進度卷_1,7年級英語,4,3,改-已修正,gooses 只存在於動詞用法，作名詞複數不存在；依使用者規定換成所有格 goose's。,Choose the plural form of goose.,"(A) gooses
+(B) geese
+(C) goose
+(D) goat",B,「goose」的複數形是「geese」，不是規則加 s。,Choose the plural form of goose.,"(A) goose's
+(B) geese
+(C) goose
+(D) goat",B,goose 的複數是不規則變化 geese，故選 (B)。(A) goose's 是所有格；(C) 為單數；(D) goat 是另一種動物。,options、answer,
+12a3a0bd7f6b41af879848383af3f1ca,6a4203a94f9b8c6f9c399b4a,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_30_3,9年級英語,9,3,改-已修正,依使用者規定不用不存在的字當選項：原選項 lifes、lifees 不存在（作 life 的複數），改為 life's、a life。,Many people lost their ______ in the old stories about dangerous storms.,"(A) lives
+(B) lifes
+(C) life
+(D) lifees",A,life 的複數常改 f 為 ves，形成 lives。句中 many people 對應複數名詞。,Many people lost their ______ in the old stories about dangerous storms.,"(A) lives
+(B) life's
+(C) life
+(D) a life",A,many people 對應複數名詞，life 的複數改 f 為 v 加 es，形成 lives，故選 (A)。(B) life's 是所有格；(C) 為單數；(D) a life 為單數，且所有格 their 後不可再加 a。,options、answer,
+b76f8429f6744d4ba70a75dc864a98fa,6a4203aa4f9b8c6f9c399b74,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_30_4,9年級英語,6,3,改-已修正,依使用者規定不用不存在的字當選項：原選項 tooths、toothes 不存在，改為 tooth's、a tooth。,Brush your ______ before you go to bed every night.,"(A) tooths
+(B) teeth
+(C) toothes
+(D) tooth",B,tooth 的不規則複數是 teeth；句中泛指多顆牙齒，所以用 teeth。,Brush your ______ before you go to bed every night.,"(A) tooth's
+(B) teeth
+(C) a tooth
+(D) tooth",B,tooth 的不規則複數是 teeth，句中泛指多顆牙齒，故選 (B)。(A) tooth's 是所有格；(C) 所有格 your 後不可再加 a；(D) 為單數，不合刷牙泛指多顆牙齒的語意。,options、answer,
+1717e583388c489e85f5af25311ab2cb,6a4203aa4f9b8c6f9c399b74,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_30_4,9年級英語,15,3,改-已修正,依使用者規定不用不存在的字當選項：原選項 womans、womens 不存在，改為 woman's、women's。,Three ______ are waiting outside the office.,"(A) women
+(B) womans
+(C) woman
+(D) womens",A,woman 的不規則複數是 women，three 後接複數名詞。,Three ______ are waiting outside the office.,"(A) women
+(B) woman's
+(C) woman
+(D) women's",A,woman 的不規則複數是 women，three 後接複數名詞，故選 (A)。(B) woman's、(D) women's 都是所有格，後面需接名詞；(C) 為單數。,options、answer,
+38c445d49c4d49f7a656ed023a9a306a,6a4203a34f9b8c6f9c399ae1,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_10_2,9年級英語,19,1,改-已修正,依使用者規定不用當複數有爭議的字：原選項 rices（rice 為不可數名詞，rices 只有動詞用法）改為 two rice。,Which phrase names the food in the picture correctly?,"(A) a rice
+(B) two rices
+(C) many rice
+(D) a bowl of rice",D,rice 是不可數名詞，不能直接加 a 或 -s；表示一碗飯要用 a bowl of rice。,Which phrase names the food in the picture correctly?,"(A) a rice
+(B) two rice
+(C) many rice
+(D) a bowl of rice",D,rice 是不可數名詞，不能直接加 a、數字或 many；表示一碗飯要用單位詞 a bowl of rice，故選 (D)。(A) 不可數名詞前不可加 a；(B) 不可數名詞不能直接接數字；(C) many 只接可數複數名詞。,options、answer,提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符
+267ee0c12c6c4469b4c278544054e02c,6a4203aa4f9b8c6f9c399b74,SUMMER-115S1-G9-JEN_115會考英4_名詞代名詞_30_4,9年級英語,10,3,改-已修正,依使用者規定不用當複數有爭議的字：原選項 rices（rice 為不可數名詞，rices 只有動詞用法）改為單位詞未加 s 的 two bowl of rice。,Which sentence best describes the picture?,"(A) There are a bowl of rices on the table.
+(B) There is a bowl of rice on the table.
+(C) There is a rice of bowl on the table.
+(D) There are bowl of rice on the table.",B,rice 是不可數名詞，表示一碗飯要用 a bowl of rice，主詞 a bowl 為單數，搭配 is。,Which sentence best describes the picture?,"(A) There are two bowl of rice on the table.
+(B) There is a bowl of rice on the table.
+(C) There is a rice of bowl on the table.
+(D) There are bowl of rice on the table.",B,rice 是不可數名詞，表示一碗飯要用 a bowl of rice，主詞 a bowl 為單數，搭配 is，故選 (B)。(A) two 後面的單位詞要用複數 bowls；(C) 單位詞與名詞順序顛倒；(D) 可數名詞 bowl 單數前缺少 a。,options、answer,提醒：原題有題目圖（metadata.image_url），文字改了請確認圖仍相符
+58447162defb4e7f93e8cda85b5d1574,6a422bdd0a425852dffca6de,115上7康軒國文self_study-3_10,7年級國文,12,49,改-已修正,「栩栩如生」被同卷第5題完整印出，須換考點；AI改考「維妙維肖」，但選項A「唯妙唯肖」是否屬錯字有爭議（第二輪亦指出），改為明確錯字。,下列哪一個詞語的字形完全正確，可用來形容人物造型逼真生動？,"(A) 詡詡如生
+(B) 栩栩如聲
+(C) 栩栩如生
+(D) 羽羽如生",C,表示形容非常逼真的詞語應寫作「栩栩如生」，其他選項都含有錯別字。,下列哪一個詞語的字形完全正確，可用來形容人物造型模仿得逼真傳神？,"(A) 維妙維笑
+(B) 維妙維俏
+(C) 維妙維肖
+(D) 惟妙惟消",C,形容模仿或描寫得非常逼真傳神的成語寫作「維妙維肖」（亦作「惟妙惟肖」），「肖」是相似的意思；(A)「笑」、(B)「俏」、(D)「消」都應作「肖」，故選 C。,content、options、answer,
+1496389db7e5463d9d90b27713c4abe7,6a31608d0acc51f49de99966,115上7適翰版公民 6-2 部落的挑戰與公民參與_10_進度卷_1,7年級公民,15,9,改-已修正,《紀念日及節日實施條例》(114.5.28公布)第6條第1項第3款：原住民依族別歲時祭儀擇定「三日」放假，原答「一日」已過時。AI改考版本與同卷第1題（傳統文化的斷層）選項、答案、解析幾乎相同，形成重複，故不採用，改為直接更正天數（選項B本來就有三日）。出處：https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0020095,依現行紀念日及節日實施辦法，原住民族可因「歲時祭儀」放假幾日，以參與傳統文化祭典？,"(A) 一日
+(B) 三日
+(C) 七日
+(D) 十日",A,依內政部修正的紀念日及節日實施辦法，原住民族歲時祭儀可放假一日，故選 A。,依現行《紀念日及節日實施條例》，原住民可依其族別歲時祭儀擇定幾日放假，以參與傳統文化祭典？,"(A) 一日
+(B) 三日
+(C) 七日
+(D) 十日",B,依《紀念日及節日實施條例》第6條規定，原住民可依其族別歲時祭儀擇定三日放假（舊《紀念日及節日實施辦法》為一日），放假日期由原住民族委員會參酌各族習俗並徵詢部落意見後公告，故選 B。,content、answer,提醒：答案代號改變 A→B（已作答學生的對錯不重算）
+6379d05f3f0a4d83859100178dc7d56b,6a4210caa01c2e916e7db89c,SUMMER-115S1-G9-JPC_115會考國5_應用文_30_3,9年級國文,13,5,改,題辭慣例「賓至如歸」用於旅館、飯店，不宜作為餐廳正解；AI改題幹為旅館，選項不變，答案唯一。,朋友開設餐廳，花籃卡片最適合寫哪一個題辭？,"(A) 杏林春暖
+(B) 賓至如歸
+(C) 金匱石室
+(D) 力透紙背",B,餐廳開業可用「賓至如歸、群賢畢至、近悅遠來」；醫院、書店、書法比賽用語不合餐廳場合。,朋友開設旅館，花籃卡片最適合寫哪一個題辭？,"(A) 杏林春暖
+(B) 賓至如歸
+(C) 金匱石室
+(D) 力透紙背",B,旅館、飯店開業可用「賓至如歸、近悅遠來、高朋滿座」；(A)「杏林春暖」用於醫院或診所，(C)「金匱石室」用於書店，(D)「力透紙背」用於書法，皆不合旅館開業場合。,content、answer,
+3ebed99cb10846b8819e768be92d1f61,6a438d39f3a25b6954b85a98,115上7翰林國文self_study-3_10,7年級國文,6,4,改-已修正,「匯流」被同卷第1、4、20題完整印出；AI改考「會聚」，但「匯聚」較標準、「薈聚」辭典亦收，答案不唯一。改考同卷未出現的「源源不絕」。,「行動的水滴才能（　）流大河」的括號中，應填入哪一個字才正確？,"(A) 會
+(B) 匯
+(C) 慧
+(D) 惠",B,「匯流」指水流或力量聚集會合，符合「水滴聚成大河」的意思。,「萊恩公布心願後，十元、二十元的小額捐款源源不（　）的湧入。」括號中應填入哪一個字才正確？,"(A) 決
+(B) 絕
+(C) 覺
+(D) 掘",B,「源源不絕」形容接連不斷、沒有斷絕，故應填「絕」；「決」指決定、決斷，「覺」指感覺、覺悟，「掘」指挖掘，皆不合語意，故選 B。,content、options、answer,
+c92756317f9440999ed34cdcfda58575,6a3d1e1502bca9f5269aa2eb,115上8翰林國文self_study-3_10,8年級國文,16,3,改,「鍥而不舍」（荀子原文）與「鍥而不捨」皆為正確寫法，B、D皆對；AI把誘答改為明確錯字，答案唯一。,「安藤忠雄面對失敗仍不放棄，表現出（　）的精神。」括號中應填入哪一個詞語，字形才正確？,"(A) 契而不捨
+(B) 鍥而不舍
+(C) 契而不舍
+(D) 鍥而不捨",D,「鍥而不捨」表示持續努力、不放棄；「契」與「舍」都不是此詞語的正確寫法。,「安藤忠雄面對失敗仍不放棄，表現出（　）的精神。」括號中應填入哪一個詞語，字形才正確？,"(A) 契而不捨
+(B) 砌而不捨
+(C) 鍥而不赦
+(D) 鍥而不捨",D,「鍥而不捨」（亦作「鍥而不舍」）表示持續努力、不放棄；「契」、「砌」與「赦」都不是此詞語的正確寫法。,options、answer,
+b6edda9503334c029deeb500907c35bd,6a42108ba01c2e916e7db85d,SUMMER-115S1-G9-JPC_115會考國5_應用文_30_2,9年級國文,11,3,改,原答案C錯（四個選項皆無正確排序）。AI重寫的選項C「收信人地址最高，收信人姓名次高，寄信人地址最低」正確，其餘三項皆錯，答案唯一；解析說明右欄地址、中欄姓名、左下寄信人地址亦正確。,直式信封上，收信人姓名、收信人地址、寄信人地址三者的位置高低，何者最合宜？,"(A) 寄信人地址最高，收信人姓名次高，收信人地址最低
+(B) 收信人地址最高，寄信人姓名次高，郵票最低
+(C) 收信人姓名最高，收信人地址次高，寄信人地址最低
+(D) 三者高度完全相同才是正式格式",C,信封中收信人姓名位置最高，收信人地址次高，寄信人地址位置最低，方便郵遞資訊判讀並符合格式。,直式信封上，收信人姓名、收信人地址、寄信人地址三者的位置高低，何者最合宜？,"(A) 寄信人地址最高，收信人姓名次高，收信人地址最低
+(B) 收信人地址最高，寄信人地址次高，收信人姓名最低
+(C) 收信人地址最高，收信人姓名次高，寄信人地址最低
+(D) 收信人姓名最高，收信人地址次高，寄信人地址最低",C,直式信封格式中，右欄「收信人地址」位置最高，中欄「收信人姓名」位置次高（居中略低於右欄），左欄「寄信人地址」位置最低（位於左下角），以利郵遞判讀並符合書信禮儀，故選(C)。(A)(B)(D)之高低順序皆不符合標準直式信封格式。,options、answer,
+a7b6e97bd4f647a9a9496ea37987ee59,6a1d99e2a93883780250a4e1,115上8適康版公民 5-2 我國地方政府的組成_30_進度卷_2,8年級公民,2,2,改,依《地方制度法》第3條，鄉以內之編組為村，鎮、縣轄市及區以內之編組為里；原題「鄉公所…到各里」不符，AI改為「各村」正確。出處：https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0040003,某鄉公所接獲上級機關交辦的防災宣導工作，並安排人員到各里執行。這個例子最能說明鄉公所具備哪一項地方政府角色？,"(A) 負責議決地方法規的立法機關
+(B) 負責監督議會施政的民意機關
+(C) 負責審查地方預算的代表機關
+(D) 負責執行委辦事項的行政機關",D,鄉公所屬地方行政機關，教材列出的職權包含辦理地方自治與執行委辦事項。,某鄉公所接獲上級機關交辦的防災宣導工作，並安排人員到各村執行。這個例子最能說明鄉公所具備哪一項地方政府角色？,"(A) 負責議決地方法規的立法機關
+(B) 負責監督議會施政的民意機關
+(C) 負責審查地方預算的代表機關
+(D) 負責執行委辦事項的行政機關",D,鄉公所屬地方行政機關，其職權包含辦理地方自治事項與執行上級機關交辦的委辦事項；議決地方法規、審查預算及監督行政機關施政則屬地方立法機關（如鄉民代表會）的職權。,content、answer,
+54bcbd31a5de4d2898d7b838f1c1ea72,6a1d9a36a93883780250a54a,115上8適康版公民 6-1 政治參與的重要性及方式_30_進度卷_1,8年級公民,16,2,改-已修正,"原題與第11題邏輯、選項、答案位置幾乎相同。AI改為「通過」情境（210,000≥200,000且多於170,000）正確，但題幹引語「已跨過法定門檻」直接說出結論，改為中性引語。依公投法第29條。（為維持已作答學生對錯，選項 C、A 對調，正解代號維持原題的 A。）","一位選務觀察員評論某公投案：「同意方票數確實高於不同意方，但同意票占全體投票權人的比例仍不足。」已知投票權人 800,000 人，有效同意票 190,000 票，不同意票 170,000 票。下列判斷何者正確？","(A) 不通過，因為有效同意票未達投票權人總數的 1/4
+(B) 不通過，因為有效同意票少於不同意票
+(C) 通過，因為有效同意票高於不同意票即可成立
+(D) 通過，因為投票權人總數只用於選務機關公告投票結果，不會影響公投通過門檻",A,"800,000 人的 1/4 是 200,000 票，有效同意票 190,000 票未達此門檻。雖然有效同意票多於不同意票，但公投通過須同時滿足兩項條件，因此結果是不通過。把同意票高於不同意票視為單一條件，會漏掉四分之一門檻。","一位選務觀察員評論某公投案：「這次雙方票數差距不大，是否通過要看有沒有同時符合法定條件。」已知投票權人 800,000 人，有效同意票 210,000 票，不同意票 170,000 票。下列判斷何者正確？","(A) 通過，因為有效同意票多於不同意票，且已達投票權人總數的 1/4
+(B) 不通過，因為有效同意票少於不同意票
+(C) 不通過，因為有效同意票未達投票權人總數的 1/2
+(D) 通過，因為投票權人總數只用於選務機關公告投票結果，不會影響公投通過門檻",A,"800,000 人的 1/4 是 200,000 票，有效同意票 210,000 票已達此門檻，且多於不同意票 170,000 票，同時滿足公民投票通過的兩項條件，因此結果為通過。(C)法定門檻為投票權人總數的 1/4 而非 1/2；(B)有效同意票多於不同意票；(D)投票權人總數直接影響 1/4 門檻的計算。",content、options、answer,
+3ffb526355874bfbb4cf11197b48e99e,6a1d9a36a93883780250a54a,115上8適康版公民 6-1 政治參與的重要性及方式_30_進度卷_1,8年級公民,20,2,改-已修正,原題與第4題情境、選項幾乎相同；AI改考多元政治參與方式，答案唯一、無同卷洩題。（為維持已作答學生對錯，選項 B、D 對調，正解代號維持原題的 D。）,選務志工撰寫立法委員選舉說明手冊，想同時解釋「單一選區」、「兩票制」與「政黨票 5% 門檻」。下列哪一項概念使用最正確？,"(A) 單一選區是指每位選民有兩張票，一票選人、一票選黨
+(B) 兩票制是指每一選區產生一位區域立委
+(C) 5% 門檻是指區域候選人得票率達標後，可分配全國不分區席次並取得區域代表資格
+(D) 單一選區說明區域席次產生方式，政黨票門檻說明不分區席次分配資格",D,單一選區說明的是一個選區產生一位區域立委；兩票制說明的是選民有候選人票與政黨票；政黨票達 5% 的政黨，才可依比例分配全國不分區席次。把單一選區與兩票制互換，或把 5% 門檻套用到區域候選人票，都是概念錯置。,除了定期透過投票參與選舉、罷免與公民投票外，在民主社會中，公民在日常生活中還能透過哪些合法方式參與政治、表達公共意見，以發揮監督政府與影響公共決策的功能？,"(A) 僅能在選舉期間投票，平時人民無權對公共政策發表意見
+(B) 為求訴求迅速獲得回應，可不受法律限制任意包圍並癱瘓機關運作
+(C) 只有年滿 20 歲的公民才能關心公共事務並對政策提出建議
+(D) 透過投書媒體、參與公共議題公聽會、向民意代表陳情或合法集會遊行",D,政治參與的方式十分多元，除了投票（選舉、罷免、公投）之外，公民平時也可透過投書媒體、參加公聽會、向政府或民意代表陳情、參與公民團體、合法集會遊行等方式表達意見，影響公共決策，故選(D)。(A)平時仍可透過多元管道參與公共事務；(C)未滿法定投票年齡者雖無投票權，仍可關心公共事務並透過其他合法管道表達意見；(B)政治參與仍應遵守法律規範，以理性、合法的方式進行。,content、options、answer,
+8d8d0ce360a043bf81a9a690317e498e,6a1d9a90a93883780250a5b3,115上8適康版公民 6-1 政治參與的重要性及方式_30_進度卷_2,8年級公民,15,2,改,同第一份卷第9題：泛稱「公告」放結果後為錯，且與同卷第12題「投票完畢7日內公告結果」矛盾；AI改為「公投案成立公告」正確。,小葵整理公民投票流程卡時，把「政府執行」放在投票前，又把「公告」放在投票結果確定之後才出現。老師提醒她要區分投票前程序與通過後處理。下列哪一項修正最適當？,"(A) 把政府執行放在提案前，因為政策應先執行再投票
+(B) 把公告刪除，因為人民連署後可直接跳到投票
+(C) 把公告放在投票前程序，政府執行放在議題通過之後
+(D) 把政府執行改成不通過後 2 年內再提出同一議題",C,公民投票流程是提案、人民連署、公告、投票，通過後才由政府執行，因此應把公告放在投票前程序，政府執行放在議題通過之後。先執行再投票、刪除公告或把不通過後限制寫成政府執行，都錯在混淆不同階段的功能。,小葵整理公民投票流程卡時，把「政府執行」放在投票前，又把「公投案成立公告」放在投票結果確定之後才出現。老師提醒她要區分投票前程序與通過後處理。下列哪一項修正最適當？,"(A) 把政府執行放在提案前，因為政策應先執行再投票
+(B) 把公投案成立公告刪除，因為人民連署後可直接跳到投票
+(C) 把公投案成立公告放在投票前程序，政府執行放在議題通過之後
+(D) 把政府執行改成不通過後 2 年內再提出同一議題",C,公民投票的投票前流程包含提案、人民連署、公投案成立公告，接著進行投票，投票通過後才由政府執行；因此應把公投案成立公告放在投票前程序，政府執行放在議題通過之後。先執行再投票、刪除成立公告或把不通過後限制寫成政府執行，都錯在混淆不同階段的功能。,content、options、answer,
+9fe48ba9d5b141e287ee603d9951978a,6a1d9a90a93883780250a5b3,115上8適康版公民 6-1 政治參與的重要性及方式_30_進度卷_2,8年級公民,20,2,改-已修正,"原題與第7題數據、答案完全相同；AI改為「多於不同意票但未達1/4」（240,000<250,000）而不通過，計算正確、與第7、14、19題情境互補。（為維持已作答學生對錯，選項 C、D 對調，正解代號維持原題的 D。）","某公民投票案有投票權人 1,000,000 人，有效同意票 260,000 票，不同意票 270,000 票。倡議者說：「同意票已超過投票權人總數的 1/4，所以應該通過。」若完整比較通過條件，下列判斷何者最適當？","(A) 通過，因為有效同意票已達投票權人總數 1/4
+(B) 通過，因為只要完成提案與人民連署即可執行
+(C) 不通過，因為同一議題 2 年內不得再提出
+(D) 不通過，因為有效同意票沒有多於不同意票",D,"此案雖達到投票權人總數 1/4 的門檻，但有效同意票 260,000 票少於不同意票 270,000 票，未同時符合通過條件，因此不通過。只看 1/4 門檻是不完整判斷；提案與連署只是投票前程序；2 年限制是不通過後的效果，不是本案不通過的理由。","某公民投票案有投票權人 1,000,000 人，有效同意票 240,000 票，不同意票 200,000 票。倡議者說：「同意票已經多於不同意票，所以應該通過。」若完整比較通過條件，下列判斷何者最適當？","(A) 通過，因為有效同意票已多於不同意票
+(B) 通過，因為只要完成提案與人民連署即可執行
+(C) 不通過，因為有效同意票沒有多於不同意票
+(D) 不通過，因為有效同意票未達投票權人總數 1/4",D,"公民投票通過條件須同時符合「有效同意票多於不同意票」且「有效同意票達投票權人總數 1/4 以上」。此案有效同意票 240,000 票雖多於不同意票 200,000 票，但未達投票權人總數 1,000,000 人的 1/4（即 250,000 票），因此不通過。(A)只看票數高低，忽略 1/4 門檻；(B)提案與連署只是投票前程序；(C)與題幹有效同意票多於不同意票的數據不符。",content、options、answer,
+aec2b4aea58e4515a10dd5eb90ec4a10,6a3246c8ea19866e0c1fb67a,115上7適南版公民 6-1 社區與部落有何不同？_10_進度卷_1,7年級公民,8,2,改,原住民族委員會即行政院所屬機關，原選項A「行政院原住民相關業務單位」可被視為正解，與C重疊；AI將A改為教育部可使答案唯一，同卷無新增洩題。,原住民族基本法規定，部落是原住民於原住民族地區一定區域內，依其傳統規範共同生活結合而成的團體，且需經哪一機關核定？,"(A) 行政院原住民相關業務單位
+(B) 立法院
+(C) 中央原住民族主管機關
+(D) 內政部",C,依原住民族基本法規定，部落需經中央原住民族主管機關核定。,原住民族基本法規定，部落是原住民於原住民族地區一定區域內，依其傳統規範共同生活結合而成的團體，且需經哪一機關核定？,"(A) 教育部
+(B) 立法院
+(C) 中央原住民族主管機關
+(D) 內政部",C,依《原住民族基本法》第2條規定，部落需經中央原住民族主管機關（即原住民族委員會）核定。(A)教育部主管教育業務；(B)立法院為中央立法機關；(D)內政部掌理全國內務行政，皆非核定部落之主管機關。,options、answer,
+d119f47eb0e34a22b4d06b7bbd5fd5b4,6a3246c8ea19866e0c1fb67a,115上7適南版公民 6-1 社區與部落有何不同？_10_進度卷_1,7年級公民,16,2,改,原題問「歸屬於不同群體的因素」，年齡、職業、宗教等也成立，答案不唯一；AI限縮為社區與部落的形成，B成為唯一正解，無洩題。,個人除了是家庭的一員外，還會因為哪些因素而歸屬於不同的群體？,"(A) 年齡與性別
+(B) 地域與族群等因素
+(C) 職業與收入
+(D) 宗教與教育程度",B,個人除了是家庭的一員外，還會因地域與族群等因素而歸屬於不同群體。,個人除了是家庭的一員外，若就「社區與部落」的形成而言，主要是因為下列哪些因素而歸屬於這類群體？,"(A) 年齡與性別
+(B) 地域與族群
+(C) 職業與收入
+(D) 宗教與教育程度",B,個人除了是家庭的一員外，還會因地域（如社區）與族群（如原住民族部落）等因素而歸屬於不同的聚居群體。其他選項如年齡、性別、職業、宗教等雖也能形成社會團體，但並非形成「社區與部落」的主要劃分依據。,content、options、answer,
+7f43c1f624ab4005aaff8bd096e56d57,6a32477dea19866e0c1fb6e4,115上7適南版公民 6-1 社區與部落有何不同？_10_進度卷_2,7年級公民,16,2,改-已修正,原題把「部落核定」與「民族核定（報請行政院）」混為一談，且與第18題重複。AI改考部落核定機關方向正確，但題幹沿用「依其傳統規範」「原住民族地區」會洩第5、6題答案，故刪去。依原住民族基本法第2條第4款。,原住民族基本法規定，部落的核定需經中央原住民族主管機關報請哪一機關核定民族？,"(A) 監察院
+(B) 立法院
+(C) 總統府
+(D) 行政院",D,自認為原住民族並經中央原住民族主管機關報請行政院核定之民族。,依《原住民族基本法》規定，原住民共同生活結合而成的團體，須經下列哪一機關核定，才能成為「部落」？,"(A) 監察院
+(B) 立法院
+(C) 總統府
+(D) 原住民族委員會",D,依《原住民族基本法》第2條第4款，部落須經中央原住民族主管機關核定；目前中央原住民族主管機關為原住民族委員會，故選 D。監察院、立法院、總統府皆非核定部落的機關。,content、options、answer,
+dc0acd5e9cd34773894bd868b409b88b,6a38b52063659435c14336d9,115上8適翰版歷史 6-1 甲午戰爭後的變局_10_進度卷_1,8年級歷史,3,2,改-已修正,選項A「皇族內閣」洩第6題答案、第6題題幹反提示本題；AI改版選項A與第6題題幹幾乎相同、選項B又洩第5、10題。改考立憲派請願的訴求。,清末推動立憲運動的立憲派人士，最後因為哪一事件對清廷感到失望，轉而支持革命運動？,"(A) 皇族內閣的成立
+(B) 八國聯軍的爆發
+(C) 馬關條約的簽訂
+(D) 戊戌政變的發生",A,宣統三年清廷成立「皇族內閣」，讓立憲派深感失望，轉而支持革命。,清廷宣布預備立憲後，立憲派人士多次發動請願，他們最主要的要求是什麼？,"(A) 速開國會
+(B) 恢復科舉
+(C) 推翻帝制
+(D) 聯俄制日",A,清廷宣布預備立憲後，立憲派人士多次請願，要求清廷「速開國會」、早日實施立憲；(B)科舉已於庚子後新政中廢除；(C)推翻帝制是革命派的主張；(D)與立憲派請願無關。故選 A。,content、options、answer,
+19ff57ec642044eabae47b8a34ec5894,6a38b57e63659435c1433742,115上8適翰版歷史 6-1 甲午戰爭後的變局_10_進度卷_2,8年級歷史,4,2,改-已修正,新政也獎勵出洋留學，原題A、B皆對；AI改A為「恢復八股文取士」可解多解，但同卷第18題題幹「庚子後新政推行新式教育」直接提示答案B。改為考「獎勵留學」。（為維持已作答學生對錯，選項 A、B 對調，正解代號維持原題的 B。）,清廷在庚子後新政中，廢除傳統科舉，並積極推動下列哪一項措施以培養國家所需的新式人才？,"(A) 派遣出洋留學生
+(B) 興辦新式學堂
+(C) 引進西方重工業
+(D) 設立新式翻譯館",B,庚子後新政廢除科舉制度後，清廷積極推行新式教育與興辦新式學堂。,清廷在庚子後新政中，除了廢除科舉、興辦新式學堂之外，還積極推動下列哪一項措施以培養新式人才？,"(A) 恢復八股文取士
+(B) 獎勵出洋留學
+(C) 設立同文館
+(D) 設立總理衙門",B,庚子後新政在教育方面廢除科舉、興辦新式學堂，並獎勵學生出洋留學，以培養新式人才，故選 B。(A)廢除科舉即不再以八股文取士；(C)同文館與(D)總理衙門皆設立於自強運動時期。,content、options、answer,
+a7f2e9a2e355467ab166318cba669d87,6a38b5fb63659435c14337ab,115上8適翰版歷史 6-2 城市風貌與社會文化變遷_10_進度卷_1,8年級歷史,7,2,改,石灰岩與大理石皆以碳酸鈣為主，遇強酸都產生二氧化碳，C、D皆可；AI限定《滬游雜記》並把C改為安山岩，答案唯一。,清末時期，人們製作「荷蘭水」所使用的氣體，是使用強酸溶解下列哪一種石材所取得的？,"(A) 花崗岩
+(B) 玄武岩
+(C) 石灰岩
+(D) 大理石",D,根據《滬游雜記》等記載，荷蘭水的氣體是利用俗稱鏹水的強酸溶解大理石，產生二氧化碳後與水調和而成。,根據清末《滬游雜記》記載，當時人們製作「荷蘭水」所使用的氣體，是使用俗稱鏹水的強酸溶解下列哪一種石材所取得的？,"(A) 花崗岩
+(B) 玄武岩
+(C) 安山岩
+(D) 大理石",D,根據《滬游雜記》記載，荷蘭水的氣體是利用俗稱鏹水的強酸溶解大理石（主要成分為碳酸鈣），產生二氧化碳後與水調和而成；花崗岩、玄武岩與安山岩皆為火成岩，非文獻記載所用之石材。,content、options、answer,
+bf163cbbc491421dab4adb31bcb4ed98,6a38b62c63659435c1433814,115上8適翰版歷史 6-2 城市風貌與社會文化變遷_10_進度卷_2,8年級歷史,11,2,改,「三從四德」同屬偏重男性、受清末批判的觀念，A、D皆可；AI把D改為與性別無關的「安土重遷」，答案唯一。,19世紀中期後，隨著西方思潮傳入與新知識分子的倡導，傳統社會中哪一種偏重男性的性別觀念開始受到廣泛的批判？,"(A) 男尊女卑
+(B) 長幼有序
+(C) 門當戶對
+(D) 三從四德",A,清末西方思潮與新知識分子批判了傳統「男尊女卑」的社會觀念，促進了女性權利意識與婚姻自由思想的萌芽。,19世紀中期後，隨著西方思潮傳入與新知識分子的倡導，傳統社會中哪一種偏重男性的性別觀念開始受到廣泛的批判？,"(A) 男尊女卑
+(B) 長幼有序
+(C) 門當戶對
+(D) 安土重遷",A,清末西方思潮與新知識分子批判了傳統「男尊女卑」的性別觀念，促進了女性權利意識與婚姻自由思想的萌芽。(B)為年齡輩分的倫理秩序；(C)為傳統婚姻重視雙方家庭社會地位相當的觀念；(D)為傳統農業社會留戀故土、不輕易遷徙的觀念，三者皆非偏重男性的性別觀念。,options、answer,
+f7abca40381e4b5eaf18cd93595faa1c,6a42105aa01c2e916e7db833,SUMMER-115S1-G9-JPC_115會考國5_應用文_10_2,9年級國文,14,2,改,題辭慣例「賓至如歸」用於旅館、飯店；AI改題幹為旅館、並把與第13題答案相同的「名山事業」換成「杏壇之光」，答案唯一。,朋友的餐廳開張，花籃卡片上最適合寫哪一個題辭？,"(A) 坐擁百城
+(B) 名山事業
+(C) 齒德俱尊
+(D) 賓至如歸",D,「賓至如歸」適合餐廳開業，表示客人來到店中像回家一樣舒適。,朋友經營的旅館開張，花籃卡片上最適合寫哪一個題辭？,"(A) 坐擁百城
+(B) 杏壇之光
+(C) 齒德俱尊
+(D) 賓至如歸",D,(A)「坐擁百城」用於祝賀書店開業或藏書豐富；(B)「杏壇之光」用於教育界；(C)「齒德俱尊」用於祝壽；(D)「賓至如歸」適合旅館或飯店開業，表示客人來此投宿像回到自己家一樣舒適。,content、options、answer,
+f8181f2f94034a4793d4058c57d2e010,6a4213c8a01c2e916e7dba3a,SUMMER-115S1-G9-JPC_115會考國7_修辭與寫作_30,9年級國文,7,2,改,「朝陽」即早晨的太陽，「清晨的朝陽」屬冗言，C也有語病；AI改為「溫暖的朝陽」，D唯一。,下列文句何者有語病？,"(A) 這份文件攸關計畫成敗，請妥善保存。
+(B) 他遇到困難仍不屈不撓，堅持到底。
+(C) 清晨的朝陽照亮山谷。
+(D) 昂首望去，眼前是一片萬丈深淵。",D,「萬丈深淵」通常在低處，應以俯視或俯瞰觀看；「昂首」是抬頭，兩者語意不合。,下列文句何者有語病？,"(A) 這份文件攸關計畫成敗，請妥善保存。
+(B) 他遇到困難仍不屈不撓，堅持到底。
+(C) 溫暖的朝陽照亮山谷。
+(D) 昂首望去，眼前是一片萬丈深淵。",D,(D)「萬丈深淵」位於低處，應以俯視或俯瞰觀看；「昂首」則是抬頭，兩者語意矛盾不合，故有語病。(A)、(B)、(C)文意通順且無語病。,options、answer,
+55d1a5d850194d31a36f236c3f960783,6a4213c8a01c2e916e7dba3a,SUMMER-115S1-G9-JPC_115會考國7_修辭與寫作_30,9年級國文,9,2,改,原D的引號標在正確的「誇飾」，錯字「鋪成」在引號外，B、D皆符合題意；AI把引號移到「鋪成」，答案唯一。,下列「」中詞語的字形，何者完全正確？,"(A) 他以「璀燦」燈火比喻城市夜景。
+(B) 句中兼具視覺與「觸覺」摹寫。
+(C) 這段話運用「邪音」雙關。
+(D) 作者使用「誇飾」鋪成語氣。",B,「觸覺」字形正確；「璀燦」應作「璀璨」，「邪音」應作「諧音」，「鋪成」應作「鋪陳」。,下列「」中詞語的字形，何者完全正確？,"(A) 他以「璀燦」燈火比喻城市夜景。
+(B) 句中兼具視覺與「觸覺」摹寫。
+(C) 這段話運用「邪音」雙關。
+(D) 作者使用誇飾「鋪成」語氣。",B,(B)「觸覺」字形正確；(A)「璀燦」應作「璀璨」；(C)「邪音」應作「諧音」；(D)「鋪成」應作「鋪陳」。,options、answer,
+812441a5881848e98f918b89cb4ae061,6a421457a01c2e916e7dba77,SUMMER-115S1-G9-JPC_115會考國7_修辭與寫作_10_2,9年級國文,12,2,改,原C「哀喜不形於色，很少透露情緒」前後語意重複（且成語應為喜怒不形於色），A、C皆符合；AI改C為「喜怒不形於色，讓人難以捉摸想法」，A唯一。,哪一個句子出現了意思重複、可刪去其一的詞語？,"(A) 球員參賽不僅僅只是為追求勝利。
+(B) 小孩朗讀故事，童音十分清亮。
+(C) 父親哀喜不形於色，很少透露情緒。
+(D) 山路曲折，我們經過一片櫻花林。",A,「僅僅」與「只是」語意重複，刪去其中一個即可使句子更精簡。其他句子沒有明顯重複詞語。,哪一個句子出現了意思重複、可刪去其一的詞語？,"(A) 球員參賽不僅僅只是為追求勝利。
+(B) 小孩朗讀故事，童音十分清亮。
+(C) 父親喜怒不形於色，讓人難以捉摸想法。
+(D) 山路曲折，我們經過一片櫻花林。",A,(A)「僅僅」與「只是」語意重複，刪去其中一個即可使句子更精簡；(B)、(C)、(D)皆文意通順，沒有語意重複的詞語。,options、answer,
+1b132b71ae0649a3b14a1fd8cbf8b644,6a421510a01c2e916e7dbb3c,SUMMER-115S1-G9-JPC_115會考國8_文言理解(一)_10,9年級國文,16,2,改,教育部辭典「惹」音ㄖㄜˇ（https://www.moedict.tw/惹），原選項與答案標ㄖㄜˋ錯誤；AI改為ㄖㄜˇ正確，其餘選項皆非此字讀音，答案唯一。,「你在此須要小心，休惹人說不是」中的「惹」字，讀音為何？,"(A) ㄖㄜˋ
+(B) ㄖㄠˇ
+(C) ㄋㄨㄛˋ
+(D) ㄧㄝˇ",A,「惹」讀作 ㄖㄜˋ，在此有招致、引起的意思。,「你在此須要小心，休惹人說不是」中的「惹」字，讀音為何？,"(A) ㄖㄜˇ
+(B) ㄖㄠˇ
+(C) ㄋㄨㄛˋ
+(D) ㄧㄝˇ",A,「惹」讀作 ㄖㄜˇ，在此有招致、引起的意思。,options、answer,
+9b82c703f15f4b5eb66087681bf236a7,6a421557a01c2e916e7dbb66,SUMMER-115S1-G9-JPC_115會考國8_文言理解(一)_30,9年級國文,9,2,改-已修正,題幹自帶「螢」且第11題亦印出「螢以光見獲」；AI只換例句仍被第11題洩答。改考同組形近字「瑩」，同卷未出現。（為維持已作答學生對錯，選項 C、B 對調，正解代號維持原題的 B。）,「螢以光見獲」一句中，表示會發光昆蟲的字應寫作哪一個？,"(A) 營
+(B) 螢
+(C) 瑩
+(D) 縈",B,表示會發光的昆蟲應寫作「螢」，「螢以光見獲」意思是螢火蟲因光亮而被捕獲。,「晶（　）剔透」形容東西光潔透明，括號中應填入哪一個字？,"(A) 營
+(B) 瑩
+(C) 螢
+(D) 縈",B,「晶瑩」形容光亮透明，應寫作「瑩」；(A)「營」有謀求、軍營之意；(C)「螢」指螢火蟲；(D)「縈」指纏繞。故選 B。,content、options、answer,
+8906b19c21684701a3ab53dabd0fd4b2,6a4227a2ba290377c02853c8,115上8適康版地理 6-2 朝鮮半島的產業發展有何特色？_10_進度卷_1,8年級地理,2,2,改-已修正,原題與第5題同考板門店；AI改考兩韓首都方向可行，但題幹「自停戰後分裂」提示第1題、選項D含板門店提示第5題，依第二輪意見去除。（為維持已作答學生對錯，選項 A、D 對調，正解代號維持原題的 D。）,兩韓之間唯一的接觸點，並設為共同警備區的地點是何處？,"(A) 平壤直轄市
+(B) 首爾市
+(C) 釜山市
+(D) 板門店",D,板門店位於停戰線附近，設有共同警備區，是兩韓之間重要且特殊的接觸點；平壤直轄市、首爾市與釜山市則是城市名稱。,關於朝鮮半島上北韓與南韓目前首都的配對，下列何者正確？,"(A) 北韓：開城；南韓：首爾
+(B) 北韓：首爾；南韓：平壤
+(C) 北韓：平壤；南韓：釜山
+(D) 北韓：平壤；南韓：首爾",D,北韓首都為平壤，南韓首都為首爾；釜山是南韓重要港口城市，開城是北韓城市，皆非首都，故選 D。,content、options、answer,
+f19c62af9fab455c8f42563bced58cf0,6a4227a2ba290377c02853c8,115上8適康版地理 6-2 朝鮮半島的產業發展有何特色？_10_進度卷_1,8年級地理,17,2,改-已修正,原題純背數據，且第14題圖已列出各地區粉絲人數可推得總數；AI改考韓流帶動觀光、飲食，被第16題題幹直接洩答。改考同卷未出現的文化產業推動措施（不出現「文化立國」字樣，避免洩第13題）。（為維持已作答學生對錯，選項 A、D 對調，正解代號維持原題的 D。）,西元2023年，全球韓流粉絲俱樂部的人數已突破下列哪一個數量級？,"(A) 20萬人
+(B) 200萬人
+(C) 2,000萬人
+(D) 2億人",D,西元2023年全球韓流粉絲俱樂部人數已突破2億人，顯示韓流在全球具有廣泛影響力。,南韓政府為推動影視、音樂等文化產業，除了訂定相關法案外，還採取了下列哪一項措施？,"(A) 將文化產業交由北韓經營
+(B) 全面禁止外國影視作品進口
+(C) 停止網路資訊的流通
+(D) 成立專責機構並設置文化產業園區",D,南韓推動文化產業時，制定文化相關法案、成立專責機構，並在各地設置文化產業園區，故選 D；其餘選項皆不符史實，且違反文化產業擴散所需的條件。,content、options、answer,
+798876254fe046c2b9520fe3e77bb74c,6a4227f6ba290377c028541c,115上8適康版地理 6-2 朝鮮半島的產業發展有何特色？_10_進度卷_2,8年級地理,17,2,改-已修正,原題照抄題幹註解即可作答；AI改考「統一換算單位以利比較」方向正確，但選項B誤稱「度量衡單位」，依第二輪意見改為「貨幣計價單位」。,某份臺、日、韓市值前十大企業比較表的註解寫著：「市值估計單位為億元新臺幣。」這份表中的市值估計使用哪一種單位？,"(A) 美元估算單位
+(B) 億元新臺幣
+(C) 日圓
+(D) 韓元",B,該表註解已說明市值估計單位為億元新臺幣，因此表中數字需以此單位理解，而不是美元、日圓或韓元等其他單位。,某份「臺、日、韓市值前十大企業比較表」的註解特別標明：「市值估計單位為億元新臺幣。」該表將日本與南韓企業的市值統一換算為新臺幣，其主要目的最可能為何？,"(A) 證明日本與南韓皆以新臺幣為法定貨幣
+(B) 統一貨幣計價單位，以便直接比較各國企業的市值規模
+(C) 顯示臺灣企業的市值總和遠高於日本與南韓
+(D) 說明這些跨國企業皆由臺灣政府出資設立",B,臺灣、日本、南韓分別使用新臺幣、日圓、韓元，若要跨國比較企業市值，必須先依匯率換算成相同的貨幣計價單位，才能直接比較，故選 B。(A)日、韓法定貨幣分別為日圓與韓元；(C)(D)統一計價單位只是方便比較，無法推論臺灣企業市值最高或由臺灣出資。,content、options、answer,
+162fe3c31e134c1daddd4de9ddaabf77,6a547366c8b92fe5db0d179e,115會考國12_文言文意(二)_30_3,9年級國文,1,2,改-已修正,原主文只有白話大意、子題卻引用未出現的詩句，子題1、3解析有誤字（更、無地不生）；AI補詩句方向正確，但又引入無關的白居易詩句，且保留「草色又恢復美好」直接洩子題1答案。改為只引詩句、不附會洩答的白話，並修正解析。,"野火焚燒路旁草，卻燒不盡深根；春風吹拂後，草色又恢復美好。草不選高門或茅舍，只要有土地便能生長。詩人接著感嘆：人遇饑饉、兵亂與官吏徵索，漂泊流離，在艱難世道裡竟不如路旁草。
+【子題1】「春風一披拂，顏色還媚好」中的「還」意義為何？
+(A) 仍然、又恢復
+(B) 歸還物品
+(C) 表示更加遙遠
+(D) 環繞四周
+答：A　解析：「更」在此承接草經春風吹拂後再度茂盛的語意，表示「仍然、又恢復」；不是指更加遙遠。
+【子題2】前半寫草「燎而不盡」，後半寫人「不如路傍草」，主要形成何種效果？
+(A) 以人的安樂反襯野草的脆弱
+(B) 以草的生命力反襯人的困頓
+(C) 證明草能理解政治
+(D) 說明高門一定沒有野草
+答：B　解析：詩中先寫野草生命強韌，再轉寫亂世百姓的困頓，以草反襯人，並非以人的安樂反襯野草。
+【子題3】若將「不擇高門生，寧居茅屋小」改為「只生高門側」，會破壞哪一層意義？
+(A) 春風使草色轉綠
+(B) 只描寫野火焚燒地上的草葉
+(C) 草隨地而生、不分貴賤的特性
+(D) 人遭逢兵亂饑荒
+答：C　解析：「無地不生」著重野草隨地生長、不分貴賤；野火焚燒草葉只是前文情節，不能完整說明此句。
+【子題4】全詩最主要的情感為何？
+(A) 歌頌官吏治理有方而使百姓安居
+(B) 羨慕高門生活奢華
+(C) 勸人放棄一切努力
+(D) 感嘆亂世百姓生存艱難
+答：D　解析：末段列舉饑饉、兵亂與官吏徵索，重點是感嘆亂世百姓生存艱難，並非歌頌官吏使百姓安居。",,1A、2B、3C、4D,四小題須分別依題組明示線索、語義關係與合理推論作答，答案依序唯一。,"某詩人詠路旁草，寫野火焚燒時草「燎而不盡」；又寫「春風一披拂，顏色還媚好」；並說草「不擇高門生，寧居茅屋小」。詩末筆鋒一轉，感嘆人遭遇饑饉、兵亂與官吏徵索，漂泊流離，竟「不如路傍草」。
+【子題1】「春風一披拂，顏色還媚好」中的「還」意義為何？
+(A) 仍然、又恢復
+(B) 歸還物品
+(C) 表示更加遙遠
+(D) 環繞四周
+答：A　解析：「還」承接草經野火焚燒、春風吹拂後再度茂盛的語意，表示「仍然、又恢復」；不是歸還物品或更加遙遠。
+【子題2】前半寫草「燎而不盡」，後半寫人「不如路傍草」，主要形成何種效果？
+(A) 以人的安樂反襯野草的脆弱
+(B) 以草的生命力反襯人的困頓
+(C) 證明草能理解政治
+(D) 說明高門一定沒有野草
+答：B　解析：詩中先寫野草生命強韌，再轉寫亂世百姓的困頓，以草反襯人。
+【子題3】若將「不擇高門生，寧居茅屋小」改為「只生高門側」，會破壞哪一層意義？
+(A) 春風使草色轉綠
+(B) 只描寫野火焚燒地上的草葉
+(C) 草隨地而生、不分貴賤的特性
+(D) 人遭逢兵亂饑荒
+答：C　解析：「不擇高門生，寧居茅屋小」著重野草隨地生長、不分貴賤；改為「只生高門側」便失去此意。
+【子題4】這首詩最主要的情感為何？
+(A) 歌頌官吏治理有方而使百姓安居
+(B) 羨慕高門生活奢華
+(C) 勸人放棄一切努力
+(D) 感嘆亂世百姓生存艱難
+答：D　解析：詩末列舉饑饉、兵亂與官吏徵索，重點是感嘆亂世百姓生存艱難。",,1A、2B、3C、4D,見各子題解析：1「還」為仍然、又恢復；2以草的生命力反襯人的困頓；3「不擇高門生」寫草不分貴賤；4感嘆亂世百姓生存艱難。,content、answer、sub_questions,
+253238d6a0904eaa9f43983834e5d239,6a3d14be36cd98081c795f14,115上8適翰版國文 10 畫的哀傷_50_進度卷_1,8年級國文,8,1,改-已修正,「搥胸頓足」為「捶胸頓足」的通行寫法，A、B皆可通；AI改用「椎」，但「椎」古通「捶」（椎心、椎胸），仍有爭議，改為明確別字「垂」。,下列句子中，沒有錯別字的是哪一項？,"(A) 他看見成績後捶胸頓足，懊惱不已。
+(B) 他看見成績後搥胸頓足，懊惱不已。
+(C) 他看見成績後捶胸噸足，懊惱不已。
+(D) 他看見成績後捶胸頓卒，懊惱不已。",A,正確寫法為「捶胸頓足」，表示捶打胸膛、跺腳，形容非常悲憤或悔恨。,下列句子中，沒有錯別字的是哪一項？,"(A) 他看見成績後捶胸頓足，懊惱不已。
+(B) 他看見成績後垂胸頓足，懊惱不已。
+(C) 他看見成績後捶胸噸足，懊惱不已。
+(D) 他看見成績後捶胸頓卒，懊惱不已。",A,正確寫法為「捶胸頓足」（亦作「搥胸頓足」），表示捶打胸膛、跺腳，形容非常悲憤或悔恨。(B)「垂」應改為「捶」；(C)「噸」應改為「頓」；(D)「卒」應改為「足」。,options、answer,
+7cc3df60ac8e47df88e1eb0bf635d54f,6a3d14e336cd98081c795f83,115上8適翰版國文 10 畫的哀傷_50_進度卷_2,8年級國文,20,1,改-已修正,原題與第19題考同四字讀音；AI換考巒、幀、湛、繽讀音正確（MOE：巒ㄌㄨㄢˊ、幀ㄓㄥˋ、湛ㄓㄢˋ、繽ㄅㄧㄣ），但題幹仍問「寫法與讀音」而四個寫法皆正確，題幹改為只問讀音。（為維持已作答學生對錯，選項 A、C 對調，正解代號維持原題的 C。）,下列何者的詞語寫法與括號字讀音都正確？,"(A) 獨佔鰲頭；「鰲」讀ㄠˋ
+(B) 目炫神迷；「炫」讀ㄒㄩㄢˋ
+(C) 赫然發現；「赫」讀ㄏㄜˋ
+(D) 恫嚇他人；「恫」讀ㄊㄨㄥˋ",C,「赫然」寫法正確，「赫」讀ㄏㄜˋ；「鰲」讀ㄠˊ，「目眩神迷」應用「眩」，「恫」讀ㄉㄨㄥˋ。,下列引號內的字，何者讀音正確？,"(A) 「湛」藍天空；「湛」讀ㄕㄣˋ
+(B) 一「幀」畫作；「幀」讀ㄓㄣ
+(C) 山「巒」起伏；「巒」讀ㄌㄨㄢˊ
+(D) 色彩「繽」紛；「繽」讀ㄅㄧㄥ",C,(C)「巒」讀ㄌㄨㄢˊ，正確；(B)「幀」應讀ㄓㄥˋ；(A)「湛」應讀ㄓㄢˋ；(D)「繽」應讀ㄅㄧㄣ。故選 C。,content、options、answer,
+877eda54ab664aa6ade43c791e999116,6a41fb814f9b8c6f9c398358,SUMMER-115S1-G9-JSO_115會考地5_中國的自然環境與人口_10,9年級社會,2,1,改-已修正,中國與美國因水域等統計口徑不同，第3、第4大兩說並存，原題B、C皆可；AI題幹括號直接寫出「與美國互為第三、四大」洩答。改為選項合併「第3或第4大」。,依世界國家面積大小排序，中國位居世界第幾大？,"(A) 第 2 大
+(B) 第 3 大
+(C) 第 4 大
+(D) 第 5 大",C,世界面積排序為俄羅斯、加拿大、美國、中國，因此中國位居世界第 4 大。,依世界國家面積大小排序，中國的排名最接近下列何者？,"(A) 第 1 大
+(B) 第 2 大
+(C) 第 3 或第 4 大
+(D) 第 6 至第 7 大",C,世界面積第 1 大為俄羅斯、第 2 大為加拿大；中國與美國面積相近，因是否計入水域等統計標準不同，兩國排名互為第 3、第 4 大，故選 C。,content、options、answer,
+2f2d0a564cc842288ede36ca10be124e,6a41fb984f9b8c6f9c3984fc,SUMMER-115S1-G9-JSO_115會考歷1_史前時代至大航海時代_10,9年級社會,20,1,改,臺南孔廟由陳永華建議籌建、鄭經在位時興建，原題問「興建的人物」B、D皆可；AI改問「哪一位統治者在位期間」，B唯一。,一位導覽員介紹臺南孔廟時說：「這座建築可追溯到鄭氏政權時期，與漢人典章制度移植臺灣有關。」興建臺南孔廟的人物是誰？,"(A) 鄭成功
+(B) 鄭經
+(C) 鄭克塽
+(D) 陳永華",B,鄭經在承天府興建孔廟，將漢人典章制度移植臺灣。,一位導覽員介紹臺南孔廟時說：「這座建築可追溯到鄭氏政權時期，與漢人典章制度移植臺灣有關。」請問臺南孔廟是在鄭氏政權哪一位統治者在位期間所興建？,"(A) 鄭成功
+(B) 鄭經
+(C) 鄭克塽
+(D) 陳永華",B,鄭經在位期間，採納諮議參軍陳永華的建議，在承天府（今臺南）興建孔廟、設立學校，將漢人典章制度移植臺灣。(A)鄭成功在位時間短暫，主要忙於軍事與拓墾；(C)鄭克塽時期鄭氏政權降清；(D)陳永華為輔政大臣，並非鄭氏政權在位統治者。,content、answer,
+c72ed491f57143b58dd4267474d10555,6a422be50a425852dffca6f3,115上7康軒國文self_study-3_20,7年級國文,2,1,改-已修正,「嚇退」在語境中兩讀皆可辯：教育部辭典 ㄏㄜˋ 為「用言語、怒叱、武力逼迫，使人害怕」，ㄒㄧㄚˋ 為「使人感到害怕」，MOE審訂表 ㄏㄜˋ（恐嚇）、ㄒㄧㄚˋ（嚇唬、嚇一跳），且A、C同時列為選項，AI直接改答A亦不穩。改用審訂表有明確例詞的「嚇一跳」。（為維持已作答學生對錯，選項 A、C 對調，正解代號維持原題的 C。）,閱讀下列句子，選出「嚇退」的正確讀音：金龍師讓張飛瞪大了眼，一副「嚇退」百萬雄軍的樣子。,"(A) ㄒㄧㄚˋ　ㄊㄨㄟˋ
+(B) ㄏㄜˋ　ㄊㄨㄟ
+(C) ㄏㄜˋ　ㄊㄨㄟˋ
+(D) ㄒㄧㄚ　ㄊㄨㄟˋ",C,「嚇退」表示以聲勢使對方退卻，「嚇」在威嚇、恐嚇的意思中讀作ㄏㄜˋ，「退」讀作ㄊㄨㄟˋ。,閱讀下列句子，選出「嚇」的正確讀音：廟頂的曹操突然一路往下溜，把廟前的村民「嚇」了一大跳。,"(A) ㄒㄧㄚ
+(B) ㄏㄜˋ
+(C) ㄒㄧㄚˋ
+(D) ㄏㄜˊ",C,依教育部《一字多音審訂表》，「嚇」表示使人害怕、受驚（如嚇唬、嚇一跳）時讀作ㄒㄧㄚˋ；用於恐嚇、威嚇等威脅義時才讀作ㄏㄜˋ。句中村民受到驚嚇，故選 C。,content、options、answer,
+3eee0b078cc9475fa2c15f6256342d5d,6a422c830a425852dffca771,115上7康軒國文self_study-3_30_2,7年級國文,17,1,改,「粘」可作「黏」用（粘貼），原題A、D皆可通；AI把D改為「拈」（用手指夾取）字義明確不符，答案唯一。,下列句子中，哪一個用字完全正確？,"(A) 師傅把彩色瓷片黏在泥偶的戰袍上。
+(B) 師傅把彩色瓷片沾在泥偶的戰袍上。
+(C) 師傅把彩色瓷片站在泥偶的戰袍上。
+(D) 師傅把彩色瓷片粘在泥偶的戰袍上。",A,此處要表達讓瓷片附著在泥偶上，應使用「黏」。B 的「沾」多指接觸液體或附著少量東西，C 的「站」字義不符，D 不是此處教學目標用字。,下列句子中，哪一個用字完全正確？,"(A) 師傅把彩色瓷片黏在泥偶的戰袍上。
+(B) 師傅把彩色瓷片沾在泥偶的戰袍上。
+(C) 師傅把彩色瓷片站在泥偶的戰袍上。
+(D) 師傅把彩色瓷片拈在泥偶的戰袍上。",A,此處要表達讓瓷片附著在泥偶上，應使用「黏」。B 的「沾」多指接觸液體或附著少量東西，C 的「站」指直立，D 的「拈」指用手指夾取，三者字義皆不符語境。,options、answer,
+277314fbdc1b474985f60938dbb45f06,6a423b983efecf6726a09b5a,115上8康軒國文self_study-3_10_2,8年級國文,2,1,改-已修正,原題幹直接寫出答案「濃、盛」；AI改問「筆酣墨濃中哪個字有濃、盛義」，與第5題（問「酣」義）互洩，且「濃」字本身也合題意，答案不唯一。改考同卷未直接測驗的「囍」字。,若把「酣」解釋成兩個近義詞，可寫作「濃、盛」。請寫出這個詞義。,,濃、盛,指定注釋中「酣」的詞義就是濃、盛。,婚宴上常貼的「囍」字，是由哪兩個字組合而成？,,兩個「喜」字（雙喜）,「囍」由兩個「喜」字合成，稱為「雙喜」，常用於婚嫁喜慶，表示喜上加喜。,content、answer,
+6d91132e7f4a4ffba6760dc808944908,6a423b983efecf6726a09b5a,115上8康軒國文self_study-3_10_2,8年級國文,18,1,改,原題與第10題互為題幹與答案；AI改考「顏體」可行。第13題誘答選項僅出現「顏體」一詞，未說明其為顏真卿所創，不構成洩答。,「官兵眷屬所居住的村落」可對應到哪一個詞語？,,眷村,官兵眷屬居住的村落稱為「眷村」。,唐代書法家顏真卿所創立的書體，字形端莊雄偉、氣勢開闊，一般稱為什麼？,,顏體,唐代顏真卿所創的書體稱為「顏體」，其特色為筆力渾厚、字形方正端莊。,content、answer,
+640188dca3f14216be3d61e3977ca063,6a8e600ce91afcf926061c78,115上8適翰版數學 5-3 累積相對次數分配表與折線圖_50_進度卷_1,8年級數學,1,1,改-已修正,45×35%=15.75人非整數，題幹數據矛盾；AI改乙班為40人（14人），合計26人，答案B唯一，計算正確。（為維持已作答學生對錯，選項 B、C 對調，正解代號維持原題的 C。）,甲班 30 人中，未滿 60 分的累積相對次數為 40%；乙班 45 人中，未滿 60 分的累積相對次數為 35%。兩班未滿 60 分的人數合計最接近多少？,"(A) 24 人
+(B) 26 人
+(C) 28 人
+(D) 30 人",C,甲班未滿 60 分為 30×40%=12 人；乙班為 45×35%=15.75 人，約 16 人，合計約 28 人。,甲班 30 人中，未滿 60 分的累積相對次數為 40%；乙班 40 人中，未滿 60 分的累積相對次數為 35%。兩班未滿 60 分的人數合計為多少？,"(A) 24 人
+(B) 28 人
+(C) 26 人
+(D) 30 人",C,甲班未滿 60 分的人數為 30×40%＝12（人）；乙班未滿 60 分的人數為 40×35%＝14（人）。兩班未滿 60 分的人數合計為 12＋14＝26（人），故選(C)。,content、options、answer,
+6073b86f5b0b4e628a0f4bdacfc1fa5f,6a32661d16c29ce3d8e9cfec,115上7適康版公民 6-1 社區參與的重要性為何？_10_進度卷_1,7年級公民,6,46,改-已修正,原選項C「休戚與共、我是當地人」直接洩第20題答案；AI改成「認同感與歸屬感→社區意識」又洩第4題。改為不出現兩題關鍵字的態度描述。,社區居民通常在面對共同問題或共同需要時，較容易產生下列哪一種感受？,"(A) 彼此完全不往來
+(B) 只關心外地活動
+(C) 休戚與共、我是當地人的社區意識
+(D) 完全沒有公共需要",C,居民面對共同問題或需要時，會產生休戚與共、我是當地人的社區意識。,社區居民通常在面對共同問題或共同需要時，彼此較容易產生下列哪一種態度？,"(A) 彼此完全不往來
+(B) 只關心外地活動
+(C) 彼此關心、互相扶持，形成生活上的連帶感
+(D) 認為完全沒有公共需要",C,居民生活息息相關，面對共同問題或共同需要時，較容易彼此關心、互相扶持，形成生活上的連帶感，這也是凝聚社區意識的基礎，故選 C。,content、options、answer,
+0a5d79199c4e4624b94c5774443e6e58,6a38f85bb56a7224d9a0ded0,115上7適康版歷史 6-2 西方文化的再傳入_10_進度卷_1,7年級歷史,8,46,改-已修正,原題幹寫出府城、太平境教會、看西街醫館，洩第5、10、20題；AI改考淡水女學堂方向可行，但題幹寫出「馬偕」「臺灣北部」「淡水」洩第3、19題，依第二輪意見去除。,西元1865年，在臺灣府城創立太平境教會，並開辦看西街醫館的傳教士是哪一位？,"(A) 馬偕
+(B) 西班牙神父
+(C) 馬雅各
+(D) 荷蘭東印度公司官員",C,馬雅各於西元1865年在臺灣府城創立太平境教會，並開辦看西街醫館。,清末開港通商後，西方傳教士積極推動新式教育，為了提升女子的受教機會，創辦了臺灣第一所新式女子學校。這所學校是下列何者？,"(A) 理學堂大書院
+(B) 看西街醫館
+(C) 淡水女學堂
+(D) 太平境教會",C,馬偕在淡水創辦「淡水女學堂」，為臺灣第一所新式女子學校。(A)理學堂大書院（牛津學堂）亦為馬偕所創，但招收男學生；(B)看西街醫館為西式醫院、(D)太平境教會為教會，皆與馬雅各在府城的活動有關。,content、options、answer,
+7ab4704f6a9e4c24835194019ae31c4b,6a42131ca01c2e916e7db9c2,SUMMER-115S1-G9-JPC_115會考國6_國學常識_30_3,9年級國文,1,4,改,「周晬」「週晬」皆可，A、C皆可；AI把C改為「周醉」，答案唯一，「晬」音ㄗㄨㄟˋ正確。,下列哪一個是一歲相關代稱的正確字形？,"(A) 周晬
+(B) 周碎
+(C) 週晬
+(D) 周粹",A,一歲可稱「周晬」，字形應作「晬」。,下列哪一個是一歲相關代稱的正確字形？,"(A) 周晬
+(B) 周碎
+(C) 周醉
+(D) 周粹",A,一歲可稱「周晬」（嬰兒滿一歲），「晬」音ㄗㄨㄟˋ，為日部，不可寫作「碎」、「醉」或「粹」。,options、answer,
+fbd6c97cf2274eb39952a99e2e573f62,6a4214f9a01c2e916e7dbb12,SUMMER-115S1-G9-JPC_115會考國7_修辭與寫作_30_4,9年級國文,5,4,改-已修正,「熏然」辭典收錄、通「醺然」，A、D皆可；AI把D改為「勳然」可行，但解析稱「薰然欲睡指溫暖和暢使人想睡」為自編釋義，改寫解析。,下列詞語何者字形正確，且可形容因氣味或感受而像喝醉般陶然？,"(A) 醺然欲醉
+(B) 薰然欲睡
+(C) 醺然欲墜
+(D) 熏然欲醉",A,「醺然欲醉」可形容像微醉般陶然的感受，字形正確。,下列詞語何者字形正確，且可形容因氣味或感受而像喝醉般陶然？,"(A) 醺然欲醉
+(B) 薰然欲睡
+(C) 醺然欲墜
+(D) 勳然欲醉",A,(A)「醺然欲醉」形容像微醉般陶然，字形正確；(B)應作「醺然欲醉」，「睡」也不合「像喝醉」之意；(C)「墜」應作「醉」；(D)「勳」應作「醺」。故選 A。,options、answer,
+bc1b5692624241fbab79178b281fedd3,6a438d94f3a25b6954b85b01,115上7翰林國文self_study-3_10_2,7年級國文,15,4,改-已修正,「清澈」被同卷第20題題幹與選項多次印出，AI只改選項B仍洩答。改考同卷未出現的「開鑿」。（為維持已作答學生對錯，選項 B、C 對調，正解代號維持原題的 C。）,「烏干達的新井冒出（　）乾淨的水」中，括號最適合填入哪一個詞？,"(A) 青撤
+(B) 清徹
+(C) 清澈
+(D) 青澈",C,「清澈」表示水清而透明，適合形容乾淨的井水。,「基金會的工人在烏干達的村落開（　）新井，讓村民喝到乾淨的水。」括號中最適合填入哪一個字？,"(A) 擊
+(B) 造
+(C) 鑿
+(D) 糟",C,「開鑿」指挖掘、打通，用於挖井最恰當，故填「鑿」；「擊」是敲打，「造」不與「開」組成挖掘義，「糟」是形近別字，故選 C。,content、options、answer,
+9b99014af0ea45b49fc8f3346e157ecd,6a421208a01c2e916e7db91a,SUMMER-115S1-G9-JPC_115會考國6_國學常識_30,9年級國文,5,3,改,「流金鑠石」亦作「流金爍石」，A、B皆可；AI把A改為明確錯字「流金礫石」，答案唯一。,下列哪一個詞語的字形符合國學常識用語？,"(A) 流金爍石
+(B) 流金鑠石
+(C) 留金鑠石
+(D) 流金濯石",B,表示夏季炎熱的詞語寫作「流金鑠石」，其中「鑠」字不可誤作其他字。,下列哪一個詞語的字形符合國學常識用語？,"(A) 流金礫石
+(B) 流金鑠石
+(C) 留金鑠石
+(D) 流金濯石",B,表示夏季炎熱，能使金石熔化的詞語寫作「流金鑠石」。(A)「礫」應作「鑠」；(C)「留」應作「流」；(D)「濯」應作「鑠」。,options、answer,
+b0fb40693068408391aa838efe18c28d,6a1d9a36a93883780250a54a,115上8適康版公民 6-1 政治參與的重要性及方式_30_進度卷_1,8年級公民,9,2,改,公投法有「公投案成立公告」（投票前）與「投票結果公告」兩種；原題泛稱「公告」放在結果判定後即為錯，與同卷第19題矛盾。AI改為「公投案成立公告」正確。,班上製作公民投票流程卡時，把「政府執行」放在投票之前，又把「公告」移到結果判定之後。若要正確區分投票前程序與通過後處理，下列修正何者最適當？,"(A) 把政府執行放在提案之前，公告放在人民連署之前
+(B) 把公告放在人民連署之後、投票之前，政府執行放在議題通過之後
+(C) 刪除公告程序，因為人民連署後即可直接投票並執行
+(D) 把政府執行改成不通過後的處理，公告改成政黨票門檻",B,公民投票流程中，提案後進入人民連署，再公告、投票；若通過，才由政府執行。公告不是結果判定後才出現，政府執行也不是投票前或不通過後的程序。,班上製作公民投票流程卡時，把「政府執行」放在投票之前，又把「公投案成立公告」移到結果判定之後。若要正確區分投票前程序與通過後處理，下列修正何者最適當？,"(A) 把政府執行放在提案之前，公投案成立公告放在人民連署之前
+(B) 把公投案成立公告放在人民連署之後、投票之前，政府執行放在議題通過之後
+(C) 刪除公投案成立公告程序，因為人民連署後即可直接投票並執行
+(D) 把政府執行改成不通過後的處理，公投案成立公告改成政黨票門檻",B,公民投票流程中，提案後進入人民連署，連署通過後由選務機關進行公投案成立公告、再舉行投票；投票後若結果通過，才由政府執行。公投案成立公告不是結果判定後才出現，政府執行也不是投票前或不通過後的程序。,content、options、answer,
+d92156fc7fbc4edba341859f4e99ab1a,6a324651ea19866e0c1fb611,115上7適南版公民 5-2 如何解決校園生活人際與公共事務的爭議？_10_進度卷_2,7年級公民,4,2,改-已修正,原題(提案→附署)與第17題(附署屬提案、附議屬動議)互相提示；AI改考臨時動議仍直接洩第17題答案，且選項C「經一人以上請假」不通。改考同卷未出現的司儀職責。（為維持已作答學生對錯，選項 A、C 對調，正解代號維持原題的 C。）,班會中的「提案」需要經過什麼程序？,"(A) 會議中以口頭提出並經一人以上附議
+(B) 會議中主席直接宣布通過
+(C) 會議前以書面呈現並經一人以上附署
+(D) 會議前由家長會同意即可",C,提案是會議前以書面呈現，並經過一人以上附署的程序。附署不同於動議的附議。,班會中，「司儀」的主要職責是什麼？,"(A) 討論時提出意見並在會後講評
+(B) 擔任會議主持人並裁決秩序問題
+(C) 依會議程序逐項宣讀，引導會議進行
+(D) 決定提案或動議是否通過",C,司儀負責依照會議程序逐項宣讀，引導會議順利進行；(B)主持會議、裁決秩序問題是主席的職責；(A)會後講評是老師的角色；(D)提案或動議是否通過須經表決，不由司儀決定。,content、options、answer,
+a7529cae73ea4dbd8816f489b78ce1ac,6a41fbc64f9b8c6f9c398805,SUMMER-115S1-G9-JSO_115會考歷4_戰後台灣_30_2,9年級社會,10,2,改-已修正,原題與第15題同考臨時條款；AI改考三七五減租方向可行，但題幹「千分之三百七十五」與選項字面直接對應。改為不出現數字的描述。第15題因此維持原題。（為維持已作答學生對錯，選項 B、C 對調，正解代號維持原題的 C。）,有一項政治制度使總統職權被擴大，後來民主化過程中，廢除它成為政治改革的重要訴求。這項制度最可能是下列何者？,"(A) 臺灣關係法與非官方往來
+(B) 三七五減租
+(C) 動員戡亂時期臨時條款
+(D) 耕者有其田",C,動員戡亂時期臨時條款具有擴大總統職權的效果，民主改革中要求終止動員戡亂並廢除該條款；臺灣關係法主要涉及臺美非官方往來，並非擴大總統職權的制度。,戰後初期政府推動土地改革，首先限制地主向佃農收取的最高地租額度，以減輕佃農負擔。這項措施是下列何者？,"(A) 臺灣關係法與非官方往來
+(B) 動員戡亂時期臨時條款
+(C) 三七五減租
+(D) 耕者有其田",C,民國38年政府實施「三七五減租」，規定地租不得超過主要作物全年收穫總量的千分之三百七十五，以減輕佃農負擔，故選 C。(A)為民國68年臺美斷交後美國制定的法律；(B)為擴大總統職權的條款；(D)為政府徵收地主超額耕地轉售給佃農的政策。,content、options、answer,
+fc4250d60b814b11a834f56525c0899c,6a42105aa01c2e916e7db833,SUMMER-115S1-G9-JPC_115會考國5_應用文_10_2,9年級國文,20,2,改-已修正,「題辭」「題詞」辭典皆收，A、C皆可；且第2、13、14題題幹皆印出「題辭」。AI改考應用文種類，答案仍被他題題幹的「題辭」二字提示。改考同卷未出現的生子題辭。（為維持已作答學生對錯，選項 B、A 對調，正解代號維持原題的 A。）,匾額、賀卡或獎牌上用來配合場合的祝賀語，名稱應寫作哪一個？,"(A) 題辭
+(B) 提辭
+(C) 題詞
+(D) 提詞",A,用於匾額、賀卡或獎牌上的應景祝賀語可稱「題辭」。,親友家中添了一名男嬰，賀卡上最適合寫哪一個題辭？,"(A) 弄璋之喜
+(B) 弄瓦之喜
+(C) 百年好合
+(D) 杏林春暖",A,古人生男孩給他玩玉璋，故祝賀生男用「弄璋之喜」；(B)「弄瓦之喜」用於生女；(C)「百年好合」用於結婚；(D)「杏林春暖」用於醫院、診所。故選 A。,content、options、answer,
+e77106d1ae5e4e46960d4fbc1d5ad57d,6a3d14be36cd98081c795f14,115上8適翰版國文 10 畫的哀傷_50_進度卷_1,8年級國文,2,1,改-已修正,原題四個考點與第20題完全相同且字形無錯；AI改版選項A「臨摩」被第16題「臨摹」洩答，改換為同卷未出現的「輪廓」。讀音依MOE：肖ㄒㄧㄠˋ、勒ㄌㄜˋ、凌ㄌㄧㄥˊ、忿ㄈㄣˋ。,下列詞語的字形與括號字讀音，何者完全正確？,"(A) 獨占鰲頭；「鰲」讀ㄠˋ
+(B) 目眩神迷；「眩」讀ㄒㄩㄢˋ
+(C) 赫然發現；「赫」讀ㄔˋ
+(D) 恫嚇他人；「恫」讀ㄊㄨㄥˊ",B,「目眩神迷」字形正確，「眩」讀ㄒㄩㄢˋ；「獨占鰲頭」字形可成立，但「鰲」應讀ㄠˊ；「赫」讀ㄏㄜˋ，「恫」讀ㄉㄨㄥˋ。,下列詞語的字形與括號字讀音，何者完全正確？,"(A) 勾勒輪闊；「勒」讀ㄌㄜˋ
+(B) 人物肖像；「肖」讀ㄒㄧㄠˋ
+(C) 盛氣凌人；「凌」讀ㄌㄥˊ
+(D) 忿恨不平；「忿」讀ㄈㄣ",B,(A)「勒」讀ㄌㄜˋ正確，但「輪闊」應作「輪廓」；(B)「人物肖像」字形正確，「肖」讀ㄒㄧㄠˋ；(C)「凌」應讀ㄌㄧㄥˊ；(D)「忿」應讀ㄈㄣˋ。故選 B。,options、answer,
+f938b6351a634f468234c7c7cd125886,6a3d14e736cd98081c795fad,115上8適翰版國文 10 畫的哀傷_10_進度卷_4,8年級國文,8,1,改,「孱孱」為辭典收錄詞語，無語境時A、B皆「用字正確」；AI補上「形容溪水流動的聲音」語境，答案唯一。,下列哪一個詞語的用字正確？,"(A) 潺潺
+(B) 孱孱
+(C) 殘殘
+(D) 潺殘",A,形容流水聲時應寫作「潺潺」。,用來形容溪水流動的聲音時，下列哪一個詞語的用字正確？,"(A) 潺潺
+(B) 孱孱
+(C) 殘殘
+(D) 潺殘",A,形容流水聲時應寫作「潺潺」，故選(A)。(B)「孱」為懦弱之意；(C)「殘」為毀壞、不完整之意；(D)為錯別字組合。,content、answer,
+b6989a2c3cb44a428c58ee04a944f7a1,6a41fb984f9b8c6f9c3984fc,SUMMER-115S1-G9-JSO_115會考歷1_史前時代至大航海時代_10,9年級社會,19,1,改-已修正,原題幹列「農業出現」洩第17題答案；AI改為舊石器特徵仍與第17題誘答互相提示。依第二輪意見改考同卷未出現的荷治時期考點。（為維持已作答學生對錯，選項 A、B 對調，正解代號維持原題的 B。）,小芸整理史前文化筆記，寫下「磨製石器、燒製陶器、農業出現、飼養家畜」。這些特徵最符合哪一時代？,"(A) 金屬器時代
+(B) 新石器時代
+(C) 清帝國時期
+(D) 舊石器時代",B,磨製石器、陶器與農業出現是新石器時代的重要特徵。,荷蘭統治臺灣時，傳教士教導西拉雅人以羅馬拼音書寫自己的語言；後來平埔族人用這種文字與漢人訂立契約，這類文書稱為什麼？,"(A) 熱蘭遮城日誌
+(B) 新港文書
+(C) 臺灣民報
+(D) 說文解字",B,荷蘭傳教士教西拉雅人以羅馬拼音書寫族語，後來留下的土地契約等文書稱為「新港文書」（番仔契），故選 B。(A)為荷蘭東印度公司在臺的官方日記；(C)為日治時期刊物；(D)為東漢許慎所著字書。,content、options、answer,
+1ae803853972452b8b75050c900352e3,6a421e000a425852dffc9b7b,115上8適翰版理化 5-2 熱量_50_進度卷_2,8年級理化,18,1,改-已修正,原題與第19題同考「熱平衡時溫度相同」；AI改考熱量傳遞方向，但第19題題幹已寫「熱量由高溫物體流向低溫物體」，且本題題幹自帶「高溫與低溫」。改為混合後質量比判斷。（為維持已作答學生對錯，選項 A、C 對調，正解代號維持原題的 C。）,兩個物體達熱平衡時，下列哪一個說法最精確？,"(A) 兩者一開始溫度相同
+(B) 兩者質量相同
+(C) 兩者溫度相同
+(D) 兩者吸收的熱量相同",C,熱平衡的判準是溫度相同且不再改變，不要求質量相同，也不表示吸收熱量相同。,甲、乙兩杯水混合後達到熱平衡，過程中甲杯水溫下降了 10℃，乙杯水溫上升了 20℃。若沒有熱量散失，下列判斷何者正確？,"(A) 兩杯水的質量相同
+(B) 乙杯水的質量是甲杯的 2 倍
+(C) 甲杯水的質量是乙杯的 2 倍
+(D) 甲杯放出的熱量比乙杯吸收的熱量多",C,沒有熱量散失時，甲杯放出的熱量等於乙杯吸收的熱量：m甲 × 10 = m乙 × 20，得 m甲 = 2 m乙，故選 C。(D)放熱與吸熱相等，不會較多。,content、options、answer,
+23fa1cb6d26845c7aec9f804f1c8bcc9,6a422c620a425852dffca75c,115上7康軒國文self_study-3_20_2,7年級國文,14,1,改-已修正,原選項C「形錄」被第20題「型錄」洩答；AI改「造行」又被第8題「造型」洩答。改用同卷未出現的「鏽」字。,下列句子何者用字完全正確？,"(A) 老師傅說，美是需要時間摩出來的。
+(B) 小花把紅色小碗代到廟前交給師傅。
+(C) 工匠把窗花圖案整理成形錄給屋主選擇。
+(D) 村民找出合適的瓷器，希望能修補受損的泥偶。",D,A 應為「磨」；B 應為「帶」；C 應為「型錄」。D 的用字與語意皆正確。,下列句子何者用字完全正確？,"(A) 老師傅說，美是需要時間摩出來的。
+(B) 小花把紅色小碗代到廟前交給師傅。
+(C) 黑鐵窗花容易生秀，必須定期上漆保養。
+(D) 村民找出合適的瓷器，希望能修補受損的泥偶。",D,(A)「摩」應改為「磨」；(B)「代」應改為「帶」；(C)「秀」應改為「鏽」。(D) 的用字與語意皆正確。,options、answer,
